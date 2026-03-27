@@ -11,13 +11,13 @@ export const HttpStatus = {
   FORBIDDEN: 403,
   NOT_FOUND: 404,
   CONFLICT: 409,
-  UNPROCESSABLE_ENTITY: 422, // Thường dùng cho lỗi Validation
+  UNPROCESSABLE_ENTITY: 422,
   TOO_MANY_REQUESTS: 429,
 
   // Lỗi Server
   INTERNAL_SERVER_ERROR: 500,
   BAD_GATEWAY: 502,
   SERVICE_UNAVAILABLE: 503,
-} as const
+} as const;
 
-export type HttpStatusCode = (typeof HttpStatus)[keyof typeof HttpStatus]
+export type HttpStatusCode = (typeof HttpStatus)[keyof typeof HttpStatus];

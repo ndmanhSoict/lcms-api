@@ -1,7 +1,7 @@
-import { Response } from 'express'
+import { Response } from 'express';
 
-import { HttpStatus, HttpStatusCode } from '../constants/httpStatus.js'
-import { ApiResponse } from '../../types/response.types.js'
+import { HttpStatus, HttpStatusCode } from '../constants/httpStatus.js';
+import { ApiResponse } from '../../types/response.types.js';
 
 /**
  * Hàm gửi phản hồi thành công chuẩn hóa
@@ -16,7 +16,7 @@ export function sendSuccess<T>(
   data: T,
   message = 'Thành công',
   statusCode: HttpStatusCode = HttpStatus.OK,
-  meta?: Record<string, unknown>,
+  meta?: Record<string, unknown>
 ): void {
   const body: ApiResponse<T> = {
     success: true,
@@ -24,33 +24,29 @@ export function sendSuccess<T>(
     data,
     ...(meta && { meta }),
     // Lấy requestId từ middleware requestId đã gán vào req
-    requestId: res.req.requestId, 
+    requestId: res.req.requestId,
     timestamp: new Date().toISOString(),
-  }
-  res.status(statusCode).json(body)
+  };
+  res.status(statusCode).json(body);
 }
 
 /**
  * Helper cho phản hồi tạo mới thành công (201)
  */
-export function sendCreated<T>(
-  res: Response, 
-  data: T, 
-  message = 'Tạo mới thành công'
-): void {
-  sendSuccess(res, data, message, HttpStatus.CREATED)
+export function sendCreated<T>(res: Response, data: T, message = 'Tạo mới thành công'): void {
+  sendSuccess(res, data, message, HttpStatus.CREATED);
 }
 
 /**
  * Helper cho phản hồi không có nội dung (204)
  */
 export function sendNoContent(res: Response): void {
-  res.status(HttpStatus.NO_CONTENT).send()
+  res.status(HttpStatus.NO_CONTENT).send();
 }
 
 /**
  * Helper chuyên biệt cho dữ liệu phân trang
- * @param res 
+ * @param res
  * @param data Mảng dữ liệu
  * @param paginationMeta Object chứa total, page, limit...
  */
@@ -60,5 +56,5 @@ export function sendPaginated<T>(
   paginationMeta: Record<string, unknown>,
   message = 'Lấy danh sách thành công'
 ): void {
-  sendSuccess(res, data, message, HttpStatus.OK, paginationMeta)
+  sendSuccess(res, data, message, HttpStatus.OK, paginationMeta);
 }
