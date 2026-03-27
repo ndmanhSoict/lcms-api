@@ -13,7 +13,7 @@
     "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\"",
     "build": "npm run clean && tsc -p tsconfig.json",
     "start": "node dist/server.js",
-    "dev": "node --watch --loader ts-node/esm src/server.ts",
+    "dev": "nodemon --watch src --ext ts --exec tsx src/server.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -27,6 +27,7 @@
     "express": "^5.0.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.3.3",
+    "uuid": "^13.0.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -38,8 +39,9 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.14",
     "prettier": "^3.4.2",
-    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.7.2"
   }
 }

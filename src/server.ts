@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import "dotenv/config";
 
 import { healthRouter } from "./routes/health.js";
+import { errorHandler } from "./middleware/errorHandler.middleware.js";
 
 
 const app = express();
@@ -30,10 +31,19 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
+// Handler cho route không tồn tại (404)
+app.use((req, res, next) => {
+  const error = new Error(`Route ${req.originalUrl} không tìm thấy`);
+  (error as any).statusCode = 404;
+  next(error);
+});
+
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   console.error("Lỗi hệ thống:", err.message);
   res.status(500).json({ status: "error", message: "Đã có lỗi xảy ra từ phía server" });
 });
+
+app.use(errorHandler);
 
 app.listen(PORT, async () => {
   await connectDB();
