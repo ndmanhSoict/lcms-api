@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
 
-import { healthRouter } from "./routes/health";
+import { healthRouter } from "./routes/health.js";
 
 
 const app = express();

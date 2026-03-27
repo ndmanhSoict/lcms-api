@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Node.js Express API with TypeScript",
   "private": true,
+  "type": "module",
   "main": "dist/server.js",
   "engines": {
     "node": ">=22.0.0",
@@ -12,7 +13,7 @@
     "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\"",
     "build": "npm run clean && tsc -p tsconfig.json",
     "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/server.ts",
+    "dev": "node --watch --loader ts-node/esm src/server.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"src/**/*.ts\"",
