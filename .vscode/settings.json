@@ -1,0 +1,22 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "scss.lint.unknownAtRules": "ignore",
+  "search.exclude": {
+    "**/node_modules": true,
+    ".tmp": true,
+    "build": true
+  },
+  "files.eol": "\n",
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "js/ts.tsdk.path": "./node_modules/typescript/lib",
+  "editor.tabSize": 2
+}
