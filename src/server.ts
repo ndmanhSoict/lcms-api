@@ -1,41 +1,28 @@
-import express, { Request, Response, NextFunction } from "express";
-import mongoose from "mongoose";
-import "dotenv/config";
+import app from './app.js';
+import { env } from './config/env.validation.js';
+import { connectMongoDB } from './infrastructure/mongodb.js';
+import logger from './shared/constants/logger.js';
 
-import { healthRouter } from "./routes/health";
-
-
-const app = express();
-const PORT = process.env.PORT || 3003;
-
-app.use(express.json());
-
-const connectDB = async () => {
+const startServer = async () => {
   try {
-    const mongoURI = process.env.MONGODB_URI || "mongodb"
-    const conn = await mongoose.connect(mongoURI);
-    console.log(`✅ Kết nối MongoDB thành công: ${conn.connection.host}`);
+    await connectMongoDB();
+
+    const server = app.listen(env.PORT, () => {
+      logger.info(`🚀 Server đang chạy tại http://localhost:${env.PORT}`);
+    });
+
+    // Graceful Shutdown
+    process.on('SIGTERM', () => {
+      logger.info('SIGTERM signal received: closing HTTP server');
+      server.close(() => {
+        logger.info('HTTP server closed');
+        process.exit(0);
+      });
+    });
   } catch (error) {
-    console.error("❌ Lỗi kết nối MongoDB:", error);
+    logger.error('❌ Server failed to start:', error);
     process.exit(1);
   }
 };
 
-app.use("/health", healthRouter);
-
-app.get("/", (req: Request, res: Response) => {
-  res.json({ 
-    status: "ok", 
-    message: "Hệ thống LCMS API đang hoạt động!" 
-  });
-});
-
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  console.error("Lỗi hệ thống:", err.message);
-  res.status(500).json({ status: "error", message: "Đã có lỗi xảy ra từ phía server" });
-});
-
-app.listen(PORT, async () => {
-  await connectDB();
-  console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
-});
+startServer();
