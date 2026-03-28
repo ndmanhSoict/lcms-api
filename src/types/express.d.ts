@@ -9,6 +9,7 @@ declare global {
         userId: Types.ObjectId;
         email: string;
         role: RoleType;
+        branchId?: string;
       };
       requestId: string;
     }
