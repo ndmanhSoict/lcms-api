@@ -1,50 +1,36 @@
-import express, { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import 'dotenv/config';
+import app from './app.js';
+import { env } from './config/env.validation.js';
+import logger from './shared/constants/logger.js';
 
-import { healthRouter } from './routes/health.js';
-import { errorHandler } from './middleware/errorHandler.middleware.js';
-
-const app = express();
-const PORT = process.env.PORT || 3003;
-
-app.use(express.json());
+const PORT = env.PORT || 3003;
 
 const connectDB = async () => {
   try {
-    const mongoURI = process.env.MONGODB_URI || 'mongodb';
-    const conn = await mongoose.connect(mongoURI);
-    console.log(`✅ Kết nối MongoDB thành công: ${conn.connection.host}`);
+    const conn = await mongoose.connect(env.MONGODB_URI);
+    logger.info(`✅ Kết nối MongoDB thành công: ${conn.connection.host}`);
   } catch (error) {
-    console.error('❌ Lỗi kết nối MongoDB:', error);
+    logger.error('❌ Lỗi kết nối MongoDB:', error);
     process.exit(1);
   }
 };
 
-app.use('/health', healthRouter);
-
-app.get('/', (req: Request, res: Response) => {
-  res.json({
-    status: 'ok',
-    message: 'Hệ thống LCMS API đang hoạt động!',
-  });
-});
-
-// Handler cho route không tồn tại (404)
-app.use((req, res, next) => {
-  const error = new Error(`Route ${req.originalUrl} không tìm thấy`);
-  (error as any).statusCode = 404;
-  next(error);
-});
-
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  console.error('Lỗi hệ thống:', err.message);
-  res.status(500).json({ status: 'error', message: 'Đã có lỗi xảy ra từ phía server' });
-});
-
-app.use(errorHandler);
-
-app.listen(PORT, async () => {
+const startServer = async () => {
   await connectDB();
-  console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
-});
+
+  const server = app.listen(PORT, () => {
+    logger.info(`🚀 Server đang chạy tại http://localhost:${PORT}`);
+  });
+
+  // Xử lý Graceful Shutdown (Tắt server an toàn khi có sự cố)
+  process.on('unhandledRejection', err => {
+    logger.error('UNHANDLED REJECTION! 💥 Đang tắt server...');
+    console.error(err);
+    server.close(() => {
+      process.exit(1);
+    });
+  });
+};
+
+startServer();

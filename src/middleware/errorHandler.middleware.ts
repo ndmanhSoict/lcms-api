@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { HttpStatus } from '../shared/constants/httpStatus.js';
 import { ApiErrorResponse } from '../types/response.types.js';
+import logger from '../shared/constants/logger.js';
 
 export const errorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
   let statusCode = err.statusCode || HttpStatus.INTERNAL_SERVER_ERROR;
@@ -27,13 +28,12 @@ export const errorHandler = (err: any, req: Request, res: Response, next: NextFu
     message,
     code,
     ...(details && { details }),
-    requestId: req.requestId, // Đảm bảo bạn đã dùng middleware requestId trước đó
+    requestId: req.requestId,
     timestamp: new Date().toISOString(),
   };
 
-  // Log lỗi để Tech Lead/Dev check (có thể dùng Winston thay vì console)
-  console.error(
-    `[Error] ${req.method} ${req.path} - RequestID: ${req.requestId} - Message: ${message}`
+  logger.error(
+    `[${req.method}] ${req.path} - RequestID: ${req.requestId} - Code: ${code} - Message: ${message}`
   );
 
   res.status(statusCode).json(response);
