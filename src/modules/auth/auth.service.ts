@@ -19,7 +19,7 @@ export class AuthService {
     const tokens = generateTokens(user);
 
     return {
-      user: tokens.accessTokenPayload,
+      user: { ...tokens.accessTokenPayload, fullName: user.fullName, role: user.role },
       tokens: {
         accessToken: tokens.accessToken,
         refreshToken: tokens.refreshToken,
