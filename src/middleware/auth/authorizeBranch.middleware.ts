@@ -5,7 +5,7 @@ import { ROLES } from '../../shared/constants/roles.js';
 
 export const authorizeBranch = (req: Request, res: Response, next: NextFunction) => {
   const user = req.user;
-  
+
   if (!user) return next(new ForbiddenError());
 
   // SYSTEM_OWNER có quyền xem mọi chi nhánh
