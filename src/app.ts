@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(requestIdMiddleware);
 
-
 app.use('/', appRouter);
 
 app.use((req, res, next) => {

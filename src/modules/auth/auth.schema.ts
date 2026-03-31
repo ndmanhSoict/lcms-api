@@ -6,9 +6,7 @@ export const loginSchema = z.object({
       .string()
       .min(1, { message: 'Vui lòng cung cấp email' })
       .email({ message: 'Định dạng email không hợp lệ' }),
-    password: z
-      .string()
-      .min(6, { message: 'Vui lòng cung cấp mật khẩu' }),
+    password: z.string().min(6, { message: 'Vui lòng cung cấp mật khẩu' }),
   }),
 });
 

@@ -36,12 +36,11 @@ const seedData = async () => {
         fullName: 'Nguyễn Văn Học Sinh',
         phone: '0988888888',
         isActive: true,
-      }
+      },
     ];
 
     await User.insertMany(mockUsers);
     console.log('✅ Đã mock data thành công!');
-
   } catch (error) {
     console.error('❌ Lỗi khi mock data:', error);
   } finally {

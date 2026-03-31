@@ -13,13 +13,17 @@ export class AuthController {
     try {
       // Dữ liệu đã được kiểm tra qua validate.middleware
       const result = await this.authService.login(req.body);
-      
-      sendSuccess(res, { 
-        user: result.user, 
-        accessToken: result.tokens.accessToken,
-        refreshToken: result.tokens.refreshToken 
-      }, 'Đăng nhập thành công');
-    } catch (error) { 
+
+      sendSuccess(
+        res,
+        {
+          user: result.user,
+          accessToken: result.tokens.accessToken,
+          refreshToken: result.tokens.refreshToken,
+        },
+        'Đăng nhập thành công'
+      );
+    } catch (error) {
       next(error);
     }
   };
@@ -28,11 +32,15 @@ export class AuthController {
     try {
       const token = req.body.refreshToken;
       const result = await this.authService.refreshToken(token);
-      
-      sendSuccess(res, { 
-        accessToken: result.tokens.accessToken,
-        refreshToken: result.tokens.refreshToken
-      }, 'Làm mới token thành công');
+
+      sendSuccess(
+        res,
+        {
+          accessToken: result.tokens.accessToken,
+          refreshToken: result.tokens.refreshToken,
+        },
+        'Làm mới token thành công'
+      );
     } catch (error) {
       next(error);
     }
