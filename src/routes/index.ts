@@ -8,5 +8,6 @@ const apiV1Router = Router();
 appRouter.use('/health', healthRouter);
 
 apiV1Router.use('/auth', authRouter);
+apiV1Router.use('/branch', authRouter);
 
 appRouter.use('/api/v1', apiV1Router);

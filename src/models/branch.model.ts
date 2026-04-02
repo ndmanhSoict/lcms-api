@@ -22,7 +22,7 @@ const BranchSchema: Schema = new Schema(
     defaultSessionSlots: { type: [String], default: [] },
     deletedAt: { type: Date, default: null },
   },
-  { timestamps: true } // Tự động quản lý createdAt và updatedAt
+  { timestamps: true }
 );
 
 export const Branch = mongoose.models.Branch || mongoose.model<IBranch>('Branch', BranchSchema);

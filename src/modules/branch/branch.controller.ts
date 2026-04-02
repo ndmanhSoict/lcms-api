@@ -11,12 +11,11 @@ export class BranchController {
 
   createBranch = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      // Dữ liệu lúc này đã an toàn vì đã đi qua lớp middleware validate
       const branch = await this.branchService.createBranch(req.body);
       
       sendCreated(res, branch, 'Tạo chi nhánh mới thành công');
     } catch (error) {
-      next(error); // Chuyển lỗi xuống global error handler
+      next(error);
     }
   };
 }
