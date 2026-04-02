@@ -20,7 +20,7 @@ branchRouter.post(
 branchRouter.get(
   '/all-branch',
   authenticate,
-  authorize(ROLES.SYSTEM_OWNER), // Chỉ SYSTEM_OWNER được lấy tất cả
-  validate(getBranchesSchema), // Chặn rác từ query params
+  authorize(ROLES.SYSTEM_OWNER),
+  validate(getBranchesSchema),
   branchController.getBranches
 );
