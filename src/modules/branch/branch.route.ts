@@ -4,7 +4,7 @@ import { validate } from '../../middleware/validate.middleware.js';
 import { authenticate } from '../../middleware/auth/authenticate.middleware.js';
 import { authorize } from '../../middleware/auth/authorize.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
-import { createBranchSchema } from './branch.schema.js';
+import { createBranchSchema, getBranchesSchema } from './branch.schema.js';
 
 export const branchRouter = Router();
 const branchController = new BranchController();
@@ -15,4 +15,12 @@ branchRouter.post(
   authorize(ROLES.SYSTEM_OWNER), // 2. Phải là SYSTEM_OWNER
   validate(createBranchSchema), // 3. Dữ liệu body phải đúng format
   branchController.createBranch // 4. Vào controller
+);
+
+branchRouter.get(
+  '/all-branch',
+  authenticate,
+  authorize(ROLES.SYSTEM_OWNER), // Chỉ SYSTEM_OWNER được lấy tất cả
+  validate(getBranchesSchema), // Chặn rác từ query params
+  branchController.getBranches
 );
