@@ -9,29 +9,30 @@ import { generateTokens } from './auth.helper.js';
 
 export class AuthService {
   async login(data: any) {
-    const { phone, password } = data; // Dùng phone thay vì email
+    const { email, password } = data; // Dùng email thay vì phone
 
-    // 1. Tìm user theo số điện thoại
-    const user = await User.findOne({ phone });
-    if (!user) throw new UnauthorizedError('Số điện thoại hoặc mật khẩu không chính xác');
+    // 1. Tìm user theo email
+    const user = await User.findOne({ email });
+    if (!user) throw new UnauthorizedError('Email hoặc mật khẩu không chính xác');
     if (!user.isActive) throw new ForbiddenError('Tài khoản của bạn đã bị khóa');
 
     // 2. Kiểm tra mật khẩu
     const isMatch = await bcrypt.compare(password, user.passwordHash);
-    if (!isMatch) throw new UnauthorizedError('Số điện thoại hoặc mật khẩu không chính xác');
+    if (!isMatch) throw new UnauthorizedError('Email hoặc mật khẩu không chính xác');
 
     // 3. Tạo JWT tokens
     const tokens = generateTokens(user);
 
-    // 4. Băm Refresh Token để lưu vào DB (Bảo mật nếu DB bị lộ)
+    // 4. Băm Refresh Token để lưu vào DB
     const tokenHash = crypto.createHash('sha256').update(tokens.refreshToken).digest('hex');
     
-    // Tính toán thời gian hết hạn (VD: '7d' -> 7 ngày)
     const expiresInDays = parseInt(env.JWT_REFRESH_EXPIRES.replace(/\D/g, '')) || 7;
     const expiresAt = new Date();
     expiresAt.setDate(expiresAt.getDate() + expiresInDays);
 
+    // Dọn dẹp session cũ của user này để tránh lỗi duplicate token hash
     await RefreshToken.deleteMany({ userId: user._id });
+
     // Lưu Refresh Token vào collection mới
     await RefreshToken.create({
       schemaVersion: 1,
@@ -39,7 +40,6 @@ export class AuthService {
       branchId: user.branchId,
       tokenHash,
       expiresAt,
-      // Có thể lấy deviceInfo và ipAddress từ req truyền vào nếu cần
     });
 
     // 5. Cập nhật last_login_at
