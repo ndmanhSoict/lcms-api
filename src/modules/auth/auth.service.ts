@@ -101,4 +101,19 @@ export class AuthService {
       throw new UnauthorizedError('Refresh token không hợp lệ hoặc đã hết hạn');
     }
   }
+
+  async logout(token: string) {
+    const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+    
+    // Tìm token trong DB và đánh dấu đã bị thu hồi (revoke) với lý do 'logout'
+    await RefreshToken.updateOne(
+      { tokenHash, revokedAt: null },
+      { 
+        $set: { 
+          revokedAt: new Date(), 
+          revokedReason: 'logout' 
+        } 
+      }
+    );
+  }
 }

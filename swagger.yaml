@@ -1,0 +1,225 @@
+openapi: 3.0.0
+info:
+  title: LCMS Auth API
+  description: Tài liệu API cho module xác thực hệ thống Quản lý Trung tâm Học tập (LCMS)
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3003/api/v1
+    description: Local Development Server
+
+tags:
+  - name: Auth
+    description: Các API liên quan đến xác thực và quản lý phiên (Session)
+
+paths:
+  /auth/login:
+    post:
+      summary: Đăng nhập vào hệ thống
+      tags:
+        - Auth
+      operationId: login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Đăng nhập thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/LoginResponseData'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+  /auth/refresh-token:
+    post:
+      summary: Làm mới Access Token
+      description: Sử dụng Refresh Token để lấy cặp Access Token và Refresh Token mới. Token cũ sẽ bị thu hồi.
+      tags:
+        - Auth
+      operationId: refreshToken
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenRequest'
+      responses:
+        '200':
+          description: Làm mới token thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/TokenResponseData'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /auth/logout:
+    post:
+      summary: Đăng xuất khỏi hệ thống
+      description: Vô hiệu hóa Refresh Token hiện tại trong cơ sở dữ liệu.
+      tags:
+        - Auth
+      operationId: logout
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenRequest'
+      responses:
+        '200':
+          description: Đăng xuất thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        nullable: true
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+components:
+  schemas:
+    # Requests
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: admin@lcms.vn
+        password:
+          type: string
+          format: password
+          minLength: 6
+          example: "Admin@123456"
+
+    RefreshTokenRequest:
+      type: object
+      required:
+        - refreshToken
+      properties:
+        refreshToken:
+          type: string
+          description: Refresh Token được cấp khi login hoặc refresh lần trước
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+
+    # Response Data
+    LoginResponseData:
+      type: object
+      properties:
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+              example: "64b1f..."
+            email:
+              type: string
+              example: "admin@lcms.vn"
+            role:
+              type: string
+              example: "SYSTEM_OWNER"
+            fullName:
+              type: string
+              example: "System Owner"
+            branchId:
+              type: string
+              nullable: true
+              example: null
+        accessToken:
+          type: string
+        refreshToken:
+          type: string
+
+    TokenResponseData:
+      type: object
+      properties:
+        accessToken:
+          type: string
+        refreshToken:
+          type: string
+
+    # Base Response Wrappers
+    ApiResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: "Thành công"
+        requestId:
+          type: string
+          format: uuid
+        timestamp:
+          type: string
+          format: date-time
+
+    ApiErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          example: "Lỗi xác thực"
+        code:
+          type: string
+          example: "UNAUTHORIZED"
+        requestId:
+          type: string
+          format: uuid
+        timestamp:
+          type: string
+          format: date-time
+        details:
+          type: object
+
+  responses:
+    UnauthorizedError:
+      description: Chưa đăng nhập hoặc Token không hợp lệ
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiErrorResponse'
+    ForbiddenError:
+      description: Không có quyền truy cập hoặc tài khoản bị khóa
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiErrorResponse'
+    ValidationError:
+      description: Dữ liệu gửi lên không đúng định dạng
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiErrorResponse'

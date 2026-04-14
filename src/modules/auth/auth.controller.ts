@@ -48,6 +48,12 @@ export class AuthController {
 
   logout = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
+      // Lấy refresh token từ body do client gửi lên
+      const token = req.body.refreshToken;
+      
+      // Gọi service để vô hiệu hóa token này dưới Database
+      await this.authService.logout(token);
+
       sendSuccess(res, null, 'Đăng xuất thành công');
     } catch (error) {
       next(error);
