@@ -7,5 +7,5 @@ export const authRouter = Router();
 const authController = new AuthController();
 
 authRouter.post('/login', validate(loginSchema), authController.login);
-authRouter.post('/refresh', validate(refreshTokenSchema), authController.refreshToken);
+authRouter.post('/refresh-token', validate(refreshTokenSchema), authController.refreshToken);
 authRouter.post('/logout', validate(refreshTokenSchema), authController.logout);
