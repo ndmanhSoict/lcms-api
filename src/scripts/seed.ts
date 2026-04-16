@@ -16,6 +16,9 @@ import { Payment } from '../models/payment.model.js';
 import { AuditLog } from '../models/auditLog.model.js';
 import { Message } from '../models/message.model.js';
 import { ClassAnnouncement } from '../models/classAnnouncement.model.js';
+import { Exam } from '../models/exam.model.js';
+import { ExamAttempt } from '../models/examAttempt.model.js';
+import { Notification } from '../models/notification.model.js';
 
 // ════════════════════════════════════════════════════════════
 // HELPERS
@@ -59,11 +62,11 @@ const seedData = async () => {
       Assignment.deleteMany({}),
       Submission.deleteMany({}),
       QuestionBank.deleteMany({}),
-      // Exam.deleteMany({}),
-      // ExamAttempt.deleteMany({}),
+      Exam.deleteMany({}),
+      ExamAttempt.deleteMany({}),
       Invoice.deleteMany({}),
       Payment.deleteMany({}),
-      // Notification.deleteMany({}),
+      Notification.deleteMany({}),
       Message.deleteMany({}),
       ClassAnnouncement.deleteMany({}),
       AuditLog.deleteMany({}),
@@ -1133,33 +1136,33 @@ const seedData = async () => {
     const auditActions = [
       'UPDATE_SCORE','CONFIRM_PAYMENT','CREATE_ACCOUNT',
       'LOGIN','LOGOUT','FAILED_LOGIN','CHANGE_INVOICE','EXPORT_DATA',
-    ] as const;
+    ];
 
-    // await AuditLog.insertMany(
-    //   Array.from({ length: 40 }, () => {
-    //     const actor     = randItem(auditActors);
-    //     const action    = randItem(auditActions);
-    //     const createdAt = daysAgo(randInt(0, 30));
-    //     return {
-    //       schemaVersion: 1,
-    //       branchId:   actor.branch,
-    //       actorId:    actor.id,
-    //       actorRole:  actor.role,
-    //       actorName:  actor.name,
-    //       requestId:  new Types.ObjectId().toString(),
-    //       action,
-    //       targetType: 'users',
-    //       targetId:   new Types.ObjectId(),
-    //       before:     action === 'UPDATE_SCORE' ? { score: randInt(4, 6) } : null,
-    //       after:      action === 'UPDATE_SCORE' ? { score: randInt(7, 10) } : null,
-    //       ipAddress:  `192.168.${randInt(1,5)}.${randInt(10,200)}`,
-    //       userAgent:  'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-    //       createdAt,
-    //       expiresAt:  addDays(createdAt, 180),
-    //     };
-    //   })
-    // );
-    // console.log('✅ AuditLogs: 40');
+    await AuditLog.insertMany(
+      Array.from({ length: 40 }, () => {
+        const actor     = randItem(auditActors);
+        const action    = randItem(auditActions);
+        const createdAt = daysAgo(randInt(0, 30));
+        return {
+          schemaVersion: 1,
+          branchId:   actor.branch,
+          actorId:    actor.id,
+          actorRole:  actor.role,
+          actorName:  actor.name,
+          requestId:  new Types.ObjectId().toString(),
+          action,
+          targetType: 'users',
+          targetId:   new Types.ObjectId(),
+          before:     action === 'UPDATE_SCORE' ? { score: randInt(4, 6) } : null,
+          after:      action === 'UPDATE_SCORE' ? { score: randInt(7, 10) } : null,
+          ipAddress:  `192.168.${randInt(1,5)}.${randInt(10,200)}`,
+          userAgent:  'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+          createdAt,
+          expiresAt:  addDays(createdAt, 180),
+        };
+      })
+    );
+    console.log('✅ AuditLogs: 40');
 
     // ════════════════════════════════════════════════════════
     // TỔNG KẾT
