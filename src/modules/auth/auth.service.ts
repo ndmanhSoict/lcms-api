@@ -64,13 +64,12 @@ export class AuthService {
       const tokenRecord = await RefreshToken.findOne({ tokenHash, revokedAt: null });
       
       if (!tokenRecord) {
-        throw new UnauthorizedError('Refresh token đã bị thu hồi hoặc không hợp lệ');
+        throw new UnauthorizedError('Refresh token đã bị thu hồi hoặc không hợp lệ 1');
       }
 
       const user = await User.findById(decoded.id);
       if (!user) throw new UnauthorizedError('Người dùng không tồn tại');
       if (!user.isActive) throw new ForbiddenError('Tài khoản đã bị khóa');
-
       const tokens = generateTokens(user);
 
       // Cập nhật token mới vào DB, thu hồi token cũ
@@ -97,15 +96,27 @@ export class AuthService {
           refreshToken: tokens.refreshToken,
         },
       };
-    } catch (error) {
-      throw new UnauthorizedError('Refresh token không hợp lệ hoặc đã hết hạn');
+    } catch (error: any) {
+      console.error("🔴 LỖI REFRESH TOKEN GỐC:", error);
+
+      if (error instanceof UnauthorizedError || error instanceof ForbiddenError) {
+        throw error;
+      }
+      
+      if (error.name === 'TokenExpiredError') {
+        throw new UnauthorizedError('Token đã hết hạn, vui lòng đăng nhập lại');
+      }
+      if (error.name === 'JsonWebTokenError') {
+        throw new UnauthorizedError('Chữ ký token không hợp lệ');
+      }
+
+      throw new UnauthorizedError('Lỗi xác thực refresh token');
     }
   }
 
   async logout(token: string) {
     const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
     
-    // Tìm token trong DB và đánh dấu đã bị thu hồi (revoke) với lý do 'logout'
     await RefreshToken.updateOne(
       { tokenHash, revokedAt: null },
       { 

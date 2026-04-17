@@ -144,6 +144,7 @@ export const REVOKE_REASONS = {
   LOGOUT:           'logout',
   PASSWORD_CHANGED: 'password_changed',
   ADMIN_REVOKE:     'admin_revoke',
+  ROTATED: 'rotated',
 } as const;
 export type RevokeReason = typeof REVOKE_REASONS[keyof typeof REVOKE_REASONS];
 
