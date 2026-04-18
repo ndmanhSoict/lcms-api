@@ -1,130 +1,205 @@
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import crypto from 'crypto';
+import jwt, { SignOptions } from 'jsonwebtoken';
 import { env } from '../../config/env.validation.js';
-import { UnauthorizedError, ForbiddenError } from '../../shared/errors/AllErrors.js';
+import { UnauthorizedError, NotFoundError, ForbiddenError } from '../../shared/errors/AllErrors.js';
 import { User } from '../../models/user.model.js';
 import { RefreshToken } from '../../models/refreshToken.model.js';
-import { generateTokens } from './auth.helper.js';
+import { AuditLog } from '../../models/auditLog.model.js';
 
 export class AuthService {
-  async login(data: any) {
-    const { email, password } = data; // Dùng email thay vì phone
+  // 0.1 Đăng nhập
+  async login(data: any, ipAddress?: string, userAgent?: string) {
+    const { email, password } = data;
 
-    // 1. Tìm user theo email
-    const user = await User.findOne({ email });
-    if (!user) throw new UnauthorizedError('Email hoặc mật khẩu không chính xác');
-    if (!user.isActive) throw new ForbiddenError('Tài khoản của bạn đã bị khóa');
+    const user = await User.findOne({ email }).select('+passwordHash');
+    if (!user) {
+      throw new UnauthorizedError('Email hoặc mật khẩu không đúng'); // Mã INVALID_CREDENTIALS cấu hình ở class Error
+    }
 
-    // 2. Kiểm tra mật khẩu
+    // Bcrypt compare
     const isMatch = await bcrypt.compare(password, user.passwordHash);
-    if (!isMatch) throw new UnauthorizedError('Email hoặc mật khẩu không chính xác');
+    if (!isMatch) {
+      // Ghi audit log FAILED_LOGIN
+      await AuditLog.create({
+        action: 'FAILED_LOGIN',
+        actorId: user._id,
+        actorRole: user.role, // Bổ sung
+        expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000), // Bổ sung
+        ipAddress,
+        userAgent,
+      });
+      throw new UnauthorizedError('Email hoặc mật khẩu không đúng');
+    }
 
-    // 3. Tạo JWT tokens
-    const tokens = generateTokens(user);
-
-    // 4. Băm Refresh Token để lưu vào DB
-    const tokenHash = crypto.createHash('sha256').update(tokens.refreshToken).digest('hex');
-    
-    const expiresInDays = parseInt(env.JWT_REFRESH_EXPIRES.replace(/\D/g, '')) || 7;
-    const expiresAt = new Date();
-    expiresAt.setDate(expiresAt.getDate() + expiresInDays);
-
-    // Dọn dẹp session cũ của user này để tránh lỗi duplicate token hash
-    await RefreshToken.deleteMany({ userId: user._id });
-
-    // Lưu Refresh Token vào collection mới
-    await RefreshToken.create({
-      schemaVersion: 1,
-      userId: user._id,
-      branchId: user.branchId,
-      tokenHash,
-      expiresAt,
-    });
-
-    // 5. Cập nhật last_login_at
+    // Cập nhật lastLoginAt
     user.lastLoginAt = new Date();
     await user.save();
 
-    return {
-      user: { ...tokens.accessTokenPayload, fullName: user.fullName, role: user.role },
-      tokens: {
-        accessToken: tokens.accessToken,
-        refreshToken: tokens.refreshToken,
-      },
-    };
+    return this.generateAndSaveTokens(user);
   }
 
-  async refreshToken(token: string) {
+  // 0.2 Làm mới Access Token (Rotate Token)
+  async refreshToken(rawRefreshToken: string) {
+    let decoded: any;
     try {
-      const decoded = jwt.verify(token, env.JWT_REFRESH_SECRET) as { id: string };
-
-      // Kiểm tra token hash có tồn tại và chưa bị thu hồi trong DB không
-      const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
-      const tokenRecord = await RefreshToken.findOne({ tokenHash, revokedAt: null });
-      
-      if (!tokenRecord) {
-        throw new UnauthorizedError('Refresh token đã bị thu hồi hoặc không hợp lệ 1');
-      }
-
-      const user = await User.findById(decoded.id);
-      if (!user) throw new UnauthorizedError('Người dùng không tồn tại');
-      if (!user.isActive) throw new ForbiddenError('Tài khoản đã bị khóa');
-      const tokens = generateTokens(user);
-
-      // Cập nhật token mới vào DB, thu hồi token cũ
-      tokenRecord.revokedAt = new Date();
-      tokenRecord.revokedReason = 'rotated';
-      await tokenRecord.save();
-
-      const newTokenHash = crypto.createHash('sha256').update(tokens.refreshToken).digest('hex');
-      const expiresInDays = parseInt(env.JWT_REFRESH_EXPIRES.replace(/\D/g, '')) || 7;
-      const expiresAt = new Date();
-      expiresAt.setDate(expiresAt.getDate() + expiresInDays);
-
-      await RefreshToken.create({
-        schemaVersion: 1,
-        userId: user._id,
-        branchId: user.branchId,
-        tokenHash: newTokenHash,
-        expiresAt,
-      });
-
-      return {
-        tokens: {
-          accessToken: tokens.accessToken,
-          refreshToken: tokens.refreshToken,
-        },
-      };
-    } catch (error: any) {
-      console.error("🔴 LỖI REFRESH TOKEN GỐC:", error);
-
-      if (error instanceof UnauthorizedError || error instanceof ForbiddenError) {
-        throw error;
-      }
-      
-      if (error.name === 'TokenExpiredError') {
-        throw new UnauthorizedError('Token đã hết hạn, vui lòng đăng nhập lại');
-      }
-      if (error.name === 'JsonWebTokenError') {
-        throw new UnauthorizedError('Chữ ký token không hợp lệ');
-      }
-
-      throw new UnauthorizedError('Lỗi xác thực refresh token');
+      decoded = jwt.verify(rawRefreshToken, env.JWT_REFRESH_SECRET);
+    } catch (err) {
+      throw new UnauthorizedError('Token hết hạn hoặc không hợp lệ');
     }
+
+    const userId = decoded.id;
+    
+    // Tìm tất cả active refresh tokens của user này
+    const activeTokens = await RefreshToken.find({ userId, revokedAt: null });
+    
+    let matchedTokenDoc = null;
+    for (const tokenDoc of activeTokens) {
+      const isMatch = await bcrypt.compare(rawRefreshToken, tokenDoc.tokenHash);
+      if (isMatch) {
+        matchedTokenDoc = tokenDoc;
+        break;
+      }
+    }
+
+    if (!matchedTokenDoc) {
+      throw new UnauthorizedError('Token đã bị thu hồi hoặc không tồn tại');
+    }
+
+    // Rotate: Thu hồi token cũ
+    matchedTokenDoc.revokedAt = new Date();
+    matchedTokenDoc.revokedReason = 'rotated';
+    await matchedTokenDoc.save();
+
+    // Sinh cặp token mới
+    const user = await User.findById(userId);
+    if (!user) throw new NotFoundError('Người dùng');
+
+    return this.generateAndSaveTokens(user);
   }
 
-  async logout(token: string) {
-    const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+  // 0.3 Đăng xuất
+  async logout(rawRefreshToken: string, userPayload: any) {
+    const userId = userPayload.id; // Lấy ID từ payload
+    const activeTokens = await RefreshToken.find({ userId, revokedAt: null });
     
-    await RefreshToken.updateOne(
-      { tokenHash, revokedAt: null },
-      { 
-        $set: { 
-          revokedAt: new Date(), 
-          revokedReason: 'logout' 
-        } 
+    for (const tokenDoc of activeTokens) {
+      const isMatch = await bcrypt.compare(rawRefreshToken, tokenDoc.tokenHash);
+      if (isMatch) {
+        tokenDoc.revokedAt = new Date();
+        tokenDoc.revokedReason = 'logout';
+        await tokenDoc.save();
+        
+        // SỬA ĐOẠN GHI LOG Ở ĐÂY
+        await AuditLog.create({ 
+          action: 'LOGOUT', 
+          actorId: userId,
+          actorRole: userPayload.role,          // Thêm role bắt buộc
+          branchId: userPayload.branchId,       // Thêm branch (nếu có)
+          expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000) // Bắt buộc: Hết hạn sau 180 ngày
+        });
+        
+        return;
       }
+    }
+    throw new UnauthorizedError('Token không hợp lệ');
+  }
+
+  // 0.4 Đổi mật khẩu
+  async changePassword(userId: string, data: any) {
+    const { currentPassword, newPassword } = data;
+    const user = await User.findById(userId).select('+passwordHash');
+    if (!user) throw new NotFoundError('Người dùng');
+
+    const isMatch = await bcrypt.compare(currentPassword, user.passwordHash);
+    if (!isMatch) throw new UnauthorizedError('Mật khẩu hiện tại không đúng');
+
+    // Hash mật khẩu mới (cost 12 theo requirement)
+    const salt = await bcrypt.genSalt(12);
+    user.passwordHash = await bcrypt.hash(newPassword, salt);
+    await user.save();
+
+    // Thu hồi toàn bộ Refresh Token của user
+    await RefreshToken.updateMany(
+      { userId, revokedAt: null },
+      { $set: { revokedAt: new Date(), revokedReason: 'password_changed' } }
     );
+
+    // Ghi log
+    await AuditLog.create({ 
+      action: 'LOGOUT', 
+      actorId: userId,
+      actorRole: user.role,          // Thêm role bắt buộc
+      branchId: user.branchId,       // Thêm branch (nếu có)
+      expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000) // Bắt buộc: Hết hạn sau 180 ngày
+    });
+  }
+
+  // 0.5 Reset mật khẩu (Admin)
+  async resetPassword(adminId: string, adminRole: string, adminBranchId: string, targetUserId: string, newPassword: string) {
+    const targetUser = await User.findById(targetUserId);
+    if (!targetUser) throw new NotFoundError('Người dùng cần reset');
+
+    // Business Rule: BO chỉ reset được user trong branch của mình
+    if (adminRole === 'branch_owner' && targetUser.branchId?.toString() !== adminBranchId) {
+      throw new ForbiddenError('Bạn chỉ có quyền thao tác với người dùng thuộc cơ sở của mình');
+    }
+
+    const salt = await bcrypt.genSalt(12);
+    targetUser.passwordHash = await bcrypt.hash(newPassword, salt);
+    await targetUser.save();
+
+    await RefreshToken.updateMany(
+      { user: targetUserId, revokedAt: null },
+      { $set: { revokedAt: new Date(), revokedReason: 'password_reset_by_admin' } }
+    );
+
+    await AuditLog.create({ 
+      action: 'RESET_PASSWORD', 
+      actorId: adminId, 
+      actorRole: adminRole, // Bổ sung
+      expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000), // Bổ sung
+      targetId: targetUserId,
+    });
+  }
+
+  // Helper function sinh token và trả về payload chuẩn
+  private async generateAndSaveTokens(user: any) {
+    const accessTokenPayload = {
+      id: user._id.toString(),
+      email: user.email,
+      role: user.role,
+      ...(user.branchId && { branchId: user.branchId.toString() })
+    };
+
+    const accessToken = jwt.sign(accessTokenPayload, env.JWT_ACCESS_SECRET, { 
+      expiresIn: env.JWT_ACCESS_EXPIRES as SignOptions['expiresIn'] 
+    });
+
+    const refreshToken = jwt.sign({ id: user._id.toString() }, env.JWT_REFRESH_SECRET, {
+      expiresIn: env.JWT_REFRESH_EXPIRES as SignOptions['expiresIn']
+    });
+
+    // Lưu Hash của Refresh Token vào DB
+    const salt = await bcrypt.genSalt(10);
+    const tokenHash = await bcrypt.hash(refreshToken, salt);
+    
+    await RefreshToken.create({
+      userId: user._id,
+      tokenHash,
+      expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // Ví dụ: 7 ngày
+    });
+
+    return {
+      accessToken,
+      refreshToken,
+      user: {
+        _id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+        role: user.role,
+        branchId: user.branchId,
+        avatarUrl: user.avatarUrl || null
+      }
+    };
   }
 }

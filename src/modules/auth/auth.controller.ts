@@ -11,18 +11,8 @@ export class AuthController {
 
   login = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      // Dữ liệu đã được kiểm tra qua validate.middleware
-      const result = await this.authService.login(req.body);
-
-      sendSuccess(
-        res,
-        {
-          user: result.user,
-          accessToken: result.tokens.accessToken,
-          refreshToken: result.tokens.refreshToken,
-        },
-        'Đăng nhập thành công'
-      );
+      const result = await this.authService.login(req.body, req.ip, req.headers['user-agent']);
+      sendSuccess(res, result, 'Đăng nhập thành công');
     } catch (error) {
       next(error);
     }
@@ -30,17 +20,8 @@ export class AuthController {
 
   refreshToken = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const token = req.body.refreshToken;
-      const result = await this.authService.refreshToken(token);
-
-      sendSuccess(
-        res,
-        {
-          accessToken: result.tokens.accessToken,
-          refreshToken: result.tokens.refreshToken,
-        },
-        'Làm mới token thành công'
-      );
+      const result = await this.authService.refreshToken(req.body.refreshToken);
+      sendSuccess(res, result, 'Làm mới token thành công');
     } catch (error) {
       next(error);
     }
@@ -48,13 +29,33 @@ export class AuthController {
 
   logout = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      // Lấy refresh token từ body do client gửi lên
-      const token = req.body.refreshToken;
+      // Sửa: Truyền toàn bộ req.user thay vì chỉ lấy req.user.id
+      await this.authService.logout(req.body.refreshToken, req.user!);
       
-      // Gọi service để vô hiệu hóa token này dưới Database
-      await this.authService.logout(token);
-
       sendSuccess(res, null, 'Đăng xuất thành công');
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  changePassword = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      await this.authService.changePassword(req.user!.id, req.body);
+      sendSuccess(res, null, 'Đổi mật khẩu thành công');
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  resetPassword = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const adminId = req.user!.id;
+      const adminRole = req.user!.role;
+      const adminBranchId = req.user!.branchId as string;
+      const targetUserId = req.params.userId as string;
+
+      await this.authService.resetPassword(adminId, adminRole, adminBranchId, targetUserId, req.body.newPassword);
+      sendSuccess(res, null, 'Reset mật khẩu thành công');
     } catch (error) {
       next(error);
     }
