@@ -30,3 +30,9 @@ export class ConflictError extends AppError {
     super(message, HttpStatus.CONFLICT, 'CONFLICT');
   }
 }
+
+export class BadRequestError extends AppError {
+  constructor(message = 'Yêu cầu không hợp lệ') {
+    super(message, HttpStatus.BAD_REQUEST, 'BAD_REQUEST');
+  }
+}
