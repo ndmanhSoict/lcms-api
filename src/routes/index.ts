@@ -6,6 +6,7 @@ import { userRouter } from '../modules/user/user.route.js';
 import { studentRouter } from '../modules/student/student.route.js';
 import { classRouter } from '../modules/class/class.route.js';
 import { enrollmentRouter } from '../modules/enrollment/enrollment.route.js';
+import { classSessionRouter } from '../modules/classSession/classSession.route.js';
 
 export const appRouter = Router();
 
@@ -18,5 +19,6 @@ apiV1Router.use('/user', userRouter);
 apiV1Router.use('/student', studentRouter);
 apiV1Router.use('/class', classRouter);
 apiV1Router.use('/enrollments', enrollmentRouter);
+apiV1Router.use('/', classSessionRouter);
 
 appRouter.use('/api/v1', apiV1Router);
