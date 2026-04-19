@@ -3,6 +3,7 @@ import { healthRouter } from './health.js';
 import { authRouter } from '../modules/auth/auth.route.js';
 import { branchRouter } from '../modules/branch/branch.route.js';
 import { userRouter } from '../modules/user/user.route.js';
+import { studentRouter } from '../modules/student/student.route.js';
 
 export const appRouter = Router();
 
@@ -12,5 +13,6 @@ appRouter.use('/health', healthRouter);
 apiV1Router.use('/auth', authRouter);
 apiV1Router.use('/branch', branchRouter);
 apiV1Router.use('/user', userRouter);
+apiV1Router.use('/student', studentRouter);
 
 appRouter.use('/api/v1', apiV1Router);
