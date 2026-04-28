@@ -19,6 +19,6 @@ apiV1Router.use('/user', userRouter);
 apiV1Router.use('/student', studentRouter);
 apiV1Router.use('/class', classRouter);
 apiV1Router.use('/enrollments', enrollmentRouter);
-apiV1Router.use('/', classSessionRouter);
+apiV1Router.use('/class-sessions', classSessionRouter);
 
 appRouter.use('/api/v1', apiV1Router);
