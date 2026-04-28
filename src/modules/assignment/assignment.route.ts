@@ -1,0 +1,53 @@
+import { Router } from 'express';
+import { authenticate } from '../../middleware/auth/authenticate.middleware.js';
+import { authorize } from '../../middleware/auth/authorize.middleware.js';
+import { validate } from '../../middleware/validate.middleware.js';
+import { ROLES } from '../../shared/constants/roles.js';
+import { AssignmentController } from './assignment.controller.js';
+import {
+  createAssignmentSchema,
+  submitAssignmentSchema,
+  gradeSubmissionSchema,
+} from './assignment.schema.js';
+
+export const assignmentRouter = Router();
+const controller = new AssignmentController();
+
+assignmentRouter.use(authenticate);
+
+// 8.1 GV tạo bài tập — chỉ GV của lớp
+assignmentRouter.post(
+  '/classes/:classId/assignments',
+  authorize(ROLES.TEACHER),
+  validate(createAssignmentSchema),
+  controller.createAssignment
+);
+
+// 8.2 Lấy danh sách bài tập — GV, HS, PH (RBAC check trong service)
+assignmentRouter.get(
+  '/classes/:classId/assignments',
+  controller.getAssignments
+);
+
+// 8.3 HS nộp bài — chỉ HS
+assignmentRouter.post(
+  '/assignments/:assignmentId/submissions',
+  authorize(ROLES.STUDENT),
+  validate(submitAssignmentSchema),
+  controller.submitAssignment
+);
+
+// 8.4 GV chấm điểm — GV của lớp + SO/BO
+assignmentRouter.patch(
+  '/submissions/:submissionId/grade',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.TEACHER),
+  validate(gradeSubmissionSchema),
+  controller.gradeSubmission
+);
+
+// 8.5 GV xem danh sách bài nộp — GV, SO, BO
+assignmentRouter.get(
+  '/assignments/:assignmentId/submissions',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.TEACHER),
+  controller.getSubmissions
+);
