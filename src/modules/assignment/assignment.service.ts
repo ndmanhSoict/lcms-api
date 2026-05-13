@@ -3,6 +3,11 @@ import { AssignmentRepository } from './assignment.repository.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { getPagination, getPaginationMeta } from '../../shared/constants/pagination.helper.js';
 import {
+  getClassAudienceRecipientIds,
+  NOTIFICATION_TYPES,
+  sendNotifications,
+} from '../../shared/utils/notification.helper.js';
+import {
   NotFoundError,
   ForbiddenError,
   BadRequestError,
@@ -102,6 +107,28 @@ export class AssignmentService {
       status: 'active',
       submissionCount: 0,
       gradedCount: 0,
+    });
+
+    const recipients = await getClassAudienceRecipientIds(cls, {
+      students: true,
+      parents: body.visible_to_parent ?? true,
+    });
+    const dueText = assignment.dueDate
+      ? ` Hạn nộp: ${assignment.dueDate.toLocaleDateString('vi-VN')}.`
+      : '';
+    await sendNotifications(recipients, {
+      branchId: cls.branchId,
+      type: NOTIFICATION_TYPES.ASSIGNMENT_CREATED,
+      title: `Bài tập mới: ${assignment.title}`,
+      content: `Lớp ${cls.name} có bài tập mới "${assignment.title}".${dueText}`,
+      actionUrl: `/classes/${classId}/assignments`,
+      metadata: {
+        classId,
+        assignmentId: assignment._id.toString(),
+        createdBy: requester.id,
+        createdByRole: requester.role,
+      },
+      excludeUserIds: [requester.id],
     });
 
     return {

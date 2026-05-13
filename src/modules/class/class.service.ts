@@ -4,6 +4,11 @@ import { ConflictError, NotFoundError, ForbiddenError } from '../../shared/error
 import { getPagination } from '../../shared/constants/pagination.helper.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { Class } from '../../models/class.model.js'; // Import để query conflict
+import {
+  getClassAudienceRecipientIds,
+  NOTIFICATION_TYPES,
+  sendNotifications,
+} from '../../shared/utils/notification.helper.js';
 
 export class ClassService {
   private classRepo: ClassRepository;
@@ -61,9 +66,28 @@ export class ClassService {
       }
 
       await session.commitTransaction();
+
+      const recipients = await getClassAudienceRecipientIds(newClass, {
+        teacher: true,
+        branchUsers: true,
+      });
+      await sendNotifications(recipients, {
+        branchId,
+        type: NOTIFICATION_TYPES.CLASS_CREATED,
+        title: `Lớp mới: ${newClass.name}`,
+        content: `Lớp ${newClass.name} đã được tạo.`,
+        actionUrl: `/classes/${newClass._id}`,
+        metadata: {
+          classId: newClass._id.toString(),
+          createdBy: requester.id,
+          createdByRole: requester.role,
+        },
+        excludeUserIds: [requester.id],
+      });
+
       return newClass;
     } catch (error) {
-      await session.abortTransaction();
+      if (session.inTransaction()) await session.abortTransaction();
       throw error;
     } finally {
       session.endSession();
@@ -132,10 +156,36 @@ export class ClassService {
       }
 
       const updatedClass = await this.classRepo.updateById(id, data, session);
+      if (!updatedClass) throw new NotFoundError('Lớp học');
       await session.commitTransaction();
+
+      const teacherIds = [cls.teacherId?.toString()].filter(Boolean) as string[];
+      const recipients = [
+        ...await getClassAudienceRecipientIds(updatedClass, {
+          teacher: true,
+          students: true,
+          parents: true,
+          branchUsers: true,
+        }),
+        ...teacherIds,
+      ];
+      await sendNotifications(recipients, {
+        branchId: cls.branchId,
+        type: NOTIFICATION_TYPES.CLASS_UPDATED,
+        title: `Lớp đã cập nhật: ${updatedClass?.name ?? cls.name}`,
+        content: `Thông tin lớp ${updatedClass?.name ?? cls.name} đã được cập nhật.`,
+        actionUrl: `/classes/${id}`,
+        metadata: {
+          classId: id,
+          updatedBy: requester.id,
+          updatedByRole: requester.role,
+        },
+        excludeUserIds: [requester.id],
+      });
+
       return updatedClass;
     } catch (error) {
-      await session.abortTransaction();
+      if (session.inTransaction()) await session.abortTransaction();
       throw error;
     } finally {
       session.endSession();

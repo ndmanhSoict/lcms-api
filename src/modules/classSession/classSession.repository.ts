@@ -1,6 +1,5 @@
 import { ClassSession, IClassSession } from '../../models/classSession.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
-import { Attendance } from '../../models/attendance.model.js';
 
 export class ClassSessionRepository {
   async create(data: Partial<IClassSession>) {
@@ -9,11 +8,27 @@ export class ClassSessionRepository {
   }
 
   // Lấy buổi học trong 1 ngày của 1 lớp để check trùng
-  async findSessionByDate(classId: string, startOfDay: Date, endOfDay: Date) {
-    return await ClassSession.findOne({
+  async findById(sessionId: string) {
+    return await ClassSession.findOne({ _id: sessionId, deletedAt: null }).lean();
+  }
+
+  async updateById(sessionId: string, data: Partial<IClassSession>) {
+    return await ClassSession.findByIdAndUpdate(sessionId, data, { new: true }).lean();
+  }
+
+  async findSessionByDate(
+    classId: string,
+    startOfDay: Date,
+    endOfDay: Date,
+    excludeSessionId?: string
+  ) {
+    const query: Record<string, any> = {
       classId,
-      sessionDate: { $gte: startOfDay, $lte: endOfDay }
-    }).lean();
+      sessionDate: { $gte: startOfDay, $lte: endOfDay },
+    };
+    if (excludeSessionId) query._id = { $ne: excludeSessionId };
+
+    return await ClassSession.findOne(query).lean();
   }
 
   async findSessionsByClass(classId: string, filter: any) {

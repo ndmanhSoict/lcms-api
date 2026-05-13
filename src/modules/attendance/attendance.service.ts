@@ -1,7 +1,14 @@
 import { Types } from 'mongoose';
 import { AttendanceRepository } from './attendance.repository.js';
 import { User } from '../../models/user.model.js';
+import { Class } from '../../models/class.model.js';
 import { ROLES } from '../../shared/constants/roles.js';
+import {
+  getBranchOwnerAndStaffIds,
+  getRelatedParentIds,
+  NOTIFICATION_TYPES,
+  sendNotifications,
+} from '../../shared/utils/notification.helper.js';
 import {
   NotFoundError,
   ForbiddenError,
@@ -92,10 +99,29 @@ export class AttendanceService {
     const totalPresent = attendanceRecords.filter(r => r.status === 'present').length;
     const totalAbsent = attendanceRecords.filter(r => r.status === 'absent').length;
 
-    // Mock: queue notification cho PH của HS vắng
-    if (totalAbsent > 0) {
-      console.log(`[Notification] Queue ${totalAbsent} thông báo vắng học cho buổi ${sessionId}`);
-    }
+    const cls = await Class.findById(session.classId).lean();
+    const studentIds = attendanceRecords.map(record => record.studentId.toString());
+    const recipients = [
+      ...studentIds,
+      ...await getRelatedParentIds(studentIds),
+      ...await getBranchOwnerAndStaffIds(session.branchId),
+    ];
+    await sendNotifications(recipients, {
+      branchId: session.branchId,
+      type: NOTIFICATION_TYPES.ATTENDANCE_MARKED,
+      title: `Đã điểm danh: ${cls?.name ?? 'Buổi học'}`,
+      content: `Buổi học ${cls?.name ? `lớp ${cls.name} ` : ''}ngày ${session.sessionDate.toLocaleDateString('vi-VN')} đã được điểm danh: ${totalPresent} có mặt, ${totalAbsent} vắng.`,
+      actionUrl: `/sessions/${sessionId}/attendance`,
+      metadata: {
+        classId: session.classId.toString(),
+        sessionId,
+        totalPresent,
+        totalAbsent,
+        markedBy: requester.id,
+        markedByRole: requester.role,
+      },
+      excludeUserIds: [requester.id],
+    });
 
     return {
       session_id: sessionId,

@@ -19,6 +19,64 @@ export class BranchService {
     );
   }
 
+  private canAccessBranch(branch: IBranch, user: any) {
+    if (user.role === ROLES.SYSTEM_OWNER) return true;
+
+    const ownerId = branch.ownerId?.toString();
+    const branchId = branch._id?.toString();
+    const requesterId = user._id?.toString();
+    const requesterBranchId = user.branchId?.toString();
+
+    return ownerId === requesterId || branchId === requesterBranchId;
+  }
+
+  private emptyStatusCounts() {
+    return { total: 0, active: 0, inactive: 0, deleted: 0 };
+  }
+
+  private buildUserSummary(userBuckets: Awaited<ReturnType<BranchRepository['getOverviewById']>>['userBuckets']) {
+    const byRole: Record<string, ReturnType<BranchService['emptyStatusCounts']>> = {};
+    const byStatus = this.emptyStatusCounts();
+
+    for (const role of Object.values(ROLES)) {
+      if (role !== ROLES.SYSTEM_OWNER) byRole[role] = this.emptyStatusCounts();
+    }
+
+    for (const bucket of userBuckets) {
+      const role = bucket._id.role;
+      if (!byRole[role]) byRole[role] = this.emptyStatusCounts();
+
+      const target = byRole[role];
+      target.total += bucket.count;
+      byStatus.total += bucket.count;
+
+      if (bucket._id.isDeleted) {
+        target.deleted += bucket.count;
+        byStatus.deleted += bucket.count;
+      } else if (bucket._id.isActive) {
+        target.active += bucket.count;
+        byStatus.active += bucket.count;
+      } else {
+        target.inactive += bucket.count;
+        byStatus.inactive += bucket.count;
+      }
+    }
+
+    return {
+      total_members: byStatus.active + byStatus.inactive,
+      total_accounts: byStatus.total,
+      by_status: byStatus,
+      by_role: byRole,
+    };
+  }
+
+  private buildCountMap(buckets: Awaited<ReturnType<BranchRepository['getOverviewById']>>['classStatusBuckets']) {
+    return buckets.reduce<Record<string, number>>((acc, bucket) => {
+      if (bucket._id) acc[bucket._id] = bucket.count;
+      return acc;
+    }, {});
+  }
+
   async createBranch(data: Partial<IBranch>) {
     const existingBranch = await this.branchRepo.findByCode(data.branchCode!);
     if (existingBranch) {
@@ -74,11 +132,81 @@ export class BranchService {
       throw new NotFoundError('Không tìm thấy chi nhánh');
     }
 
-    if (user.role !== ROLES.SYSTEM_OWNER && branch.ownerId?.toString() !== user._id.toString()) {
+    if (!this.canAccessBranch(branch as IBranch, user)) {
       throw new ForbiddenError('Bạn không có quyền truy cập chi nhánh này');
     }
 
     return branch;
+  }
+
+  async getBranchOverview(id: string, user: any) {
+    const branch = await this.branchRepo.findById(id);
+
+    if (!branch || branch.deletedAt) {
+      throw new NotFoundError('Không tìm thấy chi nhánh');
+    }
+
+    if (!this.canAccessBranch(branch as IBranch, user)) {
+      throw new ForbiddenError('Bạn không có quyền truy cập tổng quan chi nhánh này');
+    }
+
+    const overview = await this.branchRepo.getOverviewById(id);
+    if (!overview.branch) throw new NotFoundError('Không tìm thấy chi nhánh');
+
+    const owner = overview.branch.ownerId as any;
+    const classByStatus = this.buildCountMap(overview.classStatusBuckets);
+    const invoiceByStatus = this.buildCountMap(overview.invoiceStatusBuckets);
+
+    return {
+      branch_id: overview.branch._id,
+      branch_code: overview.branch.branchCode,
+      name: overview.branch.name,
+      owner: owner
+        ? {
+            _id: owner._id,
+            full_name: owner.fullName,
+            email: owner.email,
+            phone: owner.phone,
+            is_active: owner.isActive,
+          }
+        : null,
+      contact: {
+        email: overview.branch.email,
+        phone: overview.branch.phone,
+        address: overview.branch.address,
+      },
+      status: {
+        is_active: overview.branch.isActive,
+        deleted_at: overview.branch.deletedAt,
+      },
+      settings: {
+        timezone: overview.branch.timezone,
+        default_fee_per_session: overview.branch.defaultFeePerSession,
+        default_session_slots: overview.branch.defaultSessionSlots,
+        rooms: overview.branch.rooms,
+      },
+      member_summary: this.buildUserSummary(overview.userBuckets),
+      class_summary: {
+        total: overview.classStatusBuckets.reduce((sum, bucket) => sum + bucket.count, 0),
+        by_status: classByStatus,
+      },
+      finance_summary: {
+        revenue_this_month: overview.revenueThisMonth,
+        invoices_total: overview.invoiceStatusBuckets.reduce((sum, bucket) => sum + bucket.count, 0),
+        invoices_by_status: invoiceByStatus,
+      },
+      created_at: overview.branch.createdAt,
+      updated_at: overview.branch.updatedAt,
+      as_of: new Date().toISOString(),
+    };
+  }
+
+  async getMyBranchOverview(user: any) {
+    if (!user?.branchId) {
+      throw new ForbiddenError('Tài khoản hiện tại không thuộc cơ sở nào');
+    }
+
+    return this.getBranchOverview(user.branchId, user);
   }
 
   async updateBranch(id: string, data: Partial<IBranch>, user: any) {
@@ -87,7 +215,7 @@ export class BranchService {
       throw new NotFoundError('Không tìm thấy chi nhánh');
     }
 
-    if (user.role !== ROLES.SYSTEM_OWNER && branch.ownerId?.toString() !== user._id.toString()) {
+    if (!this.canAccessBranch(branch as IBranch, user)) {
       throw new ForbiddenError('Bạn không có quyền chỉnh sửa chi nhánh này');
     }
 

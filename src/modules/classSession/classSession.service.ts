@@ -3,8 +3,14 @@ import { Class } from '../../models/class.model.js';
 import { User } from '../../models/user.model.js';
 import { Attendance } from '../../models/attendance.model.js';
 import { ROLES } from '../../shared/constants/roles.js';
+import {
+  getActiveClassStudentIds,
+  getBranchOwnerAndStaffIds,
+  getRelatedParentIds,
+  NOTIFICATION_TYPES,
+  sendNotifications,
+} from '../../shared/utils/notification.helper.js';
 import { ConflictError, NotFoundError, ForbiddenError, BadRequestError } from '../../shared/errors/AllErrors.js';
-import mongoose from 'mongoose';
 
 export class ClassSessionService {
   private sessionRepo: ClassSessionRepository;
@@ -27,6 +33,54 @@ export class ClassSessionService {
     return cls;
   }
 
+  private formatSessionTime(sessionDate: Date, startTime?: string | null, endTime?: string | null) {
+    const dateText = sessionDate.toLocaleDateString('vi-VN');
+    const timeText = startTime && endTime ? ` từ ${startTime} đến ${endTime}` : '';
+    return `${dateText}${timeText}`;
+  }
+
+  private async sendSessionChangeNotifications(session: any, cls: any, requester: any, isUpdate = false) {
+    const studentIds = await getActiveClassStudentIds(cls._id);
+    const recipientIds = new Set<string>();
+
+    const sessionTimeText = this.formatSessionTime(
+      session.sessionDate,
+      session.startTime,
+      session.endTime
+    );
+    const parentIds = requester.role === ROLES.TEACHER ? [] : await getRelatedParentIds(studentIds);
+
+    if (requester.role === ROLES.TEACHER) {
+      const branchUserIds = await getBranchOwnerAndStaffIds(cls.branchId);
+      branchUserIds.forEach(id => recipientIds.add(id));
+      studentIds.forEach(id => recipientIds.add(id));
+    } else {
+      const teacherId = session.teacherId ?? cls.teacherId;
+      if (teacherId) recipientIds.add(teacherId.toString());
+      studentIds.forEach(id => recipientIds.add(id));
+      parentIds.forEach(id => recipientIds.add(id));
+    }
+
+    const title = isUpdate ? `Buổi học đã cập nhật: ${cls.name}` : `Buổi học mới: ${cls.name}`;
+    const roomText = session.roomCode ? ` tại phòng ${session.roomCode}` : '';
+    const content = `Lớp ${cls.name} ${isUpdate ? 'đã cập nhật buổi học' : 'có buổi học mới'} vào ${sessionTimeText}${roomText}.`;
+
+    await sendNotifications([...recipientIds], {
+      branchId: cls.branchId,
+      type: isUpdate ? NOTIFICATION_TYPES.CLASS_SESSION_UPDATED : NOTIFICATION_TYPES.CLASS_SESSION,
+      title,
+      content,
+      actionUrl: `/classes/${cls._id}/sessions`,
+      metadata: {
+        classId: cls._id.toString(),
+        sessionId: session._id.toString(),
+        createdBy: requester.id,
+        createdByRole: requester.role,
+      },
+      excludeUserIds: [requester.id],
+    });
+  }
+
   // 6.1 Tạo buổi học
   async createSession(classId: string, data: any, requester: any) {
     const cls = await this.checkClassAccess(classId, requester);
@@ -45,12 +99,47 @@ export class ClassSessionService {
       ...data,
       classId,
       branchId: cls.branchId,
+      teacherId: data.teacherId ?? cls.teacherId ?? null,
       sessionDate: startOfDay,
       status: 'scheduled',
       attendanceStatus: 'pending'
     };
 
-    return await this.sessionRepo.create(sessionData);
+    const session = await this.sessionRepo.create(sessionData);
+    await this.sendSessionChangeNotifications(session, cls, requester);
+
+    return session;
+  }
+
+  // 6.1b Chỉnh sửa buổi học
+  async updateSession(sessionId: string, data: any, requester: any) {
+    const existing = await this.sessionRepo.findById(sessionId);
+    if (!existing) throw new NotFoundError('Buổi học');
+
+    const cls = await this.checkClassAccess(existing.classId.toString(), requester);
+
+    const updateData = { ...data };
+    if (data.sessionDate) {
+      const sessionDate = new Date(data.sessionDate);
+      const startOfDay = new Date(sessionDate.setHours(0, 0, 0, 0));
+      const endOfDay = new Date(sessionDate.setHours(23, 59, 59, 999));
+      const duplicated = await this.sessionRepo.findSessionByDate(
+        existing.classId.toString(),
+        startOfDay,
+        endOfDay,
+        sessionId
+      );
+      if (duplicated) {
+        throw new ConflictError('Lớp này đã có buổi học được xếp vào ngày hôm đó');
+      }
+      updateData.sessionDate = startOfDay;
+    }
+
+    const updated = await this.sessionRepo.updateById(sessionId, updateData);
+    if (!updated) throw new NotFoundError('Buổi học');
+
+    await this.sendSessionChangeNotifications(updated, cls, requester, true);
+    return updated;
   }
 
   // 6.2 Lấy lịch buổi học của Lớp

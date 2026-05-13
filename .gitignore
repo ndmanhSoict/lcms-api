@@ -4,3 +4,5 @@ yarn.lock
 logs/
 docker-compose.yml
 package-lock.json
+.claude/
+dist/

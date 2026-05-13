@@ -16,10 +16,17 @@ export class UserService {
     if (existing) throw new ConflictError('Email này đã được sử dụng');
 
     if (creator.role === ROLES.BRANCH_OWNER) {
-      if (![ROLES.STAFF, ROLES.TEACHER].includes(data.role)) {
-        throw new ForbiddenError('Bạn chỉ có quyền tạo tài khoản Giáo viên hoặc Nhân viên');
+      if (![ROLES.STAFF, ROLES.TEACHER, ROLES.STUDENT, ROLES.PARENT].includes(data.role)) {
+        throw new ForbiddenError('Bạn chỉ có quyền tạo tài khoản Giáo viên, Học sinh, Phụ huynh và Nhân viên');
       }
-      data.branchId = creator.branchId; 
+      data.branchId = creator.branchId;
+    }
+
+    if (creator.role === ROLES.STAFF) {
+      if (![ROLES.STUDENT, ROLES.PARENT].includes(data.role)) {
+        throw new ForbiddenError('Nhân viên chỉ có quyền tạo tài khoản Học sinh và Phụ huynh');
+      }
+      data.branchId = creator.branchId;
     }
 
     const salt = await bcrypt.genSalt(12);

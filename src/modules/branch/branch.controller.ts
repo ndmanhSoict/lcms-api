@@ -48,6 +48,26 @@ export class BranchController {
     }
     };
 
+  getBranchOverview = async (req: Request<{ id: string }>, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const overview = await this.branchService.getBranchOverview(req.params.id, req.user);
+
+      sendSuccess(res, overview, 'Lấy tổng quan chi nhánh thành công');
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  getMyBranchOverview = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const overview = await this.branchService.getMyBranchOverview(req.user);
+
+      sendSuccess(res, overview, 'Lấy tổng quan cơ sở hiện tại thành công');
+    } catch (error) {
+      next(error);
+    }
+  };
+
   updateBranch = async (req: Request<{ id: string }>, res: Response, next: NextFunction): Promise<void> => {
     try {
       const branch = await this.branchService.updateBranch(req.params.id, req.body, req.user);

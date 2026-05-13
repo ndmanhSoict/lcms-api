@@ -18,6 +18,10 @@ tags:
     description: Quản lý cơ sở
   - name: User
     description: Quản lý người dùng (nhân viên, giáo viên)
+  - name: Teacher
+    description: Quản lý giáo viên
+  - name: Parent
+    description: Quản lý phụ huynh
   - name: Student
     description: Quản lý học sinh
   - name: Class
@@ -238,6 +242,50 @@ paths:
                       meta:
                         $ref: '#/components/schemas/PaginationMeta'
 
+  /branch/my-overview:
+    get:
+      tags: [Branch]
+      summary: Tổng quan cơ sở hiện tại — BO/STAFF (1.2a)
+      description: Lấy các thông tin tổng quan cho cơ sở gắn với tài khoản đang đăng nhập, dùng cho màn hình sau đăng nhập của chủ cơ sở hoặc nhân viên.
+      operationId: getMyBranchOverview
+      responses:
+        '200':
+          description: Tổng quan cơ sở hiện tại
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/BranchOverview'
+        '401': { $ref: '#/components/responses/UnauthorizedError' }
+        '403': { $ref: '#/components/responses/ForbiddenError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+
+  /branch/{id}/overview:
+    get:
+      tags: [Branch]
+      summary: Tổng quan cơ sở — SO/BO/STAFF (1.2b)
+      operationId: getBranchOverview
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: Tổng quan cơ sở
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/BranchOverview'
+        '403': { $ref: '#/components/responses/ForbiddenError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+
   /branch/{id}:
     get:
       tags: [Branch]
@@ -306,7 +354,12 @@ paths:
   /user/create-user:
     post:
       tags: [User]
-      summary: Tạo người dùng (nhân viên/giáo viên) — SO/BO (2.1)
+      summary: Tạo người dùng — SO/BO/STAFF (2.1)
+      description: |
+        Quyền tạo theo vai trò:
+        - **SO**: tạo mọi role
+        - **BO**: tạo STAFF, TEACHER, STUDENT, PARENT (tự động gán branchId)
+        - **STAFF**: tạo STUDENT, PARENT (tự động gán branchId)
       operationId: createUser
       requestBody:
         required: true
@@ -327,6 +380,7 @@ paths:
                       data:
                         $ref: '#/components/schemas/User'
         '403': { $ref: '#/components/responses/ForbiddenError' }
+        '409': { $ref: '#/components/responses/ConflictError' }
         '422': { $ref: '#/components/responses/ValidationError' }
 
   /user/all:
@@ -425,7 +479,343 @@ paths:
                 $ref: '#/components/schemas/ApiResponse'
         '404': { $ref: '#/components/responses/NotFoundError' }
 
+  # ── Teacher (Module T) ───────────────────────────────────────
+
+  /teachers/my-overview:
+    get:
+      tags: [Teacher]
+      summary: Tổng quan giáo viên hiện tại — TEACHER (T.0)
+      description: |
+        Lấy tổng quan dành cho giáo viên đang đăng nhập: lớp phụ trách, lịch dạy, điểm danh cần xử lý, bài tập, bài nộp chờ chấm và thông báo.
+      operationId: getMyTeacherOverview
+      responses:
+        '200':
+          description: Tổng quan giáo viên
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/TeacherOverview'
+        '401': { $ref: '#/components/responses/UnauthorizedError' }
+        '403': { $ref: '#/components/responses/ForbiddenError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+
+  /teachers:
+    post:
+      tags: [Teacher]
+      summary: Tạo giáo viên mới — BO/STAFF (T.1)
+      operationId: createTeacher
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTeacherRequest'
+      responses:
+        '201':
+          description: Tạo giáo viên thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/Teacher'
+        '409': { $ref: '#/components/responses/ConflictError' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    get:
+      tags: [Teacher]
+      summary: Danh sách giáo viên — BO/STAFF (T.2)
+      operationId: getTeachers
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - name: search
+          in: query
+          description: Tìm kiếm theo tên
+          schema: { type: string }
+        - name: isActive
+          in: query
+          schema: { type: string, enum: ['true', 'false'] }
+        - name: subject
+          in: query
+          description: Lọc theo môn học
+          schema: { type: string }
+      responses:
+        '200':
+          description: Danh sách giáo viên
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Teacher'
+                      meta:
+                        $ref: '#/components/schemas/PaginationMeta'
+
+  /teachers/{id}:
+    get:
+      tags: [Teacher]
+      summary: Chi tiết giáo viên — BO/STAFF (T.3)
+      operationId: getTeacherById
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: Chi tiết giáo viên
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/Teacher'
+        '404': { $ref: '#/components/responses/NotFoundError' }
+    patch:
+      tags: [Teacher]
+      summary: Cập nhật giáo viên — BO/STAFF (T.4)
+      operationId: updateTeacher
+      parameters:
+        - $ref: '#/components/parameters/id'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateTeacherRequest'
+      responses:
+        '200':
+          description: Cập nhật thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/Teacher'
+        '404': { $ref: '#/components/responses/NotFoundError' }
+    delete:
+      tags: [Teacher]
+      summary: Xóa mềm giáo viên — BO/STAFF (T.5)
+      operationId: deleteTeacher
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: Xóa thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          deleted: { type: boolean }
+                          teacherId: { type: string }
+        '400': { $ref: '#/components/responses/BadRequestError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+
+  # ── Parent (Module P) ────────────────────────────────────────
+
+  /parents/my-overview:
+    get:
+      tags: [Parent]
+      summary: Tổng quan phụ huynh hiện tại — PARENT (P.0)
+      description: |
+        Lấy tổng quan dành cho phụ huynh đang đăng nhập: danh sách con, lịch học, bài tập hiển thị cho phụ huynh, điểm mới, học phí và thông báo.
+      operationId: getMyParentOverview
+      responses:
+        '200':
+          description: Tổng quan phụ huynh
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/ParentOverview'
+        '401': { $ref: '#/components/responses/UnauthorizedError' }
+        '403': { $ref: '#/components/responses/ForbiddenError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+
+  /parents:
+    post:
+      tags: [Parent]
+      summary: Tạo phụ huynh mới — BO/STAFF (P.1)
+      operationId: createParent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateParentRequest'
+      responses:
+        '201':
+          description: Tạo phụ huynh thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/Parent'
+        '409': { $ref: '#/components/responses/ConflictError' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    get:
+      tags: [Parent]
+      summary: Danh sách phụ huynh — BO/STAFF (P.2)
+      operationId: getParents
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - name: search
+          in: query
+          description: Tìm kiếm theo tên phụ huynh
+          schema: { type: string }
+        - name: isActive
+          in: query
+          schema: { type: string, enum: ['true', 'false'] }
+        - name: studentId
+          in: query
+          description: Lọc theo học sinh liên kết
+          schema: { type: string }
+        - name: relationship
+          in: query
+          schema:
+            type: string
+            enum: [father, mother, guardian, other]
+      responses:
+        '200':
+          description: Danh sách phụ huynh
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Parent'
+                      meta:
+                        $ref: '#/components/schemas/PaginationMeta'
+
+  /parents/{id}:
+    get:
+      tags: [Parent]
+      summary: Chi tiết phụ huynh — BO/STAFF (P.3)
+      operationId: getParentById
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: Chi tiết phụ huynh
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/Parent'
+        '404': { $ref: '#/components/responses/NotFoundError' }
+    patch:
+      tags: [Parent]
+      summary: Cập nhật phụ huynh — BO/STAFF (P.4)
+      operationId: updateParent
+      parameters:
+        - $ref: '#/components/parameters/id'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateParentRequest'
+      responses:
+        '200':
+          description: Cập nhật thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/Parent'
+        '404': { $ref: '#/components/responses/NotFoundError' }
+        '409': { $ref: '#/components/responses/ConflictError' }
+    delete:
+      tags: [Parent]
+      summary: Xóa mềm phụ huynh — BO/STAFF (P.5)
+      operationId: deleteParent
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: Xóa thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          deleted: { type: boolean }
+                          parentId: { type: string }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+
   # ── Student (Module 3) ────────────────────────────────────────
+
+  /student/my-overview:
+    get:
+      tags: [Student]
+      summary: Tổng quan học sinh hiện tại — STUDENT (3.0)
+      description: |
+        Lấy tổng quan dành cho học sinh đang đăng nhập: lớp đang học, lịch học, điểm danh, bài tập, điểm, học phí và thông báo.
+      operationId: getMyStudentOverview
+      responses:
+        '200':
+          description: Tổng quan học sinh
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/StudentOverview'
+        '401': { $ref: '#/components/responses/UnauthorizedError' }
+        '403': { $ref: '#/components/responses/ForbiddenError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
 
   /student/create-student:
     post:
@@ -691,6 +1081,13 @@ paths:
         - $ref: '#/components/parameters/id'
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/limit'
+        - name: status
+          in: query
+          description: Lọc theo trạng thái — mặc định `active`
+          schema:
+            type: string
+            enum: [active, left]
+            default: active
       responses:
         '200':
           description: Danh sách học sinh trong lớp
@@ -704,7 +1101,7 @@ paths:
                       data:
                         type: array
                         items:
-                          $ref: '#/components/schemas/User'
+                          $ref: '#/components/schemas/ClassStudentItem'
                       meta:
                         $ref: '#/components/schemas/PaginationMeta'
         '404': { $ref: '#/components/responses/NotFoundError' }
@@ -865,6 +1262,35 @@ paths:
                           $ref: '#/components/schemas/ClassSession'
                       meta:
                         $ref: '#/components/schemas/PaginationMeta'
+
+  /sessions/{sessionId}:
+    patch:
+      tags: [ClassSession]
+      summary: Chỉnh sửa buổi học — SO/BO/STAFF/TEACHER
+      operationId: updateSession
+      parameters:
+        - $ref: '#/components/parameters/sessionId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateSessionRequest'
+      responses:
+        '200':
+          description: Cập nhật buổi học thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/ClassSession'
+        '403': { $ref: '#/components/responses/ForbiddenError' }
+        '404': { $ref: '#/components/responses/NotFoundError' }
+        '422': { $ref: '#/components/responses/ValidationError' }
 
   /users/{teacherId}/schedule:
     get:
@@ -2079,6 +2505,85 @@ components:
         createdAt: { type: string, format: date-time }
         updatedAt: { type: string, format: date-time }
 
+    BranchOverview:
+      type: object
+      properties:
+        branch_id: { type: string }
+        branch_code: { type: string }
+        name: { type: string }
+        owner:
+          type: object
+          nullable: true
+          properties:
+            _id: { type: string }
+            full_name: { type: string }
+            email: { type: string, format: email }
+            phone: { type: string }
+            is_active: { type: boolean }
+        contact:
+          type: object
+          properties:
+            email: { type: string, format: email }
+            phone: { type: string }
+            address: { type: string }
+        status:
+          type: object
+          properties:
+            is_active: { type: boolean }
+            deleted_at: { type: string, format: date-time, nullable: true }
+        settings:
+          type: object
+          properties:
+            timezone: { type: string }
+            default_fee_per_session: { type: number }
+            default_session_slots:
+              type: array
+              items:
+                type: object
+            rooms:
+              type: array
+              items:
+                type: object
+        member_summary:
+          type: object
+          properties:
+            total_members: { type: integer }
+            total_accounts: { type: integer }
+            by_status:
+              type: object
+              properties:
+                total: { type: integer }
+                active: { type: integer }
+                inactive: { type: integer }
+                deleted: { type: integer }
+            by_role:
+              type: object
+              additionalProperties:
+                type: object
+                properties:
+                  total: { type: integer }
+                  active: { type: integer }
+                  inactive: { type: integer }
+                  deleted: { type: integer }
+        class_summary:
+          type: object
+          properties:
+            total: { type: integer }
+            by_status:
+              type: object
+              additionalProperties: { type: integer }
+        finance_summary:
+          type: object
+          properties:
+            revenue_this_month: { type: number }
+            invoices_total: { type: integer }
+            invoices_by_status:
+              type: object
+              additionalProperties: { type: integer }
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }
+        as_of: { type: string, format: date-time }
+
     CreateBranchRequest:
       type: object
       required: [name, code]
@@ -2117,15 +2622,19 @@ components:
 
     CreateUserRequest:
       type: object
-      required: [full_name, email, role]
+      required: [full_name, email, role, password]
       properties:
         full_name: { type: string }
         email: { type: string, format: email }
         phone: { type: string }
         role:
           type: string
-          enum: [BRANCH_OWNER, STAFF, TEACHER]
-        branch_id: { type: string }
+          enum: [BRANCH_OWNER, STAFF, TEACHER, STUDENT, PARENT]
+          description: |
+            SO: mọi role | BO: STAFF/TEACHER/STUDENT/PARENT | STAFF: STUDENT/PARENT
+        branch_id:
+          type: string
+          description: Bắt buộc khi SO tạo tài khoản. BO/STAFF tự động dùng branchId của mình.
         password: { type: string, minLength: 6 }
 
     UpdateUserRequest:
@@ -2135,7 +2644,319 @@ components:
         phone: { type: string }
         email: { type: string, format: email }
 
+    # ── Teacher ───────────────────────────────────────────────────
+
+    TeacherInfo:
+      type: object
+      properties:
+        subjects:
+          type: array
+          items: { type: string }
+        joinDate: { type: string, format: date, nullable: true }
+        activeClassIds:
+          type: array
+          items: { type: string }
+
+    Teacher:
+      allOf:
+        - $ref: '#/components/schemas/User'
+        - type: object
+          properties:
+            teacherInfo:
+              $ref: '#/components/schemas/TeacherInfo'
+
+    TeacherOverview:
+      type: object
+      properties:
+        profile:
+          $ref: '#/components/schemas/Teacher'
+        class_summary:
+          type: object
+          properties:
+            total: { type: integer }
+            active: { type: integer }
+            upcoming: { type: integer }
+            completed: { type: integer }
+            total_students: { type: integer }
+        schedule:
+          type: object
+          properties:
+            today_sessions:
+              type: array
+              items: { type: object }
+            upcoming_sessions:
+              type: array
+              items: { type: object }
+            pending_attendance_count: { type: integer }
+        assignments:
+          type: object
+          properties:
+            active: { type: integer }
+            draft: { type: integer }
+            due_soon: { type: integer }
+            pending_submissions: { type: integer }
+        communication:
+          $ref: '#/components/schemas/CommunicationSummary'
+        as_of: { type: string, format: date-time }
+
+    CreateTeacherRequest:
+      type: object
+      required: [fullName, email, password]
+      properties:
+        fullName: { type: string, minLength: 1 }
+        email: { type: string, format: email }
+        phone: { type: string }
+        password:
+          type: string
+          minLength: 8
+          description: Phải có chữ hoa, chữ thường, số và ký tự đặc biệt
+        dateOfBirth: { type: string, format: date }
+        gender:
+          type: string
+          enum: [male, female, other]
+        teacherInfo:
+          type: object
+          properties:
+            subjects:
+              type: array
+              items: { type: string }
+            joinDate: { type: string, format: date }
+
+    UpdateTeacherRequest:
+      type: object
+      properties:
+        fullName: { type: string, minLength: 1 }
+        phone: { type: string }
+        dateOfBirth: { type: string, format: date }
+        gender:
+          type: string
+          enum: [male, female, other]
+        avatarUrl: { type: string, format: uri }
+        teacherInfo:
+          type: object
+          properties:
+            subjects:
+              type: array
+              items: { type: string }
+            joinDate: { type: string, format: date }
+
+    # ── Parent ───────────────────────────────────────────────────
+
+    ParentStudentSummary:
+      type: object
+      properties:
+        _id: { type: string }
+        fullName: { type: string }
+        userCode: { type: string }
+        phone: { type: string }
+        dateOfBirth: { type: string, format: date-time, nullable: true }
+        gender:
+          type: string
+          enum: [male, female, other]
+          nullable: true
+        studentInfo:
+          type: object
+          properties:
+            grade: { type: integer, nullable: true }
+            schoolName: { type: string, nullable: true }
+
+    ParentInfo:
+      type: object
+      properties:
+        relationship:
+          type: string
+          enum: [father, mother, guardian, other]
+          nullable: true
+        studentIds:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - $ref: '#/components/schemas/ParentStudentSummary'
+
+    Parent:
+      allOf:
+        - $ref: '#/components/schemas/User'
+        - type: object
+          properties:
+            dateOfBirth: { type: string, format: date-time, nullable: true }
+            gender:
+              type: string
+              enum: [male, female, other]
+              nullable: true
+            avatarUrl: { type: string, format: uri, nullable: true }
+            parentInfo:
+              $ref: '#/components/schemas/ParentInfo'
+
+    ParentOverview:
+      type: object
+      properties:
+        profile:
+          $ref: '#/components/schemas/Parent'
+        children:
+          type: array
+          items:
+            allOf:
+              - $ref: '#/components/schemas/ParentStudentSummary'
+              - type: object
+                properties:
+                  attendance_last_30_days:
+                    $ref: '#/components/schemas/AttendanceSummary'
+        schedule:
+          type: object
+          properties:
+            today_sessions:
+              type: array
+              items: { type: object }
+            upcoming_sessions:
+              type: array
+              items: { type: object }
+        assignments:
+          type: object
+          properties:
+            active_visible:
+              type: array
+              items: { type: object }
+        grades:
+          type: object
+          properties:
+            latest_published:
+              type: array
+              items: { type: object }
+        finance:
+          $ref: '#/components/schemas/FinanceDueSummary'
+        communication:
+          $ref: '#/components/schemas/CommunicationSummary'
+        as_of: { type: string, format: date-time }
+
+    CreateParentRequest:
+      type: object
+      required: [fullName, phone]
+      properties:
+        fullName: { type: string, minLength: 1 }
+        email:
+          type: string
+          format: email
+          description: Có thể bỏ trống, hệ thống sẽ tự sinh email nội bộ
+        phone: { type: string, minLength: 10 }
+        password:
+          type: string
+          minLength: 8
+          description: Nếu bỏ trống, hệ thống dùng mặc định `TempPass@123`
+        dateOfBirth: { type: string, format: date }
+        gender:
+          type: string
+          enum: [male, female, other]
+        avatarUrl: { type: string, format: uri }
+        isActive: { type: boolean }
+        parentInfo:
+          type: object
+          properties:
+            relationship:
+              type: string
+              enum: [father, mother, guardian, other]
+            studentIds:
+              type: array
+              items: { type: string }
+
+    UpdateParentRequest:
+      type: object
+      properties:
+        fullName: { type: string, minLength: 1 }
+        email: { type: string, format: email }
+        phone: { type: string, minLength: 10 }
+        dateOfBirth: { type: string, format: date }
+        gender:
+          type: string
+          enum: [male, female, other]
+        avatarUrl: { type: string, format: uri }
+        isActive: { type: boolean }
+        parentInfo:
+          type: object
+          properties:
+            relationship:
+              type: string
+              enum: [father, mother, guardian, other]
+            studentIds:
+              type: array
+              items: { type: string }
+
     # ── Student ───────────────────────────────────────────────────
+
+    AttendanceSummary:
+      type: object
+      properties:
+        total: { type: integer }
+        present: { type: integer }
+        absent: { type: integer }
+        attendance_rate: { type: number, description: Tỷ lệ có mặt theo phần trăm }
+
+    FinanceDueSummary:
+      type: object
+      properties:
+        unpaid_invoices: { type: integer }
+        unpaid_amount: { type: number }
+        by_status:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              count: { type: integer }
+              amount: { type: number }
+
+    CommunicationSummary:
+      type: object
+      properties:
+        unread_notifications: { type: integer }
+        unread_messages: { type: integer }
+
+    StudentOverview:
+      type: object
+      properties:
+        profile:
+          $ref: '#/components/schemas/User'
+        classes:
+          type: object
+          properties:
+            total_active: { type: integer }
+            items:
+              type: array
+              items: { type: object }
+        schedule:
+          type: object
+          properties:
+            today_sessions:
+              type: array
+              items: { type: object }
+            upcoming_sessions:
+              type: array
+              items: { type: object }
+        attendance:
+          allOf:
+            - $ref: '#/components/schemas/AttendanceSummary'
+            - type: object
+              properties:
+                last_30_days_total: { type: integer }
+        assignments:
+          type: object
+          properties:
+            active:
+              type: array
+              items: { type: object }
+            submission_by_status:
+              type: object
+              additionalProperties: { type: integer }
+        grades:
+          type: object
+          properties:
+            latest_published:
+              type: array
+              items: { type: object }
+        finance:
+          $ref: '#/components/schemas/FinanceDueSummary'
+        communication:
+          $ref: '#/components/schemas/CommunicationSummary'
+        as_of: { type: string, format: date-time }
 
     CreateStudentRequest:
       type: object
@@ -2202,6 +3023,25 @@ components:
 
     # ── Enrollment ────────────────────────────────────────────────
 
+    ClassStudentItem:
+      type: object
+      description: Enrollment record với studentId được populate
+      properties:
+        _id: { type: string, description: Enrollment ID }
+        enrolledAt: { type: string, format: date-time, description: Ngày tham gia }
+        leftAt: { type: string, format: date-time, nullable: true }
+        leftReason: { type: string, nullable: true }
+        studentId:
+          type: object
+          description: Thông tin học sinh
+          properties:
+            _id: { type: string }
+            fullName: { type: string, description: Họ tên học sinh }
+            userCode: { type: string, description: Mã học sinh }
+            phone: { type: string, nullable: true, description: Số điện thoại liên hệ }
+            email: { type: string, format: email, description: Email liên hệ }
+            dateOfBirth: { type: string, format: date, nullable: true }
+
     Enrollment:
       type: object
       properties:
@@ -2243,6 +3083,19 @@ components:
         start_time: { type: string, example: "08:00" }
         end_time: { type: string, example: "10:00" }
         topic: { type: string }
+
+    UpdateSessionRequest:
+      type: object
+      properties:
+        sessionDate: { type: string, format: date }
+        startTime: { type: string, example: "08:00" }
+        endTime: { type: string, example: "10:00" }
+        roomCode: { type: string }
+        sessionType: { type: string, enum: [regular, extra, makeup, cancelled] }
+        status: { type: string, enum: [scheduled, completed, cancelled] }
+        teacherId: { type: string }
+        note: { type: string }
+        onlineMeetingUrl: { type: string, format: uri }
 
     # ── Attendance ────────────────────────────────────────────────
 

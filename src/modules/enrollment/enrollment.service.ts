@@ -3,6 +3,12 @@ import { EnrollmentRepository } from './enrollment.repository.js';
 import { User } from '../../models/user.model.js';
 import { Class } from '../../models/class.model.js';
 import { ROLES } from '../../shared/constants/roles.js';
+import {
+  getClassAudienceRecipientIds,
+  getRelatedParentIds,
+  NOTIFICATION_TYPES,
+  sendNotifications,
+} from '../../shared/utils/notification.helper.js';
 import { ConflictError, NotFoundError, ForbiddenError, BadRequestError } from '../../shared/errors/AllErrors.js';
 
 export class EnrollmentService {
@@ -64,12 +70,30 @@ export class EnrollmentService {
 
       await session.commitTransaction();
 
-      // (Mock) Tự động gửi thông báo
-      console.log(`[Notification] Đã gửi lịch học lớp ${cls.name} cho HS ${student.fullName}`);
+      const recipients = [
+        studentId,
+        ...await getRelatedParentIds([studentId]),
+        ...await getClassAudienceRecipientIds(cls, { teacher: true, branchUsers: true }),
+      ];
+      await sendNotifications(recipients, {
+        branchId: cls.branchId,
+        type: NOTIFICATION_TYPES.ENROLLMENT_ADDED,
+        title: `Học sinh mới vào lớp ${cls.name}`,
+        content: `${student.fullName} đã được thêm vào lớp ${cls.name}.`,
+        actionUrl: `/classes/${classId}/students`,
+        metadata: {
+          classId,
+          studentId,
+          enrollmentId: newEnrollment._id.toString(),
+          createdBy: requester.id,
+          createdByRole: requester.role,
+        },
+        excludeUserIds: [requester.id],
+      });
 
       return newEnrollment;
     } catch (error) {
-      await session.abortTransaction();
+      if (session.inTransaction()) await session.abortTransaction();
       throw error;
     } finally {
       session.endSession();
@@ -86,6 +110,12 @@ export class EnrollmentService {
     if (requester.role !== ROLES.SYSTEM_OWNER && enrollment.branchId?.toString() !== requester.branchId) {
       throw new ForbiddenError('Không có quyền thao tác trên cơ sở này');
     }
+
+    const cls = await Class.findById(enrollment.classId).lean();
+    if (!cls) throw new NotFoundError('Lớp học');
+
+    const student = await User.findById(enrollment.studentId).lean();
+    if (!student) throw new NotFoundError('Học sinh');
 
     const session = await mongoose.startSession();
     session.startTransaction();
@@ -112,9 +142,33 @@ export class EnrollmentService {
       }, session);
 
       await session.commitTransaction();
+      const studentId = enrollment.studentId.toString();
+      const classId = enrollment.classId.toString();
+      const recipients = [
+        studentId,
+        ...await getRelatedParentIds([studentId]),
+        ...await getClassAudienceRecipientIds(cls, { teacher: true, branchUsers: true }),
+      ];
+      await sendNotifications(recipients, {
+        branchId: enrollment.branchId,
+        type: NOTIFICATION_TYPES.ENROLLMENT_LEFT,
+        title: `Học sinh rời lớp ${cls.name}`,
+        content: `${student.fullName} đã được rút khỏi lớp ${cls.name}.`,
+        actionUrl: `/classes/${classId}/students`,
+        metadata: {
+          classId,
+          studentId,
+          enrollmentId,
+          reason: leaveData.reason,
+          updatedBy: requester.id,
+          updatedByRole: requester.role,
+        },
+        excludeUserIds: [requester.id],
+      });
+
       return true;
     } catch (error) {
-      await session.abortTransaction();
+      if (session.inTransaction()) await session.abortTransaction();
       throw error;
     } finally {
       session.endSession();

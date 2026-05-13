@@ -119,7 +119,15 @@ export const NOTIFICATION_TYPES = {
   INVOICE_DUE:        'invoice_due',
   SCORE_PUBLISHED:    'score_published',
   ASSIGNMENT_DUE:     'assignment_due',
+  ASSIGNMENT_CREATED: 'assignment_created',
+  CLASS_CREATED:      'class_created',
+  CLASS_UPDATED:      'class_updated',
   CLASS_ANNOUNCEMENT: 'class_announcement',
+  CLASS_SESSION:      'class_session',
+  CLASS_SESSION_UPDATED: 'class_session_updated',
+  ENROLLMENT_ADDED:   'enrollment_added',
+  ENROLLMENT_LEFT:    'enrollment_left',
+  ATTENDANCE_MARKED:  'attendance_marked',
   SYSTEM:             'system',
 } as const;
 export type NotificationType = typeof NOTIFICATION_TYPES[keyof typeof NOTIFICATION_TYPES];

@@ -4,7 +4,7 @@ import { authorize } from '../../middleware/auth/authorize.middleware.js';
 import { validate } from '../../middleware/validate.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { ClassSessionController } from './classSession.controller.js';
-import { createSessionSchema } from './classSession.schema.js';
+import { createSessionSchema, updateSessionSchema } from './classSession.schema.js';
 
 export const classSessionRouter = Router();
 const controller = new ClassSessionController();
@@ -17,6 +17,14 @@ classSessionRouter.post(
   authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF, ROLES.TEACHER), 
   validate(createSessionSchema), 
   controller.createSession
+);
+
+// 6.1b Chỉnh sửa buổi học
+classSessionRouter.patch(
+  '/sessions/:sessionId',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF, ROLES.TEACHER),
+  validate(updateSessionSchema),
+  controller.updateSession
 );
 
 // 6.2 Lấy buổi học của lớp

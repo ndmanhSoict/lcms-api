@@ -27,6 +27,22 @@ branchRouter.get(
   branchController.getBranches
 );
 
+// 1.2a Tổng quan cơ sở của tài khoản đang đăng nhập
+branchRouter.get(
+  '/my-overview',
+  authenticate,
+  authorize(ROLES.BRANCH_OWNER, ROLES.STAFF),
+  branchController.getMyBranchOverview
+);
+
+// 1.2b Tổng quan cơ sở
+branchRouter.get(
+  '/:id/overview',
+  authenticate,
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF),
+  branchController.getBranchOverview
+);
+
 // 1.3 Lấy chi tiết một cơ sở
 branchRouter.get(
   '/:id',

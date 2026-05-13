@@ -1,0 +1,1323 @@
+{
+  "info": {
+    "name": "LCMS API v2.0",
+    "description": "Learning Center Management System — 71 endpoints đầy đủ\n\n**Workflow khuyến nghị:**\n1. Chạy `0.1 Đăng nhập` để lấy token (tự động lưu)\n2. Chạy theo thứ tự folder 01 → 14 để tạo data liên kết\n3. Dùng Collection Variables để tra cứu ID\n\n**Base URL:** http://localhost:3003/api/v1\n**Auth:** Bearer Token (tự động inject sau khi login)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl",        "value": "http://localhost:3003/api/v1", "type": "string" },
+    { "key": "accessToken",    "value": "", "type": "string" },
+    { "key": "refreshToken",   "value": "", "type": "string" },
+    { "key": "branchId",       "value": "", "type": "string" },
+    { "key": "userId",         "value": "", "type": "string" },
+    { "key": "teacherId",      "value": "", "type": "string" },
+    { "key": "studentId",      "value": "", "type": "string" },
+    { "key": "parentId",       "value": "", "type": "string" },
+    { "key": "parentCrudId",   "value": "", "type": "string" },
+    { "key": "classId",        "value": "", "type": "string" },
+    { "key": "enrollmentId",   "value": "", "type": "string" },
+    { "key": "sessionId",      "value": "", "type": "string" },
+    { "key": "assignmentId",   "value": "", "type": "string" },
+    { "key": "submissionId",   "value": "", "type": "string" },
+    { "key": "gradeRecordId",  "value": "", "type": "string" },
+    { "key": "invoiceId",      "value": "", "type": "string" },
+    { "key": "notificationId", "value": "", "type": "string" },
+    { "key": "threadId",       "value": "", "type": "string" }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+  },
+  "item": [
+
+    {
+      "name": "Health Check",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "url": { "raw": "http://localhost:3003/health", "host": ["http://localhost:3003"], "path": ["health"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "00 · Auth",
+      "item": [
+        {
+          "name": "0.1 Đăng nhập",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 200) {",
+              "  const d = pm.response.json().data;",
+              "  pm.collectionVariables.set('accessToken', d.accessToken);",
+              "  pm.collectionVariables.set('refreshToken', d.refreshToken);",
+              "  pm.test('Login thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "  pm.test('Có accessToken', () => pm.expect(d.accessToken).to.be.a('string').and.not.empty);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"email\": \"owner@lcms.vn\",\n  \"password\": \"Admin@123\"\n}" },
+            "url": { "raw": "{{baseUrl}}/auth/login", "host": ["{{baseUrl}}"], "path": ["auth","login"] }
+          }
+        },
+        {
+          "name": "0.2 Làm mới Access Token",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 200) {",
+              "  pm.collectionVariables.set('accessToken', pm.response.json().data.accessToken);",
+              "  pm.test('Token mới trả về', () => pm.expect(pm.response.code).to.eql(200));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}" },
+            "url": { "raw": "{{baseUrl}}/auth/refresh", "host": ["{{baseUrl}}"], "path": ["auth","refresh"] }
+          }
+        },
+        {
+          "name": "0.3 Đăng xuất",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Đăng xuất thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}" },
+            "url": { "raw": "{{baseUrl}}/auth/logout", "host": ["{{baseUrl}}"], "path": ["auth","logout"] }
+          }
+        },
+        {
+          "name": "0.4 Đổi mật khẩu bản thân",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"currentPassword\": \"Admin@123\",\n  \"newPassword\": \"NewPass@456\",\n  \"confirmPassword\": \"NewPass@456\"\n}" },
+            "url": { "raw": "{{baseUrl}}/auth/change-password", "host": ["{{baseUrl}}"], "path": ["auth","change-password"] }
+          }
+        },
+        {
+          "name": "0.5 Reset mật khẩu người dùng (SO/BO)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"newPassword\": \"Reset@789\"\n}" },
+            "url": { "raw": "{{baseUrl}}/auth/reset-password/{{userId}}", "host": ["{{baseUrl}}"], "path": ["auth","reset-password","{{userId}}"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "01 · Branch",
+      "item": [
+        {
+          "name": "1.1 Tạo cơ sở mới (SO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('branchId', pm.response.json().data._id);",
+              "  pm.test('Branch tạo thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"branchCode\": \"HN01\",\n  \"name\": \"Cơ sở Hà Nội\",\n  \"address\": \"123 Nguyễn Trãi, Thanh Xuân, Hà Nội\",\n  \"phone\": \"0901234567\",\n  \"email\": \"hanoi@lcms.vn\",\n  \"timezone\": \"Asia/Ho_Chi_Minh\",\n  \"defaultFeePerSession\": 150000,\n  \"defaultSessionSlots\": [\n    { \"name\": \"Ca sáng\", \"startTime\": \"08:00\", \"endTime\": \"10:00\" },\n    { \"name\": \"Ca chiều\", \"startTime\": \"14:00\", \"endTime\": \"16:00\" },\n    { \"name\": \"Ca tối\", \"startTime\": \"18:00\", \"endTime\": \"20:00\" }\n  ],\n  \"rooms\": [\"P101\", \"P102\", \"P103\"]\n}" },
+            "url": { "raw": "{{baseUrl}}/branch/create-branch", "host": ["{{baseUrl}}"], "path": ["branch","create-branch"] }
+          }
+        },
+        {
+          "name": "1.2 Danh sách cơ sở",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/branch/all?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["branch","all"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "search", "value": "Hà Nội", "disabled": true },
+                { "key": "isActive", "value": "true", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "1.3 Chi tiết cơ sở",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có trường name', () => pm.expect(pm.response.json().data).to.have.property('name'));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/branch/{{branchId}}", "host": ["{{baseUrl}}"], "path": ["branch","{{branchId}}"] }
+          }
+        },
+        {
+          "name": "1.4 Cập nhật cơ sở (SO/BO)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Cơ sở Hà Nội (Đã cập nhật)\",\n  \"phone\": \"0909999999\",\n  \"defaultFeePerSession\": 160000,\n  \"rooms\": [\"P101\", \"P102\", \"P103\", \"P201\"]\n}" },
+            "url": { "raw": "{{baseUrl}}/branch/{{branchId}}", "host": ["{{baseUrl}}"], "path": ["branch","{{branchId}}"] }
+          }
+        },
+        {
+          "name": "1.5 Bật/tắt cơ sở (SO)",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}/branch/{{branchId}}/toggle-active", "host": ["{{baseUrl}}"], "path": ["branch","{{branchId}}","toggle-active"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "02 · User",
+      "item": [
+        {
+          "name": "2.1 Tạo giáo viên (SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  const id = pm.response.json().data._id;",
+              "  pm.collectionVariables.set('userId', id);",
+              "  pm.collectionVariables.set('teacherId', id);",
+              "  pm.test('Tạo user thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Nguyễn Thị Hương\",\n  \"email\": \"huong.teacher@lcms.vn\",\n  \"phone\": \"0912345678\",\n  \"role\": \"teacher\",\n  \"branchId\": \"{{branchId}}\",\n  \"password\": \"Teacher@123\",\n  \"dateOfBirth\": \"1990-05-15\",\n  \"gender\": \"female\",\n  \"teacherInfo\": {\n    \"subjects\": [\"Toán\", \"Vật lý\"],\n    \"joinDate\": \"2024-01-01\"\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/user/create-user", "host": ["{{baseUrl}}"], "path": ["user","create-user"] }
+          }
+        },
+        {
+          "name": "2.1b Tạo nhân viên (SO/BO)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Trần Văn Nam\",\n  \"email\": \"nam.staff@lcms.vn\",\n  \"phone\": \"0923456789\",\n  \"role\": \"staff\",\n  \"branchId\": \"{{branchId}}\",\n  \"password\": \"Staff@123\",\n  \"dateOfBirth\": \"1995-08-20\",\n  \"gender\": \"male\"\n}" },
+            "url": { "raw": "{{baseUrl}}/user/create-user", "host": ["{{baseUrl}}"], "path": ["user","create-user"] }
+          }
+        },
+        {
+          "name": "2.2 Danh sách người dùng",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/user/all?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["user","all"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "role", "value": "teacher", "disabled": true },
+                { "key": "branchId", "value": "{{branchId}}", "disabled": true },
+                { "key": "isActive", "value": "true", "disabled": true },
+                { "key": "search", "value": "Hương", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "2.3 Chi tiết người dùng",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/user/{{userId}}", "host": ["{{baseUrl}}"], "path": ["user","{{userId}}"] }
+          }
+        },
+        {
+          "name": "2.4 Cập nhật người dùng",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Nguyễn Thị Hương (Cập nhật)\",\n  \"phone\": \"0987654321\"\n}" },
+            "url": { "raw": "{{baseUrl}}/user/{{userId}}", "host": ["{{baseUrl}}"], "path": ["user","{{userId}}"] }
+          }
+        },
+        {
+          "name": "2.5 Vô hiệu hoá người dùng (SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Vô hiệu hoá thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}/user/{{userId}}/deactivate", "host": ["{{baseUrl}}"], "path": ["user","{{userId}}","deactivate"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "T · Teacher",
+      "item": [
+        {
+          "name": "T.1 Tạo giáo viên (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('teacherId', pm.response.json().data._id);",
+              "  pm.test('Tạo giáo viên thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "  pm.test('Có teacherId', () => pm.expect(pm.response.json().data._id).to.be.a('string').and.not.empty);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Nguyễn Văn Giáo\",\n  \"email\": \"giaovien1@lcms.vn\",\n  \"phone\": \"0912345678\",\n  \"password\": \"Teacher@123\",\n  \"dateOfBirth\": \"1990-05-15\",\n  \"gender\": \"male\",\n  \"teacherInfo\": {\n    \"subjects\": [\"Toán\", \"Lý\"],\n    \"joinDate\": \"2024-09-01\"\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/teachers", "host": ["{{baseUrl}}"], "path": ["teachers"] }
+          }
+        },
+        {
+          "name": "T.2 Danh sách giáo viên (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Lấy danh sách thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có data và meta', () => {",
+              "  const body = pm.response.json();",
+              "  pm.expect(body.data).to.be.an('array');",
+              "  pm.expect(body.meta).to.have.property('totalItems');",
+              "});"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/teachers?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["teachers"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "search", "value": "Nguyễn", "description": "Tìm theo tên", "disabled": true },
+                { "key": "isActive", "value": "true", "description": "true|false", "disabled": true },
+                { "key": "subject", "value": "Toán", "description": "Lọc theo môn học", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "T.3 Chi tiết giáo viên (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Lấy chi tiết thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có teacherInfo', () => pm.expect(pm.response.json().data).to.have.property('teacherInfo'));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/teachers/{{teacherId}}", "host": ["{{baseUrl}}"], "path": ["teachers","{{teacherId}}"] }
+          }
+        },
+        {
+          "name": "T.4 Cập nhật giáo viên (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Cập nhật thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Nguyễn Văn Giáo (Updated)\",\n  \"phone\": \"0987654321\",\n  \"teacherInfo\": {\n    \"subjects\": [\"Toán\", \"Lý\", \"Hóa\"]\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/teachers/{{teacherId}}", "host": ["{{baseUrl}}"], "path": ["teachers","{{teacherId}}"] }
+          }
+        },
+        {
+          "name": "T.5 Xóa giáo viên (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Xóa thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('deleted = true', () => pm.expect(pm.response.json().data.deleted).to.be.true);"
+            ]}
+          }],
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}/teachers/{{teacherId}}", "host": ["{{baseUrl}}"], "path": ["teachers","{{teacherId}}"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "03 · Student",
+      "item": [
+        {
+          "name": "3.1 Tạo học sinh + phụ huynh (SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  const data = pm.response.json().data;",
+              "  pm.collectionVariables.set('studentId', data.student._id);",
+              "  pm.collectionVariables.set('parentId', data.parent._id);",
+              "  pm.test('Tạo học sinh thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "  pm.test('Có student và parent', () => {",
+              "    pm.expect(data.student).to.have.property('_id');",
+              "    pm.expect(data.parent).to.have.property('_id');",
+              "  });",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"branchId\": \"{{branchId}}\",\n  \"fullName\": \"Lê Minh Tuấn\",\n  \"dateOfBirth\": \"2011-03-20\",\n  \"gender\": \"male\",\n  \"schoolName\": \"THCS Lý Thường Kiệt\",\n  \"grade\": 7,\n  \"parent\": {\n    \"fullName\": \"Lê Văn Bố\",\n    \"phone\": \"0978123456\",\n    \"email\": \"bo.letuan@gmail.com\",\n    \"relationship\": \"father\",\n    \"password\": \"Parent@123\"\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/student/create-student", "host": ["{{baseUrl}}"], "path": ["student","create-student"] }
+          }
+        },
+        {
+          "name": "3.2 Danh sách học sinh",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/student/all?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["student","all"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "search", "value": "Tuấn", "disabled": true },
+                { "key": "grade", "value": "7", "disabled": true },
+                { "key": "classId", "value": "{{classId}}", "disabled": true },
+                { "key": "status", "value": "no_class", "description": "Lọc HS chưa có lớp", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "3.3 Chi tiết học sinh",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có studentInfo', () => pm.expect(pm.response.json().data).to.have.property('studentInfo'));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/student/{{studentId}}", "host": ["{{baseUrl}}"], "path": ["student","{{studentId}}"] }
+          }
+        },
+        {
+          "name": "3.4 Thêm phụ huynh thứ hai (SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('parentId', pm.response.json().data._id);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Nguyễn Thị Mẹ\",\n  \"phone\": \"0966111222\",\n  \"email\": \"me.letuan@gmail.com\",\n  \"relationship\": \"mother\",\n  \"password\": \"Parent@456\"\n}" },
+            "url": { "raw": "{{baseUrl}}/student/{{studentId}}/parents", "host": ["{{baseUrl}}"], "path": ["student","{{studentId}}","parents"] }
+          }
+        },
+        {
+          "name": "3.5 Cập nhật thông tin học sinh (SO/BO/STAFF)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"schoolName\": \"THCS Nguyễn Du\",\n  \"grade\": 8,\n  \"phone\": \"0900333444\"\n}" },
+            "url": { "raw": "{{baseUrl}}/student/{{studentId}}", "host": ["{{baseUrl}}"], "path": ["student","{{studentId}}"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "P · Parent",
+      "item": [
+        {
+          "name": "P.1 Tạo phụ huynh (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  const id = pm.response.json().data._id;",
+              "  pm.collectionVariables.set('parentCrudId', id);",
+              "  pm.test('Tạo phụ huynh thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "  pm.test('Có parentCrudId', () => pm.expect(id).to.be.a('string').and.not.empty);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Phạm Thị Giám Hộ\",\n  \"email\": \"giamho.parent@lcms.vn\",\n  \"phone\": \"0933222111\",\n  \"password\": \"Parent@789\",\n  \"dateOfBirth\": \"1985-10-12\",\n  \"gender\": \"female\",\n  \"parentInfo\": {\n    \"relationship\": \"guardian\",\n    \"studentIds\": [\"{{studentId}}\"]\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/parents", "host": ["{{baseUrl}}"], "path": ["parents"] }
+          }
+        },
+        {
+          "name": "P.2 Danh sách phụ huynh (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Lấy danh sách thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có data và meta', () => {",
+              "  const body = pm.response.json();",
+              "  pm.expect(body.data).to.be.an('array');",
+              "  pm.expect(body.meta).to.have.property('totalItems');",
+              "});"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/parents?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["parents"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "search", "value": "Phạm", "description": "Tìm theo tên phụ huynh", "disabled": true },
+                { "key": "isActive", "value": "true", "description": "true|false", "disabled": true },
+                { "key": "studentId", "value": "{{studentId}}", "description": "Lọc theo học sinh liên kết", "disabled": true },
+                { "key": "relationship", "value": "guardian", "description": "father|mother|guardian|other", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "P.3 Chi tiết phụ huynh (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Lấy chi tiết thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có parentInfo', () => pm.expect(pm.response.json().data).to.have.property('parentInfo'));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/parents/{{parentCrudId}}", "host": ["{{baseUrl}}"], "path": ["parents","{{parentCrudId}}"] }
+          }
+        },
+        {
+          "name": "P.4 Cập nhật phụ huynh (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Cập nhật thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Relationship được cập nhật', () => pm.expect(pm.response.json().data.parentInfo.relationship).to.eql('other'));"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"fullName\": \"Phạm Thị Giám Hộ (Updated)\",\n  \"phone\": \"0933999888\",\n  \"isActive\": true,\n  \"parentInfo\": {\n    \"relationship\": \"other\",\n    \"studentIds\": [\"{{studentId}}\"]\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/parents/{{parentCrudId}}", "host": ["{{baseUrl}}"], "path": ["parents","{{parentCrudId}}"] }
+          }
+        },
+        {
+          "name": "P.5 Xóa phụ huynh (BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Xóa thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('deleted = true', () => pm.expect(pm.response.json().data.deleted).to.be.true);"
+            ]}
+          }],
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}/parents/{{parentCrudId}}", "host": ["{{baseUrl}}"], "path": ["parents","{{parentCrudId}}"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "04 · Class",
+      "item": [
+        {
+          "name": "4.1 Tạo lớp học (SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('classId', pm.response.json().data._id);",
+              "  pm.test('Tạo lớp thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"branchId\": \"{{branchId}}\",\n  \"name\": \"Toán 7A - Nâng cao\",\n  \"classCode\": \"TOAN7A-2026\",\n  \"subject\": {\n    \"name\": \"Toán\",\n    \"code\": \"MATH\",\n    \"color\": \"#3B82F6\",\n    \"icon\": \"📐\"\n  },\n  \"classType\": \"ongoing\",\n  \"ongoingInfo\": {\n    \"feePerSession\": 150000,\n    \"billingCycle\": \"monthly\"\n  },\n  \"teacherId\": \"{{teacherId}}\",\n  \"weeklySchedule\": [\n    { \"dayOfWeek\": 2, \"startTime\": \"08:00\", \"endTime\": \"10:00\", \"roomCode\": \"P101\" },\n    { \"dayOfWeek\": 4, \"startTime\": \"08:00\", \"endTime\": \"10:00\", \"roomCode\": \"P101\" },\n    { \"dayOfWeek\": 6, \"startTime\": \"08:00\", \"endTime\": \"10:00\", \"roomCode\": \"P101\" }\n  ],\n  \"maxStudents\": 20,\n  \"description\": \"Lớp toán nâng cao dành cho học sinh lớp 7\"\n}" },
+            "url": { "raw": "{{baseUrl}}/class/create-class", "host": ["{{baseUrl}}"], "path": ["class","create-class"] }
+          }
+        },
+        {
+          "name": "4.1b Tạo lớp khoá học (course type)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"branchId\": \"{{branchId}}\",\n  \"name\": \"Tiếng Anh giao tiếp B1\",\n  \"classCode\": \"ENG-B1-2026\",\n  \"subject\": {\n    \"name\": \"Tiếng Anh\",\n    \"code\": \"ENG\",\n    \"color\": \"#10B981\"\n  },\n  \"classType\": \"course\",\n  \"teacherId\": \"{{teacherId}}\",\n  \"weeklySchedule\": [\n    { \"dayOfWeek\": 3, \"startTime\": \"14:00\", \"endTime\": \"16:00\", \"roomCode\": \"P102\" },\n    { \"dayOfWeek\": 5, \"startTime\": \"14:00\", \"endTime\": \"16:00\", \"roomCode\": \"P102\" }\n  ],\n  \"maxStudents\": 15\n}" },
+            "url": { "raw": "{{baseUrl}}/class/create-class", "host": ["{{baseUrl}}"], "path": ["class","create-class"] }
+          }
+        },
+        {
+          "name": "4.2 Danh sách lớp học",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/class/all?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["class","all"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "status", "value": "active", "disabled": true },
+                { "key": "teacherId", "value": "{{teacherId}}", "disabled": true },
+                { "key": "subjectCode", "value": "MATH", "disabled": true },
+                { "key": "search", "value": "Toán", "disabled": true },
+                { "key": "branchId", "value": "{{branchId}}", "description": "Chỉ SO cần truyền", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "4.3 Chi tiết lớp học",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/class/{{classId}}", "host": ["{{baseUrl}}"], "path": ["class","{{classId}}"] }
+          }
+        },
+        {
+          "name": "4.4 Cập nhật lớp học (SO/BO/STAFF)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Toán 7A - Nâng cao (Sửa)\",\n  \"maxStudents\": 25,\n  \"teacherId\": \"{{teacherId}}\",\n  \"weeklySchedule\": [\n    { \"dayOfWeek\": 2, \"startTime\": \"08:00\", \"endTime\": \"10:00\", \"roomCode\": \"P103\" },\n    { \"dayOfWeek\": 4, \"startTime\": \"08:00\", \"endTime\": \"10:00\", \"roomCode\": \"P103\" }\n  ]\n}" },
+            "url": { "raw": "{{baseUrl}}/class/{{classId}}", "host": ["{{baseUrl}}"], "path": ["class","{{classId}}"] }
+          }
+        },
+        {
+          "name": "4.5 Đóng lớp học (SO/BO/STAFF)",
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}/class/{{classId}}/close", "host": ["{{baseUrl}}"], "path": ["class","{{classId}}","close"] }
+          }
+        },
+        {
+          "name": "4.6 Danh sách học sinh trong lớp",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/class/{{classId}}/students?page=1&limit=20",
+              "host": ["{{baseUrl}}"], "path": ["class","{{classId}}","students"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "20" },
+                { "key": "status", "value": "active", "description": "active | all", "disabled": true }
+              ]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "05 · Enrollment",
+      "item": [
+        {
+          "name": "5.1 Xếp học sinh vào lớp (SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('enrollmentId', pm.response.json().data._id);",
+              "  pm.test('Xếp lớp thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"studentId\": \"{{studentId}}\",\n  \"classId\": \"{{classId}}\"\n}" },
+            "url": { "raw": "{{baseUrl}}/enrollments/add", "host": ["{{baseUrl}}"], "path": ["enrollments","add"] }
+          }
+        },
+        {
+          "name": "5.2 Rút lớp học sinh (SO/BO/STAFF)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"reason\": \"dropped\",\n  \"note\": \"Học sinh chuyển trường\"\n}" },
+            "url": { "raw": "{{baseUrl}}/enrollments/{{enrollmentId}}/leave", "host": ["{{baseUrl}}"], "path": ["enrollments","{{enrollmentId}}","leave"] }
+          }
+        },
+        {
+          "name": "5.3 Lịch sử xếp lớp của học sinh",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/enrollments/students/{{studentId}}", "host": ["{{baseUrl}}"], "path": ["enrollments","students","{{studentId}}"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "06 · ClassSession",
+      "item": [
+        {
+          "name": "6.1 Tạo buổi học (SO/BO/STAFF/TEACHER)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('sessionId', pm.response.json().data._id);",
+              "  pm.test('Tạo buổi học thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"sessionDate\": \"2026-05-05\",\n  \"startTime\": \"08:00\",\n  \"endTime\": \"10:00\",\n  \"roomCode\": \"P101\",\n  \"sessionType\": \"regular\",\n  \"note\": \"Ôn tập chương 3\"\n}" },
+            "url": { "raw": "{{baseUrl}}/classes/{{classId}}/sessions", "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","sessions"] }
+          }
+        },
+        {
+          "name": "6.1b Tạo buổi học bù",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"sessionDate\": \"2026-05-10\",\n  \"startTime\": \"09:00\",\n  \"endTime\": \"11:00\",\n  \"roomCode\": \"P102\",\n  \"sessionType\": \"makeup\",\n  \"note\": \"Buổi bù ngày 28/4\"\n}" },
+            "url": { "raw": "{{baseUrl}}/classes/{{classId}}/sessions", "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","sessions"] }
+          }
+        },
+        {
+          "name": "6.2 Danh sách buổi học của lớp",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/classes/{{classId}}/sessions?page=1&limit=20",
+              "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","sessions"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "20" },
+                { "key": "from", "value": "2026-05-01", "disabled": true },
+                { "key": "to", "value": "2026-05-31", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "6.3 Lịch dạy của giáo viên",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/users/{{teacherId}}/schedule?from=2026-05-01&to=2026-05-31",
+              "host": ["{{baseUrl}}"], "path": ["users","{{teacherId}}","schedule"],
+              "query": [
+                { "key": "from", "value": "2026-05-01" },
+                { "key": "to", "value": "2026-05-31" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "6.4 Lịch học của học sinh",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/students/{{studentId}}/schedule?from=2026-05-01&to=2026-05-31",
+              "host": ["{{baseUrl}}"], "path": ["students","{{studentId}}","schedule"],
+              "query": [
+                { "key": "from", "value": "2026-05-01" },
+                { "key": "to", "value": "2026-05-31" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "07 · Attendance",
+      "item": [
+        {
+          "name": "7.1 Điểm danh toàn buổi (TEACHER của lớp)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Điểm danh thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "if (pm.response.code === 201) {",
+              "  const r = pm.response.json().data;",
+              "  pm.test('Có tổng present/absent', () => {",
+              "    pm.expect(r).to.have.property('total_present');",
+              "    pm.expect(r).to.have.property('total_absent');",
+              "  });",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"records\": [\n    { \"student_id\": \"{{studentId}}\", \"status\": \"present\" }\n  ]\n}" },
+            "url": { "raw": "{{baseUrl}}/sessions/{{sessionId}}/attendance", "host": ["{{baseUrl}}"], "path": ["sessions","{{sessionId}}","attendance"] }
+          }
+        },
+        {
+          "name": "7.2 Xem điểm danh của buổi học (TC/SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có summary', () => pm.expect(pm.response.json().data).to.have.property('summary'));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/sessions/{{sessionId}}/attendance", "host": ["{{baseUrl}}"], "path": ["sessions","{{sessionId}}","attendance"] }
+          }
+        },
+        {
+          "name": "7.3 Sửa điểm danh 1 học sinh (TC/SO/BO/STAFF)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"absent\",\n  \"reason\": \"Nghỉ có phép, phụ huynh xin phép trước\"\n}" },
+            "url": { "raw": "{{baseUrl}}/sessions/{{sessionId}}/attendance/{{studentId}}", "host": ["{{baseUrl}}"], "path": ["sessions","{{sessionId}}","attendance","{{studentId}}"] }
+          }
+        },
+        {
+          "name": "7.4 Thống kê điểm danh học sinh",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có attendance_rate', () => pm.expect(pm.response.json().data).to.have.property('attendance_rate'));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/students/{{studentId}}/attendance-summary?class_id={{classId}}&from=2026-05-01&to=2026-05-31",
+              "host": ["{{baseUrl}}"], "path": ["students","{{studentId}}","attendance-summary"],
+              "query": [
+                { "key": "class_id", "value": "{{classId}}", "description": "BẮT BUỘC" },
+                { "key": "from", "value": "2026-05-01", "description": "BẮT BUỘC — ISO date" },
+                { "key": "to", "value": "2026-05-31", "description": "BẮT BUỘC — ISO date" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "08 · Assignment",
+      "item": [
+        {
+          "name": "8.1 Tạo bài tập (TEACHER)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('assignmentId', pm.response.json().data._id);",
+              "  pm.test('Tạo bài tập thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Bài tập chương 3 — Phương trình bậc nhất\",\n  \"description\": \"Làm tất cả bài tập từ trang 45 đến 52 trong SGK. Trình bày rõ ràng, từng bước giải.\",\n  \"assignment_type\": \"homework\",\n  \"due_date\": \"2026-05-15T23:59:00.000Z\",\n  \"max_score\": 10,\n  \"is_graded\": true,\n  \"visible_to_parent\": true,\n  \"submission_config\": {\n    \"allow_late\": false,\n    \"allow_text\": true,\n    \"allow_file\": true,\n    \"accept_file_types\": [\".pdf\", \".jpg\", \".png\"]\n  }\n}" },
+            "url": { "raw": "{{baseUrl}}/classes/{{classId}}/assignments", "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","assignments"] }
+          }
+        },
+        {
+          "name": "8.2 Danh sách bài tập lớp (TC/SD/PH)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/classes/{{classId}}/assignments", "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","assignments"] }
+          }
+        },
+        {
+          "name": "8.3 Học sinh nộp bài",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('submissionId', pm.response.json().data._id);",
+              "  pm.test('Nộp bài thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"content_text\": \"Em đã hoàn thành bài tập. Câu 1: x = 3. Câu 2: x = -2. Câu 3: Vô nghiệm.\"\n}" },
+            "url": { "raw": "{{baseUrl}}/assignments/{{assignmentId}}/submissions", "host": ["{{baseUrl}}"], "path": ["assignments","{{assignmentId}}","submissions"] }
+          }
+        },
+        {
+          "name": "8.4 Danh sách bài nộp (TC/SO/BO)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/assignments/{{assignmentId}}/submissions", "host": ["{{baseUrl}}"], "path": ["assignments","{{assignmentId}}","submissions"] }
+          }
+        },
+        {
+          "name": "8.5 Chấm điểm bài nộp (TC/SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Chấm điểm thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"score\": 8.5,\n  \"feedback\": \"Bài làm tốt! Câu 3 cần trình bày thêm điều kiện. Cố gắng lên em.\"\n}" },
+            "url": { "raw": "{{baseUrl}}/submissions/{{submissionId}}/grade", "host": ["{{baseUrl}}"], "path": ["submissions","{{submissionId}}","grade"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "09 · GradeRecord",
+      "item": [
+        {
+          "name": "9.1 Tạo/Cập nhật học bạ (TEACHER)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 200 || pm.response.code === 201) {",
+              "  pm.collectionVariables.set('gradeRecordId', pm.response.json().data._id);",
+              "  pm.test('Lưu học bạ thành công', () => pm.expect([200, 201]).to.include(pm.response.code));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"student_id\": \"{{studentId}}\",\n  \"class_id\": \"{{classId}}\",\n  \"academic_period\": \"2025-2026 HK2\",\n  \"assignment_avg\": 8.2,\n  \"exam_scores\": [\n    {\n      \"exam_id\": \"exam_placeholder_id_1\",\n      \"title\": \"Kiểm tra 15 phút lần 1\",\n      \"score\": 9.0,\n      \"total_score\": 10,\n      \"weight\": 0.1,\n      \"exam_date\": \"2026-03-10T00:00:00.000Z\"\n    },\n    {\n      \"exam_id\": \"exam_placeholder_id_2\",\n      \"title\": \"Kiểm tra giữa kỳ\",\n      \"score\": 7.5,\n      \"total_score\": 10,\n      \"weight\": 0.3,\n      \"exam_date\": \"2026-03-28T00:00:00.000Z\"\n    },\n    {\n      \"exam_id\": \"exam_placeholder_id_3\",\n      \"title\": \"Kiểm tra cuối kỳ\",\n      \"score\": 8.0,\n      \"total_score\": 10,\n      \"weight\": 0.5,\n      \"exam_date\": \"2026-05-25T00:00:00.000Z\"\n    }\n  ],\n  \"teacher_comment\": \"Học sinh có tiến bộ rõ rệt, cần cải thiện kỹ năng trình bày.\"\n}" },
+            "url": { "raw": "{{baseUrl}}/grade-records", "host": ["{{baseUrl}}"], "path": ["grade-records"] }
+          }
+        },
+        {
+          "name": "9.2 Publish học bạ (TEACHER)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Publish thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}/grade-records/{{gradeRecordId}}/publish", "host": ["{{baseUrl}}"], "path": ["grade-records","{{gradeRecordId}}","publish"] }
+          }
+        },
+        {
+          "name": "9.3 Xem học bạ học sinh (TC/SO/BO/STAFF/SD/PH)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/students/{{studentId}}/grade-records", "host": ["{{baseUrl}}"], "path": ["students","{{studentId}}","grade-records"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "10 · Finance",
+      "item": [
+        {
+          "name": "10.1 Tạo phiếu học phí thủ công (SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "if (pm.response.code === 201) {",
+              "  pm.collectionVariables.set('invoiceId', pm.response.json().data._id);",
+              "  pm.test('Tạo phiếu thành công', () => pm.expect(pm.response.code).to.eql(201));",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"student_id\": \"{{studentId}}\",\n  \"class_id\": \"{{classId}}\",\n  \"invoice_type\": \"monthly\",\n  \"billing_period\": \"2026-05\",\n  \"sessions_attended\": 8,\n  \"fee_per_session\": 150000,\n  \"discount_amount\": 0,\n  \"due_date\": \"2026-05-31T23:59:00.000Z\",\n  \"note\": \"Học phí tháng 5/2026 — Lớp Toán 7A\"\n}" },
+            "url": { "raw": "{{baseUrl}}/invoices", "host": ["{{baseUrl}}"], "path": ["invoices"] }
+          }
+        },
+        {
+          "name": "10.2 Tạo hàng loạt phiếu học phí (SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Batch generate thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "if (pm.response.code === 200) {",
+              "  const r = pm.response.json().data;",
+              "  console.log(`Generated: ${r.generated}, Skipped: ${r.skipped}, Failed: ${r.failed}`);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"branch_id\": \"{{branchId}}\",\n  \"billing_period\": \"2026-05\",\n  \"due_date\": \"2026-05-31T23:59:00.000Z\"\n}" },
+            "url": { "raw": "{{baseUrl}}/invoices/batch-generate", "host": ["{{baseUrl}}"], "path": ["invoices","batch-generate"] }
+          }
+        },
+        {
+          "name": "10.3 Danh sách phiếu học phí",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/invoices?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["invoices"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "student_id", "value": "{{studentId}}", "disabled": true },
+                { "key": "status", "value": "unpaid", "description": "unpaid|paid|overdue|cancelled|partial", "disabled": true },
+                { "key": "billing_period", "value": "2026-05", "disabled": true },
+                { "key": "due_date_before", "value": "2026-05-31", "disabled": true },
+                { "key": "branch_id", "value": "{{branchId}}", "description": "Chỉ SO cần truyền", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "10.4 Chi tiết phiếu học phí",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/invoices/{{invoiceId}}", "host": ["{{baseUrl}}"], "path": ["invoices","{{invoiceId}}"] }
+          }
+        },
+        {
+          "name": "10.5 Thu tiền mặt (SO/BO/STAFF)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Thu tiền mặt thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"amount\": 1200000,\n  \"note\": \"Phụ huynh Lê Văn Bố đóng trực tiếp tại quầy\"\n}" },
+            "url": { "raw": "{{baseUrl}}/invoices/{{invoiceId}}/pay-cash", "host": ["{{baseUrl}}"], "path": ["invoices","{{invoiceId}}","pay-cash"] }
+          }
+        },
+        {
+          "name": "10.6 Tạo link thanh toán VNPay",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"bank_code\": \"\",\n  \"return_url\": \"http://localhost:3000/payment/result\"\n}" },
+            "url": { "raw": "{{baseUrl}}/invoices/{{invoiceId}}/vnpay/create-payment", "host": ["{{baseUrl}}"], "path": ["invoices","{{invoiceId}}","vnpay","create-payment"] }
+          }
+        },
+        {
+          "name": "10.7 VNPay IPN Webhook (không cần Auth — VNPay server gọi)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"vnp_TmnCode\": \"LCMSTEST\",\n  \"vnp_Amount\": \"120000000\",\n  \"vnp_BankCode\": \"NCB\",\n  \"vnp_BankTranNo\": \"VNP14127827\",\n  \"vnp_CardType\": \"ATM\",\n  \"vnp_PayDate\": \"20260501153000\",\n  \"vnp_CurrCode\": \"VND\",\n  \"vnp_OrderInfo\": \"Thanh+toan+hoc+phi\",\n  \"vnp_TransactionNo\": \"14127827\",\n  \"vnp_ResponseCode\": \"00\",\n  \"vnp_TransactionStatus\": \"00\",\n  \"vnp_TxnRef\": \"INV-HN01-001\",\n  \"vnp_SecureHash\": \"placeholder_hash_value\"\n}" },
+            "url": { "raw": "{{baseUrl}}/invoices/vnpay/webhook", "host": ["{{baseUrl}}"], "path": ["invoices","vnpay","webhook"] }
+          }
+        },
+        {
+          "name": "10.8 VNPay Return (redirect từ VNPay sau thanh toán)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/invoices/vnpay/return?vnp_ResponseCode=00&vnp_TxnRef=INV-HN01-001&vnp_Amount=120000000&vnp_TransactionNo=14127827&vnp_SecureHash=placeholder",
+              "host": ["{{baseUrl}}"], "path": ["invoices","vnpay","return"],
+              "query": [
+                { "key": "vnp_ResponseCode", "value": "00", "description": "00 = thành công" },
+                { "key": "vnp_TxnRef", "value": "INV-HN01-001" },
+                { "key": "vnp_Amount", "value": "120000000", "description": "VNPay đơn vị = VND * 100" },
+                { "key": "vnp_TransactionNo", "value": "14127827" },
+                { "key": "vnp_SecureHash", "value": "placeholder" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "11 · Notification",
+      "item": [
+        {
+          "name": "11.1 Danh sách thông báo của tôi",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "if (pm.response.code === 200) {",
+              "  const items = pm.response.json().data;",
+              "  if (items && items.length > 0) {",
+              "    pm.collectionVariables.set('notificationId', items[0]._id);",
+              "    console.log('Saved notificationId:', items[0]._id);",
+              "  }",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/notifications?page=1&limit=20",
+              "host": ["{{baseUrl}}"], "path": ["notifications"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "20" },
+                { "key": "is_read", "value": "false", "description": "true | false", "disabled": true },
+                { "key": "type", "value": "absence", "description": "absence|invoice_due|score_published|assignment_due|class_announcement|system", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "11.2 Đánh dấu 1 thông báo đã đọc",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Cập nhật thành công', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}/notifications/{{notificationId}}/read", "host": ["{{baseUrl}}"], "path": ["notifications","{{notificationId}}","read"] }
+          }
+        },
+        {
+          "name": "11.3 Đánh dấu TẤT CẢ thông báo đã đọc",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Cập nhật thành công', () => pm.expect(pm.response.code).to.eql(200));",
+              "if (pm.response.code === 200) {",
+              "  console.log('Updated count:', pm.response.json().data.updated_count);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "PATCH",
+            "url": { "raw": "{{baseUrl}}/notifications/read-all", "host": ["{{baseUrl}}"], "path": ["notifications","read-all"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "12 · Message",
+      "description": "Chỉ TEACHER ↔ PARENT nhắn tin được với nhau (phải có học sinh chung)",
+      "item": [
+        {
+          "name": "12.1 Danh sách hội thoại (TEACHER/PARENT)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "if (pm.response.code === 200) {",
+              "  const threads = pm.response.json().data;",
+              "  if (threads && threads.length > 0) {",
+              "    pm.collectionVariables.set('threadId', threads[0].thread_id);",
+              "    console.log('Saved threadId:', threads[0].thread_id);",
+              "  }",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/messages/threads", "host": ["{{baseUrl}}"], "path": ["messages","threads"] }
+          }
+        },
+        {
+          "name": "12.2 Tin nhắn trong hội thoại",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/messages/threads/{{threadId}}?page=1&limit=30",
+              "host": ["{{baseUrl}}"], "path": ["messages","threads","{{threadId}}"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "30" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "12.3 Gửi tin nhắn (TEACHER/PARENT)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"receiver_id\": \"{{parentId}}\",\n  \"message_type\": \"text\",\n  \"content\": \"Kính chào phụ huynh, em Tuấn hôm nay học rất tập trung và có tiến bộ tốt ạ.\"\n}" },
+            "url": { "raw": "{{baseUrl}}/messages", "host": ["{{baseUrl}}"], "path": ["messages"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "13 · Report",
+      "item": [
+        {
+          "name": "13.1 Dashboard cơ sở (SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có students, classes, finance', () => {",
+              "  const d = pm.response.json().data;",
+              "  pm.expect(d).to.have.all.keys(['students','classes','finance','attendance']);",
+              "});"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/reports/branch-dashboard",
+              "host": ["{{baseUrl}}"], "path": ["reports","branch-dashboard"],
+              "query": [
+                { "key": "branch_id", "value": "{{branchId}}", "description": "BẮT BUỘC với System Owner", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "13.2 Báo cáo doanh thu (SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/reports/revenue?year=2026&from_month=1&to_month=5",
+              "host": ["{{baseUrl}}"], "path": ["reports","revenue"],
+              "query": [
+                { "key": "year", "value": "2026", "description": "Năm (mặc định = năm hiện tại)" },
+                { "key": "from_month", "value": "1", "description": "Tháng bắt đầu (1-12)" },
+                { "key": "to_month", "value": "5", "description": "Tháng kết thúc (1-12)" },
+                { "key": "branch_id", "value": "{{branchId}}", "description": "Chỉ SO cần truyền", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "13.3 Học sinh có nguy cơ bỏ học (SO/BO)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/reports/at-risk-students?consecutive_absences=3",
+              "host": ["{{baseUrl}}"], "path": ["reports","at-risk-students"],
+              "query": [
+                { "key": "consecutive_absences", "value": "3", "description": "Số buổi vắng liên tiếp (mặc định 3)" },
+                { "key": "branch_id", "value": "{{branchId}}", "description": "BẮT BUỘC với System Owner", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "13.4 Dashboard toàn hệ thống (SO only)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));",
+              "pm.test('Có branches và totals', () => {",
+              "  const d = pm.response.json().data;",
+              "  pm.expect(d).to.have.property('branches');",
+              "  pm.expect(d).to.have.property('total_students');",
+              "});"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/reports/system-dashboard", "host": ["{{baseUrl}}"], "path": ["reports","system-dashboard"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "14 · ClassAnnouncement",
+      "item": [
+        {
+          "name": "14.1 Tạo thông báo lớp (TEACHER)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Tạo thông báo thành công', () => pm.expect(pm.response.code).to.eql(201));"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Lịch học bù tuần tới\",\n  \"content\": \"Do ngày 5/5 nghỉ lễ, lớp sẽ học bù vào thứ 7 ngày 10/5 lúc 8h sáng tại phòng P102. Phụ huynh và học sinh lưu ý sắp xếp.\",\n  \"is_pinned\": true,\n  \"target_audience\": [\"student\", \"parent\"]\n}" },
+            "url": { "raw": "{{baseUrl}}/classes/{{classId}}/announcements", "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","announcements"] }
+          }
+        },
+        {
+          "name": "14.2 Danh sách thông báo lớp (TC/SD/PH)",
+          "event": [{
+            "listen": "test",
+            "script": { "type": "text/javascript", "exec": [
+              "pm.test('Trả về 200', () => pm.expect(pm.response.code).to.eql(200));"
+            ]}
+          }],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/classes/{{classId}}/announcements?page=1&limit=10",
+              "host": ["{{baseUrl}}"], "path": ["classes","{{classId}}","announcements"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" }
+              ]
+            }
+          }
+        }
+      ]
+    }
+
+  ]
+}

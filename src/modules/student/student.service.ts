@@ -1,9 +1,19 @@
 import mongoose from 'mongoose';
+import { Types } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import { StudentRepository } from './student.repository.js';
-import { ROLES, RELATIONSHIPS } from '../../shared/constants/roles.js';
-import { ConflictError, NotFoundError, BadRequestError, ForbiddenError } from '../../shared/errors/AllErrors.js';
+import { ROLES } from '../../shared/constants/roles.js';
+import { NotFoundError, ForbiddenError } from '../../shared/errors/AllErrors.js';
 import { getPagination } from '../../shared/constants/pagination.helper.js';
+import { User } from '../../models/user.model.js';
+import { ClassSession } from '../../models/classSession.model.js';
+import { Attendance } from '../../models/attendance.model.js';
+import { Assignment } from '../../models/assignment.model.js';
+import { Submission } from '../../models/submission.model.js';
+import { GradeRecord } from '../../models/gradeRecord.model.js';
+import { Invoice } from '../../models/invoice.model.js';
+import { Notification } from '../../models/notification.model.js';
+import { Message } from '../../models/message.model.js';
 
 export class StudentService {
   private studentRepo: StudentRepository;
@@ -15,6 +25,24 @@ export class StudentService {
   private generateUserCode(role: string): string {
     const prefix = role === ROLES.STUDENT ? 'HS' : 'PH';
     return `${prefix}${Date.now()}`; // Theo ý bạn: dùng Date.now() cho nhanh và unique
+  }
+
+  private startOfDay(date: Date) {
+    const start = new Date(date);
+    start.setHours(0, 0, 0, 0);
+    return start;
+  }
+
+  private endOfDay(date: Date) {
+    const end = new Date(date);
+    end.setHours(23, 59, 59, 999);
+    return end;
+  }
+
+  private addDays(date: Date, days: number) {
+    const next = new Date(date);
+    next.setDate(next.getDate() + days);
+    return next;
   }
 
   async createStudent(data: any, creator: any) {
@@ -134,6 +162,152 @@ export class StudentService {
     const student = await this.studentRepo.getStudentDetail(id);
     if (!student) throw new NotFoundError('Học sinh');
     return student;
+  }
+
+  async getMyOverview(requester: any) {
+    if (requester.role !== ROLES.STUDENT) {
+      throw new ForbiddenError('Chỉ học sinh mới có quyền xem tổng quan học sinh');
+    }
+
+    const student = await User.findOne({ _id: requester.id, role: ROLES.STUDENT, deletedAt: null })
+      .select('-passwordHash')
+      .populate({
+        path: 'studentInfo.activeClassIds',
+        select: 'name subject teacherId weeklySchedule',
+        populate: { path: 'teacherId', select: 'fullName avatarUrl' },
+      })
+      .lean();
+
+    if (!student) throw new NotFoundError('Học sinh');
+
+    const studentId = new Types.ObjectId(requester.id);
+    const classIds = (student.studentInfo?.activeClassIds ?? []).map((item: any) => item._id ?? item);
+    const now = new Date();
+    const todayStart = this.startOfDay(now);
+    const todayEnd = this.endOfDay(now);
+    const next7Days = this.endOfDay(this.addDays(now, 7));
+    const last30Days = this.startOfDay(this.addDays(now, -30));
+
+    const [
+      todaySessions,
+      upcomingSessions,
+      attendanceAgg,
+      assignments,
+      submissionStats,
+      latestGrades,
+      unpaidAgg,
+      unreadNotifications,
+      unreadMessages,
+    ] = await Promise.all([
+      ClassSession.find({
+        classId: { $in: classIds },
+        deletedAt: null,
+        status: { $ne: 'cancelled' },
+        sessionDate: { $gte: todayStart, $lte: todayEnd },
+      })
+        .populate('classId', 'name subject')
+        .sort({ sessionDate: 1, startTime: 1 })
+        .limit(10)
+        .lean(),
+      ClassSession.find({
+        classId: { $in: classIds },
+        deletedAt: null,
+        status: 'scheduled',
+        sessionDate: { $gt: todayEnd, $lte: next7Days },
+      })
+        .populate('classId', 'name subject')
+        .sort({ sessionDate: 1, startTime: 1 })
+        .limit(10)
+        .lean(),
+      Attendance.aggregate([
+        { $match: { studentId, sessionDate: { $gte: last30Days, $lte: todayEnd } } },
+        {
+          $group: {
+            _id: null,
+            total: { $sum: 1 },
+            present: { $sum: { $cond: [{ $eq: ['$status', 'present'] }, 1, 0] } },
+            absent: { $sum: { $cond: [{ $eq: ['$status', 'absent'] }, 1, 0] } },
+          },
+        },
+      ]),
+      Assignment.find({
+        classId: { $in: classIds },
+        deletedAt: null,
+        status: 'active',
+      })
+        .select('_id classId title dueDate assignmentType maxScore')
+        .sort({ dueDate: 1 })
+        .limit(10)
+        .lean(),
+      Submission.aggregate([
+        { $match: { studentId } },
+        { $group: { _id: '$status', count: { $sum: 1 } } },
+      ]),
+      GradeRecord.find({ studentId, status: 'published' })
+        .populate('classId', 'name subject')
+        .sort({ publishedAt: -1, updatedAt: -1 })
+        .limit(5)
+        .lean(),
+      Invoice.aggregate([
+        { $match: { studentId, status: { $in: ['unpaid', 'overdue', 'partial'] }, deletedAt: null } },
+        { $group: { _id: '$status', count: { $sum: 1 }, amount: { $sum: '$totalAmount' } } },
+      ]),
+      Notification.countDocuments({ recipientId: studentId, isRead: false }),
+      Message.countDocuments({ receiverId: studentId, isRead: false, deletedAt: null }),
+    ]);
+
+    const attendance = attendanceAgg[0] ?? { total: 0, present: 0, absent: 0 };
+    const attendanceRate = attendance.total > 0
+      ? Math.round((attendance.present / attendance.total) * 1000) / 10
+      : 0;
+    const submissionsByStatus = submissionStats.reduce<Record<string, number>>((acc, item) => {
+      acc[item._id] = item.count;
+      return acc;
+    }, {});
+    const unpaidSummary = unpaidAgg.reduce(
+      (acc, item) => {
+        acc.count += item.count;
+        acc.amount += item.amount;
+        acc.by_status[item._id] = { count: item.count, amount: item.amount };
+        return acc;
+      },
+      { count: 0, amount: 0, by_status: {} as Record<string, { count: number; amount: number }> }
+    );
+
+    return {
+      profile: student,
+      classes: {
+        total_active: classIds.length,
+        items: student.studentInfo?.activeClassIds ?? [],
+      },
+      schedule: {
+        today_sessions: todaySessions,
+        upcoming_sessions: upcomingSessions,
+      },
+      attendance: {
+        last_30_days_total: attendance.total,
+        present: attendance.present,
+        absent: attendance.absent,
+        attendance_rate: attendanceRate,
+      },
+      assignments: {
+        active: assignments,
+        submission_by_status: submissionsByStatus,
+      },
+      grades: {
+        latest_published: latestGrades,
+      },
+      finance: {
+        unpaid_invoices: unpaidSummary.count,
+        unpaid_amount: unpaidSummary.amount,
+        by_status: unpaidSummary.by_status,
+      },
+      communication: {
+        unread_notifications: unreadNotifications,
+        unread_messages: unreadMessages,
+      },
+      as_of: new Date().toISOString(),
+    };
   }
 
   async updateStudent(id: string, data: any, requester: any) {

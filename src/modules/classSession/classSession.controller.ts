@@ -16,6 +16,13 @@ export class ClassSessionController {
     } catch (error) { next(error); }
   };
 
+  updateSession = async (req: Request<{ sessionId: string }>, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.sessionService.updateSession(req.params.sessionId, req.body, req.user);
+      sendSuccess(res, result, 'Cập nhật buổi học thành công');
+    } catch (error) { next(error); }
+  };
+
   getClassSessions = async (req: Request<{ classId: string }>, res: Response, next: NextFunction) => {
     try {
       const result = await this.sessionService.getClassSessions(req.params.classId, req.query, req.user);

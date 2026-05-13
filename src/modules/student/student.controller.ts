@@ -39,6 +39,13 @@ export class StudentController {
     } catch (error) { next(error); }
   };
 
+  getMyOverview = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.studentService.getMyOverview(req.user);
+      sendSuccess(res, result, 'Lấy tổng quan học sinh thành công');
+    } catch (error) { next(error); }
+  };
+
   updateStudent = async (req: Request<{ id: string }>, res: Response, next: NextFunction) => {
     try {
       const result = await this.studentService.updateStudent(req.params.id, req.body, req.user);

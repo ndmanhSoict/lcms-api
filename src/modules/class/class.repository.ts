@@ -1,4 +1,4 @@
-import mongoose, { ClientSession } from 'mongoose';
+import { ClientSession } from 'mongoose';
 import { Class, IClass } from '../../models/class.model.js';
 import { User } from '../../models/user.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
@@ -71,7 +71,7 @@ export class ClassRepository {
 
     const [enrollments, totalItems] = await Promise.all([
       Enrollment.find(filter)
-        .populate('studentId', 'userCode fullName dateOfBirth phone')
+        .populate('studentId', 'userCode fullName dateOfBirth phone email')
         .sort({ enrolledAt: -1 })
         .skip(skip)
         .limit(limit)

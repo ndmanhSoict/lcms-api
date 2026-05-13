@@ -13,6 +13,7 @@ studentRouter.use(authenticate);
 
 studentRouter.post('/create-student', authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF), validate(createStudentSchema), controller.createStudent);
 studentRouter.get('/all', authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF), controller.getStudents);
+studentRouter.get('/my-overview', authorize(ROLES.STUDENT), controller.getMyOverview);
 studentRouter.get('/:id', controller.getStudentById);
 studentRouter.post('/:studentId/parents', authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF), controller.addParent);
 studentRouter.patch(

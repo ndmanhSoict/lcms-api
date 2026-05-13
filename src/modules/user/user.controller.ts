@@ -41,7 +41,7 @@ export class UserController {
 
   deactivateUser = async (req: Request<{ id: string }>, res: Response, next: NextFunction) => {
     try {
-      const result = await this.userService.deactivateUser(req.params.id, req.user);
+      await this.userService.deactivateUser(req.params.id, req.user);
       sendSuccess(res, { isActive: false }, 'Khóa tài khoản thành công');
     } catch (error) { next(error); }
   };
