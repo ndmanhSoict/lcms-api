@@ -1,7 +1,7 @@
 import { Types } from 'mongoose';
 import { AssignmentRepository } from './assignment.repository.js';
 import { IAssignment, IAssignmentQuestion } from '../../models/assignment.model.js';
-import { ISubmissionAnswer } from '../../models/submission.model.js';
+import { ISubmission, ISubmissionAnswer } from '../../models/submission.model.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { getPagination, getPaginationMeta } from '../../shared/constants/pagination.helper.js';
 import {
@@ -14,7 +14,6 @@ import {
   NotFoundError,
   ForbiddenError,
   BadRequestError,
-  ConflictError,
   ValidationError,
 } from '../../shared/errors/AllErrors.js';
 
@@ -86,7 +85,7 @@ export class AssignmentService {
 
   private getUploadedUrls(
     files: Express.Multer.File[] | undefined,
-    folder: 'assignments' | 'submissions'
+    folder: 'assignments' | 'submissions' | 'submission-feedback'
   ) {
     return (files ?? []).map(file => `/uploads/${folder}/${file.filename}`);
   }
@@ -218,8 +217,13 @@ export class AssignmentService {
     return Boolean(assignment.dueDate && new Date() >= new Date(assignment.dueDate));
   }
 
-  private questionsForRequester(questions: IAssignmentQuestion[], requester: RequestUser) {
+  private questionsForRequester(
+    questions: IAssignmentQuestion[],
+    requester: RequestUser,
+    answersReleased: boolean
+  ) {
     if (requester.role !== ROLES.STUDENT && requester.role !== ROLES.PARENT) return questions;
+    if (requester.role === ROLES.STUDENT && answersReleased) return questions;
 
     return questions.map(question => ({
       ...question,
@@ -238,22 +242,36 @@ export class AssignmentService {
       attachmentUrls?: string[];
       isLate?: boolean;
       feedback?: string;
+      feedbackAttachmentUrls?: string[];
+      resubmitCount?: number;
     },
-    scoreReleased: boolean
+    resultReleased: boolean,
+    canResubmit: boolean
   ) {
     return {
       _id: submission._id,
-      status: scoreReleased ? submission.status : 'submitted',
+      status: resultReleased ? submission.status : 'submitted',
       content_text: submission.contentText,
       attachment_urls: submission.attachmentUrls ?? [],
       answers: (submission.answers ?? []).map(answer =>
-        scoreReleased ? answer : { questionId: answer.questionId, value: answer.value }
+        resultReleased ? answer : { questionId: answer.questionId, value: answer.value }
       ),
       submitted_at: submission.submittedAt,
       is_late: submission.isLate,
-      score: scoreReleased ? (submission.score ?? null) : null,
-      feedback: scoreReleased ? (submission.feedback ?? null) : null,
+      score: resultReleased ? (submission.score ?? null) : null,
+      feedback: resultReleased ? (submission.feedback ?? null) : null,
+      feedback_attachment_urls: resultReleased ? (submission.feedbackAttachmentUrls ?? []) : [],
+      resubmit_count: submission.resubmitCount ?? 0,
+      can_resubmit: canResubmit,
     };
+  }
+
+  private canResubmit(assignment: IAssignment) {
+    return (
+      assignment.status === 'active' &&
+      !assignment.answersReleasedAt &&
+      (!assignment.dueDate || new Date() <= new Date(assignment.dueDate))
+    );
   }
 
   // Lấy class + kiểm tra GV của lớp
@@ -462,12 +480,18 @@ export class AssignmentService {
         title: a.title,
         description: a.description,
         attachment_urls: a.attachmentUrls ?? [],
-        questions: this.questionsForRequester(a.questions ?? [], requester),
+        questions: this.questionsForRequester(
+          a.questions ?? [],
+          requester,
+          Boolean(a.answersReleasedAt)
+        ),
         due_date: a.dueDate,
         max_score: a.maxScore,
         auto_grade: a.autoGrade ?? false,
         release_score_after_due_date: a.releaseScoreAfterDueDate ?? false,
         score_released: scoreReleased,
+        answers_released: Boolean(a.answersReleasedAt),
+        answers_released_at: a.answersReleasedAt ?? null,
         status: a.status,
         submission_count: a.submissionCount,
         graded_count: a.gradedCount,
@@ -476,6 +500,7 @@ export class AssignmentService {
               status: scoreReleased ? sub.status : 'submitted',
               submitted_at: sub.submittedAt,
               score: scoreReleased ? (sub.score ?? null) : null,
+              can_resubmit: this.canResubmit(a),
             }
           : null,
       };
@@ -508,6 +533,8 @@ export class AssignmentService {
           )
         : null;
     const scoreReleased = this.isScoreReleased(assignment);
+    const answersReleased = Boolean(assignment.answersReleasedAt);
+    const resultReleased = scoreReleased || answersReleased;
 
     return {
       _id: assignment._id,
@@ -517,19 +544,23 @@ export class AssignmentService {
       title: assignment.title,
       description: assignment.description,
       attachment_urls: assignment.attachmentUrls ?? [],
-      questions: this.questionsForRequester(assignment.questions ?? [], requester),
+      questions: this.questionsForRequester(assignment.questions ?? [], requester, answersReleased),
       due_date: assignment.dueDate,
       max_score: assignment.maxScore,
       is_graded: assignment.isGraded,
       auto_grade: assignment.autoGrade ?? false,
       release_score_after_due_date: assignment.releaseScoreAfterDueDate ?? false,
       score_released: scoreReleased,
+      answers_released: answersReleased,
+      answers_released_at: assignment.answersReleasedAt ?? null,
       visible_to_parent: assignment.visibleToParent,
       submission_config: assignment.submissionConfig,
       status: assignment.status,
       submission_count: assignment.submissionCount,
       graded_count: assignment.gradedCount,
-      my_submission: mySubmission ? this.submissionForStudent(mySubmission, scoreReleased) : null,
+      my_submission: mySubmission
+        ? this.submissionForStudent(mySubmission, resultReleased, this.canResubmit(assignment))
+        : null,
     };
   }
 
@@ -555,24 +586,30 @@ export class AssignmentService {
     );
     if (!enrollment) throw new ForbiddenError('Bạn không đang học trong lớp này');
 
-    // Kiểm tra trùng lặp
-    const existing = await this.repo.findSubmissionByStudent(
-      assignmentId,
-      requester.id,
-      assignment.branchId.toString()
-    );
-    if (existing) throw new ConflictError('Bạn đã nộp bài tập này rồi');
+    const existing = await this.repo.findSubmissionByStudentDoc(assignmentId, requester.id);
 
     // Kiểm tra hạn nộp
     const now = new Date();
     const isLate = assignment.dueDate ? now > assignment.dueDate : false;
 
+    if (existing && assignment.answersReleasedAt) {
+      throw new ValidationError('Giáo viên đã mở đáp án nên bài tập không thể làm lại');
+    }
+
+    if (existing && isLate) {
+      throw new ValidationError('Đã hết thời hạn làm lại bài tập');
+    }
+
     if (isLate && assignment.submissionConfig?.allowLate === false) {
       throw new ValidationError('Đã quá hạn nộp bài và bài tập này không cho phép nộp muộn');
     }
 
+    const requestedAttachmentUrls = this.parseJsonField<string[]>(body.attachment_urls, []);
+    const retainedAttachmentUrls = requestedAttachmentUrls.filter(
+      url => /^https?:\/\//i.test(url) || existing?.attachmentUrls.includes(url)
+    );
     const attachmentUrls = [
-      ...this.parseJsonField<string[]>(body.attachment_urls, []),
+      ...retainedAttachmentUrls,
       ...this.getUploadedUrls(files, 'submissions'),
     ].filter(Boolean);
     let answers = this.normalizeAnswers(body.answers);
@@ -591,7 +628,8 @@ export class AssignmentService {
       : null;
     if (autoGradeResult) answers = autoGradeResult.answers;
 
-    const submission = await this.repo.createSubmission({
+    const submissionStatus: ISubmission['status'] = autoGradeResult ? 'graded' : 'submitted';
+    const submissionData = {
       branchId: assignment.branchId,
       assignmentId: new Types.ObjectId(assignmentId),
       studentId: new Types.ObjectId(requester.id),
@@ -601,16 +639,22 @@ export class AssignmentService {
       answers,
       submittedAt: now,
       isLate,
-      status: autoGradeResult ? 'graded' : 'submitted',
+      status: submissionStatus,
       score: autoGradeResult?.score,
       feedback: autoGradeResult ? 'Bài được chấm tự động theo đáp án của giáo viên.' : undefined,
       gradedAt: autoGradeResult ? now : undefined,
       gradedBy: autoGradeResult ? assignment.teacherId : undefined,
       maxScore: assignment.maxScore ?? undefined,
-    });
+    };
 
-    await this.repo.incrementSubmissionCount(assignmentId);
-    if (autoGradeResult) await this.repo.incrementGradedCount(assignmentId);
+    const wasGraded = existing?.status === 'graded';
+    const submission = existing
+      ? await this.repo.resubmitSubmission(existing, submissionData)
+      : await this.repo.createSubmission(submissionData);
+
+    if (!existing) await this.repo.incrementSubmissionCount(assignmentId);
+    if (!wasGraded && autoGradeResult) await this.repo.incrementGradedCount(assignmentId);
+    if (wasGraded && !autoGradeResult) await this.repo.decrementGradedCount(assignmentId);
 
     const scoreReleased = this.isScoreReleased(assignment);
 
@@ -629,11 +673,18 @@ export class AssignmentService {
             value: answer.value,
           })),
       score: scoreReleased ? (submission.score ?? null) : null,
+      resubmit_count: submission.resubmitCount,
+      can_resubmit: this.canResubmit(assignment),
     };
   }
 
   // 8.4 GV chấm điểm
-  async gradeSubmission(submissionId: string, body: AppPayload, requester: RequestUser) {
+  async gradeSubmission(
+    submissionId: string,
+    body: AppPayload,
+    requester: RequestUser,
+    files?: Express.Multer.File[]
+  ) {
     const submission = await this.repo.findSubmissionById(submissionId);
     if (!submission) throw new NotFoundError('Bài nộp');
 
@@ -673,6 +724,7 @@ export class AssignmentService {
     const updated = await this.repo.updateSubmissionGrade(submission, {
       score,
       feedback: body.feedback,
+      feedbackAttachmentUrls: this.getUploadedUrls(files, 'submission-feedback'),
       gradedBy: new Types.ObjectId(requester.id),
     });
 
@@ -701,6 +753,44 @@ export class AssignmentService {
         classId: assignment.classId.toString(),
         assignmentId: assignment._id.toString(),
         submissionId: submission._id.toString(),
+      },
+      excludeUserIds: [requester.id],
+    });
+
+    return updated;
+  }
+
+  async releaseAnswers(assignmentId: string, requester: RequestUser) {
+    const assignment = await this.repo.findAssignmentById(assignmentId);
+    if (!assignment) throw new NotFoundError('Bài tập');
+    if (assignment.answersReleasedAt) return assignment;
+
+    const cls = await this.repo.findClassById(assignment.classId.toString());
+    if (!cls) throw new NotFoundError('Lớp học');
+
+    if (requester.role !== ROLES.SYSTEM_OWNER && cls.branchId.toString() !== requester.branchId) {
+      throw new ForbiddenError('Lớp học không thuộc cơ sở của bạn');
+    }
+    if (assignment.branchId.toString() !== cls.branchId.toString()) {
+      throw new ForbiddenError('Bài tập không thuộc cơ sở của lớp học');
+    }
+    if (requester.role === ROLES.TEACHER && cls.teacherId?.toString() !== requester.id) {
+      throw new ForbiddenError('Bạn không được phân công giảng dạy lớp này');
+    }
+
+    const updated = await this.repo.releaseAnswers(assignmentId, new Types.ObjectId(requester.id));
+    if (!updated) return await this.repo.findAssignmentById(assignmentId);
+
+    const recipients = await getClassAudienceRecipientIds(cls, { students: true, parents: false });
+    await sendNotifications(recipients, {
+      branchId: cls.branchId,
+      type: NOTIFICATION_TYPES.SCORE_PUBLISHED,
+      title: `Đã mở đáp án: ${assignment.title}`,
+      content: `Giáo viên đã mở đáp án bài tập "${assignment.title}". Bạn có thể xem đáp án và bài làm đã nộp.`,
+      actionUrl: '/student/assignments',
+      metadata: {
+        classId: assignment.classId.toString(),
+        assignmentId: assignment._id.toString(),
       },
       excludeUserIds: [requester.id],
     });
@@ -752,6 +842,8 @@ export class AssignmentService {
       score: s.score ?? null,
       max_score: s.maxScore ?? assignment.maxScore ?? null,
       feedback: s.feedback ?? null,
+      feedback_attachment_urls: s.feedbackAttachmentUrls ?? [],
+      resubmit_count: s.resubmitCount ?? 0,
       graded_at: s.gradedAt ?? null,
     }));
 

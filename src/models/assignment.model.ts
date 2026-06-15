@@ -44,6 +44,8 @@ export interface IAssignment extends Document {
   isGraded: boolean;
   autoGrade: boolean;
   releaseScoreAfterDueDate: boolean;
+  answersReleasedAt?: Date;
+  answersReleasedBy?: Types.ObjectId;
   visibleToParent: boolean;
   submissionConfig?: ISubmissionConfig;
   status: 'active' | 'closed' | 'draft';
@@ -111,6 +113,8 @@ const AssignmentSchema = new Schema<IAssignment>(
     isGraded: { type: Boolean, default: true },
     autoGrade: { type: Boolean, default: false },
     releaseScoreAfterDueDate: { type: Boolean, default: false },
+    answersReleasedAt: { type: Date, default: null },
+    answersReleasedBy: { type: Schema.Types.ObjectId, ref: 'User', default: null },
     visibleToParent: { type: Boolean, default: true },
     submissionConfig: { type: SubmissionConfigSchema, default: null },
     status: {

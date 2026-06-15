@@ -75,6 +75,40 @@ export class AssignmentRepository {
     return await Submission.create(data);
   }
 
+  async resubmitSubmission(
+    submissionDoc: ISubmission,
+    data: {
+      contentText?: string;
+      attachmentUrls: string[];
+      answers: ISubmission['answers'];
+      submittedAt: Date;
+      isLate: boolean;
+      status: ISubmission['status'];
+      score?: number;
+      feedback?: string;
+      gradedAt?: Date;
+      gradedBy?: Types.ObjectId;
+      maxScore?: number;
+    }
+  ) {
+    submissionDoc.contentText = data.contentText;
+    submissionDoc.attachmentUrls = data.attachmentUrls;
+    submissionDoc.answers = data.answers;
+    submissionDoc.submittedAt = data.submittedAt;
+    submissionDoc.isLate = data.isLate;
+    submissionDoc.status = data.status;
+    submissionDoc.score = data.score;
+    submissionDoc.feedback = data.feedback;
+    submissionDoc.feedbackAttachmentUrls = [];
+    submissionDoc.gradedAt = data.gradedAt;
+    submissionDoc.gradedBy = data.gradedBy;
+    submissionDoc.maxScore = data.maxScore;
+    submissionDoc.revisionRequested = false;
+    submissionDoc.revisionNote = undefined;
+    submissionDoc.resubmitCount += 1;
+    return await submissionDoc.save();
+  }
+
   async incrementSubmissionCount(assignmentId: string) {
     await Assignment.findByIdAndUpdate(assignmentId, { $inc: { submissionCount: 1 } });
   }
@@ -85,11 +119,17 @@ export class AssignmentRepository {
 
   async updateSubmissionGrade(
     submissionDoc: ISubmission,
-    data: { score: number; feedback?: string; gradedBy: Types.ObjectId }
+    data: {
+      score: number;
+      feedback?: string;
+      feedbackAttachmentUrls: string[];
+      gradedBy: Types.ObjectId;
+    }
   ) {
     submissionDoc.status = 'graded';
     submissionDoc.score = data.score;
     submissionDoc.feedback = data.feedback;
+    submissionDoc.feedbackAttachmentUrls = data.feedbackAttachmentUrls;
     submissionDoc.gradedAt = new Date();
     submissionDoc.gradedBy = data.gradedBy;
     return await submissionDoc.save();
@@ -97,6 +137,20 @@ export class AssignmentRepository {
 
   async incrementGradedCount(assignmentId: string) {
     await Assignment.findByIdAndUpdate(assignmentId, { $inc: { gradedCount: 1 } });
+  }
+
+  async decrementGradedCount(assignmentId: string) {
+    await Assignment.updateOne({ _id: assignmentId }, [
+      { $set: { gradedCount: { $max: [0, { $subtract: ['$gradedCount', 1] }] } } },
+    ]);
+  }
+
+  async releaseAnswers(assignmentId: string, releasedBy: Types.ObjectId) {
+    return await Assignment.findOneAndUpdate(
+      { _id: assignmentId, deletedAt: null, answersReleasedAt: null },
+      { $set: { answersReleasedAt: new Date(), answersReleasedBy: releasedBy } },
+      { new: true }
+    ).lean();
   }
 
   async findSubmissionsByAssignment(assignmentId: string, branchId: string, statusFilter?: string) {

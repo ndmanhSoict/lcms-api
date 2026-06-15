@@ -38,13 +38,7 @@ export class AssignmentController {
         req.query,
         req.user
       );
-      sendSuccess(
-        res,
-        data,
-        'Lấy danh sách bài tập thành công',
-        200,
-        meta
-      );
+      sendSuccess(res, data, 'Lấy danh sách bài tập thành công', 200, meta);
     } catch (error) {
       next(error);
     }
@@ -93,9 +87,24 @@ export class AssignmentController {
       const result = await this.service.gradeSubmission(
         req.params.submissionId,
         req.body,
-        req.user
+        req.user,
+        req.files as Express.Multer.File[] | undefined
       );
       sendSuccess(res, result, 'Chấm điểm thành công');
+    } catch (error) {
+      await this.removeUploadedFiles(req.files);
+      next(error);
+    }
+  };
+
+  releaseAnswers = async (
+    req: Request<{ assignmentId: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const result = await this.service.releaseAnswers(req.params.assignmentId, req.user);
+      sendSuccess(res, result, 'Mở đáp án thành công');
     } catch (error) {
       next(error);
     }

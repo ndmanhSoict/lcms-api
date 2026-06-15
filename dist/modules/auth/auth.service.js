@@ -106,13 +106,15 @@ export class AuthService {
         await user.save();
         // Thu hồi toàn bộ Refresh Token của user
         await RefreshToken.updateMany({ userId, revokedAt: null }, { $set: { revokedAt: new Date(), revokedReason: 'password_changed' } });
-        // Ghi log
+        // Ghi lại đúng sự kiện bảo mật thay vì coi đổi mật khẩu là đăng xuất.
         await AuditLog.create({
-            action: 'LOGOUT',
+            action: 'CHANGE_PASSWORD',
             actorId: userId,
-            actorRole: user.role, // Thêm role bắt buộc
-            branchId: user.branchId, // Thêm branch (nếu có)
-            expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000), // Bắt buộc: Hết hạn sau 180 ngày
+            actorRole: user.role,
+            branchId: user.branchId,
+            targetType: 'User',
+            targetId: user._id,
+            expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000),
         });
     }
     // 0.5 Reset mật khẩu (Admin)

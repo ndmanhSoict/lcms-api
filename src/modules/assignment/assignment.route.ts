@@ -1,14 +1,13 @@
 import { Router } from 'express';
 import { authenticate } from '../../middleware/auth/authenticate.middleware.js';
 import { authorize } from '../../middleware/auth/authorize.middleware.js';
-import { validate } from '../../middleware/validate.middleware.js';
 import {
   uploadAssignmentAttachments,
+  uploadSubmissionFeedbackImages,
   uploadSubmissionAttachments,
 } from '../../middleware/upload.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { AssignmentController } from './assignment.controller.js';
-import { gradeSubmissionSchema } from './assignment.schema.js';
 
 export const assignmentRouter = Router();
 const controller = new AssignmentController();
@@ -41,8 +40,14 @@ assignmentRouter.post(
 assignmentRouter.patch(
   '/submissions/:submissionId/grade',
   authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.TEACHER),
-  validate(gradeSubmissionSchema),
+  uploadSubmissionFeedbackImages.array('feedback_images', 10),
   controller.gradeSubmission
+);
+
+assignmentRouter.patch(
+  '/assignments/:assignmentId/release-answers',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.TEACHER),
+  controller.releaseAnswers
 );
 
 // 8.5 GV xem danh sách bài nộp — GV, SO, BO

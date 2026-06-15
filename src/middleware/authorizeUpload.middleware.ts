@@ -87,8 +87,10 @@ export const authorizeUpload = async (req: Request, _res: Response, next: NextFu
       return next();
     }
 
-    if (folder === 'submissions') {
-      const submission = await Submission.findOne({ attachmentUrls: fileUrl })
+    if (folder === 'submissions' || folder === 'submission-feedback') {
+      const submission = await Submission.findOne(
+        folder === 'submissions' ? { attachmentUrls: fileUrl } : { feedbackAttachmentUrls: fileUrl }
+      )
         .select('branchId classId studentId')
         .lean();
       if (!submission) throw new NotFoundError('Tệp');

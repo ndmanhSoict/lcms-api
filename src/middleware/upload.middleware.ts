@@ -7,6 +7,7 @@ import { BadRequestError } from '../shared/errors/AllErrors.js';
 const SESSION_MATERIAL_DIR = path.join(process.cwd(), 'uploads', 'session-materials');
 const ASSIGNMENT_ATTACHMENT_DIR = path.join(process.cwd(), 'uploads', 'assignments');
 const SUBMISSION_ATTACHMENT_DIR = path.join(process.cwd(), 'uploads', 'submissions');
+const SUBMISSION_FEEDBACK_DIR = path.join(process.cwd(), 'uploads', 'submission-feedback');
 const MAX_SESSION_MATERIAL_SIZE = 10 * 1024 * 1024;
 const MAX_ASSIGNMENT_FILE_SIZE = 10 * 1024 * 1024;
 const ALLOWED_SESSION_MATERIAL_MIME_TYPES = new Set([
@@ -18,13 +19,12 @@ const ALLOWED_SESSION_MATERIAL_MIME_TYPES = new Set([
   'application/msword',
   'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 ]);
-const ALLOWED_ASSIGNMENT_FILE_MIME_TYPES = new Set([
-  ...ALLOWED_SESSION_MATERIAL_MIME_TYPES,
-]);
+const ALLOWED_ASSIGNMENT_FILE_MIME_TYPES = new Set([...ALLOWED_SESSION_MATERIAL_MIME_TYPES]);
 
 fs.mkdirSync(SESSION_MATERIAL_DIR, { recursive: true });
 fs.mkdirSync(ASSIGNMENT_ATTACHMENT_DIR, { recursive: true });
 fs.mkdirSync(SUBMISSION_ATTACHMENT_DIR, { recursive: true });
+fs.mkdirSync(SUBMISSION_FEEDBACK_DIR, { recursive: true });
 
 const sessionMaterialStorage = multer.diskStorage({
   destination: (_req, _file, cb) => {
@@ -80,4 +80,16 @@ export const uploadSubmissionAttachments = multer({
   storage: createStorage(SUBMISSION_ATTACHMENT_DIR),
   limits: { fileSize: MAX_ASSIGNMENT_FILE_SIZE, files: 10 },
   fileFilter: assignmentFileFilter,
+});
+
+export const uploadSubmissionFeedbackImages = multer({
+  storage: createStorage(SUBMISSION_FEEDBACK_DIR),
+  limits: { fileSize: MAX_ASSIGNMENT_FILE_SIZE, files: 10 },
+  fileFilter: (_req, file, cb) => {
+    if (!file.mimetype.startsWith('image/')) {
+      cb(new BadRequestError('Phần nhận xét chỉ hỗ trợ tệp ảnh'));
+      return;
+    }
+    cb(null, true);
+  },
 });

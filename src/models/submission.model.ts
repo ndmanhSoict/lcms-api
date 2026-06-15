@@ -17,6 +17,7 @@ export interface ISubmission extends Document {
   score?: number;
   maxScore?: number;
   feedback?: string;
+  feedbackAttachmentUrls: string[];
   gradedAt?: Date;
   gradedBy?: Types.ObjectId;
   revisionRequested: boolean;
@@ -64,6 +65,7 @@ const SubmissionSchema = new Schema<ISubmission>(
     score: { type: Number, default: null },
     maxScore: { type: Number, default: null },
     feedback: { type: String, default: null },
+    feedbackAttachmentUrls: { type: [String], default: [] },
     gradedAt: { type: Date, default: null },
     gradedBy: { type: Schema.Types.ObjectId, ref: 'User', default: null },
     revisionRequested: { type: Boolean, default: false },
