@@ -1,8 +1,10 @@
 import { Types } from 'mongoose';
 import { Enrollment } from '../../models/enrollment.model.js';
-import { Notification } from '../../models/notification.model.js';
+import { Notification, INotification } from '../../models/notification.model.js';
+import { emitNotificationCreated } from '../../infrastructure/socket.js';
 import { User } from '../../models/user.model.js';
 import { NOTIFICATION_TYPES, NotificationType, ROLES } from '../constants/roles.js';
+import { IClass } from '../../models/class.model.js';
 
 type RecipientId = string | Types.ObjectId | null | undefined;
 
@@ -12,7 +14,7 @@ type NotificationPayload = {
   title: string;
   content?: string | null;
   actionUrl?: string | null;
-  metadata?: Record<string, unknown> | null;
+  metadata?: StoredMetadata | null;
   excludeUserIds?: RecipientId[];
 };
 
@@ -37,13 +39,39 @@ function addDays(date: Date, days: number) {
   return result;
 }
 
+function serializeNotification(notification: INotification) {
+  const createdAt =
+    notification.createdAt instanceof Date
+      ? notification.createdAt.toISOString()
+      : notification.createdAt;
+
+  return {
+    id: notification._id.toString(),
+    _id: notification._id.toString(),
+    branchId: notification.branchId?.toString() ?? '',
+    branch_id: notification.branchId?.toString() ?? '',
+    userId: notification.recipientId.toString(),
+    user_id: notification.recipientId.toString(),
+    type: notification.type,
+    title: notification.title,
+    body: notification.content ?? '',
+    content: notification.content ?? '',
+    actionUrl: notification.actionUrl ?? '',
+    action_url: notification.actionUrl ?? '',
+    isRead: notification.isRead,
+    is_read: notification.isRead,
+    readAt: notification.readAt ?? null,
+    read_at: notification.readAt ?? null,
+    createdAt,
+    created_at: createdAt,
+  };
+}
+
 export async function sendNotifications(recipientIds: RecipientId[], payload: NotificationPayload) {
   const exclude = new Set((payload.excludeUserIds ?? []).map(normalizeId).filter(Boolean));
   const recipients = [
     ...new Set(
-      recipientIds
-        .map(normalizeId)
-        .filter((id): id is string => Boolean(id) && !exclude.has(id))
+      recipientIds.map(normalizeId).filter((id): id is string => Boolean(id) && !exclude.has(id))
     ),
   ];
 
@@ -51,9 +79,23 @@ export async function sendNotifications(recipientIds: RecipientId[], payload: No
 
   const createdAt = new Date();
   const branchId = normalizeId(payload.branchId);
+  let scopedRecipients = recipients;
+  if (branchId) {
+    const recipientUsers = await User.find({
+      _id: { $in: recipients.map(id => new Types.ObjectId(id)) },
+      isActive: true,
+      deletedAt: null,
+      $or: [{ branchId: new Types.ObjectId(branchId) }, { role: ROLES.SYSTEM_OWNER }],
+    })
+      .select('_id')
+      .lean();
+    const allowed = new Set(recipientUsers.map(user => user._id.toString()));
+    scopedRecipients = recipients.filter(id => allowed.has(id));
+  }
+  if (scopedRecipients.length === 0) return 0;
 
-  await Notification.insertMany(
-    recipients.map(recipientId => ({
+  const notifications = await Notification.insertMany(
+    scopedRecipients.map(recipientId => ({
       branchId: branchId ? new Types.ObjectId(branchId) : null,
       recipientId: new Types.ObjectId(recipientId),
       type: payload.type,
@@ -69,7 +111,14 @@ export async function sendNotifications(recipientIds: RecipientId[], payload: No
     }))
   );
 
-  return recipients.length;
+  for (const notification of notifications) {
+    emitNotificationCreated(
+      notification.recipientId.toString(),
+      serializeNotification(notification)
+    );
+  }
+
+  return scopedRecipients.length;
 }
 
 export async function getActiveClassStudentIds(classId: string | Types.ObjectId) {
@@ -136,7 +185,10 @@ export async function getBranchOwnerAndStaffIds(branchId: string | Types.ObjectI
   return users.map(user => user._id.toString());
 }
 
-export async function getClassAudienceRecipientIds(cls: any, options: ClassAudienceOptions) {
+export async function getClassAudienceRecipientIds(
+  cls: Pick<IClass, '_id' | 'teacherId' | 'branchId'>,
+  options: ClassAudienceOptions
+) {
   const recipientIds: string[] = [];
   let studentIds: string[] = [];
 
@@ -150,11 +202,11 @@ export async function getClassAudienceRecipientIds(cls: any, options: ClassAudie
   }
 
   if (options.parents) {
-    recipientIds.push(...await getRelatedParentIds(studentIds));
+    recipientIds.push(...(await getRelatedParentIds(studentIds)));
   }
 
   if (options.branchUsers) {
-    recipientIds.push(...await getBranchOwnerAndStaffIds(cls.branchId));
+    recipientIds.push(...(await getBranchOwnerAndStaffIds(cls.branchId)));
   }
 
   return [...new Set(recipientIds)];

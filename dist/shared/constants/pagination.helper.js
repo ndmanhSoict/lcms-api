@@ -2,8 +2,8 @@
  * Xử lý query params để lấy các thông số phân trang
  */
 export const getPagination = (queryPage, queryLimit) => {
-    const page = Math.max(1, parseInt(queryPage) || 1);
-    const limit = Math.max(1, Math.min(100, parseInt(queryLimit) || 10));
+    const page = Math.max(1, parseInt(String(queryPage ?? ''), 10) || 1);
+    const limit = Math.max(1, Math.min(100, parseInt(String(queryLimit ?? ''), 10) || 50));
     const skip = (page - 1) * limit;
     return { page, limit, skip };
 };

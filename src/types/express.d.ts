@@ -1,10 +1,10 @@
-import { RoleType } from '../constants/roles';
+import { RoleType } from '../shared/constants/roles.js';
 import { Types } from 'mongoose';
 
 declare global {
   namespace Express {
     interface Request {
-      user?: {
+      user: {
         id: string;
         userId: Types.ObjectId;
         email: string;

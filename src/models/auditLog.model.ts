@@ -13,9 +13,9 @@ export interface IAuditLog extends Document {
   targetType?: string;
   targetId?: Types.ObjectId;
   /** Snapshot trước khi thay đổi */
-  before?: Record<string, any>;
+  before?: AuditSnapshot;
   /** Snapshot sau khi thay đổi */
-  after?: Record<string, any>;
+  after?: AuditSnapshot;
   ipAddress?: string;
   userAgent?: string;
   createdAt: Date;

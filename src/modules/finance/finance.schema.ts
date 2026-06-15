@@ -7,8 +7,10 @@ export const createInvoiceSchema = z.object({
     class_id: z.string().min(1),
     invoice_type: z.enum(['monthly', 'course']).default('monthly'),
     billing_period: z.string().regex(/^\d{4}-\d{2}$/, 'billing_period phải là YYYY-MM'),
-    sessions_attended: z.number().int().min(0),
-    fee_per_session: z.number().min(0),
+    sessions_attended: z.number().int().min(0).optional(),
+    sessions_total: z.number().int().min(0).optional(),
+    fee_per_session: z.number().min(0).optional(),
+    course_fee: z.number().min(0).optional(),
     discount_amount: z.number().min(0).default(0),
     discount_note: z.string().optional(),
     due_date: z.string().datetime({ message: 'due_date phải là ISO 8601' }).optional(),
@@ -16,12 +18,33 @@ export const createInvoiceSchema = z.object({
   }),
 });
 
+// 12.1b Tính thử học phí trước khi tạo phiếu
+export const calculateInvoiceSchema = z.object({
+  body: z.object({
+    student_id: z.string().min(1),
+    class_id: z.string().min(1),
+    invoice_type: z.enum(['monthly', 'course']).optional(),
+    billing_period: z.string().regex(/^\d{4}-\d{2}$/, 'billing_period phải là YYYY-MM'),
+    sessions_attended: z.number().int().min(0).optional(),
+    sessions_total: z.number().int().min(0).optional(),
+    fee_per_session: z.number().min(0).optional(),
+    course_fee: z.number().min(0).optional(),
+    discount_amount: z.number().min(0).default(0),
+    discount_note: z.string().optional(),
+    due_date: z.string().datetime({ message: 'due_date phải là ISO 8601' }).optional(),
+  }),
+});
+
 // 12.2 Batch generate
 export const batchGenerateInvoiceSchema = z.object({
   body: z.object({
-    branch_id: z.string().min(1),
+    branch_id: z.string().min(1).optional(),
+    class_id: z.string().min(1).optional(),
     billing_period: z.string().regex(/^\d{4}-\d{2}$/, 'billing_period phải là YYYY-MM'),
     due_date: z.string().datetime({ message: 'due_date phải là ISO 8601' }).optional(),
+  }).refine((body) => Boolean(body.branch_id || body.class_id), {
+    message: 'Vui lòng chọn cơ sở hoặc lớp cần tính học phí',
+    path: ['class_id'],
   }),
 });
 
@@ -39,6 +62,10 @@ export const vnpayCreatePaymentSchema = z.object({
   params: z.object({ id: z.string().min(1) }),
   body: z.object({
     bank_code: z.string().optional().default(''),
-    return_url: z.string().url('return_url phải là URL hợp lệ'),
+    return_url: z.string().url('return_url phải là URL hợp lệ').optional(),
   }),
+});
+
+export const deleteInvoiceSchema = z.object({
+  params: z.object({ id: z.string().min(1) }),
 });

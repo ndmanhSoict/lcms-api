@@ -141,7 +141,11 @@ InvoiceSchema.index(
 // Idempotent VNPay webhook
 InvoiceSchema.index(
   { vnpayTransactionRef: 1 },
-  { unique: true, sparse: true, name: 'idx_invoices_vnpay_ref' }
+  {
+    unique: true,
+    partialFilterExpression: { vnpayTransactionRef: { $type: 'string' } },
+    name: 'idx_invoices_vnpay_ref',
+  }
 );
 InvoiceSchema.index(
   { studentId: 1, billingPeriod: 1 },

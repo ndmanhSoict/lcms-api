@@ -17,7 +17,7 @@ export interface INotification extends Document {
   actionUrl?: string;
   /** ['in_app', 'email'] */
   channels: string[];
-  metadata?: Record<string, any>;
+  metadata?: StoredMetadata;
   isRead: boolean;
   readAt?: Date;
   emailSent: boolean;

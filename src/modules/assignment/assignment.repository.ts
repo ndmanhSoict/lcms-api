@@ -14,17 +14,25 @@ export class AssignmentRepository {
     return await Assignment.findOne({ _id: id, deletedAt: null }).lean();
   }
 
+  async findAssignmentByIdWithClass(id: string) {
+    return await Assignment.findOne({ _id: id, deletedAt: null })
+      .populate('classId', 'name classCode subjectName')
+      .populate('teacherId', 'fullName branchId')
+      .lean();
+  }
+
   async createAssignment(data: Partial<IAssignment>) {
     return await Assignment.create(data);
   }
 
   async findAssignmentsByClass(
     classId: string,
-    filter: Record<string, any>,
+    branchId: string,
+    filter: MongoFilter<IAssignment>,
     skip: number,
     limit: number
   ) {
-    const query = { classId, deletedAt: null, ...filter };
+    const query = { classId, branchId, deletedAt: null, ...filter };
     const [items, total] = await Promise.all([
       Assignment.find(query).sort({ createdAt: -1 }).skip(skip).limit(limit).lean(),
       Assignment.countDocuments(query),
@@ -32,21 +40,35 @@ export class AssignmentRepository {
     return { items, total };
   }
 
-  async findActiveEnrollment(studentId: string, classId: string) {
-    return await Enrollment.findOne({ studentId, classId, leftAt: null }).lean();
-  }
-
-  // Tìm tất cả enrollment active của parent's children trong 1 lớp
-  async findChildEnrollmentInClass(childIds: string[], classId: string) {
+  async findActiveEnrollment(studentId: string, classId: string, branchId?: string) {
     return await Enrollment.findOne({
-      studentId: { $in: childIds.map(id => new Types.ObjectId(id)) },
+      studentId,
       classId,
+      ...(branchId && { branchId }),
       leftAt: null,
     }).lean();
   }
 
-  async findSubmissionByStudent(assignmentId: string, studentId: string) {
-    return await Submission.findOne({ assignmentId, studentId }).lean();
+  // Tìm tất cả enrollment active của parent's children trong 1 lớp
+  async findChildEnrollmentInClass(childIds: string[], classId: string, branchId?: string) {
+    return await Enrollment.findOne({
+      studentId: { $in: childIds.map(id => new Types.ObjectId(id)) },
+      classId,
+      ...(branchId && { branchId }),
+      leftAt: null,
+    }).lean();
+  }
+
+  async findSubmissionByStudent(assignmentId: string, studentId: string, branchId?: string) {
+    return await Submission.findOne({
+      assignmentId,
+      studentId,
+      ...(branchId && { branchId }),
+    }).lean();
+  }
+
+  async findSubmissionByStudentDoc(assignmentId: string, studentId: string) {
+    return await Submission.findOne({ assignmentId, studentId });
   }
 
   async createSubmission(data: Partial<ISubmission>) {
@@ -62,12 +84,12 @@ export class AssignmentRepository {
   }
 
   async updateSubmissionGrade(
-    submissionDoc: any,
+    submissionDoc: ISubmission,
     data: { score: number; feedback?: string; gradedBy: Types.ObjectId }
   ) {
     submissionDoc.status = 'graded';
     submissionDoc.score = data.score;
-    submissionDoc.feedback = data.feedback ?? null;
+    submissionDoc.feedback = data.feedback;
     submissionDoc.gradedAt = new Date();
     submissionDoc.gradedBy = data.gradedBy;
     return await submissionDoc.save();
@@ -77,21 +99,25 @@ export class AssignmentRepository {
     await Assignment.findByIdAndUpdate(assignmentId, { $inc: { gradedCount: 1 } });
   }
 
-  async findSubmissionsByAssignment(assignmentId: string, statusFilter?: string) {
-    const query: Record<string, any> = { assignmentId };
+  async findSubmissionsByAssignment(assignmentId: string, branchId: string, statusFilter?: string) {
+    const query: MongoFilter<ISubmission> = { assignmentId, branchId };
     if (statusFilter) query.status = statusFilter;
 
     return await Submission.find(query)
-      .populate('studentId', 'fullName userCode')
+      .populate({
+        path: 'studentId',
+        select: 'fullName userCode branchId',
+        match: { branchId },
+      })
       .sort({ submittedAt: 1 })
       .lean();
   }
 
-  async countSubmissionsByAssignment(assignmentId: string) {
+  async countSubmissionsByAssignment(assignmentId: string, branchId: string) {
     const [submitted, graded, total] = await Promise.all([
-      Submission.countDocuments({ assignmentId, status: 'submitted' }),
-      Submission.countDocuments({ assignmentId, status: 'graded' }),
-      Submission.countDocuments({ assignmentId }),
+      Submission.countDocuments({ assignmentId, branchId, status: 'submitted' }),
+      Submission.countDocuments({ assignmentId, branchId, status: 'graded' }),
+      Submission.countDocuments({ assignmentId, branchId }),
     ]);
     return { total, submitted, graded };
   }
@@ -102,8 +128,8 @@ export class AssignmentRepository {
     actorRole: string;
     branchId: Types.ObjectId;
     targetId: Types.ObjectId;
-    before: Record<string, any>;
-    after: Record<string, any>;
+    before: AuditSnapshot;
+    after: AuditSnapshot;
   }) {
     return await AuditLog.create({
       ...data,

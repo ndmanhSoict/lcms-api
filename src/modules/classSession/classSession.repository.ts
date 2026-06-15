@@ -1,4 +1,4 @@
-import { ClassSession, IClassSession } from '../../models/classSession.model.js';
+import { ClassSession, IClassSession, IMaterial } from '../../models/classSession.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
 
 export class ClassSessionRepository {
@@ -16,13 +16,21 @@ export class ClassSessionRepository {
     return await ClassSession.findByIdAndUpdate(sessionId, data, { new: true }).lean();
   }
 
+  async addMaterial(sessionId: string, material: IMaterial) {
+    return await ClassSession.findOneAndUpdate(
+      { _id: sessionId, deletedAt: null },
+      { $push: { materials: material } },
+      { new: true }
+    ).lean();
+  }
+
   async findSessionByDate(
     classId: string,
     startOfDay: Date,
     endOfDay: Date,
     excludeSessionId?: string
   ) {
-    const query: Record<string, any> = {
+    const query: MongoFilter<IClassSession> = {
       classId,
       sessionDate: { $gte: startOfDay, $lte: endOfDay },
     };
@@ -31,34 +39,88 @@ export class ClassSessionRepository {
     return await ClassSession.findOne(query).lean();
   }
 
-  async findSessionsByClass(classId: string, filter: any) {
+  async findRoomSessionsByDate(
+    roomId: string,
+    branchId: string,
+    startOfDay: Date,
+    endOfDay: Date,
+    excludeSessionId?: string
+  ) {
+    const query: MongoFilter<IClassSession> = {
+      roomId,
+      branchId,
+      deletedAt: null,
+      status: { $ne: 'cancelled' },
+      sessionDate: { $gte: startOfDay, $lte: endOfDay },
+    };
+    if (excludeSessionId) query._id = { $ne: excludeSessionId };
+
+    return await ClassSession.find(query).select('startTime endTime').lean();
+  }
+
+  async findSessionsByClass(classId: string, filter: MongoFilter<IClassSession>) {
     return await ClassSession.find({ classId, ...filter })
-      .populate('teacherId', 'fullName')
+      .populate({
+        path: 'teacherId',
+        select: 'fullName branchId',
+        match: filter.branchId ? { branchId: filter.branchId } : undefined,
+      })
+      .populate({
+        path: 'roomId',
+        select: 'code capacity detail branchId',
+        match: filter.branchId ? { branchId: filter.branchId } : undefined,
+      })
       .sort({ sessionDate: 1, startTime: 1 })
       .lean();
   }
 
-  async findTeacherSchedule(teacherId: string, fromDate: Date, toDate: Date) {
+  async findTeacherSchedule(teacherId: string, fromDate: Date, toDate: Date, branchId?: string) {
     return await ClassSession.find({
       teacherId,
-      sessionDate: { $gte: fromDate, $lte: toDate }
+      ...(branchId && { branchId }),
+      deletedAt: null,
+      sessionDate: { $gte: fromDate, $lte: toDate },
     })
-      .populate('classId', 'name subject classCode maxStudents studentCount')
+      .populate({
+        path: 'classId',
+        select: 'name subject classCode maxStudents studentCount branchId roomSnapshot',
+        match: branchId ? { branchId } : undefined,
+      })
+      .populate({
+        path: 'roomId',
+        select: 'code capacity detail branchId',
+        match: branchId ? { branchId } : undefined,
+      })
       .sort({ sessionDate: 1, startTime: 1 })
       .lean();
   }
 
-  async findStudentEnrollments(studentId: string) {
-    return await Enrollment.find({ studentId }).lean();
+  async findStudentEnrollments(studentId: string, branchId?: string) {
+    return await Enrollment.find({ studentId, ...(branchId && { branchId }) }).lean();
   }
 
-  async findSessionsByClasses(classIds: string[], fromDate: Date, toDate: Date) {
+  async findSessionsByClasses(classIds: string[], fromDate: Date, toDate: Date, branchId?: string) {
     return await ClassSession.find({
       classId: { $in: classIds },
-      sessionDate: { $gte: fromDate, $lte: toDate }
+      ...(branchId && { branchId }),
+      deletedAt: null,
+      sessionDate: { $gte: fromDate, $lte: toDate },
     })
-      .populate('classId', 'name subject classCode')
-      .populate('teacherId', 'fullName')
+      .populate({
+        path: 'classId',
+        select: 'name subject classCode branchId roomSnapshot',
+        match: branchId ? { branchId } : undefined,
+      })
+      .populate({
+        path: 'teacherId',
+        select: 'fullName branchId',
+        match: branchId ? { branchId } : undefined,
+      })
+      .populate({
+        path: 'roomId',
+        select: 'code capacity detail branchId',
+        match: branchId ? { branchId } : undefined,
+      })
       .sort({ sessionDate: 1, startTime: 1 })
       .lean();
   }

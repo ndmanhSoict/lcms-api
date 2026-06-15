@@ -12,13 +12,13 @@ export class ParentRepository {
     return await new User(data).save({ session });
   }
 
-  async findAllPaginated(filter: any, skip: number, limit: number) {
+  async findAllPaginated(filter: MongoFilter<IUser>, skip: number, limit: number) {
     const [parents, totalItems] = await Promise.all([
       User.find({ ...filter, role: ROLES.PARENT })
         .select('-passwordHash')
         .populate({
           path: 'parentInfo.studentIds',
-          select: 'fullName userCode phone studentInfo.grade studentInfo.schoolName',
+          select: 'fullName userCode phone branchId studentInfo.grade studentInfo.schoolName',
         })
         .sort({ createdAt: -1 })
         .skip(skip)
@@ -41,12 +41,17 @@ export class ParentRepository {
       .select('-passwordHash')
       .populate({
         path: 'parentInfo.studentIds',
-        select: 'fullName userCode phone dateOfBirth gender studentInfo',
+        select: 'fullName userCode phone branchId dateOfBirth gender studentInfo',
+        populate: {
+          path: 'studentInfo.activeClassIds',
+          select:
+            'name classCode branchId description subject teacherSnapshot weeklySchedule status classType courseInfo ongoingInfo maxStudents studentCount',
+        },
       })
       .lean();
   }
 
-  async updateById(id: string, data: any, session?: ClientSession) {
+  async updateById(id: string, data: MongoUpdate<IUser>, session?: ClientSession) {
     return await User.findByIdAndUpdate(id, data, { new: true, session })
       .select('-passwordHash')
       .lean();

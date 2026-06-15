@@ -9,9 +9,12 @@ export class AuthService {
     // 0.1 Đăng nhập
     async login(data, ipAddress, userAgent) {
         const { email, password } = data;
-        const user = await User.findOne({ email }).select('+passwordHash');
+        const user = await User.findOne({ email, deletedAt: null }).select('+passwordHash');
         if (!user) {
             throw new UnauthorizedError('Email hoặc mật khẩu không đúng'); // Mã INVALID_CREDENTIALS cấu hình ở class Error
+        }
+        if (!user.isActive) {
+            throw new UnauthorizedError('Tài khoản đã bị khóa');
         }
         // Bcrypt compare
         const isMatch = await bcrypt.compare(password, user.passwordHash);
@@ -38,7 +41,7 @@ export class AuthService {
         try {
             decoded = jwt.verify(rawRefreshToken, env.JWT_REFRESH_SECRET);
         }
-        catch (err) {
+        catch {
             throw new UnauthorizedError('Token hết hạn hoặc không hợp lệ');
         }
         const userId = decoded.id;
@@ -60,9 +63,9 @@ export class AuthService {
         matchedTokenDoc.revokedReason = 'rotated';
         await matchedTokenDoc.save();
         // Sinh cặp token mới
-        const user = await User.findById(userId);
+        const user = await User.findOne({ _id: userId, isActive: true, deletedAt: null });
         if (!user)
-            throw new NotFoundError('Người dùng');
+            throw new UnauthorizedError('Tài khoản không tồn tại hoặc đã bị khóa');
         return this.generateAndSaveTokens(user);
     }
     // 0.3 Đăng xuất
@@ -81,7 +84,7 @@ export class AuthService {
                     actorId: userId,
                     actorRole: userPayload.role, // Thêm role bắt buộc
                     branchId: userPayload.branchId, // Thêm branch (nếu có)
-                    expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000) // Bắt buộc: Hết hạn sau 180 ngày
+                    expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000), // Bắt buộc: Hết hạn sau 180 ngày
                 });
                 return;
             }
@@ -91,7 +94,7 @@ export class AuthService {
     // 0.4 Đổi mật khẩu
     async changePassword(userId, data) {
         const { currentPassword, newPassword } = data;
-        const user = await User.findById(userId).select('+passwordHash');
+        const user = await User.findOne({ _id: userId, isActive: true, deletedAt: null }).select('+passwordHash');
         if (!user)
             throw new NotFoundError('Người dùng');
         const isMatch = await bcrypt.compare(currentPassword, user.passwordHash);
@@ -109,12 +112,12 @@ export class AuthService {
             actorId: userId,
             actorRole: user.role, // Thêm role bắt buộc
             branchId: user.branchId, // Thêm branch (nếu có)
-            expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000) // Bắt buộc: Hết hạn sau 180 ngày
+            expiresAt: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000), // Bắt buộc: Hết hạn sau 180 ngày
         });
     }
     // 0.5 Reset mật khẩu (Admin)
     async resetPassword(adminId, adminRole, adminBranchId, targetUserId, newPassword) {
-        const targetUser = await User.findById(targetUserId);
+        const targetUser = await User.findOne({ _id: targetUserId, deletedAt: null });
         if (!targetUser)
             throw new NotFoundError('Người dùng cần reset');
         // Business Rule: BO chỉ reset được user trong branch của mình
@@ -124,7 +127,7 @@ export class AuthService {
         const salt = await bcrypt.genSalt(12);
         targetUser.passwordHash = await bcrypt.hash(newPassword, salt);
         await targetUser.save();
-        await RefreshToken.updateMany({ user: targetUserId, revokedAt: null }, { $set: { revokedAt: new Date(), revokedReason: 'password_reset_by_admin' } });
+        await RefreshToken.updateMany({ userId: targetUserId, revokedAt: null }, { $set: { revokedAt: new Date(), revokedReason: 'password_reset_by_admin' } });
         await AuditLog.create({
             action: 'RESET_PASSWORD',
             actorId: adminId,
@@ -139,21 +142,22 @@ export class AuthService {
             id: user._id.toString(),
             email: user.email,
             role: user.role,
-            ...(user.branchId && { branchId: user.branchId.toString() })
+            ...(user.branchId && { branchId: user.branchId.toString() }),
         };
         const accessToken = jwt.sign(accessTokenPayload, env.JWT_ACCESS_SECRET, {
-            expiresIn: env.JWT_ACCESS_EXPIRES
+            expiresIn: env.JWT_ACCESS_EXPIRES,
         });
         const refreshToken = jwt.sign({ id: user._id.toString() }, env.JWT_REFRESH_SECRET, {
-            expiresIn: env.JWT_REFRESH_EXPIRES
+            expiresIn: env.JWT_REFRESH_EXPIRES,
         });
         // Lưu Hash của Refresh Token vào DB
         const salt = await bcrypt.genSalt(10);
         const tokenHash = await bcrypt.hash(refreshToken, salt);
         await RefreshToken.create({
             userId: user._id,
+            branchId: user.branchId,
             tokenHash,
-            expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // Ví dụ: 7 ngày
+            expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // Ví dụ: 7 ngày
         });
         return {
             accessToken,
@@ -164,8 +168,8 @@ export class AuthService {
                 email: user.email,
                 role: user.role,
                 branchId: user.branchId,
-                avatarUrl: user.avatarUrl || null
-            }
+                avatarUrl: user.avatarUrl || null,
+            },
         };
     }
 }

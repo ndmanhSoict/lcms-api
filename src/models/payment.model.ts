@@ -19,7 +19,7 @@ export interface IPayment extends Document {
   receivedAt?: Date;
   vnpayRef?: string;
   /** Raw response từ VNPay */
-  vnpayData?: Record<string, any>;
+  vnpayData?: VnpayStoredData;
   // Immutable record — không có updatedAt
   createdAt: Date;
 }

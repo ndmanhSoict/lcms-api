@@ -2,13 +2,13 @@ import { Router } from 'express';
 import { authenticate } from '../../middleware/auth/authenticate.middleware.js';
 import { authorize } from '../../middleware/auth/authorize.middleware.js';
 import { validate } from '../../middleware/validate.middleware.js';
+import {
+  uploadAssignmentAttachments,
+  uploadSubmissionAttachments,
+} from '../../middleware/upload.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { AssignmentController } from './assignment.controller.js';
-import {
-  createAssignmentSchema,
-  submitAssignmentSchema,
-  gradeSubmissionSchema,
-} from './assignment.schema.js';
+import { gradeSubmissionSchema } from './assignment.schema.js';
 
 export const assignmentRouter = Router();
 const controller = new AssignmentController();
@@ -19,21 +19,21 @@ assignmentRouter.use(authenticate);
 assignmentRouter.post(
   '/classes/:classId/assignments',
   authorize(ROLES.TEACHER),
-  validate(createAssignmentSchema),
+  uploadAssignmentAttachments.array('attachments', 10),
   controller.createAssignment
 );
 
 // 8.2 Lấy danh sách bài tập — GV, HS, PH (RBAC check trong service)
-assignmentRouter.get(
-  '/classes/:classId/assignments',
-  controller.getAssignments
-);
+assignmentRouter.get('/classes/:classId/assignments', controller.getAssignments);
+
+// 8.2b Lấy chi tiết bài tập
+assignmentRouter.get('/assignments/:assignmentId', controller.getAssignment);
 
 // 8.3 HS nộp bài — chỉ HS
 assignmentRouter.post(
   '/assignments/:assignmentId/submissions',
   authorize(ROLES.STUDENT),
-  validate(submitAssignmentSchema),
+  uploadSubmissionAttachments.array('attachments', 10),
   controller.submitAssignment
 );
 

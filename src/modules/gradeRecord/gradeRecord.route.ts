@@ -4,7 +4,11 @@ import { authorize } from '../../middleware/auth/authorize.middleware.js';
 import { validate } from '../../middleware/validate.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { GradeRecordController } from './gradeRecord.controller.js';
-import { upsertGradeRecordSchema, publishGradeRecordSchema } from './gradeRecord.schema.js';
+import {
+  getClassGradeRecordsSchema,
+  publishGradeRecordSchema,
+  upsertGradeRecordSchema,
+} from './gradeRecord.schema.js';
 
 export const gradeRecordRouter = Router();
 const controller = new GradeRecordController();
@@ -28,7 +32,12 @@ gradeRecordRouter.patch(
 );
 
 // 11.3 Xem học bạ học sinh — nhiều role (RBAC trong service)
+gradeRecordRouter.get('/students/:studentId/grade-records', controller.getStudentGradeRecords);
+
+// 11.4 Xem học bạ theo lớp — GV/QL theo scope
 gradeRecordRouter.get(
-  '/students/:studentId/grade-records',
-  controller.getStudentGradeRecords
+  '/classes/:classId/grade-records',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF, ROLES.TEACHER),
+  validate(getClassGradeRecordsSchema),
+  controller.getClassGradeRecords
 );

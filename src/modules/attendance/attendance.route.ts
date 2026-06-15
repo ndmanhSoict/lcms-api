@@ -39,3 +39,9 @@ attendanceRouter.get(
   '/students/:studentId/attendance-summary',
   controller.getStudentAttendanceSummary
 );
+
+// 7.5 Xem lại từng buổi điểm danh của học sinh
+attendanceRouter.get(
+  '/students/:studentId/attendance-history',
+  controller.getStudentAttendanceHistory
+);

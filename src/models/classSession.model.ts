@@ -1,13 +1,20 @@
 import mongoose, { Schema, Document, Types } from 'mongoose';
 import {
-  SESSION_TYPES, SessionType,
-  SESSION_STATUSES, SessionStatus,
+  SESSION_TYPES,
+  SessionType,
+  SESSION_STATUSES,
+  SessionStatus,
   ATTENDANCE_SUBMISSION_STATUS,
 } from '../shared/constants/roles.js';
+import { IRoomSnapshot } from './class.model.js';
 
 export interface IMaterial {
   name: string;
   url: string;
+  mimeType?: string;
+  size?: number;
+  uploadedAt?: Date;
+  uploadedBy?: Types.ObjectId;
 }
 
 export interface IClassSession extends Document {
@@ -18,6 +25,8 @@ export interface IClassSession extends Document {
   sessionDate: Date;
   startTime?: string;
   endTime?: string;
+  roomId: Types.ObjectId;
+  roomSnapshot?: IRoomSnapshot;
   roomCode?: string;
   sessionType: SessionType;
   status: SessionStatus;
@@ -34,7 +43,11 @@ export interface IClassSession extends Document {
 const MaterialSchema = new Schema<IMaterial>(
   {
     name: { type: String, required: true },
-    url:  { type: String, required: true },
+    url: { type: String, required: true },
+    mimeType: { type: String, default: null },
+    size: { type: Number, default: 0 },
+    uploadedAt: { type: Date, default: Date.now },
+    uploadedBy: { type: Schema.Types.ObjectId, ref: 'User', default: null },
   },
   { _id: false }
 );
@@ -42,13 +55,19 @@ const MaterialSchema = new Schema<IMaterial>(
 const ClassSessionSchema = new Schema<IClassSession>(
   {
     schemaVersion: { type: Number, default: 1 },
-    branchId:      { type: Schema.Types.ObjectId, ref: 'Branch', required: true },
-    classId:       { type: Schema.Types.ObjectId, ref: 'Class',  required: true },
-    teacherId:     { type: Schema.Types.ObjectId, ref: 'User',   default: null },
-    sessionDate:   { type: Date, required: true },
-    startTime:     { type: String, default: null },
-    endTime:       { type: String, default: null },
-    roomCode:      { type: String, default: null },
+    branchId: { type: Schema.Types.ObjectId, ref: 'Branch', required: true },
+    classId: { type: Schema.Types.ObjectId, ref: 'Class', required: true },
+    teacherId: { type: Schema.Types.ObjectId, ref: 'User', default: null },
+    sessionDate: { type: Date, required: true },
+    startTime: { type: String, default: null },
+    endTime: { type: String, default: null },
+    roomId: { type: Schema.Types.ObjectId, ref: 'Classroom', required: true },
+    roomSnapshot: {
+      code: { type: String, required: true },
+      capacity: { type: Number, required: true },
+      detail: { type: String, default: null },
+    },
+    roomCode: { type: String, default: null },
     sessionType: {
       type: String,
       enum: Object.values(SESSION_TYPES),
@@ -66,9 +85,9 @@ const ClassSessionSchema = new Schema<IClassSession>(
       enum: Object.values(ATTENDANCE_SUBMISSION_STATUS),
       default: ATTENDANCE_SUBMISSION_STATUS.PENDING,
     },
-    materials:        { type: [MaterialSchema], default: [] },
+    materials: { type: [MaterialSchema], default: [] },
     onlineMeetingUrl: { type: String, default: null },
-    deletedAt:        { type: Date, default: null },
+    deletedAt: { type: Date, default: null },
   },
   {
     timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' },
@@ -92,9 +111,10 @@ ClassSessionSchema.index(
   { classId: 1, sessionDate: 1, status: 1 },
   { name: 'idx_sessions_class_date_status' }
 );
+ClassSessionSchema.index({ branchId: 1, sessionDate: 1 }, { name: 'idx_sessions_branch_date' });
 ClassSessionSchema.index(
-  { branchId: 1, sessionDate: 1 },
-  { name: 'idx_sessions_branch_date' }
+  { roomId: 1, sessionDate: 1, status: 1 },
+  { name: 'idx_sessions_room_date_status' }
 );
 
 export const ClassSession =

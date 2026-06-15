@@ -23,7 +23,7 @@ export class ParentController {
     try {
       const result = await this.service.getParents(req.query, req.user);
       const meta = getPaginationMeta(result.totalItems, result.page, result.limit);
-      sendPaginated(res, result.parents, meta as any, 'Lấy danh sách phụ huynh thành công');
+      sendPaginated(res, result.parents, meta, 'Lấy danh sách phụ huynh thành công');
     } catch (error) {
       next(error);
     }
@@ -42,6 +42,15 @@ export class ParentController {
     try {
       const result = await this.service.getMyOverview(req.user);
       sendSuccess(res, result, 'Lấy tổng quan phụ huynh thành công');
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  getMyAttendance = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.service.getMyAttendance(req.query, req.user);
+      sendSuccess(res, result, 'Lấy điểm danh học sinh của phụ huynh thành công');
     } catch (error) {
       next(error);
     }

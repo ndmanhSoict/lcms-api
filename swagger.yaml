@@ -191,6 +191,7 @@ paths:
     post:
       tags: [Branch]
       summary: Tạo cơ sở mới — SO (1.1)
+      description: Chủ hệ thống chỉ cấp email và mật khẩu ban đầu. API tự tạo hồ sơ cơ sở tạm thời và tài khoản chủ cơ sở để người này đăng nhập rồi cấu hình tiếp.
       operationId: createBranch
       requestBody:
         required: true
@@ -309,7 +310,8 @@ paths:
 
     patch:
       tags: [Branch]
-      summary: Cập nhật cơ sở — SO (1.4)
+      summary: Cập nhật cơ sở — SO/BO (1.4)
+      description: Chủ cơ sở chỉ được cập nhật cơ sở của mình với các trường hồ sơ và cấu hình mặc định bên dưới. Mã cơ sở, chủ sở hữu, trạng thái hoạt động và danh sách phòng học do các chức năng quản trị riêng quản lý.
       operationId: updateBranch
       parameters:
         - $ref: '#/components/parameters/id'
@@ -415,6 +417,51 @@ paths:
                           $ref: '#/components/schemas/User'
                       meta:
                         $ref: '#/components/schemas/PaginationMeta'
+
+  /user/me:
+    get:
+      tags: [User]
+      summary: Hồ sơ cá nhân của tôi
+      operationId: getMyProfile
+      responses:
+        '200':
+          description: Hồ sơ cá nhân
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/User'
+        '401': { $ref: '#/components/responses/UnauthorizedError' }
+
+    patch:
+      tags: [User]
+      summary: Cập nhật hồ sơ cá nhân của tôi
+      description: Người dùng chỉ được tự sửa họ tên, số điện thoại, ảnh đại diện, ngày sinh và giới tính.
+      operationId: updateMyProfile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserRequest'
+      responses:
+        '200':
+          description: Cập nhật hồ sơ cá nhân thành công
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/User'
+        '401': { $ref: '#/components/responses/UnauthorizedError' }
+        '422': { $ref: '#/components/responses/ValidationError' }
 
   /user/{id}:
     get:
@@ -2316,23 +2363,25 @@ paths:
                   - type: object
                     properties:
                       data:
-                        type: array
-                        items:
-                          type: object
-                          properties:
-                            branch:
+                        type: object
+                        properties:
+                          branches:
+                            type: array
+                            items:
                               type: object
                               properties:
-                                _id: { type: string }
-                                name: { type: string }
-                                code: { type: string }
-                            stats:
-                              type: object
-                              properties:
+                                branch_id: { type: string }
+                                branch_name: { type: string }
+                                contact_email: { type: string, format: email }
+                                is_active: { type: boolean }
                                 students_active: { type: integer }
-                                revenue_this_month: { type: number }
-                                unpaid_count: { type: integer }
-                                unpaid_amount: { type: number }
+                                parents_active: { type: integer }
+                                teachers_active: { type: integer }
+                          total_students: { type: integer }
+                          total_parents: { type: integer }
+                          total_teachers: { type: integer }
+                          total_active_branches: { type: integer }
+                          total_paused_branches: { type: integer }
 
   # ── ClassAnnouncement (Module 16) ─────────────────────────────
 
@@ -2586,21 +2635,43 @@ components:
 
     CreateBranchRequest:
       type: object
-      required: [name, code]
+      required: [ownerEmail, password]
       properties:
-        name: { type: string, example: "Cơ sở Hà Nội" }
-        code: { type: string, example: "HN01" }
-        address: { type: string }
-        phone: { type: string }
-        email: { type: string, format: email }
+        ownerEmail:
+          type: string
+          format: email
+          example: "owner.branch@lcms.edu.vn"
+        password:
+          type: string
+          format: password
+          minLength: 8
+          example: "Owner@123"
 
     UpdateBranchRequest:
       type: object
       properties:
-        name: { type: string }
-        address: { type: string }
-        phone: { type: string }
+        name: { type: string, maxLength: 150 }
+        address: { type: string, maxLength: 500 }
+        phone:
+          type: string
+          maxLength: 30
+          pattern: '^[0-9+().\s-]*$'
         email: { type: string, format: email }
+        timezone: { type: string, example: "Asia/Ho_Chi_Minh" }
+        defaultFeePerSession:
+          type: number
+          minimum: 0
+          nullable: true
+        defaultSessionSlots:
+          type: array
+          maxItems: 20
+          items:
+            type: object
+            required: [name, startTime, endTime]
+            properties:
+              name: { type: string, maxLength: 80 }
+              startTime: { type: string, pattern: '^([01]\d|2[0-3]):[0-5]\d$' }
+              endTime: { type: string, pattern: '^([01]\d|2[0-3]):[0-5]\d$' }
 
     # ── User ──────────────────────────────────────────────────────
 
@@ -2610,12 +2681,18 @@ components:
         _id: { type: string }
         fullName: { type: string }
         email: { type: string }
-        phone: { type: string }
+        phone: { type: string, nullable: true }
         role:
           type: string
           enum: [SYSTEM_OWNER, BRANCH_OWNER, STAFF, TEACHER, STUDENT, PARENT]
         branchId: { type: string, nullable: true }
         userCode: { type: string }
+        avatarUrl: { type: string, nullable: true }
+        dateOfBirth: { type: string, format: date-time, nullable: true }
+        gender:
+          type: string
+          enum: [male, female, other]
+          nullable: true
         isActive: { type: boolean }
         createdAt: { type: string, format: date-time }
         updatedAt: { type: string, format: date-time }
@@ -2640,9 +2717,17 @@ components:
     UpdateUserRequest:
       type: object
       properties:
-        full_name: { type: string }
-        phone: { type: string }
-        email: { type: string, format: email }
+        fullName: { type: string }
+        phone: { type: string, nullable: true }
+        avatarUrl: { type: string, nullable: true }
+        dateOfBirth: { type: string, format: date, nullable: true }
+        gender:
+          type: string
+          enum: [male, female, other]
+          nullable: true
+        isActive:
+          type: boolean
+          description: Chỉ quản trị được cập nhật trạng thái tài khoản.
 
     # ── Teacher ───────────────────────────────────────────────────
 

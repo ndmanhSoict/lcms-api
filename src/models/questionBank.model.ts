@@ -33,9 +33,8 @@ export interface IQuestionBank extends Document {
   options?: IQuestionOption[];
   /**
    * MC/TF: string | fill_blank: string | string[] | essay: null
-   * Dùng any để linh hoạt, validation ở service layer
    */
-  correctAnswer?: any;
+  correctAnswer?: QuestionAnswerValue;
   /** Ngưỡng chấp nhận khi fill_blank (regex hoặc exact) */
   answerTolerance?: string;
   /** Hướng dẫn chấm bài tự luận */

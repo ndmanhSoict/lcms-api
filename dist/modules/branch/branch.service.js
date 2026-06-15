@@ -1,7 +1,10 @@
 import { BranchRepository } from './branch.repository.js';
 import { getPagination } from '../../shared/constants/pagination.helper.js';
-import { ConflictError, NotFoundError, ForbiddenError } from '../../shared/errors/AllErrors.js';
+import { ConflictError, NotFoundError, ForbiddenError, BadRequestError, } from '../../shared/errors/AllErrors.js';
 import { ROLES } from '../../shared/constants/roles.js';
+import bcrypt from 'bcryptjs';
+import { Types } from 'mongoose';
+import { randomUUID } from 'crypto';
 export class BranchService {
     constructor() {
         this.branchRepo = new BranchRepository();
@@ -10,16 +13,29 @@ export class BranchService {
     formatRooms(rooms) {
         if (!rooms || !Array.isArray(rooms))
             return rooms;
-        return rooms.map(room => typeof room === 'string' ? { code: room, name: room } : room);
+        return rooms.map(room => (typeof room === 'string' ? { code: room, name: room } : room));
+    }
+    normalizeEmail(email) {
+        return email?.trim().toLowerCase();
+    }
+    async generateBranchCode() {
+        for (let attempt = 0; attempt < 5; attempt += 1) {
+            const code = `CS-${randomUUID().slice(0, 8).toUpperCase()}`;
+            const existing = await this.branchRepo.findByCode(code);
+            if (!existing)
+                return code;
+        }
+        throw new ConflictError('Không thể tạo mã cơ sở tự động, vui lòng thử lại');
+    }
+    generateOwnerUserCode() {
+        return `BO-${randomUUID().slice(0, 8).toUpperCase()}`;
     }
     canAccessBranch(branch, user) {
         if (user.role === ROLES.SYSTEM_OWNER)
             return true;
-        const ownerId = branch.ownerId?.toString();
         const branchId = branch._id?.toString();
-        const requesterId = user._id?.toString();
         const requesterBranchId = user.branchId?.toString();
-        return ownerId === requesterId || branchId === requesterBranchId;
+        return Boolean(requesterBranchId && branchId === requesterBranchId);
     }
     emptyStatusCounts() {
         return { total: 0, active: 0, inactive: 0, deleted: 0 };
@@ -65,36 +81,60 @@ export class BranchService {
             return acc;
         }, {});
     }
-    async createBranch(data) {
-        const existingBranch = await this.branchRepo.findByCode(data.branchCode);
-        if (existingBranch) {
-            throw new ConflictError(`Mã chi nhánh '${data.branchCode}' đã tồn tại trong hệ thống`);
+    async createBranch(data, creator) {
+        const ownerEmail = this.normalizeEmail(data.ownerEmail);
+        if (!ownerEmail || !data.password) {
+            throw new BadRequestError('Vui lòng nhập email và mật khẩu tài khoản chủ cơ sở');
         }
-        // Transform rooms string[] -> object[] trước khi lưu
-        if (data.rooms) {
-            data.rooms = this.formatRooms(data.rooms);
-        }
-        const newBranchData = { ...data, isActive: true };
-        return await this.branchRepo.create(newBranchData);
+        const existingOwner = await this.branchRepo.findUserByEmail(ownerEmail);
+        if (existingOwner)
+            throw new ConflictError('Email này đã được sử dụng');
+        const branchCode = await this.generateBranchCode();
+        const passwordHash = await bcrypt.hash(data.password, 12);
+        const branch = await this.branchRepo.create({
+            branchCode,
+            name: 'Cơ sở mới',
+            email: ownerEmail,
+            rooms: [],
+            defaultSessionSlots: [],
+            isActive: true,
+        });
+        const branchId = branch._id;
+        const owner = await this.branchRepo.createOwner({
+            email: ownerEmail,
+            passwordHash,
+            role: ROLES.BRANCH_OWNER,
+            branchId,
+            fullName: 'Chủ cơ sở',
+            isActive: true,
+            userCode: this.generateOwnerUserCode(),
+            createdBy: creator.userId,
+        });
+        const createdBranch = await this.branchRepo.updateById(branchId.toString(), {
+            ownerId: owner._id,
+        });
+        if (!createdBranch)
+            throw new NotFoundError('Cơ sở vừa tạo');
+        return createdBranch;
     }
     async getBranches(query, user) {
         const { page, limit, skip } = getPagination(query.page, query.limit);
         const filter = {
-            $or: [
-                { deletedAt: null },
-                { deletedAt: { $exists: false } }
-            ]
+            $or: [{ deletedAt: null }, { deletedAt: { $exists: false } }],
         };
-        if (user.role === ROLES.BRANCH_OWNER) {
-            filter.ownerId = user._id;
+        if (user.role !== ROLES.SYSTEM_OWNER) {
+            if (!user.branchId) {
+                throw new ForbiddenError('Tài khoản hiện tại không thuộc cơ sở nào');
+            }
+            filter._id = new Types.ObjectId(user.branchId);
         }
         if (query.search) {
             filter.$and = filter.$and || [];
             filter.$and.push({
                 $or: [
                     { name: { $regex: query.search, $options: 'i' } },
-                    { branchCode: { $regex: query.search, $options: 'i' } }
-                ]
+                    { branchCode: { $regex: query.search, $options: 'i' } },
+                ],
             });
         }
         if (query.isActive !== undefined) {
@@ -184,11 +224,21 @@ export class BranchService {
         if (!this.canAccessBranch(branch, user)) {
             throw new ForbiddenError('Bạn không có quyền chỉnh sửa chi nhánh này');
         }
-        // Transform rooms string[] -> object[] trước khi update
-        if (data.rooms) {
-            data.rooms = this.formatRooms(data.rooms);
+        if (user.role === ROLES.BRANCH_OWNER && data.rooms !== undefined) {
+            throw new ForbiddenError('Vui lòng quản lý phòng học tại chức năng Phòng học');
         }
-        return await this.branchRepo.updateById(id, data);
+        const { name, address, phone, email, timezone, defaultFeePerSession, defaultSessionSlots, rooms, } = data;
+        const updateData = {
+            ...(name !== undefined && { name }),
+            ...(address !== undefined && { address }),
+            ...(phone !== undefined && { phone }),
+            ...(email !== undefined && { email: this.normalizeEmail(email) || '' }),
+            ...(timezone !== undefined && { timezone }),
+            ...(defaultFeePerSession !== undefined && { defaultFeePerSession }),
+            ...(defaultSessionSlots !== undefined && { defaultSessionSlots }),
+            ...(rooms !== undefined && { rooms: this.formatRooms(rooms) }),
+        };
+        return await this.branchRepo.updateById(id, updateData);
     }
     async toggleActive(id) {
         const branch = await this.branchRepo.findById(id);

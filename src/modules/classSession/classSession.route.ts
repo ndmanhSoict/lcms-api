@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { authenticate } from '../../middleware/auth/authenticate.middleware.js';
 import { authorize } from '../../middleware/auth/authorize.middleware.js';
 import { validate } from '../../middleware/validate.middleware.js';
+import { uploadSessionMaterial } from '../../middleware/upload.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
 import { ClassSessionController } from './classSession.controller.js';
 import { createSessionSchema, updateSessionSchema } from './classSession.schema.js';
@@ -13,9 +14,9 @@ classSessionRouter.use(authenticate);
 
 // 6.1 Tạo buổi học cho lớp
 classSessionRouter.post(
-  '/classes/:classId/sessions', 
-  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF, ROLES.TEACHER), 
-  validate(createSessionSchema), 
+  '/classes/:classId/sessions',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF, ROLES.TEACHER),
+  validate(createSessionSchema),
   controller.createSession
 );
 
@@ -25,6 +26,14 @@ classSessionRouter.patch(
   authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF, ROLES.TEACHER),
   validate(updateSessionSchema),
   controller.updateSession
+);
+
+// 6.1c Giáo viên tải tài liệu buổi học
+classSessionRouter.post(
+  '/sessions/:sessionId/materials',
+  authorize(ROLES.TEACHER),
+  uploadSessionMaterial.single('file'),
+  controller.uploadSessionMaterial
 );
 
 // 6.2 Lấy buổi học của lớp

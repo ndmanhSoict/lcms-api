@@ -16,7 +16,7 @@ export function sendSuccess<T>(
   data: T,
   message = 'Thành công',
   statusCode: HttpStatusCode = HttpStatus.OK,
-  meta?: Record<string, unknown>
+  meta?: object
 ): void {
   const body: ApiResponse<T> = {
     success: true,
@@ -53,7 +53,7 @@ export function sendNoContent(res: Response): void {
 export function sendPaginated<T>(
   res: Response,
   data: T[],
-  paginationMeta: Record<string, unknown>,
+  paginationMeta: object,
   message = 'Lấy danh sách thành công'
 ): void {
   sendSuccess(res, data, message, HttpStatus.OK, paginationMeta);

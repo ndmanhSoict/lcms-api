@@ -1,0 +1,170 @@
+// LCMS - Database Diagram
+// Paste vào https://dbdiagram.io
+
+Table Branch {
+  _id ObjectId [pk]
+}
+
+Table Classroom {
+  _id ObjectId [pk]
+  branchId ObjectId
+}
+
+Table User {
+  _id ObjectId [pk]
+  branchId ObjectId
+}
+
+Table Class {
+  _id ObjectId [pk]
+  branchId ObjectId
+  teacherId ObjectId
+  roomId ObjectId
+}
+
+Table Enrollment {
+  _id ObjectId [pk]
+  studentId ObjectId
+  classId ObjectId
+}
+
+Table ClassSession {
+  _id ObjectId [pk]
+  classId ObjectId
+  roomId ObjectId
+  teacherId ObjectId
+}
+
+Table Attendance {
+  _id ObjectId [pk]
+  sessionId ObjectId
+  classId ObjectId
+  studentId ObjectId
+}
+
+Table Assignment {
+  _id ObjectId [pk]
+  classId ObjectId
+  teacherId ObjectId
+  sessionId ObjectId
+}
+
+Table Submission {
+  _id ObjectId [pk]
+  assignmentId ObjectId
+  studentId ObjectId
+  classId ObjectId
+}
+
+Table QuestionBank {
+  _id ObjectId [pk]
+  createdBy ObjectId
+}
+
+Table Exam {
+  _id ObjectId [pk]
+  classId ObjectId
+  teacherId ObjectId
+  branchId ObjectId
+}
+
+Table ExamAttempt {
+  _id ObjectId [pk]
+  examId ObjectId
+  studentId ObjectId
+  classId ObjectId
+}
+
+Table GradeRecord {
+  _id ObjectId [pk]
+  studentId ObjectId
+  classId ObjectId
+  teacherId ObjectId
+}
+
+Table Invoice {
+  _id ObjectId [pk]
+  studentId ObjectId
+  classId ObjectId
+  branchId ObjectId
+}
+
+Table Payment {
+  _id ObjectId [pk]
+  invoiceId ObjectId
+  studentId ObjectId
+}
+
+Table Notification {
+  _id ObjectId [pk]
+  recipientId ObjectId
+}
+
+Table Message {
+  _id ObjectId [pk]
+  senderId ObjectId
+  receiverId ObjectId
+}
+
+// ── Tổ chức ────────────────────────────────────────────
+Ref: Classroom.branchId    > Branch._id
+Ref: User.branchId         > Branch._id
+Ref: Class.branchId        > Branch._id
+Ref: Exam.branchId         > Branch._id
+Ref: Invoice.branchId      > Branch._id
+
+// ── Lớp học ────────────────────────────────────────────
+Ref: Class.teacherId       > User._id
+Ref: Class.roomId          > Classroom._id
+
+// ── Ghi danh (Student <> Class) ────────────────────────
+Ref: Enrollment.studentId  > User._id
+Ref: Enrollment.classId    > Class._id
+
+// ── Buổi học ───────────────────────────────────────────
+Ref: ClassSession.classId  > Class._id
+Ref: ClassSession.roomId   > Classroom._id
+Ref: ClassSession.teacherId > User._id
+
+// ── Điểm danh ──────────────────────────────────────────
+Ref: Attendance.sessionId  > ClassSession._id
+Ref: Attendance.classId    > Class._id
+Ref: Attendance.studentId  > User._id
+
+// ── Bài tập ────────────────────────────────────────────
+Ref: Assignment.classId    > Class._id
+Ref: Assignment.teacherId  > User._id
+Ref: Assignment.sessionId  > ClassSession._id
+
+// ── Nộp bài ────────────────────────────────────────────
+Ref: Submission.assignmentId > Assignment._id
+Ref: Submission.studentId    > User._id
+Ref: Submission.classId      > Class._id
+
+// ── Ngân hàng câu hỏi ──────────────────────────────────
+Ref: QuestionBank.createdBy  > User._id
+
+// ── Bài kiểm tra ───────────────────────────────────────
+Ref: Exam.classId            > Class._id
+Ref: Exam.teacherId          > User._id
+
+// ── Lượt làm bài ───────────────────────────────────────
+Ref: ExamAttempt.examId      > Exam._id
+Ref: ExamAttempt.studentId   > User._id
+Ref: ExamAttempt.classId     > Class._id
+
+// ── Học bạ ─────────────────────────────────────────────
+Ref: GradeRecord.studentId   > User._id
+Ref: GradeRecord.classId     > Class._id
+Ref: GradeRecord.teacherId   > User._id
+
+// ── Tài chính ──────────────────────────────────────────
+Ref: Invoice.studentId       > User._id
+Ref: Invoice.classId         > Class._id
+Ref: Payment.invoiceId       > Invoice._id
+Ref: Payment.studentId       > User._id
+
+// ── Thông báo & Tin nhắn ───────────────────────────────
+Ref: Notification.recipientId > User._id
+Ref: Message.senderId         > User._id
+Ref: Message.receiverId       > User._id

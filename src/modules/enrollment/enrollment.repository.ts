@@ -26,14 +26,18 @@ export class EnrollmentRepository {
 
   async addClassToStudent(studentId: string, classId: string, session: ClientSession) {
     await User.findByIdAndUpdate(
-      studentId, 
-      { $addToSet: { 'studentInfo.activeClassIds': classId } }, 
+      studentId,
+      { $addToSet: { 'studentInfo.activeClassIds': classId } },
       { session }
     );
   }
 
   // ─── TRANSACTION: RÚT LỚP ──────────────────────────────────────────────
-  async leaveClassWithSession(enrollmentId: string, leaveData: any, session: ClientSession) {
+  async leaveClassWithSession(
+    enrollmentId: string,
+    leaveData: MongoUpdate<IEnrollment>,
+    session: ClientSession
+  ) {
     return await Enrollment.findByIdAndUpdate(
       enrollmentId,
       { $set: leaveData },
@@ -47,21 +51,19 @@ export class EnrollmentRepository {
 
   async removeClassFromStudent(studentId: string, classId: string, session: ClientSession) {
     await User.findByIdAndUpdate(
-      studentId, 
-      { $pull: { 'studentInfo.activeClassIds': classId } }, 
+      studentId,
+      { $pull: { 'studentInfo.activeClassIds': classId } },
       { session }
     );
   }
 
-  async createAuditLog(logData: any, session: ClientSession) {
+  async createAuditLog(logData: AuditSnapshot, session: ClientSession) {
     const log = new AuditLog(logData);
     await log.save({ session });
   }
 
   // ─── LẤY LỊCH SỬ XẾP LỚP ───────────────────────────────────────────────
-  async getEnrollmentsByStudent(studentId: string) {
-    return await Enrollment.find({ studentId })
-      .sort({ enrolledAt: -1 })
-      .lean();
+  async getEnrollmentsByStudent(studentId: string, branchId: string) {
+    return await Enrollment.find({ studentId, branchId }).sort({ enrolledAt: -1 }).lean();
   }
 }

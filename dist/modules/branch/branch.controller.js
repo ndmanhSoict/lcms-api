@@ -5,8 +5,8 @@ export class BranchController {
     constructor() {
         this.createBranch = async (req, res, next) => {
             try {
-                const branch = await this.branchService.createBranch(req.body);
-                sendCreated(res, branch, 'Tạo chi nhánh mới thành công');
+                const branch = await this.branchService.createBranch(req.body, req.user);
+                sendCreated(res, branch, 'Khởi tạo cơ sở và tài khoản chủ cơ sở thành công');
             }
             catch (error) {
                 next(error);

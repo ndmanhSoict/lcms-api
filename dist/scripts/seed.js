@@ -19,6 +19,7 @@ import { ClassAnnouncement } from '../models/classAnnouncement.model.js';
 import { Exam } from '../models/exam.model.js';
 import { ExamAttempt } from '../models/examAttempt.model.js';
 import { Notification } from '../models/notification.model.js';
+import { GradeRecord } from '../models/gradeRecord.model.js';
 // ════════════════════════════════════════════════════════════
 // HELPERS
 // ════════════════════════════════════════════════════════════
@@ -60,6 +61,7 @@ const seedData = async () => {
             QuestionBank.deleteMany({}),
             Exam.deleteMany({}),
             ExamAttempt.deleteMany({}),
+            GradeRecord.deleteMany({}),
             Invoice.deleteMany({}),
             Payment.deleteMany({}),
             Notification.deleteMany({}),
@@ -68,6 +70,13 @@ const seedData = async () => {
             AuditLog.deleteMany({}),
         ]);
         console.log('🧹 Đã dọn dẹp toàn bộ data cũ.\n');
+        // Đảm bảo nhiều hóa đơn không dùng VNPay có thể cùng không có mã giao dịch.
+        await Invoice.collection.dropIndex('idx_invoices_vnpay_ref').catch(() => null);
+        await Invoice.collection.createIndex({ vnpayTransactionRef: 1 }, {
+            unique: true,
+            partialFilterExpression: { vnpayTransactionRef: { $type: 'string' } },
+            name: 'idx_invoices_vnpay_ref',
+        });
         // ── Bcrypt hash chung (cost 12 theo thiết kế) ──────────
         const salt = await bcrypt.genSalt(12);
         const passwordHash = await bcrypt.hash('Admin@123456', salt);
@@ -674,16 +683,17 @@ const seedData = async () => {
         }
         console.log(`✅ Enrollments: ${enrollmentDocs.length} | Student activeClassIds: cập nhật xong`);
         // ════════════════════════════════════════════════════════
-        // 9. CLASS SESSIONS — 60 ngày qua
+        // 9. CLASS SESSIONS — 60 ngày qua + 14 ngày tới
         // ════════════════════════════════════════════════════════
         const sessionDocs = [];
         for (const clsDef of classDefs) {
-            for (let d = 60; d >= 0; d--) {
-                const date = daysAgo(d);
+            for (let offset = -60; offset <= 14; offset++) {
+                const date = offset < 0 ? daysAgo(Math.abs(offset)) : daysFromNow(offset);
                 const dow = date.getDay();
                 for (const slot of clsDef.weeklySchedule) {
                     if (slot.dayOfWeek === dow) {
-                        const isPast = d > 0;
+                        const isPast = offset < 0;
+                        const isToday = offset === 0;
                         sessionDocs.push({
                             schemaVersion: 1,
                             branchId: clsDef.branchId,
@@ -695,12 +705,21 @@ const seedData = async () => {
                             roomCode: slot.roomCode,
                             sessionType: 'regular',
                             status: isPast ? 'completed' : 'scheduled',
-                            note: '',
+                            note: isToday ? 'Buổi học hôm nay, kiểm tra lịch và phòng học trước giờ vào lớp.' : '',
                             attendanceStatus: isPast ? 'submitted' : 'pending',
-                            materials: [],
-                            onlineMeetingUrl: null,
-                            createdAt: daysAgo(d + 1),
-                            updatedAt: daysAgo(Math.max(d, 1)),
+                            materials: isPast && Math.random() > 0.65 ? [
+                                {
+                                    name: `Tài liệu ${clsDef.subject.name} - ${clsDef.name}`,
+                                    url: `/uploads/materials/${clsDef.classCode.toLowerCase()}-${offset}.pdf`,
+                                    mimeType: 'application/pdf',
+                                    size: randInt(180000, 850000),
+                                    uploadedAt: addDays(date, 0),
+                                    uploadedBy: clsDef.teacherId,
+                                },
+                            ] : [],
+                            onlineMeetingUrl: offset >= 0 && Math.random() > 0.7 ? `https://meet.lcms.edu.vn/${clsDef.classCode}` : null,
+                            createdAt: isPast ? daysAgo(Math.abs(offset) + 1) : daysAgo(1),
+                            updatedAt: isPast ? daysAgo(Math.max(Math.abs(offset), 1)) : daysAgo(0),
                             deletedAt: null,
                         });
                     }
@@ -740,7 +759,7 @@ const seedData = async () => {
         await Attendance.insertMany(attendanceDocs);
         console.log(`✅ Attendances: ${attendanceDocs.length}`);
         // ════════════════════════════════════════════════════════
-        // 11. ASSIGNMENTS — 10 bài tập mẫu
+        // 11. ASSIGNMENTS — bài tập mẫu đủ trạng thái
         // ════════════════════════════════════════════════════════
         const assignmentDefs = [
             { classId: cls.toan8a, teacherId: tc.hungHBT, branchId: branchHBT, title: 'Bài tập Số học — Chương 1', dueAgo: 25 },
@@ -753,6 +772,10 @@ const seedData = async () => {
             { classId: cls.hoa9b, teacherId: tc.longCG, branchId: branchCG, title: 'Bài tập Nguyên tử và Phân tử', dueAgo: 8 },
             { classId: cls.toanCG, teacherId: tc.longCG, branchId: branchCG, title: 'Ôn tập Toán — Hàm số bậc nhất', dueAgo: 14 },
             { classId: cls.anhCG, teacherId: tc.huongCG, branchId: branchCG, title: 'Practice Test — Reading & Writing', dueAgo: 6 },
+            { classId: cls.toan8a, teacherId: tc.hungHBT, branchId: branchHBT, title: 'Phiếu luyện tập cuối tuần — Hình học', dueAgo: -4, status: 'active' },
+            { classId: cls.anh8b, teacherId: tc.chauHBT, branchId: branchHBT, title: 'Speaking preparation — My favorite book', dueAgo: -2, status: 'active', assignmentType: 'practice' },
+            { classId: cls.vanCG, teacherId: tc.truongCG, branchId: branchCG, title: 'Dàn ý bài văn nghị luận xã hội', dueAgo: -6, status: 'active' },
+            { classId: cls.hoa9b, teacherId: tc.longCG, branchId: branchCG, title: 'Dự án nhóm: Bảng tuần hoàn mini', dueAgo: -10, status: 'draft', assignmentType: 'project' },
         ];
         const assignmentIds = assignmentDefs.map(() => new Types.ObjectId());
         await Assignment.insertMany(assignmentDefs.map((a, i) => ({
@@ -765,13 +788,24 @@ const seedData = async () => {
             title: a.title,
             description: '<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>',
             attachmentUrls: [],
-            assignmentType: 'homework',
+            questions: [
+                {
+                    prompt: 'Tự đánh giá mức độ hoàn thành bài học hôm nay.',
+                    type: 'single_choice',
+                    points: 1,
+                    options: [
+                        { id: 'a', text: 'Em đã hiểu bài', isCorrect: true },
+                        { id: 'b', text: 'Em cần giáo viên hỗ trợ thêm', isCorrect: false },
+                    ],
+                },
+            ],
+            assignmentType: a.assignmentType ?? 'homework',
             dueDate: daysAgo(a.dueAgo),
             maxScore: 10,
             isGraded: true,
             visibleToParent: true,
-            submissionConfig: { allowText: true, allowFile: true, maxFileSizeMb: 10, allowedExtensions: ['pdf', 'doc', 'docx', 'jpg', 'png'] },
-            status: 'closed',
+            submissionConfig: { allowLate: true, allowText: true, allowFile: true, maxFileSizeMb: 10, allowedFileTypes: ['pdf', 'doc', 'docx', 'jpg', 'png'] },
+            status: a.status ?? 'closed',
             submissionCount: 0,
             gradedCount: 0,
             createdAt: daysAgo(a.dueAgo + 7),
@@ -827,7 +861,7 @@ const seedData = async () => {
         // ════════════════════════════════════════════════════════
         // 13. QUESTION BANK — 15 câu hỏi mẫu
         // ════════════════════════════════════════════════════════
-        await QuestionBank.insertMany([
+        const questionBankDocs = (await QuestionBank.insertMany([
             { schemaVersion: 1, createdBy: tc.hungHBT, subjectName: 'Toán học', subjectCode: 'TOAN', questionType: 'multiple_choice', difficulty: 'easy', content: 'Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?', options: [{ key: 'A', content: '112' }, { key: 'B', content: '96' }, { key: 'C', content: '108' }, { key: 'D', content: '100' }], correctAnswer: 'A', chapter: 'Chương 1', tags: ['số học'], isReported: false, reportNote: null, isActive: true, usageCount: 0, createdAt: daysAgo(30), updatedAt: daysAgo(30), deletedAt: null },
             { schemaVersion: 1, createdBy: tc.hungHBT, subjectName: 'Toán học', subjectCode: 'TOAN', questionType: 'multiple_choice', difficulty: 'medium', content: 'Giải phương trình 3x − 7 = 2x + 5, tìm x:', options: [{ key: 'A', content: 'x=10' }, { key: 'B', content: 'x=12' }, { key: 'C', content: 'x=8' }, { key: 'D', content: 'x=14' }], correctAnswer: 'B', chapter: 'Chương 2', tags: ['phương trình'], isReported: false, reportNote: null, isActive: true, usageCount: 0, createdAt: daysAgo(30), updatedAt: daysAgo(30), deletedAt: null },
             { schemaVersion: 1, createdBy: tc.hungHBT, subjectName: 'Toán học', subjectCode: 'TOAN', questionType: 'true_false', difficulty: 'easy', content: 'Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.', correctAnswer: true, chapter: 'Chương 3', tags: ['hình học'], isReported: false, reportNote: null, isActive: true, usageCount: 0, createdAt: daysAgo(30), updatedAt: daysAgo(30), deletedAt: null },
@@ -843,28 +877,252 @@ const seedData = async () => {
             { schemaVersion: 1, createdBy: tc.thanhCG, subjectName: 'Vật Lý', subjectCode: 'LY', questionType: 'true_false', difficulty: 'easy', content: 'Ánh sáng truyền trong chân không với vận tốc khoảng 3×10⁸ m/s.', correctAnswer: true, chapter: 'Chương 4', tags: ['quang học'], isReported: false, reportNote: null, isActive: true, usageCount: 0, createdAt: daysAgo(20), updatedAt: daysAgo(20), deletedAt: null },
             { schemaVersion: 1, createdBy: tc.thanhCG, subjectName: 'Vật Lý', subjectCode: 'LY', questionType: 'fill_blank', difficulty: 'medium', content: 'Công thức tính công cơ học là A = F × ___.', correctAnswer: 's', answerTolerance: 'exact', chapter: 'Chương 2', tags: ['công cơ học'], isReported: false, reportNote: null, isActive: true, usageCount: 0, createdAt: daysAgo(20), updatedAt: daysAgo(20), deletedAt: null },
             { schemaVersion: 1, createdBy: tc.thanhCG, subjectName: 'Vật Lý', subjectCode: 'LY', questionType: 'essay', difficulty: 'hard', content: 'Quả bóng rơi tự do từ độ cao 20m. Tính vận tốc ngay trước khi chạm đất (g = 10 m/s²).', correctAnswer: null, gradingGuide: 'v² = 2gh = 400 → v = 20 m/s. Ghi rõ công thức, thay số, đơn vị.', chapter: 'Chương 1', tags: ['rơi tự do'], isReported: false, reportNote: null, isActive: true, usageCount: 0, createdAt: daysAgo(20), updatedAt: daysAgo(20), deletedAt: null },
-        ]);
-        console.log('✅ QuestionBank: 15');
+        ]));
+        console.log(`✅ QuestionBank: ${questionBankDocs.length}`);
         // ════════════════════════════════════════════════════════
-        // 14. INVOICES + PAYMENTS — 2 tháng
+        // 14. EXAMS + EXAM ATTEMPTS
+        // ════════════════════════════════════════════════════════
+        const examDefs = classDefs.map((c, i) => {
+            const subjectQuestions = questionBankDocs.filter(q => q.subjectCode === c.subject.code);
+            const questions = (subjectQuestions.length ? subjectQuestions : questionBankDocs).slice(0, 4);
+            return {
+                _id: new Types.ObjectId(),
+                schemaVersion: 1,
+                branchId: c.branchId,
+                classId: c._id,
+                teacherId: c.teacherId,
+                title: i % 3 === 0 ? `Kiểm tra 15 phút - ${c.name}` : `Bài kiểm tra định kỳ - ${c.name}`,
+                description: 'Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.',
+                durationMinutes: i % 3 === 0 ? 15 : 45,
+                totalScore: 10,
+                passingScore: 5,
+                config: {
+                    shuffleQuestions: true,
+                    shuffleOptions: true,
+                    showResultAfter: i % 2 === 0 ? 'submit' : 'graded',
+                    allowedAttempts: 1,
+                },
+                availableFrom: daysAgo(20 - (i % 5)),
+                availableTo: i % 4 === 0 ? daysFromNow(7) : daysAgo(1),
+                questions: questions.map((q, order) => ({
+                    questionId: q._id,
+                    questionType: q.questionType,
+                    content: q.content,
+                    imageUrl: null,
+                    options: q.options ?? null,
+                    correctAnswer: q.correctAnswer ?? null,
+                    score: order === 0 ? 4 : 2,
+                    order: order + 1,
+                })),
+                status: i % 5 === 0 ? 'published' : 'closed',
+                attemptCount: 0,
+                createdAt: daysAgo(30 - (i % 7)),
+                updatedAt: daysAgo(1),
+                deletedAt: null,
+            };
+        });
+        await Exam.insertMany(examDefs);
+        const examAttemptDocs = [];
+        for (const exam of examDefs) {
+            const plan = enrollmentPlan.find(p => p.classId.equals(exam.classId));
+            if (!plan)
+                continue;
+            const attemptStudentIdxs = plan.studentIdxs.slice(0, Math.min(plan.studentIdxs.length, 8));
+            for (const idx of attemptStudentIdxs) {
+                const score = parseFloat((Math.random() * 4 + 5.5).toFixed(1));
+                const startedAt = daysAgo(randInt(2, 18));
+                const submittedAt = addDays(startedAt, 0);
+                examAttemptDocs.push({
+                    schemaVersion: 1,
+                    branchId: exam.branchId,
+                    examId: exam._id,
+                    studentId: studentIds[idx],
+                    classId: exam.classId,
+                    status: score >= 5 ? 'graded' : randItem(['submitted', 'auto_submitted']),
+                    startedAt,
+                    submittedAt,
+                    timeRemainingSeconds: randInt(120, 900),
+                    answers: exam.questions.map(q => ({
+                        questionId: q.questionId,
+                        questionOrder: q.order,
+                        answer: q.questionType === 'essay' ? 'Bài tự luận mẫu của học sinh.' : q.correctAnswer,
+                        isFlagged: Math.random() > 0.85,
+                        answeredAt: submittedAt,
+                    })),
+                    lastSavedAt: submittedAt,
+                    score,
+                    totalScore: 10,
+                    autoScore: Math.min(score, 8),
+                    manualScore: Math.max(score - 8, 0),
+                    gradedAt: daysAgo(randInt(1, 5)),
+                    gradedBy: exam.teacherId,
+                    answerResults: exam.questions.map(q => ({
+                        questionId: q.questionId,
+                        questionType: q.questionType,
+                        studentAnswer: q.questionType === 'essay' ? 'Bài tự luận mẫu của học sinh.' : q.correctAnswer,
+                        correctAnswer: q.correctAnswer,
+                        isCorrect: q.questionType === 'essay' ? null : true,
+                        scoreEarned: q.questionType === 'essay' ? null : q.score,
+                    })),
+                    essayGrades: exam.questions
+                        .filter(q => q.questionType === 'essay')
+                        .map(q => ({
+                        questionId: q.questionId,
+                        score: 1.5,
+                        feedback: 'Lập luận ổn, cần trình bày rõ hơn.',
+                        gradedBy: exam.teacherId,
+                        gradedAt: daysAgo(randInt(1, 5)),
+                    })),
+                    ipAddress: `192.168.${randInt(1, 5)}.${randInt(10, 200)}`,
+                    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+                    tabSwitchCount: randInt(0, 3),
+                    createdAt: startedAt,
+                    updatedAt: submittedAt,
+                });
+            }
+            await Exam.updateOne({ _id: exam._id }, { $set: { attemptCount: attemptStudentIdxs.length } });
+        }
+        await ExamAttempt.insertMany(examAttemptDocs);
+        console.log(`✅ Exams: ${examDefs.length} | ExamAttempts: ${examAttemptDocs.length}`);
+        // ════════════════════════════════════════════════════════
+        // 15. GRADE RECORDS
+        // ════════════════════════════════════════════════════════
+        const gradeDocs = [];
+        const academicPeriod = '2025-2026 HK2';
+        const commentSamples = [
+            'Em tiến bộ rõ trong các buổi gần đây, cần duy trì thói quen ôn bài sau mỗi buổi học.',
+            'Nắm kiến thức nền tốt, nên luyện thêm dạng bài vận dụng để tăng tốc độ xử lý.',
+            'Thái độ học tập tích cực, hợp tác tốt trong lớp.',
+            'Cần chú ý hoàn thành bài tập đúng hạn và hỏi lại giáo viên khi chưa hiểu bài.',
+        ];
+        for (const enrollment of enrollmentDocs) {
+            const clsDef = classDefs.find(c => c._id.equals(enrollment.classId));
+            const attendance = attendanceDocs.filter(a => a.studentId.equals(enrollment.studentId) && a.classId.equals(enrollment.classId));
+            const presentCount = attendance.filter(a => a.status === 'present').length;
+            const absentCount = attendance.filter(a => a.status === 'absent').length;
+            const homeworkScores = submissionDocs
+                .filter(s => s.studentId.equals(enrollment.studentId) && s.classId.equals(enrollment.classId))
+                .slice(0, 4)
+                .map((s) => {
+                const assignmentIndex = assignmentIds.findIndex(id => id.equals(s.assignmentId));
+                const assignment = assignmentDefs[assignmentIndex];
+                return {
+                    assignmentId: s.assignmentId,
+                    title: assignment?.title ?? 'Bài tập',
+                    score: s.score,
+                    maxScore: s.maxScore,
+                    weight: 1,
+                    dueDate: assignment ? daysAgo(assignment.dueAgo) : null,
+                    submittedAt: s.submittedAt,
+                    feedback: s.feedback,
+                };
+            });
+            const testScores = examAttemptDocs
+                .filter(a => a.studentId.equals(enrollment.studentId) && a.classId.equals(enrollment.classId))
+                .slice(0, 2)
+                .map((a) => {
+                const exam = examDefs.find(e => e._id.equals(a.examId));
+                return {
+                    examId: a.examId,
+                    title: exam?.title ?? 'Bài kiểm tra',
+                    score: a.score,
+                    totalScore: a.totalScore,
+                    weight: 2,
+                    testDate: a.submittedAt,
+                    note: a.status === 'graded' ? 'Đã chấm' : 'Chờ rà soát tự luận',
+                };
+            });
+            const assignmentAvg = homeworkScores.length
+                ? parseFloat((homeworkScores.reduce((sum, item) => sum + item.score, 0) / homeworkScores.length).toFixed(1))
+                : null;
+            const testAvg = testScores.length
+                ? testScores.reduce((sum, item) => sum + (item.score / item.totalScore) * 10, 0) / testScores.length
+                : null;
+            const finalScore = assignmentAvg === null && testAvg === null
+                ? null
+                : parseFloat((((assignmentAvg ?? testAvg ?? 0) * 0.4 + (testAvg ?? assignmentAvg ?? 0) * 0.6)).toFixed(1));
+            const isPublished = Math.random() > 0.25;
+            gradeDocs.push({
+                schemaVersion: 1,
+                branchId: enrollment.branchId,
+                studentId: enrollment.studentId,
+                classId: enrollment.classId,
+                teacherId: clsDef.teacherId,
+                academicPeriod,
+                attendanceSummary: {
+                    totalSessions: attendance.length,
+                    presentCount,
+                    absentCount,
+                    attendanceRate: attendance.length ? Math.round((presentCount / attendance.length) * 1000) / 10 : 0,
+                    note: absentCount > 2 ? 'Cần theo dõi thêm tình hình chuyên cần.' : 'Chuyên cần ổn định.',
+                },
+                homeworkScores,
+                assignmentAvg,
+                testScores,
+                examScores: testScores.map(item => ({
+                    examId: item.examId,
+                    title: item.title,
+                    score: item.score,
+                    totalScore: item.totalScore,
+                    weight: item.weight,
+                    examDate: item.testDate,
+                })),
+                finalScore,
+                regularComment: randItem(commentSamples),
+                teacherComment: randItem(commentSamples),
+                courseComment: clsDef.classType === 'course' ? 'Kết quả giữa khóa dùng để điều chỉnh lộ trình ôn tập.' : null,
+                sessionComments: attendance.slice(0, 3).map(a => ({
+                    sessionId: a.sessionId,
+                    sessionDate: a.sessionDate,
+                    topic: `${clsDef.subject.name} - luyện tập trên lớp`,
+                    attendanceStatus: a.status,
+                    attitudeScore: a.status === 'present' ? randInt(7, 10) : null,
+                    comment: a.status === 'present' ? randItem(commentSamples) : 'Vắng buổi này, cần xem lại tài liệu bù.',
+                })),
+                monthlyComments: [
+                    {
+                        month: '2026-04',
+                        comment: randItem(commentSamples),
+                        strengths: 'Có ý thức học tập và tương tác trong lớp.',
+                        improvements: 'Cần luyện thêm bài tập tự học ở nhà.',
+                    },
+                    {
+                        month: '2026-05',
+                        comment: randItem(commentSamples),
+                        strengths: 'Nắm được phần kiến thức trọng tâm.',
+                        improvements: 'Tăng tốc độ làm bài và kiểm tra lại đáp án.',
+                    },
+                ],
+                status: isPublished ? 'published' : 'draft',
+                publishedAt: isPublished ? daysAgo(randInt(1, 12)) : null,
+                createdAt: daysAgo(20),
+                updatedAt: daysAgo(randInt(0, 5)),
+            });
+        }
+        await GradeRecord.insertMany(gradeDocs);
+        console.log(`✅ GradeRecords: ${gradeDocs.length}`);
+        // ════════════════════════════════════════════════════════
+        // 16. INVOICES + PAYMENTS — tháng trước + tháng hiện tại
         // ════════════════════════════════════════════════════════
         const invoiceDocs = [];
         const paymentDocs = [];
         const invoiceIds = [];
-        for (const period of ['2025-04', '2025-05']) {
-            const [yr, mo] = period.split('-').map(Number);
-            const periodStart = new Date(`${yr}-${String(mo).padStart(2, '0')}-01`);
-            const periodEnd = mo === 12
-                ? new Date(`${yr + 1}-01-01`)
-                : new Date(`${yr}-${String(mo + 1).padStart(2, '0')}-01`);
-            const dueDate = new Date(`${yr}-${String(mo).padStart(2, '0')}-${mo === 4 ? '30' : '31'}`);
+        const monthStart = (offset) => {
+            const now = new Date();
+            return new Date(now.getFullYear(), now.getMonth() + offset, 1);
+        };
+        const formatPeriod = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        for (const periodStart of [monthStart(-1), monthStart(0)]) {
+            const period = formatPeriod(periodStart);
+            const periodEnd = new Date(periodStart.getFullYear(), periodStart.getMonth() + 1, 1);
+            const dueDate = new Date(periodStart.getFullYear(), periodStart.getMonth() + 1, 0);
             for (const plan of enrollmentPlan) {
                 const clsDef = classDefs.find(c => c._id.equals(plan.classId));
                 if (!clsDef.ongoingInfo)
                     continue; // bỏ qua lớp theo khóa
                 for (const idx of plan.studentIdxs) {
                     // Đếm số buổi có mặt trong tháng từ attendanceDocs
-                    const sessionsAttended = attendanceDocs.filter((a) => a.studentId.equals(studentIds[idx]) &&
+                    const sessionsAttended = attendanceDocs.filter(a => a.studentId.equals(studentIds[idx]) &&
                         a.classId.equals(plan.classId) &&
                         a.status === 'present' &&
                         a.sessionDate >= periodStart &&
@@ -875,10 +1133,12 @@ const seedData = async () => {
                     const subtotal = sessionsAttended * feePerSession;
                     const discount = Math.random() > 0.9 ? 50000 : 0;
                     const totalAmount = subtotal - discount;
-                    const isPaid = period === '2025-04' || Math.random() > 0.25;
+                    const isPaid = period === formatPeriod(monthStart(-1)) || Math.random() > 0.25;
+                    const isPartial = !isPaid && Math.random() > 0.55;
                     const isOverdue = !isPaid && dueDate < new Date();
                     const paidAt = isPaid ? daysAgo(randInt(1, 20)) : null;
-                    const method = isPaid ? randItem(['cash', 'vnpay']) : null;
+                    const method = isPaid || isPartial ? randItem(['cash', 'vnpay']) : null;
+                    const paidAmount = isPaid ? totalAmount : (isPartial ? Math.round(totalAmount * 0.4) : null);
                     const invId = new Types.ObjectId();
                     invoiceIds.push(invId);
                     const stu = studentRaw[idx];
@@ -903,10 +1163,10 @@ const seedData = async () => {
                         excusedSessions: 0,
                         totalAmount,
                         dueDate,
-                        status: isPaid ? 'paid' : (isOverdue ? 'overdue' : 'unpaid'),
+                        status: isPaid ? 'paid' : (isPartial ? 'partial' : (isOverdue ? 'overdue' : 'unpaid')),
                         paymentMethod: method,
                         paidAt,
-                        paidAmount: isPaid ? totalAmount : null,
+                        paidAmount,
                         confirmedBy: isPaid && method === 'cash'
                             ? (clsDef.branchId.equals(branchHBT) ? staffHBT1 : staffCG1)
                             : null,
@@ -920,7 +1180,7 @@ const seedData = async () => {
                         updatedAt: daysAgo(1),
                         deletedAt: null,
                     });
-                    if (isPaid) {
+                    if (isPaid || isPartial) {
                         const pmId = new Types.ObjectId();
                         const vnpayRef = method === 'vnpay' ? `VNP${Date.now()}${randInt(1000, 9999)}` : null;
                         paymentDocs.push({
@@ -930,7 +1190,7 @@ const seedData = async () => {
                             invoiceId: invId,
                             studentId: studentIds[idx],
                             paymentMethod: method,
-                            amount: totalAmount,
+                            amount: paidAmount,
                             status: 'success',
                             receivedBy: method === 'cash'
                                 ? (clsDef.branchId.equals(branchHBT) ? staffHBT1 : staffCG1)
@@ -956,7 +1216,7 @@ const seedData = async () => {
         // ════════════════════════════════════════════════════════
         const notifDocs = [];
         // Vắng học → gửi cho phụ huynh
-        const absentList = attendanceDocs.filter((a) => a.status === 'absent').slice(0, 60);
+        const absentList = attendanceDocs.filter(a => a.status === 'absent').slice(0, 60);
         for (const rec of absentList) {
             const idx = studentIds.findIndex(id => id.equals(rec.studentId));
             if (idx < 0)
@@ -982,7 +1242,7 @@ const seedData = async () => {
             });
         }
         // Học phí quá hạn / chưa thanh toán
-        const unpaidInvoices = invoiceDocs.filter((inv) => ['unpaid', 'overdue'].includes(inv.status)).slice(0, 40);
+        const unpaidInvoices = invoiceDocs.filter(inv => ['unpaid', 'overdue'].includes(inv.status)).slice(0, 40);
         for (const inv of unpaidInvoices) {
             const idx = studentIds.findIndex(id => id.equals(inv.studentId));
             if (idx < 0)
@@ -1005,7 +1265,63 @@ const seedData = async () => {
                 expiresAt: daysFromNow(180),
             });
         }
-        // await Notification.insertMany(notifDocs);
+        // Học bạ đã công bố → gửi cho học sinh + phụ huynh
+        const publishedGrades = gradeDocs.filter(g => g.status === 'published').slice(0, 60);
+        for (const grade of publishedGrades) {
+            const idx = studentIds.findIndex(id => id.equals(grade.studentId));
+            const clsDef = classDefs.find(c => c._id.equals(grade.classId));
+            if (idx < 0 || !clsDef)
+                continue;
+            for (const recipientId of [studentIds[idx], parentIds[idx]]) {
+                notifDocs.push({
+                    schemaVersion: 1,
+                    branchId: grade.branchId,
+                    recipientId,
+                    type: 'score_published',
+                    title: 'Điểm học tập đã được công bố',
+                    content: `${clsDef.name} đã có nhận xét và điểm tổng kết kỳ ${grade.academicPeriod}.`,
+                    actionUrl: recipientId.equals(studentIds[idx]) ? '/student/grades' : '/parent/grades',
+                    channels: ['in_app', 'email'],
+                    metadata: { studentId: studentIds[idx].toString(), classId: clsDef._id.toString(), finalScore: grade.finalScore },
+                    isRead: Math.random() > 0.65,
+                    readAt: null,
+                    emailSent: true,
+                    emailSentAt: daysAgo(randInt(0, 3)),
+                    createdAt: grade.publishedAt ?? daysAgo(randInt(1, 10)),
+                    expiresAt: daysFromNow(180),
+                });
+            }
+        }
+        // Bài tập đang mở → gửi cho học sinh
+        const activeAssignments = assignmentDefs
+            .map((assignment, index) => ({ assignment, assignmentId: assignmentIds[index] }))
+            .filter(item => item.assignment.status === 'active');
+        for (const { assignment, assignmentId } of activeAssignments) {
+            const plan = enrollmentPlan.find(p => p.classId.equals(assignment.classId));
+            const clsDef = classDefs.find(c => c._id.equals(assignment.classId));
+            if (!plan || !clsDef)
+                continue;
+            for (const idx of plan.studentIdxs.slice(0, 8)) {
+                notifDocs.push({
+                    schemaVersion: 1,
+                    branchId: assignment.branchId,
+                    recipientId: studentIds[idx],
+                    type: 'assignment_due',
+                    title: 'Bài tập sắp đến hạn',
+                    content: `${assignment.title} của lớp ${clsDef.name} cần nộp trước hạn.`,
+                    actionUrl: '/student/assignments',
+                    channels: ['in_app'],
+                    metadata: { assignmentId: assignmentId.toString(), classId: clsDef._id.toString() },
+                    isRead: Math.random() > 0.45,
+                    readAt: null,
+                    emailSent: false,
+                    emailSentAt: null,
+                    createdAt: daysAgo(randInt(0, 2)),
+                    expiresAt: daysFromNow(120),
+                });
+            }
+        }
+        await Notification.insertMany(notifDocs);
         console.log(`✅ Notifications: ${notifDocs.length}`);
         // ════════════════════════════════════════════════════════
         // 16. MESSAGES — 20 tin nhắn GV ↔ PH

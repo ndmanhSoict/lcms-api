@@ -12,6 +12,8 @@ export const createAssignmentSchema = z.object({
     due_date: z.string().datetime({ message: 'due_date phải là ISO 8601' }).optional(),
     max_score: z.number().min(0).optional(),
     is_graded: z.boolean().optional().default(true),
+    auto_grade: z.boolean().optional().default(false),
+    release_score_after_due_date: z.boolean().optional().default(false),
     visible_to_parent: z.boolean().optional().default(true),
     attachment_urls: z.array(z.string().url()).optional().default([]),
     submission_config: z
@@ -30,13 +32,16 @@ export const submitAssignmentSchema = z.object({
   params: z.object({
     assignmentId: z.string().min(1, 'assignmentId không hợp lệ'),
   }),
-  body: z.object({
-    content_text: z.string().optional(),
-    attachment_urls: z.array(z.string().url()).optional().default([]),
-  }).refine(
-    data => (data.content_text ?? '').trim().length > 0 || (data.attachment_urls ?? []).length > 0,
-    { message: 'Phải có nội dung hoặc tệp đính kèm' }
-  ),
+  body: z
+    .object({
+      content_text: z.string().optional(),
+      attachment_urls: z.array(z.string().url()).optional().default([]),
+    })
+    .refine(
+      data =>
+        (data.content_text ?? '').trim().length > 0 || (data.attachment_urls ?? []).length > 0,
+      { message: 'Phải có nội dung hoặc tệp đính kèm' }
+    ),
 });
 
 // 8.4 GV chấm điểm

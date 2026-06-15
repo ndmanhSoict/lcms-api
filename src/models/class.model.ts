@@ -16,12 +16,19 @@ export interface IWeeklyScheduleSlot {
   dayOfWeek: number;   // 0 = CN, 1 = T2 … 6 = T7
   startTime: string;   // "HH:mm"
   endTime: string;     // "HH:mm"
+  roomId?: Types.ObjectId;
   roomCode?: string;
 }
 
 export interface ITeacherSnapshot {
   fullName: string;
   avatarUrl?: string;
+}
+
+export interface IRoomSnapshot {
+  code: string;
+  capacity: number;
+  detail?: string;
 }
 
 /** Dùng khi class_type = "course" */
@@ -52,8 +59,12 @@ export interface IClass extends Document {
   teacherId?: Types.ObjectId;
   teacherSnapshot?: ITeacherSnapshot;
   coTeacherIds: Types.ObjectId[];
+  roomId: Types.ObjectId;
+  roomSnapshot?: IRoomSnapshot;
 
   classType: ClassType;
+  startDate?: Date;
+  endDate?: Date;
   courseInfo?: ICourseInfo;
   ongoingInfo?: IOngoingInfo;
 
@@ -85,6 +96,7 @@ const WeeklyScheduleSchema = new Schema<IWeeklyScheduleSlot>(
     dayOfWeek: { type: Number, required: true, min: 0, max: 6 },
     startTime: { type: String, required: true },
     endTime:   { type: String, required: true },
+    roomId:    { type: Schema.Types.ObjectId, ref: 'Classroom', default: null },
     roomCode:  { type: String, default: null },
   },
   { _id: false }
@@ -94,6 +106,15 @@ const TeacherSnapshotSchema = new Schema<ITeacherSnapshot>(
   {
     fullName:  { type: String, required: true },
     avatarUrl: { type: String, default: null },
+  },
+  { _id: false }
+);
+
+const RoomSnapshotSchema = new Schema<IRoomSnapshot>(
+  {
+    code: { type: String, required: true },
+    capacity: { type: Number, required: true },
+    detail: { type: String, default: null },
   },
   { _id: false }
 );
@@ -135,12 +156,16 @@ const ClassSchema = new Schema<IClass>(
     teacherId:       { type: Schema.Types.ObjectId, ref: 'User', default: null },
     teacherSnapshot: { type: TeacherSnapshotSchema, default: null },
     coTeacherIds:    { type: [Schema.Types.ObjectId], ref: 'User', default: [] },
+    roomId:          { type: Schema.Types.ObjectId, ref: 'Classroom', required: true },
+    roomSnapshot:    { type: RoomSnapshotSchema, default: null },
 
     classType:   {
       type: String,
       enum: Object.values(CLASS_TYPES),
       required: true,
     },
+    startDate:   { type: Date, default: null },
+    endDate:     { type: Date, default: null },
     courseInfo:  { type: CourseInfoSchema,  default: null },
     ongoingInfo: { type: OngoingInfoSchema, default: null },
 
@@ -171,6 +196,7 @@ ClassSchema.index(
   { unique: true, sparse: true, name: 'idx_classes_branch_code' }
 );
 ClassSchema.index({ teacherId: 1, status: 1 }, { name: 'idx_classes_teacher' });
+ClassSchema.index({ roomId: 1, status: 1 }, { name: 'idx_classes_room' });
 ClassSchema.index({ 'subject.code': 1, branchId: 1 }, { name: 'idx_classes_subject_code' });
 ClassSchema.index({ 'subject.name': 1 }, { name: 'idx_classes_subject_name' });
 

@@ -29,11 +29,15 @@ export class ClassAnnouncementRepository {
     return await ClassAnnouncement.create(data);
   }
 
-  async findByClass(classId: string, skip: number, limit: number) {
-    const query = { classId, deletedAt: null };
+  async findByClass(classId: string, branchId: string, skip: number, limit: number) {
+    const query = { classId, branchId, deletedAt: null };
     const [items, total] = await Promise.all([
       ClassAnnouncement.find(query)
-        .populate('authorId', 'fullName')
+        .populate({
+          path: 'authorId',
+          select: 'fullName branchId',
+          match: { branchId },
+        })
         .sort({ isPinned: -1, createdAt: -1 })
         .skip(skip)
         .limit(limit)

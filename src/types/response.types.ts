@@ -5,7 +5,7 @@ export interface ApiResponse<T = null> {
   success: true;
   message: string;
   data: T;
-  meta?: Record<string, unknown>;
+  meta?: object;
   requestId?: string;
   timestamp: string;
 }

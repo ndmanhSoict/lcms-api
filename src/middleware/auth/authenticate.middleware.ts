@@ -4,6 +4,7 @@ import { env } from '../../config/env.validation.js';
 import { UnauthorizedError } from '../../shared/errors/AllErrors.js';
 import { RoleType } from '../../shared/constants/roles.js';
 import { Types } from 'mongoose';
+import { User } from '../../models/user.model.js';
 
 interface JwtPayload {
   id: string;
@@ -12,7 +13,7 @@ interface JwtPayload {
   branchId?: string;
 }
 
-export const authenticate = (req: Request, res: Response, next: NextFunction) => {
+export const authenticate = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const authHeader = req.headers.authorization;
     if (!authHeader?.startsWith('Bearer ')) {
@@ -21,18 +22,29 @@ export const authenticate = (req: Request, res: Response, next: NextFunction) =>
 
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, env.JWT_ACCESS_SECRET) as JwtPayload;
+    const user = await User.findOne({
+      _id: decoded.id,
+      isActive: true,
+      deletedAt: null,
+    })
+      .select('_id email role branchId')
+      .lean();
 
-    // Gán thông tin vào Request object đã định nghĩa trong express.d.ts
+    if (!user) {
+      throw new UnauthorizedError('Tài khoản không tồn tại hoặc đã bị khóa');
+    }
+
+    // Role and branch come from the current database state, not stale JWT claims.
     req.user = {
-      id: decoded.id,
-      userId: new Types.ObjectId(decoded.id),
-      email: decoded.email,
-      role: decoded.role,
-      branchId: decoded.branchId,
+      id: user._id.toString(),
+      userId: new Types.ObjectId(user._id),
+      email: user.email,
+      role: user.role,
+      branchId: user.branchId?.toString(),
     };
 
     next();
-  } catch (error) {
+  } catch {
     next(new UnauthorizedError('Token không hợp lệ hoặc đã hết hạn'));
   }
 };

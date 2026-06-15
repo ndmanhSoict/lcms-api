@@ -1,25 +1,30 @@
 import { Types } from 'mongoose';
-import { Attendance } from '../../models/attendance.model.js';
+import { Attendance, IAttendance } from '../../models/attendance.model.js';
 import { ClassSession } from '../../models/classSession.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
 import { AuditLog } from '../../models/auditLog.model.js';
+import { AttendanceStatus } from '../../shared/constants/roles.js';
 
 export class AttendanceRepository {
   async findSessionById(sessionId: string) {
     return await ClassSession.findOne({ _id: sessionId, deletedAt: null }).lean();
   }
 
-  async findActiveEnrollmentsByClass(classId: string) {
-    return await Enrollment.find({ classId, leftAt: null }).lean();
+  async findActiveEnrollmentsByClass(classId: string, branchId: string) {
+    return await Enrollment.find({ classId, branchId, leftAt: null }).lean();
   }
 
-  async findAttendanceRecord(sessionId: string, studentId: string) {
-    return await Attendance.findOne({ sessionId, studentId });
+  async findAttendanceRecord(sessionId: string, studentId: string, branchId: string) {
+    return await Attendance.findOne({ sessionId, studentId, branchId });
   }
 
-  async findAttendancesBySession(sessionId: string) {
-    return await Attendance.find({ sessionId })
-      .populate('studentId', 'fullName code')
+  async findAttendancesBySession(sessionId: string, branchId: string) {
+    return await Attendance.find({ sessionId, branchId })
+      .populate({
+        path: 'studentId',
+        select: 'fullName userCode branchId',
+        match: { branchId },
+      })
       .sort({ createdAt: 1 })
       .lean();
   }
@@ -30,7 +35,7 @@ export class AttendanceRepository {
     classId: Types.ObjectId;
     branchId: Types.ObjectId;
     teacherId?: Types.ObjectId | null;
-    status: string;
+    status: AttendanceStatus;
     sessionDate: Date;
   }) {
     return await Attendance.create({
@@ -43,8 +48,8 @@ export class AttendanceRepository {
   }
 
   async updateAttendanceRecord(
-    attendanceDoc: any,
-    newStatus: string,
+    attendanceDoc: IAttendance,
+    newStatus: AttendanceStatus,
     changedBy: Types.ObjectId,
     reason?: string
   ) {
@@ -53,7 +58,7 @@ export class AttendanceRepository {
       changedTo: newStatus,
       changedBy,
       changedAt: new Date(),
-      reason: reason ?? null,
+      reason,
     });
     attendanceDoc.status = newStatus;
     attendanceDoc.markedAt = new Date();
@@ -74,8 +79,8 @@ export class AttendanceRepository {
     actorRole: string;
     branchId: Types.ObjectId;
     targetId: Types.ObjectId;
-    before: Record<string, any>;
-    after: Record<string, any>;
+    before: AuditSnapshot;
+    after: AuditSnapshot;
   }) {
     return await AuditLog.create({
       ...data,
@@ -88,12 +93,14 @@ export class AttendanceRepository {
   async getAttendanceSummary(
     studentId: string,
     classId: string,
+    branchId: string,
     fromDate: Date,
     toDate: Date
   ) {
-    const filter: any = {
+    const filter: MongoFilter<IAttendance> = {
       studentId: new Types.ObjectId(studentId),
       classId: new Types.ObjectId(classId),
+      branchId: new Types.ObjectId(branchId),
       sessionDate: { $gte: fromDate, $lte: toDate },
     };
 
@@ -103,5 +110,42 @@ export class AttendanceRepository {
       .lean();
 
     return records;
+  }
+
+  async findStudentAttendanceHistory(
+    studentId: string,
+    branchId: string,
+    fromDate: Date,
+    toDate: Date,
+    filters: { classId?: string; status?: AttendanceStatus }
+  ) {
+    const filter: MongoFilter<IAttendance> = {
+      studentId: new Types.ObjectId(studentId),
+      branchId: new Types.ObjectId(branchId),
+      sessionDate: { $gte: fromDate, $lte: toDate },
+    };
+
+    if (filters.classId) filter.classId = new Types.ObjectId(filters.classId);
+    if (filters.status) filter.status = filters.status;
+
+    return await Attendance.find(filter)
+      .populate({
+        path: 'studentId',
+        select: 'fullName userCode branchId',
+        match: { branchId },
+      })
+      .populate({
+        path: 'classId',
+        select: 'name classCode subject teacherSnapshot branchId',
+        match: { branchId },
+      })
+      .populate({
+        path: 'sessionId',
+        select: 'note startTime endTime status attendanceStatus branchId',
+        match: { branchId },
+      })
+      .sort({ sessionDate: -1, createdAt: -1 })
+      .limit(300)
+      .lean();
   }
 }

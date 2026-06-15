@@ -25,6 +25,23 @@ export class FinanceRepository {
     return await Invoice.findOne({ _id: id, deletedAt: null });
   }
 
+  async hasActivePayments(invoiceId: string) {
+    return Boolean(
+      await Payment.exists({
+        invoiceId,
+        status: { $in: ['pending', 'success'] },
+      })
+    );
+  }
+
+  async softDeleteInvoice(invoiceId: string) {
+    return await Invoice.findByIdAndUpdate(
+      invoiceId,
+      { $set: { deletedAt: new Date(), status: 'cancelled' } },
+      { new: true }
+    );
+  }
+
   async findExistingInvoice(studentId: string, classId: string, billingPeriod: string) {
     return await Invoice.findOne({ studentId, classId, billingPeriod, deletedAt: null }).lean();
   }
@@ -43,11 +60,20 @@ export class FinanceRepository {
     return await Invoice.create(data);
   }
 
-  async findInvoices(filter: Record<string, any>, skip: number, limit: number) {
+  async findInvoices(filter: MongoFilter<IInvoice>, skip: number, limit: number) {
+    const branchMatch = filter.branchId ? { branchId: filter.branchId } : undefined;
     const [items, total, totalAmountAgg] = await Promise.all([
       Invoice.find(filter)
-        .populate('studentId', 'fullName userCode')
-        .populate('classId', 'name')
+        .populate({
+          path: 'studentId',
+          select: 'fullName userCode branchId',
+          match: branchMatch,
+        })
+        .populate({
+          path: 'classId',
+          select: 'name branchId classType',
+          match: branchMatch,
+        })
         .sort({ createdAt: -1 })
         .skip(skip)
         .limit(limit)
@@ -62,12 +88,61 @@ export class FinanceRepository {
     return { items, total, totalAmount };
   }
 
+  async findActiveEnrollment(studentId: string, classId: string) {
+    return await Enrollment.findOne({ studentId, classId, leftAt: null }).lean();
+  }
+
+  async findPayments(filter: MongoFilter<IPayment>, skip: number, limit: number) {
+    const branchMatch = filter.branchId ? { branchId: filter.branchId } : undefined;
+    const [items, total] = await Promise.all([
+      Payment.find(filter)
+        .populate({
+          path: 'invoiceId',
+          select: 'invoiceCode billingPeriod status branchId',
+          match: branchMatch,
+        })
+        .populate({
+          path: 'studentId',
+          select: 'fullName userCode branchId',
+          match: branchMatch,
+        })
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limit)
+        .lean(),
+      Payment.countDocuments(filter),
+    ]);
+
+    return { items, total };
+  }
+
   async createPayment(data: Partial<IPayment>) {
     return await Payment.create(data);
   }
 
+  async findPaymentByVNPayTxnRef(txnRef: string) {
+    return await Payment.findOne({
+      paymentMethod: 'vnpay',
+      vnpayRef: txnRef,
+    }).sort({ createdAt: -1 });
+  }
+
+  async updatePaymentVNPayResult(
+    paymentDoc: IPayment,
+    status: 'success' | 'failed',
+    vnpayData: VnpayStoredData
+  ) {
+    paymentDoc.status = status;
+    paymentDoc.receivedAt = status === 'success' ? new Date() : paymentDoc.receivedAt;
+    paymentDoc.vnpayData = {
+      ...(paymentDoc.vnpayData ?? {}),
+      ...vnpayData,
+    };
+    return await paymentDoc.save();
+  }
+
   async updateInvoiceAfterPayment(
-    invoiceDoc: any,
+    invoiceDoc: IInvoice,
     paymentId: Types.ObjectId,
     paidAmount: number,
     confirmedBy: Types.ObjectId
@@ -86,12 +161,16 @@ export class FinanceRepository {
   }
 
   async updateInvoiceVNPay(
-    invoiceDoc: any,
+    invoiceDoc: IInvoice,
     paymentId: Types.ObjectId,
     vnpayRef: string,
     vnpayTransactionId: string
   ) {
-    const totalPaid = (invoiceDoc.paidAmount ?? 0) + invoiceDoc.totalAmount;
+    const remainingAmount = Math.max(
+      0,
+      (invoiceDoc.totalAmount ?? 0) - (invoiceDoc.paidAmount ?? 0)
+    );
+    const totalPaid = (invoiceDoc.paidAmount ?? 0) + remainingAmount;
     invoiceDoc.status = 'paid';
     invoiceDoc.paidAmount = totalPaid;
     invoiceDoc.paidAt = new Date();
@@ -105,6 +184,10 @@ export class FinanceRepository {
   // 12.2 Batch: lấy tất cả enrollment active của branch
   async findActiveEnrollmentsByBranch(branchId: string) {
     return await Enrollment.find({ branchId, leftAt: null }).lean();
+  }
+
+  async findActiveEnrollmentsByClass(classId: string, branchId: string) {
+    return await Enrollment.find({ classId, branchId, leftAt: null }).lean();
   }
 
   // Đếm buổi có mặt trong tháng (billing period = "YYYY-MM")
@@ -131,8 +214,8 @@ export class FinanceRepository {
     actorRole: string;
     branchId: Types.ObjectId;
     targetId: Types.ObjectId;
-    before?: Record<string, any>;
-    after?: Record<string, any>;
+    before?: AuditSnapshot;
+    after?: AuditSnapshot;
   }) {
     return await AuditLog.create({
       ...data,

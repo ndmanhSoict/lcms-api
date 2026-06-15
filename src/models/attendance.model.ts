@@ -33,31 +33,31 @@ export interface IAttendance extends Document {
 const AttendanceEditHistorySchema = new Schema<IAttendanceEditHistory>(
   {
     changedFrom: { type: String, enum: Object.values(ATTENDANCE_STATUS), required: true },
-    changedTo:   { type: String, enum: Object.values(ATTENDANCE_STATUS), required: true },
-    changedBy:   { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    changedAt:   { type: Date, required: true, default: () => new Date() },
-    reason:      { type: String, default: null },
+    changedTo: { type: String, enum: Object.values(ATTENDANCE_STATUS), required: true },
+    changedBy: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    changedAt: { type: Date, required: true, default: () => new Date() },
+    reason: { type: String, default: null },
   },
   { _id: false }
 );
 
 const AttendanceSchema = new Schema<IAttendance>(
   {
-    schemaVersion:   { type: Number, default: 1 },
-    branchId:        { type: Schema.Types.ObjectId, ref: 'Branch',       required: true },
-    sessionId:       { type: Schema.Types.ObjectId, ref: 'ClassSession', required: true },
-    classId:         { type: Schema.Types.ObjectId, ref: 'Class',        required: true },
-    studentId:       { type: Schema.Types.ObjectId, ref: 'User',         required: true },
-    teacherId:       { type: Schema.Types.ObjectId, ref: 'User',         default: null },
+    schemaVersion: { type: Number, default: 1 },
+    branchId: { type: Schema.Types.ObjectId, ref: 'Branch', required: true },
+    sessionId: { type: Schema.Types.ObjectId, ref: 'ClassSession', required: true },
+    classId: { type: Schema.Types.ObjectId, ref: 'Class', required: true },
+    studentId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    teacherId: { type: Schema.Types.ObjectId, ref: 'User', default: null },
     status: {
       type: String,
       enum: Object.values(ATTENDANCE_STATUS),
       required: true,
     },
-    sessionDate:      { type: Date, required: true },
-    markedAt:         { type: Date, default: null },
-    absenceNotified:  { type: Boolean, default: false },
-    editHistory:      { type: [AttendanceEditHistorySchema], default: [] },
+    sessionDate: { type: Date, required: true },
+    markedAt: { type: Date, default: null },
+    absenceNotified: { type: Boolean, default: false },
+    editHistory: { type: [AttendanceEditHistorySchema], default: [] },
   },
   {
     timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' },
@@ -84,10 +84,7 @@ AttendanceSchema.index(
     name: 'idx_attend_absent_unnotified',
   }
 );
-AttendanceSchema.index(
-  { branchId: 1, sessionDate: 1 },
-  { name: 'idx_attend_branch_date' }
-);
+AttendanceSchema.index({ branchId: 1, sessionDate: 1 }, { name: 'idx_attend_branch_date' });
 
 export const Attendance =
   mongoose.models.Attendance ||

@@ -2,7 +2,9 @@ import { Router } from 'express';
 import { authenticate } from '../../middleware/auth/authenticate.middleware.js';
 import { authorize } from '../../middleware/auth/authorize.middleware.js';
 import { ROLES } from '../../shared/constants/roles.js';
+import { validate } from '../../middleware/validate.middleware.js';
 import { ReportController } from './report.controller.js';
+import { branchAnalyticsSchema } from './report.schema.js';
 
 export const reportRouter = Router();
 const controller = new ReportController();
@@ -35,4 +37,12 @@ reportRouter.get(
   '/reports/system-dashboard',
   authorize(ROLES.SYSTEM_OWNER),
   controller.getSystemDashboard
+);
+
+// Báo cáo vận hành chuyên sâu — chỉ Chủ cơ sở
+reportRouter.get(
+  '/reports/branch-analytics',
+  authorize(ROLES.BRANCH_OWNER),
+  validate(branchAnalyticsSchema),
+  controller.getBranchAnalytics
 );

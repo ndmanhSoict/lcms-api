@@ -10,7 +10,7 @@ import {
 export interface IExamAnswer {
   questionId: Types.ObjectId;
   questionOrder: number;
-  answer?: any;
+  answer?: QuestionAnswerValue;
   isFlagged: boolean;
   answeredAt?: Date;
 }
@@ -18,8 +18,8 @@ export interface IExamAnswer {
 export interface IAnswerResult {
   questionId: Types.ObjectId;
   questionType: QuestionType;
-  studentAnswer?: any;
-  correctAnswer?: any;
+  studentAnswer?: QuestionAnswerValue;
+  correctAnswer?: QuestionAnswerValue;
   isCorrect?: boolean;
   scoreEarned?: number;
 }
@@ -43,6 +43,7 @@ export interface IExamAttempt extends Document {
   submittedAt?: Date;
   /** Server-side timer — chống gian lận thời gian */
   timeRemainingSeconds?: number;
+  draftExpiresAt?: Date;
   answers: IExamAnswer[];
   lastSavedAt?: Date;
   score?: number;
@@ -110,6 +111,7 @@ const ExamAttemptSchema = new Schema<IExamAttempt>(
     startedAt:             { type: Date, required: true, default: () => new Date() },
     submittedAt:           { type: Date, default: null },
     timeRemainingSeconds:  { type: Number, default: null },
+    draftExpiresAt:        { type: Date, default: null },
     answers:               { type: [ExamAnswerSchema], default: [] },
     lastSavedAt:           { type: Date, default: null },
     score:                 { type: Number, default: null },

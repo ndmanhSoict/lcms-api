@@ -1,12 +1,32 @@
 import { Types } from 'mongoose';
 import { Message, IMessage } from '../../models/message.model.js';
-import { User } from '../../models/user.model.js';
+import { User, IUser } from '../../models/user.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
 import { Class } from '../../models/class.model.js';
 
 export class MessageRepository {
   async findUserById(id: string) {
     return await User.findById(id).lean();
+  }
+
+  async findUsers(filter: MongoFilter<IUser>, limit: number) {
+    return await User.find(filter)
+      .select('fullName role userCode email avatarUrl branchId')
+      .sort({ fullName: 1 })
+      .limit(limit)
+      .lean();
+  }
+
+  async getBranchIdsForParent(parentId: string) {
+    const parent = await User.findById(parentId).select('parentInfo.studentIds').lean();
+    const childIds = parent?.parentInfo?.studentIds ?? [];
+    if (!childIds.length) return [];
+
+    const children = await User.find({ _id: { $in: childIds }, deletedAt: null })
+      .select('branchId')
+      .lean();
+
+    return [...new Set(children.map(child => child.branchId?.toString()).filter(Boolean))];
   }
 
   // Kiểm tra GV có lớp nào chứa HS mà PH đó quản lý không
@@ -20,7 +40,9 @@ export class MessageRepository {
       teacherId: new Types.ObjectId(teacherId),
       status: 'active',
       deletedAt: null,
-    }).select('_id').lean();
+    })
+      .select('_id')
+      .lean();
     const classIds = teacherClasses.map(c => c._id);
 
     // Kiểm tra ít nhất 1 con đang học trong lớp GV
@@ -51,6 +73,8 @@ export class MessageRepository {
         $group: {
           _id: '$threadId',
           lastContent: { $first: '$content' },
+          lastMessageType: { $first: '$messageType' },
+          lastSenderId: { $first: '$senderId' },
           lastSentAt: { $first: '$sentAt' },
           otherUserId: {
             $first: {
@@ -84,14 +108,24 @@ export class MessageRepository {
     return await Message.countDocuments({ threadId, deletedAt: null });
   }
 
+  async countUnreadMessages(userId: Types.ObjectId, senderIds?: Types.ObjectId[]) {
+    return await Message.countDocuments({
+      receiverId: userId,
+      ...(senderIds && { senderId: { $in: senderIds } }),
+      isRead: false,
+      deletedAt: null,
+    });
+  }
+
   async createMessage(data: Partial<IMessage>) {
     return await Message.create(data);
   }
 
   async markThreadAsRead(threadId: string, receiverId: Types.ObjectId) {
-    await Message.updateMany(
+    const result = await Message.updateMany(
       { threadId, receiverId, isRead: false },
       { $set: { isRead: true, readAt: new Date() } }
     );
+    return result.modifiedCount;
   }
 }

@@ -12,6 +12,7 @@ const controller = new ParentController();
 parentRouter.use(authenticate);
 
 parentRouter.get('/my-overview', authorize(ROLES.PARENT), controller.getMyOverview);
+parentRouter.get('/my-attendance', authorize(ROLES.PARENT), controller.getMyAttendance);
 
 parentRouter.use(authorize(ROLES.BRANCH_OWNER, ROLES.STAFF));
 

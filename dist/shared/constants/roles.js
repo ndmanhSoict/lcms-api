@@ -43,6 +43,7 @@ export const QUESTION_TYPES = {
     MULTIPLE_CHOICE: 'multiple_choice',
     ESSAY: 'essay',
     FILL_BLANK: 'fill_blank',
+    SHORT_ANSWER: 'short_answer',
     TRUE_FALSE: 'true_false',
 };
 export const DIFFICULTY_LEVELS = {
@@ -93,9 +94,11 @@ export const NOTIFICATION_TYPES = {
     CLASS_ANNOUNCEMENT: 'class_announcement',
     CLASS_SESSION: 'class_session',
     CLASS_SESSION_UPDATED: 'class_session_updated',
+    CLASS_SESSION_MATERIAL: 'class_session_material',
     ENROLLMENT_ADDED: 'enrollment_added',
     ENROLLMENT_LEFT: 'enrollment_left',
     ATTENDANCE_MARKED: 'attendance_marked',
+    STUDENT_EVALUATION: 'student_evaluation',
     SYSTEM: 'system',
 };
 export const AUDIT_ACTIONS = {
@@ -136,6 +139,15 @@ export const SUBMISSION_STATUSES = {
     REVISION_REQUESTED: 'revision_requested',
 };
 export const GRADE_STATUSES = {
+    DRAFT: 'draft',
+    PUBLISHED: 'published',
+};
+export const EVALUATION_PERIOD_TYPES = {
+    SESSION: 'session',
+    MONTHLY: 'monthly',
+    COURSE: 'course',
+};
+export const EVALUATION_STATUSES = {
     DRAFT: 'draft',
     PUBLISHED: 'published',
 };

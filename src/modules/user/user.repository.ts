@@ -12,7 +12,7 @@ export class UserRepository {
     return await user.save();
   }
 
-  async findAllPaginated(filter: any, skip: number, limit: number) {
+  async findAllPaginated(filter: MongoFilter<IUser>, skip: number, limit: number) {
     const [users, totalItems] = await Promise.all([
       User.find(filter)
         .select('-password') // Không trả về mật khẩu
@@ -20,26 +20,26 @@ export class UserRepository {
         .limit(limit)
         .sort({ createdAt: -1 })
         .lean(),
-      User.countDocuments(filter)
+      User.countDocuments(filter),
     ]);
     return { users, totalItems };
   }
 
   async findById(id: string) {
-    return await User.findById(id).select('-password').lean();
+    return await User.findById(id).select('-passwordHash').lean();
   }
 
-  async updateById(id: string, data: any) {
-    return await User.findByIdAndUpdate(id, data, { new: true }).select('-password').lean();
+  async updateById(id: string, data: MongoUpdate<IUser>) {
+    return await User.findByIdAndUpdate(id, data, { new: true }).select('-passwordHash').lean();
   }
 
   async revokeAllTokens(userId: string) {
     return await RefreshToken.updateMany(
       { userId, isRevoked: false },
-      { 
-        isRevoked: true, 
+      {
+        isRevoked: true,
         revokeReason: REVOKE_REASONS.ADMIN_REVOKE,
-        revokedAt: new Date() 
+        revokedAt: new Date(),
       }
     );
   }

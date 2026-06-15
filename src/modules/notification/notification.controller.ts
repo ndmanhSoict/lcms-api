@@ -13,7 +13,7 @@ export class NotificationController {
   getNotifications = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { data, meta } = await this.service.getNotifications(req.query, req.user);
-      sendSuccess(res, data, 'Lấy danh sách thông báo thành công', 200, meta as unknown as Record<string, unknown>);
+      sendSuccess(res, data, 'Lấy danh sách thông báo thành công', 200, meta);
     } catch (error) { next(error); }
   };
 

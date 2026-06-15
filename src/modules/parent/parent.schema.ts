@@ -1,5 +1,9 @@
 import { z } from 'zod';
 import { GENDERS, RELATIONSHIPS } from '../../shared/constants/roles.js';
+import {
+  VIETNAM_MOBILE_PHONE_MESSAGE,
+  VIETNAM_MOBILE_PHONE_REGEX,
+} from '../../shared/utils/validators.js';
 
 const passwordSchema = z.string()
   .min(8, 'Mật khẩu phải ít nhất 8 ký tự')
@@ -7,6 +11,11 @@ const passwordSchema = z.string()
   .regex(/[a-z]/, 'Mật khẩu phải có chữ thường')
   .regex(/[0-9]/, 'Mật khẩu phải có chữ số')
   .regex(/[^A-Za-z0-9]/, 'Mật khẩu phải có ký tự đặc biệt');
+
+const phoneSchema = z
+  .string()
+  .trim()
+  .regex(VIETNAM_MOBILE_PHONE_REGEX, VIETNAM_MOBILE_PHONE_MESSAGE);
 
 const parentInfoSchema = z.object({
   studentIds: z.array(z.string()).optional().default([]),
@@ -22,7 +31,7 @@ export const createParentSchema = z.object({
   body: z.object({
     fullName: z.string().min(1, 'Họ tên không được để trống'),
     email: z.string().email('Email không hợp lệ').optional().or(z.literal('')),
-    phone: z.string().min(10, 'Số điện thoại không hợp lệ'),
+    phone: phoneSchema,
     password: passwordSchema.optional(),
     dateOfBirth: z.string().optional(),
     gender: z.enum([GENDERS.MALE, GENDERS.FEMALE, GENDERS.OTHER]).optional(),
@@ -36,7 +45,7 @@ export const updateParentSchema = z.object({
   body: z.object({
     fullName: z.string().min(1).optional(),
     email: z.string().email('Email không hợp lệ').optional(),
-    phone: z.string().min(10, 'Số điện thoại không hợp lệ').optional(),
+    phone: phoneSchema.optional(),
     dateOfBirth: z.string().optional(),
     gender: z.enum([GENDERS.MALE, GENDERS.FEMALE, GENDERS.OTHER]).optional(),
     avatarUrl: z.string().url('avatarUrl phải là URL hợp lệ').optional(),

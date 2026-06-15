@@ -2,6 +2,7 @@ node_modules/
 yarn.lock
 .env
 logs/
+uploads/
 docker-compose.yml
 package-lock.json
 .claude/

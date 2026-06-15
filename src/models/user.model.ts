@@ -1,8 +1,11 @@
 import mongoose, { Schema, Document, Types } from 'mongoose';
 import {
-  ROLES, RoleType,
-  GENDERS, GenderType,
-  RELATIONSHIPS, RelationshipType,
+  ROLES,
+  RoleType,
+  GENDERS,
+  GenderType,
+  RELATIONSHIPS,
+  RelationshipType,
 } from '../shared/constants/roles.js';
 
 // ── Embedded sub-types ───────────────────────────────────────
@@ -57,7 +60,7 @@ export interface IUser extends Document {
 
   // Role-specific blocks (chỉ có 1 block tương ứng role)
   studentInfo?: IStudentInfo;
-  parentInfo?:  IParentInfo;
+  parentInfo?: IParentInfo;
   teacherInfo?: ITeacherInfo;
 
   // Status
@@ -77,16 +80,16 @@ const StudentInfoSchema = new Schema<IStudentInfo>(
   {
     activeClassIds: { type: [Schema.Types.ObjectId], ref: 'Class', default: [] },
     enrollmentDate: { type: Date, default: null },
-    parentIds:      { type: [Schema.Types.ObjectId], ref: 'User', default: [] },
-    schoolName:     { type: String, default: null },
-    grade:          { type: Number, default: null },
+    parentIds: { type: [Schema.Types.ObjectId], ref: 'User', default: [] },
+    schoolName: { type: String, default: null },
+    grade: { type: Number, default: null },
   },
   { _id: false }
 );
 
 const ParentInfoSchema = new Schema<IParentInfo>(
   {
-    studentIds:   { type: [Schema.Types.ObjectId], ref: 'User', default: [] },
+    studentIds: { type: [Schema.Types.ObjectId], ref: 'User', default: [] },
     relationship: {
       type: String,
       enum: [...Object.values(RELATIONSHIPS), null],
@@ -98,8 +101,8 @@ const ParentInfoSchema = new Schema<IParentInfo>(
 
 const TeacherInfoSchema = new Schema<ITeacherInfo>(
   {
-    subjects:       { type: [String], default: [] },
-    joinDate:       { type: Date, default: null },
+    subjects: { type: [String], default: [] },
+    joinDate: { type: Date, default: null },
     activeClassIds: { type: [Schema.Types.ObjectId], ref: 'Class', default: [] },
   },
   { _id: false }
@@ -109,25 +112,25 @@ const TeacherInfoSchema = new Schema<ITeacherInfo>(
 const UserSchema = new Schema<IUser>(
   {
     schemaVersion: { type: Number, default: 1 },
-    userCode:      { type: String, sparse: true, default: null },
+    userCode: { type: String, sparse: true, default: null },
 
-    email:        { type: String, sparse: true },
-    phone:        { type: String, sparse: true, default: null },
-    passwordHash: { type: String, required: true },
+    email: { type: String, sparse: true },
+    phone: { type: String, sparse: true, default: null },
+    passwordHash: { type: String, required: true, select: false },
 
-    role:     { type: String, enum: Object.values(ROLES), required: true },
+    role: { type: String, enum: Object.values(ROLES), required: true },
     branchId: { type: Schema.Types.ObjectId, ref: 'Branch', default: null },
 
-    fullName:    { type: String, required: true },
+    fullName: { type: String, required: true },
     dateOfBirth: { type: Date, default: null },
-    gender:      { type: String, enum: [...Object.values(GENDERS), null], default: null },
-    avatarUrl:   { type: String, default: null },
+    gender: { type: String, enum: [...Object.values(GENDERS), null], default: null },
+    avatarUrl: { type: String, default: null },
 
     studentInfo: { type: StudentInfoSchema, default: null },
-    parentInfo:  { type: ParentInfoSchema,  default: null },
+    parentInfo: { type: ParentInfoSchema, default: null },
     teacherInfo: { type: TeacherInfoSchema, default: null },
 
-    isActive:    { type: Boolean, required: true, default: true },
+    isActive: { type: Boolean, required: true, default: true },
     lastLoginAt: { type: Date, default: null },
 
     createdBy: { type: Schema.Types.ObjectId, ref: 'User', default: null },
@@ -137,15 +140,27 @@ const UserSchema = new Schema<IUser>(
   {
     timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' },
     collection: 'users',
+    toJSON: {
+      transform: (_doc, ret: Record<string, unknown>) => {
+        delete ret.passwordHash;
+        return ret;
+      },
+    },
+    toObject: {
+      transform: (_doc, ret: Record<string, unknown>) => {
+        delete ret.passwordHash;
+        return ret;
+      },
+    },
   }
 );
 
 // ── Indexes ──────────────────────────────────────────────────
 // Phase 1: email là login chính — unique
-UserSchema.index({ email: 1 },     { unique: true, sparse: true, name: 'idx_users_email' });
+UserSchema.index({ email: 1 }, { unique: true, sparse: true, name: 'idx_users_email' });
 // Phase 2: nâng lên unique:true khi bật login SĐT
-UserSchema.index({ phone: 1 },     { sparse: true, name: 'idx_users_phone' });
-UserSchema.index({ userCode: 1 },  { unique: true, sparse: true, name: 'idx_users_code' });
+UserSchema.index({ phone: 1 }, { sparse: true, name: 'idx_users_phone' });
+UserSchema.index({ userCode: 1 }, { unique: true, sparse: true, name: 'idx_users_code' });
 UserSchema.index({ branchId: 1, role: 1 }, { name: 'idx_users_branch_role' });
 // Q04: HS chưa xếp lớp nào
 UserSchema.index(
@@ -164,7 +179,6 @@ UserSchema.index(
 );
 // Full-text tìm tên
 UserSchema.index({ fullName: 'text' }, { name: 'idx_users_fullname_text' });
-UserSchema.index({ deletedAt: 1 },     { sparse: true, name: 'idx_users_deleted' });
+UserSchema.index({ deletedAt: 1 }, { sparse: true, name: 'idx_users_deleted' });
 
-export const User =
-  mongoose.models.User || mongoose.model<IUser>('User', UserSchema, 'users');
+export const User = mongoose.models.User || mongoose.model<IUser>('User', UserSchema, 'users');

@@ -11,7 +11,7 @@ import {
 export interface IExamConfig {
   shuffleQuestions: boolean;
   shuffleOptions: boolean;
-  showResultAfter: 'submit' | 'graded';
+  showResultAfter: 'submit' | 'graded' | 'teacher_release';
   allowedAttempts: number;
 }
 
@@ -25,7 +25,7 @@ export interface IExamQuestion {
   content: string;
   imageUrl?: string;
   options?: Array<{ key: string; content: string }>;
-  correctAnswer?: any;
+  correctAnswer?: QuestionAnswerValue;
   score: number;
   order: number;
 }
@@ -34,6 +34,7 @@ export interface IExam extends Document {
   schemaVersion: number;
   branchId: Types.ObjectId;
   classId: Types.ObjectId;
+  targetType: 'class' | 'course';
   teacherId: Types.ObjectId;
   title: string;
   description?: string;
@@ -46,6 +47,8 @@ export interface IExam extends Document {
   /** Embed snapshot câu hỏi — immutable sau publish */
   questions: IExamQuestion[];
   status: ExamStatus;
+  resultPublishedAt?: Date;
+  resultPublishedBy?: Types.ObjectId;
   /** Denorm counter */
   attemptCount: number;
   createdAt: Date;
@@ -74,7 +77,11 @@ const ExamConfigSchema = new Schema<IExamConfig>(
   {
     shuffleQuestions: { type: Boolean, default: true },
     shuffleOptions:   { type: Boolean, default: true },
-    showResultAfter:  { type: String, enum: ['submit', 'graded'], default: 'submit' },
+    showResultAfter:  {
+      type: String,
+      enum: ['submit', 'graded', 'teacher_release'],
+      default: 'teacher_release',
+    },
     allowedAttempts:  { type: Number, default: 1 },
   },
   { _id: false }
@@ -85,6 +92,7 @@ const ExamSchema = new Schema<IExam>(
     schemaVersion:   { type: Number, default: 1 },
     branchId:        { type: Schema.Types.ObjectId, ref: 'Branch', required: true },
     classId:         { type: Schema.Types.ObjectId, ref: 'Class',  required: true },
+    targetType:      { type: String, enum: ['class', 'course'], default: 'class' },
     teacherId:       { type: Schema.Types.ObjectId, ref: 'User',   required: true },
     title:           { type: String, required: true },
     description:     { type: String, default: null },
@@ -101,8 +109,10 @@ const ExamSchema = new Schema<IExam>(
       required: true,
       default: EXAM_STATUSES.DRAFT,
     },
-    attemptCount: { type: Number, default: 0 },
-    deletedAt:    { type: Date, default: null },
+    resultPublishedAt: { type: Date, default: null },
+    resultPublishedBy: { type: Schema.Types.ObjectId, ref: 'User', default: null },
+    attemptCount:      { type: Number, default: 0 },
+    deletedAt:         { type: Date, default: null },
   },
   {
     timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' },

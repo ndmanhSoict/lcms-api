@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
+import fs from 'node:fs/promises';
 import { ClassSessionService } from './classSession.service.js';
 import { sendCreated, sendSuccess } from '../../shared/utils/response.helper.js';
 
@@ -11,36 +12,103 @@ export class ClassSessionController {
 
   createSession = async (req: Request<{ classId: string }>, res: Response, next: NextFunction) => {
     try {
-      const result = await this.sessionService.createSession(req.params.classId, req.body, req.user);
+      const result = await this.sessionService.createSession(
+        req.params.classId,
+        req.body,
+        req.user
+      );
       sendCreated(res, result, 'Tạo buổi học thành công');
-    } catch (error) { next(error); }
+    } catch (error) {
+      next(error);
+    }
   };
 
-  updateSession = async (req: Request<{ sessionId: string }>, res: Response, next: NextFunction) => {
+  updateSession = async (
+    req: Request<{ sessionId: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
     try {
-      const result = await this.sessionService.updateSession(req.params.sessionId, req.body, req.user);
+      const result = await this.sessionService.updateSession(
+        req.params.sessionId,
+        req.body,
+        req.user
+      );
       sendSuccess(res, result, 'Cập nhật buổi học thành công');
-    } catch (error) { next(error); }
+    } catch (error) {
+      next(error);
+    }
   };
 
-  getClassSessions = async (req: Request<{ classId: string }>, res: Response, next: NextFunction) => {
+  uploadSessionMaterial = async (
+    req: Request<{ sessionId: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
     try {
-      const result = await this.sessionService.getClassSessions(req.params.classId, req.query, req.user);
+      const result = await this.sessionService.uploadSessionMaterial(
+        req.params.sessionId,
+        req.file,
+        req.body,
+        req.user
+      );
+      sendCreated(res, result, 'Tải tài liệu buổi học thành công');
+    } catch (error) {
+      if (req.file?.path) {
+        await fs.unlink(req.file.path).catch(() => undefined);
+      }
+      next(error);
+    }
+  };
+
+  getClassSessions = async (
+    req: Request<{ classId: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const result = await this.sessionService.getClassSessions(
+        req.params.classId,
+        req.query,
+        req.user
+      );
       sendSuccess(res, result, 'Lấy danh sách buổi học của lớp thành công');
-    } catch (error) { next(error); }
+    } catch (error) {
+      next(error);
+    }
   };
 
-  getTeacherSchedule = async (req: Request<{ teacherId: string }>, res: Response, next: NextFunction) => {
+  getTeacherSchedule = async (
+    req: Request<{ teacherId: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
     try {
-      const result = await this.sessionService.getTeacherSchedule(req.params.teacherId, req.query, req.user);
+      const result = await this.sessionService.getTeacherSchedule(
+        req.params.teacherId,
+        req.query,
+        req.user
+      );
       sendSuccess(res, result, 'Lấy lịch dạy giáo viên thành công');
-    } catch (error) { next(error); }
+    } catch (error) {
+      next(error);
+    }
   };
 
-  getStudentSchedule = async (req: Request<{ studentId: string }>, res: Response, next: NextFunction) => {
+  getStudentSchedule = async (
+    req: Request<{ studentId: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
     try {
-      const result = await this.sessionService.getStudentSchedule(req.params.studentId, req.query, req.user);
+      const result = await this.sessionService.getStudentSchedule(
+        req.params.studentId,
+        req.query,
+        req.user
+      );
       sendSuccess(res, result, 'Lấy lịch học thành công');
-    } catch (error) { next(error); }
+    } catch (error) {
+      next(error);
+    }
   };
 }

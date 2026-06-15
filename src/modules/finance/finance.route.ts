@@ -6,7 +6,9 @@ import { ROLES } from '../../shared/constants/roles.js';
 import { FinanceController } from './finance.controller.js';
 import {
   createInvoiceSchema,
+  calculateInvoiceSchema,
   batchGenerateInvoiceSchema,
+  deleteInvoiceSchema,
   payCashSchema,
   vnpayCreatePaymentSchema,
 } from './finance.schema.js';
@@ -17,6 +19,7 @@ const controller = new FinanceController();
 // ── Routes KHÔNG cần JWT (VNPay server gọi) ──────────────────
 
 // 12.7 VNPay IPN Webhook — trước /:id để không bị match nhầm
+financeRouter.get('/invoices/vnpay/webhook', controller.vnpayWebhook);
 financeRouter.post('/invoices/vnpay/webhook', controller.vnpayWebhook);
 
 // 12.8 VNPay Return
@@ -33,10 +36,18 @@ financeRouter.post(
   controller.createInvoice
 );
 
+// 12.1b Tính thử học phí — SO/BO/ST (trước /:id)
+financeRouter.post(
+  '/invoices/calculate',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF),
+  validate(calculateInvoiceSchema),
+  controller.calculateInvoice
+);
+
 // 12.2 Batch generate — SO/BO (trước /:id)
 financeRouter.post(
   '/invoices/batch-generate',
-  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER),
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF),
   validate(batchGenerateInvoiceSchema),
   controller.batchGenerateInvoices
 );
@@ -44,8 +55,18 @@ financeRouter.post(
 // 12.3 Lấy danh sách (RBAC trong service)
 financeRouter.get('/invoices', controller.getInvoices);
 
+// 12.4b Lịch sử giao dịch (RBAC trong service)
+financeRouter.get('/payments', controller.getPayments);
+
 // 12.4 Chi tiết phiếu (RBAC trong service)
 financeRouter.get('/invoices/:id', controller.getInvoiceById);
+
+financeRouter.delete(
+  '/invoices/:id',
+  authorize(ROLES.SYSTEM_OWNER, ROLES.BRANCH_OWNER, ROLES.STAFF),
+  validate(deleteInvoiceSchema),
+  controller.deleteInvoice
+);
 
 // 12.5 Thu tiền mặt — SO/BO/ST
 financeRouter.post(

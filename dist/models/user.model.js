@@ -27,7 +27,7 @@ const UserSchema = new Schema({
     userCode: { type: String, sparse: true, default: null },
     email: { type: String, sparse: true },
     phone: { type: String, sparse: true, default: null },
-    passwordHash: { type: String, required: true },
+    passwordHash: { type: String, required: true, select: false },
     role: { type: String, enum: Object.values(ROLES), required: true },
     branchId: { type: Schema.Types.ObjectId, ref: 'Branch', default: null },
     fullName: { type: String, required: true },
@@ -45,6 +45,18 @@ const UserSchema = new Schema({
 }, {
     timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' },
     collection: 'users',
+    toJSON: {
+        transform: (_doc, ret) => {
+            delete ret.passwordHash;
+            return ret;
+        },
+    },
+    toObject: {
+        transform: (_doc, ret) => {
+            delete ret.passwordHash;
+            return ret;
+        },
+    },
 });
 // ── Indexes ──────────────────────────────────────────────────
 // Phase 1: email là login chính — unique

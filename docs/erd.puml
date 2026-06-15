@@ -1,0 +1,97 @@
+@startuml LCMS-ERD
+hide empty members
+hide circle
+skinparam linetype ortho
+
+skinparam entity {
+  BackgroundColor #F5F8FF
+  BorderColor     #4A6FA5
+  FontSize        13
+  FontStyle       bold
+}
+skinparam arrow {
+  Color           #555555
+  FontSize        11
+}
+
+' ══════════════════════════════════════════════════════
+'  ENTITIES
+' ══════════════════════════════════════════════════════
+
+entity Branch
+entity Classroom
+entity User
+entity Class
+entity ClassSession
+entity Enrollment
+entity Attendance
+entity Assignment
+entity Submission
+entity Exam
+entity ExamAttempt
+entity QuestionBank
+entity Invoice
+entity Payment
+entity GradeRecord
+entity Notification
+entity Message
+
+' ══════════════════════════════════════════════════════
+'  QUAN HỆ
+' ══════════════════════════════════════════════════════
+
+' ── Tổ chức ──────────────────────────────────────────
+Branch      ||--o{ Classroom    : "có phòng học"
+Branch      ||--o{ User         : "quản lý"
+Branch      ||--o{ Class        : "mở lớp"
+
+' ── Nhân sự / Lớp ────────────────────────────────────
+User        ||--o{ Class        : "teacher dạy"
+Class       }o--|| Classroom    : "học tại"
+
+' ── Ghi danh (N-N Student ↔ Class) ──────────────────
+User        ||--o{ Enrollment   : "student đăng ký"
+Class       ||--o{ Enrollment   : "chứa HS"
+
+' ── Self-ref: Phụ huynh - Học sinh ──────────────────
+User        }o--o{ User         : "parent / student"
+
+' ── Buổi học ─────────────────────────────────────────
+Class       ||--o{ ClassSession : "gồm các buổi"
+Classroom   ||--o{ ClassSession : "diễn ra tại"
+
+' ── Điểm danh ────────────────────────────────────────
+ClassSession||--o{ Attendance   : "ghi điểm danh"
+User        ||--o{ Attendance   : "student được điểm danh"
+
+' ── Bài tập / Nộp bài ───────────────────────────────
+Class       ||--o{ Assignment   : "có bài tập"
+User        ||--o{ Assignment   : "teacher giao"
+ClassSession|o--o{ Assignment   : "gắn với buổi học"
+Assignment  ||--o{ Submission   : "nhận bài nộp"
+User        ||--o{ Submission   : "student nộp"
+
+' ── Ngân hàng câu hỏi / Kiểm tra ───────────────────
+User        ||--o{ QuestionBank : "teacher tạo câu hỏi"
+QuestionBank||--o{ Exam         : "dùng trong đề thi"
+Class       ||--o{ Exam         : "có bài kiểm tra"
+User        ||--o{ Exam         : "teacher tạo đề"
+Exam        ||--o{ ExamAttempt  : "HS làm bài"
+User        ||--o{ ExamAttempt  : "student thực hiện"
+
+' ── Học bạ tổng hợp ──────────────────────────────────
+User        ||--o{ GradeRecord  : "student có học bạ"
+Class       ||--o{ GradeRecord  : "theo lớp"
+User        ||--o{ GradeRecord  : "teacher phụ trách"
+
+' ── Tài chính ────────────────────────────────────────
+User        ||--o{ Invoice      : "student nhận HĐ"
+Class       ||--o{ Invoice      : "phát sinh HĐ"
+Invoice     ||--o{ Payment      : "có thanh toán"
+User        ||--o{ Payment      : "student thanh toán"
+
+' ── Thông báo & Tin nhắn ─────────────────────────────
+User        ||--o{ Notification : "nhận thông báo"
+User        ||--o{ Message      : "gửi / nhận tin"
+
+@enduml

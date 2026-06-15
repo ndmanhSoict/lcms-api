@@ -1,7 +1,8 @@
 import jwt, { SignOptions } from 'jsonwebtoken';
 import { env } from '../../config/env.validation.js';
+import { IUser } from '../../models/user.model.js';
 
-export const generateTokens = (user: any) => {
+export const generateTokens = (user: IUser) => {
   const accessTokenPayload = {
     id: user._id.toString(),
     email: user.email,

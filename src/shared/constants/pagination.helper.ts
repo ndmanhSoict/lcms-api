@@ -16,9 +16,9 @@ export interface PaginationResult {
 /**
  * Xử lý query params để lấy các thông số phân trang
  */
-export const getPagination = (queryPage?: any, queryLimit?: any): PaginationParams => {
-  const page = Math.max(1, parseInt(queryPage) || 1);
-  const limit = Math.max(1, Math.min(100, parseInt(queryLimit) || 10));
+export const getPagination = (queryPage?: unknown, queryLimit?: unknown): PaginationParams => {
+  const page = Math.max(1, parseInt(String(queryPage ?? ''), 10) || 1);
+  const limit = Math.max(1, Math.min(100, parseInt(String(queryLimit ?? ''), 10) || 50));
   const skip = (page - 1) * limit;
 
   return { page, limit, skip };
