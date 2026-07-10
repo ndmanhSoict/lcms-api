@@ -3,7 +3,7 @@ import { Attendance, IAttendance } from '../../models/attendance.model.js';
 import { ClassSession } from '../../models/classSession.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
 import { AuditLog } from '../../models/auditLog.model.js';
-import { AttendanceStatus } from '../../shared/constants/roles.js';
+import { ATTENDANCE_STATUS, AttendanceStatus } from '../../shared/constants/roles.js';
 
 export class AttendanceRepository {
   async findSessionById(sessionId: string) {
@@ -126,7 +126,8 @@ export class AttendanceRepository {
     };
 
     if (filters.classId) filter.classId = new Types.ObjectId(filters.classId);
-    if (filters.status) filter.status = filters.status;
+    if (filters.status === ATTENDANCE_STATUS.PRESENT) filter.status = ATTENDANCE_STATUS.PRESENT;
+    if (filters.status === ATTENDANCE_STATUS.ABSENT) filter.status = { $ne: ATTENDANCE_STATUS.PRESENT };
 
     return await Attendance.find(filter)
       .populate({

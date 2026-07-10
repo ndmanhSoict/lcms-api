@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "schemaVersion": 1,
+  "branchCode": "CS-HBT",
+  "name": "Cơ sở Hai Bà Trưng",
+  "address": "45 Phố Huế, Hai Bà Trưng, Hà Nội",
+  "phone": "024-3821-4567",
+  "email": "haibatrung@lcms.edu.vn",
+  "logoUrl": null,
+  "ownerId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "timezone": "Asia/Ho_Chi_Minh",
+  "defaultFeePerSession": 150000,
+  "defaultSessionSlots": [
+    {
+      "name": "Ca sáng",
+      "startTime": "07:30",
+      "endTime": "09:30"
+    },
+    {
+      "name": "Ca chiều",
+      "startTime": "14:00",
+      "endTime": "16:00"
+    },
+    {
+      "name": "Ca tối",
+      "startTime": "18:00",
+      "endTime": "20:00"
+    }
+  ],
+  "rooms": [
+    {
+      "code": "P101",
+      "name": "Phòng 101"
+    },
+    {
+      "code": "P102",
+      "name": "Phòng 102"
+    },
+    {
+      "code": "P201",
+      "name": "Phòng 201"
+    }
+  ],
+  "isActive": false,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-19T14:16:04.893Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T07:48:23.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "schemaVersion": 1,
+  "branchCode": "CS-CG",
+  "name": "Cơ sở Cầu Giấy",
+  "address": "18 Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+  "phone": "024-3756-8901",
+  "email": "caugiay@lcms.edu.vn",
+  "logoUrl": null,
+  "ownerId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "timezone": "Asia/Ho_Chi_Minh",
+  "defaultFeePerSession": 160000,
+  "defaultSessionSlots": [
+    {
+      "name": "Ca sáng",
+      "startTime": "08:00",
+      "endTime": "10:00"
+    },
+    {
+      "name": "Ca chiều",
+      "startTime": "14:30",
+      "endTime": "16:30"
+    },
+    {
+      "name": "Ca tối",
+      "startTime": "18:30",
+      "endTime": "20:30"
+    }
+  ],
+  "rooms": [
+    {
+      "code": "A01",
+      "name": "Phòng A01"
+    },
+    {
+      "code": "A02",
+      "name": "Phòng A02"
+    },
+    {
+      "code": "B01",
+      "name": "Phòng B01"
+    }
+  ],
+  "isActive": true,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-01-18T14:16:04.894Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:06.693Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "schemaVersion": 1,
+  "branchCode": "CS-6DB7124C",
+  "name": "Cơ sở Bình Minh",
+  "address": "128 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+  "phone": "024-7308-6868",
+  "email": "csbm@lcms.edu.vn",
+  "logoUrl": null,
+  "ownerId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "timezone": "Asia/Ho_Chi_Minh",
+  "defaultFeePerSession": 180000,
+  "defaultSessionSlots": [
+    {
+      "name": "Ca sáng 1",
+      "startTime": "07:30",
+      "endTime": "09:00"
+    },
+    {
+      "name": "Ca sáng 2",
+      "startTime": "09:15",
+      "endTime": "10:45"
+    },
+    {
+      "name": "Ca chiều",
+      "startTime": "14:00",
+      "endTime": "16:00"
+    },
+    {
+      "name": "Ca tối",
+      "startTime": "18:00",
+      "endTime": "20:00"
+    }
+  ],
+  "rooms": [
+    {
+      "code": "BM-A01",
+      "name": "BM-A01",
+      "capacity": 24,
+      "detail": "Tầng 1 - TV 65 inch, điều hòa, bảng từ"
+    },
+    {
+      "code": "BM-A02",
+      "name": "BM-A02",
+      "capacity": 20,
+      "detail": "Tầng 1 - Phòng học nhóm, ánh sáng tự nhiên"
+    },
+    {
+      "code": "BM-A03",
+      "name": "BM-A03",
+      "capacity": 28,
+      "detail": "Tầng 1 - Máy chiếu, loa, bảng tương tác"
+    },
+    {
+      "code": "BM-B01",
+      "name": "BM-B01",
+      "capacity": 26,
+      "detail": "Tầng 2 - Phòng Toán và Khoa học tự nhiên"
+    },
+    {
+      "code": "BM-B02",
+      "name": "BM-B02",
+      "capacity": 22,
+      "detail": "Tầng 2 - Phòng Ngoại ngữ, tai nghe luyện nghe"
+    },
+    {
+      "code": "BM-B03",
+      "name": "BM-B03",
+      "capacity": 30,
+      "detail": "Tầng 2 - Phòng học lớn và sinh hoạt chuyên đề"
+    },
+    {
+      "code": "BM-C01",
+      "name": "BM-C01",
+      "capacity": 18,
+      "detail": "Tầng 3 - Phòng phụ đạo và học cá nhân"
+    },
+    {
+      "code": "BM-LAB",
+      "name": "BM-LAB",
+      "capacity": 20,
+      "detail": "Tầng 3 - Phòng máy tính và thi trực tuyến"
+    }
+  ],
+  "isActive": true,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-07T15:12:50.056Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2fb0711ac44747aea0745d"
+  },
+  "schemaVersion": 1,
+  "branchCode": "CS-F0CFEFCB",
+  "name": "Cơ sở mới",
+  "address": null,
+  "phone": null,
+  "email": "cstest@lcms.vn",
+  "logoUrl": null,
+  "ownerId": {
+    "$oid": "6a2fb0711ac44747aea0745f"
+  },
+  "timezone": "Asia/Ho_Chi_Minh",
+  "defaultFeePerSession": null,
+  "defaultSessionSlots": [],
+  "rooms": [],
+  "isActive": true,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T07:57:37.740Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T07:57:37.875Z"
+  },
+  "__v": 0
+}]

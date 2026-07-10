@@ -9,6 +9,7 @@ import {
   calculateInvoiceSchema,
   batchGenerateInvoiceSchema,
   deleteInvoiceSchema,
+  vnpayCreateBulkPaymentSchema,
   payCashSchema,
   vnpayCreatePaymentSchema,
 } from './finance.schema.js';
@@ -77,6 +78,12 @@ financeRouter.post(
 );
 
 // 12.6 Tạo link VNPay (RBAC trong service)
+financeRouter.post(
+  '/invoices/vnpay/create-bulk-payment',
+  validate(vnpayCreateBulkPaymentSchema),
+  controller.vnpayCreateBulkPayment
+);
+
 financeRouter.post(
   '/invoices/:id/vnpay/create-payment',
   validate(vnpayCreatePaymentSchema),

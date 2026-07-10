@@ -1,7 +1,7 @@
 import mongoose, { Types } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import { ParentRepository } from './parent.repository.js';
-import { ROLES } from '../../shared/constants/roles.js';
+import { ATTENDANCE_STATUS, ROLES } from '../../shared/constants/roles.js';
 import {
   BadRequestError,
   ConflictError,
@@ -143,6 +143,12 @@ export class ParentService {
     if (!value) return fallback;
     const date = new Date(value);
     return Number.isNaN(date.getTime()) ? fallback : date;
+  }
+
+  private normalizeAttendanceStatus(status: unknown) {
+    return status === ATTENDANCE_STATUS.PRESENT
+      ? ATTENDANCE_STATUS.PRESENT
+      : ATTENDANCE_STATUS.ABSENT;
   }
 
   private async validateStudents(studentIds: string[], branchId?: string) {
@@ -459,7 +465,7 @@ export class ParentService {
     if (ownedStudentIds.length === 0) {
       return {
         records: [],
-        summary: { total: 0, present: 0, absent: 0, late: 0, excused: 0, attendance_rate: 0 },
+        summary: { total: 0, present: 0, absent: 0, attendance_rate: 0 },
         filters: {
           from: null,
           to: null,
@@ -491,7 +497,16 @@ export class ParentService {
     };
 
     if (query.class_id) filter.classId = new Types.ObjectId(query.class_id.toString());
-    if (query.status) filter.status = query.status.toString();
+    if (query.status) {
+      const status = query.status.toString();
+      if (!Object.values(ATTENDANCE_STATUS).includes(status as never)) {
+        throw new BadRequestError('Trạng thái điểm danh không hợp lệ');
+      }
+      filter.status =
+        status === ATTENDANCE_STATUS.PRESENT
+          ? ATTENDANCE_STATUS.PRESENT
+          : { $ne: ATTENDANCE_STATUS.PRESENT };
+    }
 
     const records = (await Attendance.find(filter)
       .populate({
@@ -513,25 +528,25 @@ export class ParentService {
       .limit(300)
       .lean()) as AttendanceRecordView[];
 
-    const summary = records.reduce(
+    const normalizedRecords = records.map(record => ({
+      ...record,
+      status: this.normalizeAttendanceStatus(record.status),
+    }));
+
+    const summary = normalizedRecords.reduce(
       (acc, record) => {
         acc.total += 1;
-        if (record.status === 'present') acc.present += 1;
-        if (record.status === 'absent') acc.absent += 1;
-        if (record.status === 'late') acc.late += 1;
-        if (record.status === 'excused') acc.excused += 1;
+        if (record.status === ATTENDANCE_STATUS.PRESENT) acc.present += 1;
+        if (record.status === ATTENDANCE_STATUS.ABSENT) acc.absent += 1;
         return acc;
       },
-      { total: 0, present: 0, absent: 0, late: 0, excused: 0, attendance_rate: 0 }
+      { total: 0, present: 0, absent: 0, attendance_rate: 0 }
     );
     summary.attendance_rate =
-      summary.total > 0
-        ? Math.round(((summary.present + summary.late + summary.excused) / summary.total) * 1000) /
-          10
-        : 0;
+      summary.total > 0 ? Math.round((summary.present / summary.total) * 1000) / 10 : 0;
 
     return {
-      records: records.map(record => {
+      records: normalizedRecords.map(record => {
         const student = this.getPopulatedEntity<AttendanceStudentView>(record.studentId);
         const classItem = this.getPopulatedEntity<AttendanceClassView>(record.classId);
         const session = this.getPopulatedEntity<AttendanceSessionView>(record.sessionId);

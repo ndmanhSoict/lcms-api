@@ -1,0 +1,216 @@
+[{
+  "_id": {
+    "$oid": "6a25ad65e1a5a42f03c0b792"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM01-01",
+  "capacity": 20,
+  "detail": "Có tivi, điều hòa, đèn điện đầy đủ",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-07T17:41:57.614Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-07T17:41:57.614Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "898018f469851c9afe6694ba"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-B01",
+  "capacity": 26,
+  "detail": "Tầng 2 - Phòng Toán và Khoa học tự nhiên",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7e666266ef681415cd807e7e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-B03",
+  "capacity": 30,
+  "detail": "Tầng 2 - Phòng học lớn và sinh hoạt chuyên đề",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6131cac626729d3594179f00"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-A03",
+  "capacity": 28,
+  "detail": "Tầng 1 - Máy chiếu, loa, bảng tương tác",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "89a96a842c7fa52672a8e18f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-B02",
+  "capacity": 22,
+  "detail": "Tầng 2 - Phòng Ngoại ngữ, tai nghe luyện nghe",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "814a869aeefcbe34528124dc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-LAB",
+  "capacity": 20,
+  "detail": "Tầng 3 - Phòng máy tính và thi trực tuyến",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e5bbcc1422f1f81ac4ba61a5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-A02",
+  "capacity": 20,
+  "detail": "Tầng 1 - Phòng học nhóm, ánh sáng tự nhiên",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9f74fcecff46f93395744bd6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-A01",
+  "capacity": 24,
+  "detail": "Tầng 1 - TV 65 inch, điều hòa, bảng từ",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "97e469f94f463dc6d51a038a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "code": "BM-C01",
+  "capacity": 18,
+  "detail": "Tầng 3 - Phòng phụ đạo và học cá nhân",
+  "isActive": true,
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-11-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+}]

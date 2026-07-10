@@ -1,0 +1,9101 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d801"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d800"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-07T14:16:18.079Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d803"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d802"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabb"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780806635",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T14:16:18.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d805"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d804"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabc"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780801142",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-30T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d807"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d806"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabd"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780801994",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d809"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d808"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabe"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d80b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d80a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabf"
+  },
+  "paymentMethod": "cash",
+  "amount": 1150000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-17T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-17T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d80d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d80c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac0"
+  },
+  "paymentMethod": "cash",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-16T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d80f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d80e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1150000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780803492",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d811"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d810"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d813"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d812"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780801133",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-05T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d815"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d814"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac4"
+  },
+  "paymentMethod": "cash",
+  "amount": 900000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-08T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d817"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d816"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780803740",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d819"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d818"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "cash",
+  "amount": 1350000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d81b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d81a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabc"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780804029",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d81d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d81c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabe"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1300000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780803656",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-30T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d81f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d81e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac0"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-04-29T14:16:18.080Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d821"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d820"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1350000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-06T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d823"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d822"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cace"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780811813",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d825"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d824"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacf"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-07T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d827"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d826"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad0"
+  },
+  "paymentMethod": "cash",
+  "amount": 1350000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-07T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d829"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d828"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780815800",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d82b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d82a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1350000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-07T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d82d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d82c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabb"
+  },
+  "paymentMethod": "cash",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d82f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d82e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabd"
+  },
+  "paymentMethod": "cash",
+  "amount": 900000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-04T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-04T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d831"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d830"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabf"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d833"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d832"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780816095",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d835"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d834"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-01T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d837"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d836"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-14T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d839"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d838"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad4"
+  },
+  "paymentMethod": "cash",
+  "amount": 1200000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-15T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-15T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d83b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d83a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1150000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780813910",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d83d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d83c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad6"
+  },
+  "paymentMethod": "cash",
+  "amount": 1050000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-14T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d83f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d83e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad7"
+  },
+  "paymentMethod": "cash",
+  "amount": 1000000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d841"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d840"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac4"
+  },
+  "paymentMethod": "cash",
+  "amount": 980000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-04T14:16:18.081Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-04T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d843"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d842"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 840000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780813866",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d845"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d844"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1120000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780818336",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-09T14:16:18.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d847"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d846"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac7"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1260000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780829029",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d849"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d848"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cace"
+  },
+  "paymentMethod": "cash",
+  "amount": 1260000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-02T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d84b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d84a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacf"
+  },
+  "paymentMethod": "cash",
+  "amount": 1260000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-03T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d84d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d84c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad0"
+  },
+  "paymentMethod": "cash",
+  "amount": 980000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-08T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d84f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d84e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad1"
+  },
+  "paymentMethod": "cash",
+  "amount": 1260000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d851"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d850"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1120000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-04T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-04T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d853"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d852"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1260000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780828067",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d855"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d854"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cada"
+  },
+  "paymentMethod": "cash",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-07T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d857"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d856"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadb"
+  },
+  "paymentMethod": "cash",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-03T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d859"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d858"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadc"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780821014",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d85b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d85a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae2"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780823446",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d85d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d85c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1120000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-16T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d85f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d85e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae4"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780824872",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-30T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d861"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d860"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780822476",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d863"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d862"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780823291",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d865"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d864"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae7"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 960000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780827735",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d867"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d866"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad8"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780823453",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d869"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d868"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad9"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780825414",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d86b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d86a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae8"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1120000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780821005",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d86d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d86c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae9"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780823156",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d86f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d86e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caea"
+  },
+  "paymentMethod": "cash",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d871"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d870"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caeb"
+  },
+  "paymentMethod": "cash",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-07T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d873"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d872"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caec"
+  },
+  "paymentMethod": "cash",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-04-29T14:16:18.082Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d875"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d874"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caed"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1280000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780827722",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d877"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d876"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caee"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1390000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780828664",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d879"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d878"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caef"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780823668",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d87b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d87a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae1"
+  },
+  "paymentMethod": "cash",
+  "amount": 1085000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-08T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d87d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d87c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1085000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-16T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d87f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d87e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1085000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-03T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d881"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d880"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae4"
+  },
+  "paymentMethod": "cash",
+  "amount": 1240000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-06T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d883"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d882"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae5"
+  },
+  "paymentMethod": "cash",
+  "amount": 1240000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d885"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d884"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf0"
+  },
+  "paymentMethod": "cash",
+  "amount": 1395000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d887"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d886"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf1"
+  },
+  "paymentMethod": "cash",
+  "amount": 1240000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d889"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d888"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1085000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-14T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d88b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d88a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 600000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780837398",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d88d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d88c"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabb"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 240000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780837625",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d88f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d88e"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabc"
+  },
+  "paymentMethod": "cash",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-01T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d891"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d890"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabd"
+  },
+  "paymentMethod": "cash",
+  "amount": 300000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": null,
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d893"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d892"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabe"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780834232",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d897"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d896"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780833606",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d899"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d898"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac2"
+  },
+  "paymentMethod": "cash",
+  "amount": 700000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-16T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d89c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac4"
+  },
+  "paymentMethod": "cash",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-06T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d89e"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89d"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 600000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780839546",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-15T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8a1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8a0"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabc"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780831407",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-05T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8a3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8a2"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabe"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780833812",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-09T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8a5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8a4"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac0"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780833518",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8a7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8a6"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac2"
+  },
+  "paymentMethod": "cash",
+  "amount": 180000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": null,
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8a9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8a8"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cace"
+  },
+  "paymentMethod": "cash",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ab"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8aa"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacf"
+  },
+  "paymentMethod": "cash",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T14:16:18.083Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T14:16:18.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ad"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8ac"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad0"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780842882",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8af"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8ae"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 450000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780847650",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-09T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8b1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8b0"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad2"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 180000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780849232",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8b3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8b2"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabb"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780841330",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8b5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8b4"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabd"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780844152",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8b7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8b6"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabf"
+  },
+  "paymentMethod": "cash",
+  "amount": 600000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ba"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8b9"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 550000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780848085",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8bc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8bb"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad3"
+  },
+  "paymentMethod": "cash",
+  "amount": 300000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": null,
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8be"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8bd"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad4"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 700000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780846299",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8c0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8bf"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 600000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780844781",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8c2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8c1"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 600000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780844017",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8c4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8c3"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad7"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 750000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780849808",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8c6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8c5"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac4"
+  },
+  "paymentMethod": "cash",
+  "amount": 700000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-15T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-15T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8c8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8c7"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac5"
+  },
+  "paymentMethod": "cash",
+  "amount": 420000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-04-28T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-28T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ca"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8c9"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 560000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780846902",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8cc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8cb"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac7"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 700000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780843021",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-04-28T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ce"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8cd"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cace"
+  },
+  "paymentMethod": "cash",
+  "amount": 560000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8d0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8cf"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacf"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 650000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780845830",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-30T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8d2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8d1"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad0"
+  },
+  "paymentMethod": "cash",
+  "amount": 700000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8d4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8d3"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad1"
+  },
+  "paymentMethod": "cash",
+  "amount": 280000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "receivedAt": null,
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8d6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8d5"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad2"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 230000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780841629",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8d8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8d7"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 420000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780844927",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8da"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8d9"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cada"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 320000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780846619",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8dc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8db"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadb"
+  },
+  "paymentMethod": "cash",
+  "amount": 320000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": null,
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-18T14:16:18.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8de"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8dd"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadc"
+  },
+  "paymentMethod": "cash",
+  "amount": 800000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-03T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8e0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8df"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae2"
+  },
+  "paymentMethod": "cash",
+  "amount": 800000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T14:16:18.084Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8e2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8e1"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae3"
+  },
+  "paymentMethod": "cash",
+  "amount": 480000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-14T14:16:18.085Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8e4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8e3"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae4"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 640000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780854433",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8e6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8e5"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 800000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780858763",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8e8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8e7"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 640000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780856150",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-17T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ea"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8e9"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae7"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 800000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780851031",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-30T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8ee"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8ed"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae8"
+  },
+  "paymentMethod": "cash",
+  "amount": 430000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T14:16:18.085Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8f0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8ef"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae9"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 480000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780854229",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8f2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8f1"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caea"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 480000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780858258",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8f4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8f3"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caeb"
+  },
+  "paymentMethod": "cash",
+  "amount": 480000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-01T14:16:18.085Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8f6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8f5"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caec"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 640000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780857535",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8f8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8f7"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caed"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 480000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780856889",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8fa"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8f9"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caee"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 640000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780859147",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8fc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8fb"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caef"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 640000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780851144",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-17T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d8fe"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8fd"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 620000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780851607",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d900"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d8ff"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae2"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 310000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780856506",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "MB"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d902"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d901"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae3"
+  },
+  "paymentMethod": "cash",
+  "amount": 620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-16T14:16:18.085Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d904"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d903"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae4"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 775000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780852148",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d906"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d905"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 775000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780856446",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "TECHCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d908"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d907"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf0"
+  },
+  "paymentMethod": "cash",
+  "amount": 620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "receivedAt": {
+    "$date": "2026-05-15T14:16:18.085Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-15T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174d90a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d909"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf1"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 775000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "VNP17791137780859377",
+  "vnpayData": {
+    "responseCode": "00",
+    "bankCode": "VIETCOMBANK"
+  },
+  "createdAt": {
+    "$date": "2026-04-30T14:16:18.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3e15795ec229c42bed31"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791216857722174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791216857722174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:28:05.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3e26795ec229c42bed43"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791217028372174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791217028372174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:28:22.838Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3e3d795ec229c42bed52"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791217257992174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791217257992174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:28:45.800Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3f0125a7a74ac7870af5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791219218122174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791219218122174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:32:01.820Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3f1c25a7a74ac7870b17"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791219486182174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791219486182174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:32:28.619Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3f8d25a7a74ac7870b23"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791220610692174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791220610692174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:34:21.069Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b3f9625a7a74ac7870b2f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791220705332174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791220705332174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:34:30.533Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b4029aeb3ede9d98d4eac"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791222170112174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791222170112174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:36:57.012Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b40725621d7c5d2c433fc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17791222907272174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17791222907272174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-18T16:38:10.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c913344536c0de489ae40"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792084992852174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792084992852174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T16:34:59.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c94cb9f3582438f0dc851"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792094190302174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792094190302174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T16:50:19.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca36c07efaba07d7eab5f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792131641042174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792131641042174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T17:52:44.106Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca38efa1a7522cb7873d4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792131985242174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792131985242174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T17:53:18.530Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca63fe6c3518f96681d9b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792138873672174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792138873672174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:04:47.373Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca7cb0163a259aa75c285"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792142838242174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792142838242174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:11:23.826Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca7d20163a259aa75c288"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792142908722174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792142908722174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:11:30.873Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca853d0585612b358b54d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792144197822174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792144197822174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:13:39.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0ca956d0585612b358b550"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792146786162174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792146786162174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:17:58.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0caafb49421a97200fff04"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792150991952174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792150991952174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:24:59.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0caca20eba844af2c708b1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792155229732174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792155229732174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:32:02.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0cae950eba844af2c708b4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792160219402174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792160219402174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:40:21.940Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0caf0d0eba844af2c708b7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792161412652174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792161412652174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:42:21.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0cb09c0eba844af2c708bf"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792165402652174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792165402652174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:49:00.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0cb0b40eba844af2c708ce"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792165643282174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792165643282174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:49:24.329Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0cb0f50eba844af2c708dd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792166298002174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792166298002174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:50:29.800Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0cb15a0eba844af2c708ec"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792167300622174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792167300622174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:52:10.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0cb1f80eba844af2c708fb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17792168888032174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17792168888032174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-19T18:54:48.803Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f1c82a9d5da55560aece5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17793752342532174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17793752342532174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T14:53:54.254Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f1ce24b1cca2ee514a8bf"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17793753300232174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17793753300232174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T14:55:30.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f1e034b1cca2ee514a918"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17793756195892174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17793756195892174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T15:00:19.590Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f293c68289f16fc94afac"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17793784923612174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17793784923612174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T15:48:12.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f2a4f230628e8a19cc06a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS17793787675472174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17793787675472174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T15:52:47.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f2b06ae88b6955fcb9276"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "invoiceId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 300000,
+  "status": "success",
+  "receivedBy": null,
+  "receivedAt": {
+    "$date": "2026-05-21T15:56:21.343Z"
+  },
+  "vnpayRef": "LCMS17793789500522174d89f",
+  "vnpayData": {
+    "txnRef": "LCMS17793789500522174d89f",
+    "invoiceCode": "INV-2026-05-0082",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "6a0b1f2721a466242174caba",
+    "createdByRole": "student",
+    "vnp_Amount": "30000000",
+    "vnp_BankCode": "NCB",
+    "vnp_BankTranNo": "VNP15550537",
+    "vnp_CardType": "ATM",
+    "vnp_OrderInfo": "Thanh toan hoc phi INV 2026 05 0082",
+    "vnp_PayDate": "20260521225617",
+    "vnp_ResponseCode": "00",
+    "vnp_TmnCode": "5KALK83E",
+    "vnp_TransactionNo": "15550537",
+    "vnp_TransactionStatus": "00",
+    "vnp_TxnRef": "LCMS17793789500522174d89f",
+    "vnp_SecureHash": "338952c99af82b1cf80c40b3fd390be6f54c7c18f6c14c60544daf12e7addc06b46ef04c52974b768c72b8686253afc300f6ee1b9cb84556c05eb06d6ab6d541",
+    "responseCode": "00",
+    "responseMessage": "Giao dịch thành công",
+    "transactionStatus": "00",
+    "transactionStatusMessage": "Giao dịch thanh toán thành công",
+    "transactionNo": "15550537",
+    "bankCode": "NCB",
+    "bankTranNo": "VNP15550537",
+    "cardType": "ATM",
+    "payDate": "20260521225617"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T15:55:50.053Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e8fa08a8ff0954f7ee6ce"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6a2a68d4c47a2113c76fbc36"
+  },
+  "studentId": {
+    "$oid": "6a25991bbec8d4498ab278c1"
+  },
+  "paymentMethod": "cash",
+  "amount": 210000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-14T11:25:20.831Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-14T11:25:20.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "1dec8e33249fe23566dc765b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "585ee0f9aa7d6b9d5982693d"
+  },
+  "studentId": {
+    "$oid": "b8be11acd7369c2af55d559f"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8f07553a4fe621e0763b083f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "d70f5a50323f5df4b10df8e7"
+  },
+  "studentId": {
+    "$oid": "cf94d9ed5a773c31616a68b3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040004",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7ad88752444d641c670c8c11"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "12809af8d1661cd13b6a13ed"
+  },
+  "studentId": {
+    "$oid": "cf94d9ed5a773c31616a68b3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050004",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1d23bbc5f4247c2b0ef69f8f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "2d6f4232528296392f673865"
+  },
+  "studentId": {
+    "$oid": "59d7d9698fc3f343568effa4"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "11447d46ca0ddc71c1a26bd3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "b04fdbfe4a659bf70e7a8e14"
+  },
+  "studentId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "86157b8c5be5f89ec2fb0fb5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "ccd7f709b54f8f5f832b1d9b"
+  },
+  "studentId": {
+    "$oid": "340f9b1aae9c6cce09f4bbf5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040016",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cdaddb710851bcc60f86c401"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a2ff1391568e8327b342af32"
+  },
+  "studentId": {
+    "$oid": "087b2812519c9f898292b64e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7886da0fbf7b9bf57f561e52"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "d26822b22811475fc46b4fc6"
+  },
+  "studentId": {
+    "$oid": "087b2812519c9f898292b64e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ee1384837f9f602259d967b9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "0e0a0f09b5b7593181e6b645"
+  },
+  "studentId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040019",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e95efe66c0f2816efd0a3086"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "0c665f3ebf409f914ae754e8"
+  },
+  "studentId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 810000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060019",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c912157a28a094cbbe35a6aa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "52bf53ae9b06be9dff883758"
+  },
+  "studentId": {
+    "$oid": "568f53787c6291d6b87c0035"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4ebb2c9900728a81be27b516"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "8d774ba0477aeceebb6a18e7"
+  },
+  "studentId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d8121a2006f4470a0e115419"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "f85e8e4aeeb266485ba5aebb"
+  },
+  "studentId": {
+    "$oid": "cf96fb049068708c7c7e2029"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040022",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "249178bbf0e845dbd097e99c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "9afa0714f4904d5264ab8468"
+  },
+  "studentId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0761cb60c72ae9af8026a5bf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "3a6e26d9078813acfacaa57e"
+  },
+  "studentId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f3eeceb7a7d8f63416134311"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "9c90dd299cc3283d532855cb"
+  },
+  "studentId": {
+    "$oid": "e4ac43c31cfabb35cc21b035"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7e4d8de0c6cc03627bb4425d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "196b55987fe8c0a67fa351d7"
+  },
+  "studentId": {
+    "$oid": "e5d9625eecfab793fd038090"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "41e5bfe505b1b10789425c5a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "31e5c35e2d93811896e6a085"
+  },
+  "studentId": {
+    "$oid": "80f8a9c30bc54ec70d8f8f57"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060034",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "93538c548cc05630ab51741a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "088721e20cbf3d3e186f49d3"
+  },
+  "studentId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6c30756afbaf6f809fc0a218"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "74b77faaf3ba2cc382d001fb"
+  },
+  "studentId": {
+    "$oid": "b7aab62a02b5d2521d8ec9c9"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "54a39f29d2df3a51bff356b3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "44fd7382beb97ef596d23096"
+  },
+  "studentId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2507486e71a5530d75539046"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "30427c4afcd533edccf61bc9"
+  },
+  "studentId": {
+    "$oid": "df6cae3269d2b0b01ed24d79"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050040",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b12f35d8ff24ff1fc3fcc610"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a1e239543aa23acae49e6526"
+  },
+  "studentId": {
+    "$oid": "2675bab7277cc1346c52ddb5"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "70377e387b3eb66285ce7c96"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "76107d2470376cba8e17f76d"
+  },
+  "studentId": {
+    "$oid": "2675bab7277cc1346c52ddb5"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "57dec9a4fa742f188885a875"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "ec1ffcb88b8d5c5e9461e054"
+  },
+  "studentId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 720000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060001",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4487cbea5e64a6d19bac6c29"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "da25ac6c0cfbeb0a0c4ccb36"
+  },
+  "studentId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d404e87e28b874b5fbb90773"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "080cf9c87a8c4ee1ab4af620"
+  },
+  "studentId": {
+    "$oid": "59d7d9698fc3f343568effa4"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3a3aa022610a711c9d815344"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "5843e4a358ea5a70fc4de318"
+  },
+  "studentId": {
+    "$oid": "72c2ccb11b75613df41a47ee"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "18358895f075ad8676e19c70"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "387752de3eb130caafceb8ca"
+  },
+  "studentId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e9b5dac42ea80525d18cbb3a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "c5ef35bbfa00df8e6b945d38"
+  },
+  "studentId": {
+    "$oid": "506834154d8401a5e0b4212a"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040010",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e14df187d9032fac941c40e8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "2c6713f20d748fb3d6e264b4"
+  },
+  "studentId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040013",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8f3da5385e9278d2aeecb1cd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6c78d1ef482e6db1bf05fc75"
+  },
+  "studentId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050013",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "637269187b846ed07938fce5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "018fecf4e6ef37904679f3ae"
+  },
+  "studentId": {
+    "$oid": "8d1cfb22992eb13b6a65406e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6fd7f0e19969583a2204c961"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "eb77f6c7f2323d7631e18ceb"
+  },
+  "studentId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1811293ffaa3856208ff0287"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "c4372b81cf275684ca39868d"
+  },
+  "studentId": {
+    "$oid": "340f9b1aae9c6cce09f4bbf5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060016",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "19202a1ba2c3f0ec24b46b44"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "c6b8bd545be4c9d785b8f33a"
+  },
+  "studentId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6bb751bb90c26261bb5f4f54"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "34020c8d2038849764ba0b64"
+  },
+  "studentId": {
+    "$oid": "a9af75c8559c3ffdade4e113"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1432e166273a91272dfce754"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "003619bded1072d441f4477b"
+  },
+  "studentId": {
+    "$oid": "a9af75c8559c3ffdade4e113"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "73f58f2e9c5036606b26f2b1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "3c011db199ff65b13b11b7f9"
+  },
+  "studentId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040025",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2fbdc6e857f87766e4234acb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "2c5a567c993748df8e75837d"
+  },
+  "studentId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050025",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "93c2523aa9752bb184e6e2f4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "7f238742603fc1795704fd50"
+  },
+  "studentId": {
+    "$oid": "a0f702ab676c7b72ea16a26c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9d05389e5feec49c4f862554"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "9e7eadec3beaa63114ab85e0"
+  },
+  "studentId": {
+    "$oid": "a0f702ab676c7b72ea16a26c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7e685ac0d39dc925eb544bd6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "7bed7cbbafe76d30c5ae2351"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "be213256e1610172e5a7f467"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "58e073cd23654673bd7a3d45"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0466967caff89fec935c8518"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e231cdd828bba41a81ceb39d"
+  },
+  "studentId": {
+    "$oid": "3dc8342af02feab610cf2166"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040028",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6f041e7ce7d3517efcd877e0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "f06f117bffc6b0ea3a667e25"
+  },
+  "studentId": {
+    "$oid": "3dc8342af02feab610cf2166"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050028",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3720cb0e8a6b9dcd93ceab15"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "dd4f346e7a608926e5f1cdea"
+  },
+  "studentId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050031",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cfcd30254ff1edf2666893db"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "5fe14ca56963b697788e502d"
+  },
+  "studentId": {
+    "$oid": "5a358a1b6a6304d23008f539"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "84376848a9353d651f806815"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a048b71e470a354329c57704"
+  },
+  "studentId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "51c9982ac11d9c97960ed459"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "84952442a1eb4c5e47f129f1"
+  },
+  "studentId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1efe01d2c8f5acfb5d764683"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "365dc17e2bb29fb10e17d5a9"
+  },
+  "studentId": {
+    "$oid": "9633cb0fa12251da7f89dfb6"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5fb30ad6c9c4cd66aca7e0db"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "386c6928d5183af396648919"
+  },
+  "studentId": {
+    "$oid": "df6cae3269d2b0b01ed24d79"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040040",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e45d5272e668323b49d68884"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "cd655cea23588bdbed0a8676"
+  },
+  "studentId": {
+    "$oid": "81ee59bad90b403ab12c5199"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "36d0c9f71b8474c7dc3b724e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "4ba9b8679d08d46cf0a1d0f2"
+  },
+  "studentId": {
+    "$oid": "be96d9e39a2064d3da799e32"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4f94e12246a4399c3e745ace"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "b00fc8c99715444c7a9bf1a5"
+  },
+  "studentId": {
+    "$oid": "be96d9e39a2064d3da799e32"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0ef47d3c0194010e6c9bfba1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "d57ed4ffe6d2dd9222d5b0cb"
+  },
+  "studentId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050043",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7a48565c04742fa297c85cd1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "7444e35cf3fd9eb68f23c887"
+  },
+  "studentId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060043",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "79723e054306c84d5b6d5667"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "f42b2beb1c7e004f266d5b96"
+  },
+  "studentId": {
+    "$oid": "8bd097060a35182e14c63722"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050046",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4c4eb4e1e00a2227eca75a3f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "86b4b13e5e9ac9d58f04dfcf"
+  },
+  "studentId": {
+    "$oid": "8bd097060a35182e14c63722"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 765000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060046",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "018dfc24ba7580b65d8904cf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "091c3a08022cd454d83957c3"
+  },
+  "studentId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050001",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "23787f79aec1d937d1fa05e0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "78de36321fd039f4a8ab0a4c"
+  },
+  "studentId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2de27475f76a1d00a2c6f716"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a43d65df77da108731733e18"
+  },
+  "studentId": {
+    "$oid": "cf94d9ed5a773c31616a68b3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060004",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c43005874ddfb6a8bbadbc7d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "81c181df1309b12407177181"
+  },
+  "studentId": {
+    "$oid": "59d7d9698fc3f343568effa4"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c797431887cea01281f2179f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "222c41b99ed57f8334997a63"
+  },
+  "studentId": {
+    "$oid": "72c2ccb11b75613df41a47ee"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7ab79039f7b128baa6254813"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "73f13769220d8ab873a0affe"
+  },
+  "studentId": {
+    "$oid": "506834154d8401a5e0b4212a"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050010",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "455bdc73018abbd99dca9d09"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "cf845bf9c2acdd4615deb684"
+  },
+  "studentId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "916ac5388349481f2cc1e2f0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "39d271940182d2293e36b339"
+  },
+  "studentId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3e8ddfc6c3bb06edb8ca19dc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "3604b5cb852f79edb22af06c"
+  },
+  "studentId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1bbf9591aa01025a77fc650b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "3fcb31a8b85c35b67087b4cb"
+  },
+  "studentId": {
+    "$oid": "340f9b1aae9c6cce09f4bbf5"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050016",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a596f48c6f44239067db0ba"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "0191e6a743e9d1af7fecea2b"
+  },
+  "studentId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ee7df65992183fc4ce533705"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "accce1654bacda9677a81985"
+  },
+  "studentId": {
+    "$oid": "087b2812519c9f898292b64e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cb891939483adb0bf072d794"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "f3b69b6ea1766bc957192590"
+  },
+  "studentId": {
+    "$oid": "568f53787c6291d6b87c0035"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "76b6e6319cd535e93def3ae6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "ad7b8f6420295f52fa89df23"
+  },
+  "studentId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9473180df88f13874030b8ad"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "43015a88a8ae70d8007ebbba"
+  },
+  "studentId": {
+    "$oid": "cf96fb049068708c7c7e2029"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050022",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e40ee2223d3e126179949acb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "2f30864967acf98385b7f654"
+  },
+  "studentId": {
+    "$oid": "cf96fb049068708c7c7e2029"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060022",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b6288affa4138ea1ff8acd2f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "937914ed67d43fa1384b2b47"
+  },
+  "studentId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ad1921dba2ffbddf9756a299"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "695802a3b5b8852bf198aa24"
+  },
+  "studentId": {
+    "$oid": "a0f702ab676c7b72ea16a26c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b5a4a3b859815ccb35178da"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6d2a670b0a6b0f638f8e83a5"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a82669ea520f1927429539d5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "17fbc8beb7437aa42b6e0a5c"
+  },
+  "studentId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060031",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d050eab36c4fffba6a952927"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "ca1b71d590b57d3e8078407a"
+  },
+  "studentId": {
+    "$oid": "5a358a1b6a6304d23008f539"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1810c93b3efbc46937c80586"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6e1cf71575551eb63da775ee"
+  },
+  "studentId": {
+    "$oid": "5a358a1b6a6304d23008f539"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d653c0cd345a68603cf6d6b1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6ae1efbcb2e2d737b546eb59"
+  },
+  "studentId": {
+    "$oid": "b7aab62a02b5d2521d8ec9c9"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4a0cadbc1ba1404fc972a2f6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "d1f6d3f1dc76df0d1377a732"
+  },
+  "studentId": {
+    "$oid": "b7aab62a02b5d2521d8ec9c9"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ca09c50156f3b0eb3e8364b3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "16957f18b2fdd03f36cc1977"
+  },
+  "studentId": {
+    "$oid": "9633cb0fa12251da7f89dfb6"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "74160347b73314b5cbae7485"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "574918bc966df071126048e8"
+  },
+  "studentId": {
+    "$oid": "81ee59bad90b403ab12c5199"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663aff42960dda6553a72321"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "c45c3f4346ba09fc8ae82a17"
+  },
+  "studentId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040043",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "10a6a75f6629f0229a28a725"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "5115005828f0835299ce7a9f"
+  },
+  "studentId": {
+    "$oid": "2675bab7277cc1346c52ddb5"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "01bcc2574ed864fef9c3dfa5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6a2a87c59200ad30a8d56416"
+  },
+  "studentId": {
+    "$oid": "6a076245f56db23e94a2a494"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "31b15d945b3a858aefe65ec1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "c9c191873e8e7294f0996d91"
+  },
+  "studentId": {
+    "$oid": "6a076245f56db23e94a2a494"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5ea289b4a82ed1c48b5416e9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "1b290a0c4c316983d8da82b3"
+  },
+  "studentId": {
+    "$oid": "8bd097060a35182e14c63722"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040046",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "79f35605a0453c354ddcfafc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "3d0c6dd804857fce1040378f"
+  },
+  "studentId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "eb1b36807ed7fbee5ce20234"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "1fa11c8e35c5cd431e1906ed"
+  },
+  "studentId": {
+    "$oid": "8353052c17f467bde9d96959"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e0d546a28b9140560f89da2b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "ece380832cf8c3de05a4c11b"
+  },
+  "studentId": {
+    "$oid": "8353052c17f467bde9d96959"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ca2cda56dbf755a9eb6224ae"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "8339dd3fc024ed26639ca384"
+  },
+  "studentId": {
+    "$oid": "8353052c17f467bde9d96959"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4b0c505b8ac4a34168e2a410"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6e3ba28b41e8c86133ecfc33"
+  },
+  "studentId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040001",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0c183f911a12671f99eee2ec"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "61940ec9ed514212705a63b3"
+  },
+  "studentId": {
+    "$oid": "b8be11acd7369c2af55d559f"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a8d3ff0a855f7f51bb62dd2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "7cecf046db7f92cd9f90c993"
+  },
+  "studentId": {
+    "$oid": "b8be11acd7369c2af55d559f"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1fbd0a24f13ca3497f1e3f54"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "4ae43101716969ada2f9a926"
+  },
+  "studentId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "08bbfd8e93fe43faf928c325"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "d5bb406b988c21ed6f71a460"
+  },
+  "studentId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9839974fa177bdfdf9c73563"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "b9e8d272b0c62335401bb2c0"
+  },
+  "studentId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "35b912fe6f2d529f9f853906"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "908ba87b39b80c9ac32392c5"
+  },
+  "studentId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040007",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "056b4f38f456035cfbf79a47"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e2f1803cb09d7c64bc922f6c"
+  },
+  "studentId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050007",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "026b4e948e831edb43abae68"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "220e9e12bdbc3289da3171e3"
+  },
+  "studentId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060007",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "359cce8580b008fa826c4ec8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "0d8a774532dca4468d2976dc"
+  },
+  "studentId": {
+    "$oid": "72c2ccb11b75613df41a47ee"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cc57ac88fe30c09d2b8f00dc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e0774d53b866fe2432750562"
+  },
+  "studentId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "90a0a372bada05db8d3a17f1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "24f490a11b103b7eace9f151"
+  },
+  "studentId": {
+    "$oid": "506834154d8401a5e0b4212a"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 765000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060010",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7f9e545539d1b57074d8e071"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "8c459aaabe8ff174b48c420c"
+  },
+  "studentId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5659f5faf073b2149e46bdc0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "b970093f52e58c03fb618de2"
+  },
+  "studentId": {
+    "$oid": "d0c81893540fbba6a365f63c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a56f18a704292242e86f98d8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a1762b992343653c663096b4"
+  },
+  "studentId": {
+    "$oid": "d0c81893540fbba6a365f63c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4f16f8493cb3e9ac6cd7480c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6c9724790d4964cf0863a9dc"
+  },
+  "studentId": {
+    "$oid": "d0c81893540fbba6a365f63c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6f731ec4e194f1352ba48899"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "86da497f1c85a68bb0f17c9c"
+  },
+  "studentId": {
+    "$oid": "8d1cfb22992eb13b6a65406e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "581641a1e43cb11ebe750239"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "7b64d34c2aa446ffca73f3b7"
+  },
+  "studentId": {
+    "$oid": "8d1cfb22992eb13b6a65406e"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7ebc78a06b5bfa78c5e40ea5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a2f9ffbf23473183f83c9309"
+  },
+  "studentId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "82930be01020d96196eb0fed"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "f2ea4511ce5defc57bbb81b3"
+  },
+  "studentId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050019",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "35351efa56faac9dec83de91"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "0186b475c0847c3bf1673728"
+  },
+  "studentId": {
+    "$oid": "568f53787c6291d6b87c0035"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1c53ff6f6c164cf9890d9b9e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "a32679b7cf85236746848500"
+  },
+  "studentId": {
+    "$oid": "a9af75c8559c3ffdade4e113"
+  },
+  "paymentMethod": "cash",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "759258dc9bfd82bfdb687c71"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "1daf66b7a44743f72c8c4db3"
+  },
+  "studentId": {
+    "$oid": "3dc8342af02feab610cf2166"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 855000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060028",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c0fe463042c5f1c1e1be1a46"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e479f4012da5c0235bdcb38b"
+  },
+  "studentId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cb1896c815fa8a5973817768"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "dbd369dd7c42a39798a8d818"
+  },
+  "studentId": {
+    "$oid": "e4ac43c31cfabb35cc21b035"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2a3499ba3b4cd02ac48ab74a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "52393554a0a0994421748e0f"
+  },
+  "studentId": {
+    "$oid": "e4ac43c31cfabb35cc21b035"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3b98c3908613435b7cf5f643"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "de0fe7d450ace75765bcda11"
+  },
+  "studentId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040031",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "83e2bb63b5d30b4e8ae1dde0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "8f3b76b24e78982901e8a0c9"
+  },
+  "studentId": {
+    "$oid": "e5d9625eecfab793fd038090"
+  },
+  "paymentMethod": "cash",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "70ca7a311461293826b1dc61"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "8b15255b2403503e095ab622"
+  },
+  "studentId": {
+    "$oid": "80f8a9c30bc54ec70d8f8f57"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040034",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "24bea14d17be83cff2a8368f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "09a6775fc74cd68c63e4a303"
+  },
+  "studentId": {
+    "$oid": "80f8a9c30bc54ec70d8f8f57"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050034",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a10890f37b6f092630353821"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "35bfc7c4c557a08de26326ff"
+  },
+  "studentId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026040037",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7a80dd7456c20c6b6f77a5bb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "031d961c44b7f755a688b861"
+  },
+  "studentId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1440000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026050037",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9ec3a058b501448b0b448a07"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "82ef548855043d4c62d9ec79"
+  },
+  "studentId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 720000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060037",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "171b252d874f0f7727c0ac23"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e5d32aa7e3679bbbf11850ca"
+  },
+  "studentId": {
+    "$oid": "9633cb0fa12251da7f89dfb6"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-11T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c864a1dafbec64de1df84017"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "416186bc6cb9dc6fae8bdc08"
+  },
+  "studentId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-04-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69579072efae5a6774660712"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "5719c52e8ba83bc91670d07b"
+  },
+  "studentId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-12T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c317b47e9ea56e78ff48bb26"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e53585a2e71230c2a0671af0"
+  },
+  "studentId": {
+    "$oid": "df6cae3269d2b0b01ed24d79"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 1710000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  },
+  "vnpayRef": "BM2026060040",
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-13T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1f2e1fa1225999de24b4c64d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "e7473cf8b46e0241fd0cad92"
+  },
+  "studentId": {
+    "$oid": "be96d9e39a2064d3da799e32"
+  },
+  "paymentMethod": "cash",
+  "amount": 1530000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c1f98468236bc1e620455be2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "ce8c308bb7c98c88eda6cb23"
+  },
+  "studentId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-05-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ba739d0d69c0ed9cefb8ffc4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "4656460a3b6f527975d530d9"
+  },
+  "studentId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "paymentMethod": "cash",
+  "amount": 1620000,
+  "status": "success",
+  "receivedBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receivedAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  },
+  "vnpayRef": null,
+  "vnpayData": null,
+  "createdAt": {
+    "$date": "2026-06-10T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2f88cd51dff3a0002c0d8a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6a2f88b451dff3a0002c0d48"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 2200000,
+  "status": "failed",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS1781500109544002c0d48",
+  "vnpayData": {
+    "txnRef": "LCMS1781500109544002c0d48",
+    "invoiceCode": "INV-CS-6DB7124C-2026-0004",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "84127029c4827c45a46214e3",
+    "createdByRole": "student",
+    "vnp_Amount": "220000000",
+    "vnp_BankCode": "VNPAY",
+    "vnp_CardType": "QRCODE",
+    "vnp_OrderInfo": "Thanh toan hoc phi INV CS 6DB7124C 2026 0004",
+    "vnp_PayDate": "20260615120831",
+    "vnp_ResponseCode": "24",
+    "vnp_TmnCode": "5KALK83E",
+    "vnp_TransactionNo": "0",
+    "vnp_TransactionStatus": "02",
+    "vnp_TxnRef": "LCMS1781500109544002c0d48",
+    "vnp_SecureHash": "32f65dd2f6064ae8e3ceb772cda08520165f7447c7fca15405d235af8d9288ae164292a73b253de3ae70cd53062b82f8535d4cd6dc2dfb3c4e396e2c8dadd927",
+    "failureReason": "vnpay_response",
+    "failureMessage": "Thanh toán VNPay thất bại: Khách hàng đã hủy giao dịch",
+    "responseCode": "24",
+    "responseMessage": "Khách hàng đã hủy giao dịch",
+    "transactionStatus": "02",
+    "transactionStatusMessage": "Giao dịch bị lỗi",
+    "transactionNo": "0",
+    "bankCode": "VNPAY",
+    "bankTranNo": null,
+    "cardType": "QRCODE",
+    "payDate": "20260615120831"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T05:08:29.545Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2f88ea51dff3a0002c0df3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6a2f88b451dff3a0002c0d48"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 2200000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS1781500138538002c0d48",
+  "vnpayData": {
+    "txnRef": "LCMS1781500138538002c0d48",
+    "invoiceCode": "INV-CS-6DB7124C-2026-0004",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "84127029c4827c45a46214e3",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T05:08:58.538Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2fb33a1ac44747aea078a0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6a2f88b451dff3a0002c0d48"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 2200000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS1781510970247002c0d48",
+  "vnpayData": {
+    "txnRef": "LCMS1781510970247002c0d48",
+    "invoiceCode": "INV-CS-6DB7124C-2026-0004",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "84127029c4827c45a46214e3",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T08:09:30.248Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2fb35b1ac44747aea078cb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "invoiceId": {
+    "$oid": "6a2f88b451dff3a0002c0d48"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "paymentMethod": "vnpay",
+  "amount": 2200000,
+  "status": "pending",
+  "receivedBy": null,
+  "receivedAt": null,
+  "vnpayRef": "LCMS1781511003997002c0d48",
+  "vnpayData": {
+    "txnRef": "LCMS1781511003997002c0d48",
+    "invoiceCode": "INV-CS-6DB7124C-2026-0004",
+    "returnUrl": "http://localhost:5174/student/finance",
+    "createdBy": "84127029c4827c45a46214e3",
+    "createdByRole": "student"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T08:10:03.998Z"
+  },
+  "__v": 0
+}]

@@ -50,6 +50,12 @@ export class AttendanceService {
     return value && typeof value === 'object' && '_id' in value ? (value as T) : null;
   }
 
+  private normalizeAttendanceStatus(status: unknown): AttendanceStatus {
+    return status === ATTENDANCE_STATUS.PRESENT
+      ? ATTENDANCE_STATUS.PRESENT
+      : ATTENDANCE_STATUS.ABSENT;
+  }
+
   private async resolveAuthorizedStudent(studentId: string, requester: RequestUser) {
     const student = await User.findById(studentId).lean();
     if (!student || student.role !== ROLES.STUDENT) throw new NotFoundError('Học sinh');
@@ -159,8 +165,10 @@ export class AttendanceService {
 
     await this.repo.updateSessionAttendanceStatus(sessionId, 'submitted');
 
-    const totalPresent = attendanceRecords.filter(r => r.status === 'present').length;
-    const totalAbsent = attendanceRecords.filter(r => r.status === 'absent').length;
+    const totalPresent = attendanceRecords.filter(
+      r => this.normalizeAttendanceStatus(r.status) === ATTENDANCE_STATUS.PRESENT
+    ).length;
+    const totalAbsent = attendanceRecords.length - totalPresent;
 
     const cls = await Class.findById(session.classId).lean();
     const studentIds = attendanceRecords.map(record => record.studentId.toString());
@@ -255,14 +263,18 @@ export class AttendanceService {
       session.branchId.toString()
     );
 
-    const present = records.filter(r => r.status === 'present').length;
-    const absent = records.filter(r => r.status === 'absent').length;
+    const normalizedRecords = records.map(r => ({
+      ...r,
+      status: this.normalizeAttendanceStatus(r.status),
+    }));
+    const present = normalizedRecords.filter(r => r.status === ATTENDANCE_STATUS.PRESENT).length;
+    const absent = normalizedRecords.length - present;
 
     return {
       session_id: sessionId,
       session_date: session.sessionDate,
       attendance_status: session.attendanceStatus,
-      records: records.map(r => ({
+      records: normalizedRecords.map(r => ({
         student_id: (r.studentId as PopulatedUserSummary)._id ?? r.studentId,
         student_name: (r.studentId as PopulatedUserSummary).fullName ?? null,
         status: r.status,
@@ -309,9 +321,13 @@ export class AttendanceService {
       toDate
     );
 
-    const present = records.filter(r => r.status === ATTENDANCE_STATUS.PRESENT).length;
-    const absent = records.filter(r => r.status === ATTENDANCE_STATUS.ABSENT).length;
-    const total = records.length;
+    const normalizedRecords = records.map(r => ({
+      ...r,
+      status: this.normalizeAttendanceStatus(r.status),
+    }));
+    const present = normalizedRecords.filter(r => r.status === ATTENDANCE_STATUS.PRESENT).length;
+    const absent = normalizedRecords.length - present;
+    const total = normalizedRecords.length;
 
     return {
       student_id: studentId,
@@ -321,7 +337,7 @@ export class AttendanceService {
       present,
       absent,
       attendance_rate: total > 0 ? Math.round((present / total) * 1000) / 10 : 0,
-      detail: records.map(r => ({
+      detail: normalizedRecords.map(r => ({
         session_date: r.sessionDate,
         status: r.status,
       })),
@@ -361,12 +377,18 @@ export class AttendanceService {
       { classId, status }
     );
 
-    const present = records.filter(record => record.status === ATTENDANCE_STATUS.PRESENT).length;
-    const absent = records.filter(record => record.status === ATTENDANCE_STATUS.ABSENT).length;
-    const total = records.length;
+    const normalizedRecords = records.map(record => ({
+      ...record,
+      status: this.normalizeAttendanceStatus(record.status),
+    }));
+    const present = normalizedRecords.filter(
+      record => record.status === ATTENDANCE_STATUS.PRESENT
+    ).length;
+    const absent = normalizedRecords.length - present;
+    const total = normalizedRecords.length;
 
     return {
-      records: records.map(record => {
+      records: normalizedRecords.map(record => {
         const studentItem = this.getPopulatedEntity<PopulatedAttendanceStudent>(record.studentId);
         const classItem = this.getPopulatedEntity<PopulatedAttendanceClass>(record.classId);
         const session = this.getPopulatedEntity<PopulatedAttendanceSession>(record.sessionId);

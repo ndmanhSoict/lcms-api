@@ -1,0 +1,4578 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "sessionId": null,
+  "title": "Bài tập Số học — Chương 1",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3d0"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-04-23T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-16T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "sessionId": null,
+  "title": "Bài tập Phương trình bậc nhất",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3d2"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-08T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-01T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8b"
+  },
+  "sessionId": null,
+  "title": "Luyện đề Toán — Phần đại số",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3d4"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-04-28T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-21T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.693Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "sessionId": null,
+  "title": "Vocabulary Exercise — Unit 1 & 2",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3d6"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-03T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-26T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "sessionId": null,
+  "title": "Grammar Worksheet — Present Tenses",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3d8"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-13T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-06T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.809Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8d"
+  },
+  "sessionId": null,
+  "title": "Phân tích nhân vật trong Lão Hạc",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3da"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-04-30T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "sessionId": null,
+  "title": "Bài tập Cơ học — Định luật Newton",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3dc"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-06T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-29T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "sessionId": null,
+  "title": "Bài tập Nguyên tử và Phân tử",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3de"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-10T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-03T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:15.981Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3c9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "sessionId": null,
+  "title": "Ôn tập Toán — Hàm số bậc nhất",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3e0"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-04T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-27T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3ca"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8e"
+  },
+  "sessionId": null,
+  "title": "Practice Test — Reading & Writing",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3e2"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-12T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-05T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.110Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3cb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "sessionId": null,
+  "title": "Phiếu luyện tập cuối tuần — Hình học",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3e4"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-22T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-15T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.169Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3cc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "sessionId": null,
+  "title": "Speaking preparation — My favorite book",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3e6"
+      }
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-20T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-13T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.226Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3cd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca91"
+  },
+  "sessionId": null,
+  "title": "Dàn ý bài văn nghị luận xã hội",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3e8"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-24T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 6,
+  "gradedCount": 6,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-17T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.294Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2f21a466242174d3ce"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "sessionId": null,
+  "title": "Dự án nhóm: Bảng tuần hoàn mini",
+  "description": "<p>Học sinh hoàn thành và nộp trước hạn. Trình bày rõ ràng, đầy đủ các bước.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Tự đánh giá mức độ hoàn thành bài học hôm nay.",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em đã hiểu bài",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Em cần giáo viên hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a0b1f2f21a466242174d3ea"
+      }
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-05-28T14:16:15.505Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "doc",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "draft",
+  "submissionCount": 8,
+  "gradedCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-21T14:16:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.357Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e8149f9c66349137d86a8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "teacherId": {
+    "$oid": "6a25b20d8a33df1377f3dbb7"
+  },
+  "sessionId": null,
+  "title": "Bài tập về nhà số 1",
+  "description": "Cần làm nghiêm túc đầy đủ",
+  "attachmentUrls": [
+    "/uploads/assignments/cf998da9-122b-4324-b134-23013e5ac0a6.png"
+  ],
+  "questions": [
+    {
+      "prompt": "Năm này thuộc thế kỉ bao nhiêu",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "q_1781432596129_a",
+          "text": "2",
+          "isCorrect": true
+        },
+        {
+          "id": "q_1781432596129_b",
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "id": "q_1781432596129_3",
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "id": "q_1781432596129_4",
+          "text": "21",
+          "isCorrect": false
+        },
+        {
+          "id": "q_1781432596129_5",
+          "text": "14",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a2e8149f9c66349137d86a9"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-17T10:23:00.000Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": []
+  },
+  "status": "active",
+  "submissionCount": 1,
+  "gradedCount": 1,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T10:24:09.860Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-14T12:03:41.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6283966840749c1621e9b72d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Ngữ văn 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "3495c6b145edd76b0058abc4"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fafef27a453e72ef5abc32a7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Tiếng Anh 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "02e1a24d018ccdc84ad230e3"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-13T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bb71dd3722c096269c215f6b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Toán học 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "1e1c8489e35c2f7d104a4347"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-14T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "07f48bb5c2549ab21f6f1507"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Toán học 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "9a594cfb5e22c5507913729f"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-30T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "41a8be9c5bb8917363b27235"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Toán học 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "cbe0945df637795a05b0840c"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-07-01T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "draft",
+  "submissionCount": 0,
+  "gradedCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "41d981dd3a340c6dc8c562c0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Toán học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "1a0e1b78d887e37a6ec261ea"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "acddb8746407265942be70e1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Toán học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "452340ea065029599954102a"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-30T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "draft",
+  "submissionCount": 0,
+  "gradedCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0626b85b11faeeb4051a3964"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Hóa học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "b65c8ba0f22389f02d1ed2fc"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-14T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1ff4dedc44c7b7dfae908a1a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Hóa học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "18f440b0364f4dc5d7abaabd"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 4,
+  "gradedCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-20T07:19:50.555Z"
+  },
+  "answersReleasedAt": {
+    "$date": "2026-06-20T07:19:50.555Z"
+  },
+  "answersReleasedBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  }
+},
+{
+  "_id": {
+    "$oid": "3884b43572b5a34163a0f820"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Hóa học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "47fe1a25fd8123c0dd3c1e05"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-07-01T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 6,
+  "gradedCount": 4,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-20T07:19:26.683Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a24d3b9f79d5d5ad317bed2d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Ngữ văn 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "2d230c86dffd3660bf7b036d"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-27T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9b4923f849a41bdd1e4a4bcd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Ngữ văn 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "4264f8ddc93586d60cae0543"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-02T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "96802e6530099434ee400a57"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Tiếng Anh 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "b1d119e2062737fc00ee8188"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-13T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2532c8f0f754e8256bc3b77f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Tiếng Anh 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "1e5e4afe7b21027726acc8e2"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-30T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 7,
+  "gradedCount": 5,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "639e442cd7cdff350464ec74"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Ngữ văn 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "5f64066c3fa24db9492b0e6b"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-14T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fda738d9d1fef87c3ae1b909"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Ngữ văn 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "68cbc11c760bf0805b961b70"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-30T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ecd887c74965cfe382924820"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Toán học 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "a5a01950b780c0a9208fd14a"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-27T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 10,
+  "gradedCount": 10,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8dc194645afe2b1d506661bc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Tiếng Anh 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "e9af82c8f8c780c7311f620a"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-29T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e224f3560e3cf5dfb77cba03"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Tiếng Anh 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "b0efdfc8b4f141b665d482f6"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a71d7e9cbd649de1e1db3ee3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Vật lý 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "e136d777cdf7c118d90454d9"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-02T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b4c28392f00d31400e9ca7c7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Vật lý 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "8cd2f2e0875c72ee3cfac944"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-28T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 5,
+  "gradedCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2333bd2d16ab6c86e2f3b753"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Tiếng Anh 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "68dd9b597223f49ee224953d"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-28T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cf6b77d422ef9dd523a5f863"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Tiếng Anh 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "6ea838d33e0fd740877ea17f"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "da100b406f6fe9e6a1694d2c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Toán học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "0f57258de2f77f151eb39f95"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-13T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e760df975eaa36589337b251"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Toán học 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "d860e837acf8540cb2ff735d"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7278c02ab842c7e1ce262077"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Toán học 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "7861d57491be3be7c203b260"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-29T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "draft",
+  "submissionCount": 0,
+  "gradedCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c94e44d457ed2287f887695a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Toán học 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "c89a555eb71f0b1eb58b91f1"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-02T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5a45dc26eecc267411cb3bc2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Toán học 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "c152c6b0bc18cff3690f1661"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-28T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "draft",
+  "submissionCount": 0,
+  "gradedCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5fbe538dd4b6bf5b03c9a885"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Ngữ văn 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "2f8df2209444af28fbe47556"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-29T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 5,
+  "gradedCount": 1,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3373266769bea99dd51b7277"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Tiếng Anh 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "4b286c121eb2fb63f8d93190"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-30T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 7,
+  "gradedCount": 4,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f35254e9c5887e22154439c0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Toán học 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "02777113a7c8828cfba68e55"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 5,
+  "gradedCount": 1,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f47aa3801c9814c87886e515"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Vật lý 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "d5a6215bd62175356ff59cdd"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-11T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "acb53a50f6aa8616c752d7dd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Vật lý 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "8c794405bbae3c2fd9e453dd"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-27T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bfd0ef66ba33c9a74244c50a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Tiếng Anh 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "3cdb404ef9fa25019a76fb8e"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-12T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-02T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8c8a5fc8a864b9d9033d7ae9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Tiếng Anh 7",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "1f7ebd751a404ce57a79ef2e"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-29T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 3,
+  "gradedCount": 1,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a0177d2a1cf80cb49f01207b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Toán học 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "239fa59a37564062762c97a4"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-11T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ea724cc0f171a8852fec3c10"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Ngữ văn 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "c4f900295be1132167081e91"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-12T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-02T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b2a93f6acdaed71b00fff57b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Ngữ văn 6",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "a88f75d8f7e267f04741fa3b"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-28T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "11cc1f0f6375643a58bec4d2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Toán học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "d01c35a4165f25d27a83c5ab"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-29T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d42bbe875f3d2c745268ef2f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Hóa học 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "ed9ceeecc8144cd5d200c97d"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-30T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "259937da6b5e49f9f1e89709"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Ngữ văn 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "ee71aef83030122aafc07b7b"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-11T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0b6d240ed27ed9801d491ff3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Ngữ văn 8",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "be749316911512c5702a2203"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-06-28T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 7,
+  "gradedCount": 4,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8a51177db625b18da5bdd381"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Bài luyện tập tuần Toán học 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "c4f805d02cb78124731e81aa"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-05-12T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-02T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "da71cb83d42ae3ef1d6b9f1e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Toán học 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "fd4862ed019a444b4c4e0a85"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-28T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 12,
+  "gradedCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fb144dd815b66258542faa4c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Phiếu củng cố kiến thức Tiếng Anh 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "43835427dd71808cf286372d"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "practice",
+  "dueDate": {
+    "$date": "2026-05-29T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 9,
+  "gradedCount": 9,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a744e15fd93d2fcd1e5cef2b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Tiếng Anh 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "ff56e34c9951c8ce61aa76eb"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "closed",
+  "submissionCount": 11,
+  "gradedCount": 11,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6e665784c67c84a719dcc6e4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Bài tập vận dụng Ngữ văn 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "47310bbb0db77b273bf12bbc"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 4,
+  "gradedCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ff7238a4a669ffcd77aeb0ca"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "sessionId": null,
+  "title": "Dự án học tập mini Ngữ văn 9",
+  "description": "<p>Hoàn thành đầy đủ, trình bày rõ ràng và nộp đúng hạn.</p>",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "_id": {
+        "$oid": "8f432662342166d65f7d2832"
+      },
+      "prompt": "Em tự đánh giá mức độ hiểu bài?",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã hiểu và vận dụng được",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Cần được hỗ trợ thêm",
+          "isCorrect": false
+        }
+      ],
+      "points": 1
+    }
+  ],
+  "assignmentType": "project",
+  "dueDate": {
+    "$date": "2026-07-01T02:12:07.254Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": [
+      "pdf",
+      "docx",
+      "jpg",
+      "png"
+    ]
+  },
+  "status": "active",
+  "submissionCount": 3,
+  "gradedCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2fb1ca1ac44747aea076da"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "teacherId": {
+    "$oid": "6a25b20d8a33df1377f3dbb7"
+  },
+  "sessionId": null,
+  "title": "Bài tập test",
+  "description": "Nhớ làm bài đầy đủ",
+  "attachmentUrls": [],
+  "questions": [
+    {
+      "prompt": "Ngày hôm này như àno",
+      "type": "single_choice",
+      "options": [
+        {
+          "id": "q_1781510570465_a",
+          "text": "1+1",
+          "isCorrect": true
+        },
+        {
+          "id": "q_1781510570465_b",
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "id": "q_1781510570465_3",
+          "text": "3",
+          "isCorrect": false
+        }
+      ],
+      "points": 1,
+      "_id": {
+        "$oid": "6a2fb1ca1ac44747aea076db"
+      }
+    }
+  ],
+  "assignmentType": "homework",
+  "dueDate": {
+    "$date": "2026-06-17T08:02:00.000Z"
+  },
+  "maxScore": 10,
+  "isGraded": true,
+  "autoGrade": false,
+  "releaseScoreAfterDueDate": false,
+  "visibleToParent": true,
+  "submissionConfig": {
+    "allowLate": true,
+    "allowText": true,
+    "allowFile": true,
+    "maxFileSizeMb": 10,
+    "allowedFileTypes": []
+  },
+  "status": "active",
+  "submissionCount": 1,
+  "gradedCount": 1,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T08:03:22.142Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T08:04:46.611Z"
+  },
+  "__v": 0
+}]

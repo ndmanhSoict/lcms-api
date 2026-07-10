@@ -126,6 +126,16 @@ export class FinanceController {
     }
   };
 
+  vnpayCreateBulkPayment = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const body = { ...req.body, ip_addr: req.ip };
+      const result = await this.service.vnpayCreateBulkPayment(body, req.user);
+      sendSuccess(res, result, 'Tạo link thanh toán toàn bộ thành công');
+    } catch (error) {
+      next(error);
+    }
+  };
+
   // 12.7 VNPay Webhook (IPN) — không dùng sendSuccess (VNPay cần format riêng)
   vnpayWebhook = async (req: Request, res: Response, next: NextFunction) => {
     try {

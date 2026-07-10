@@ -1,0 +1,3810 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d472"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "số học"
+  ],
+  "chapter": "Chương 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "112"
+    },
+    {
+      "key": "B",
+      "content": "96"
+    },
+    {
+      "key": "C",
+      "content": "108"
+    },
+    {
+      "key": "D",
+      "content": "100"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d473"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "phương trình"
+  ],
+  "chapter": "Chương 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "x=10"
+    },
+    {
+      "key": "B",
+      "content": "x=12"
+    },
+    {
+      "key": "C",
+      "content": "x=8"
+    },
+    {
+      "key": "D",
+      "content": "x=14"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d474"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "true_false",
+  "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "hình học"
+  ],
+  "chapter": "Chương 3",
+  "options": null,
+  "correctAnswer": true,
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d475"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "fill_blank",
+  "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "hình học"
+  ],
+  "chapter": "Chương 3",
+  "options": null,
+  "correctAnswer": "50",
+  "answerTolerance": "exact",
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d476"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "essay",
+  "content": "Chứng minh rằng với mọi n tự nhiên, tổng n³ + 2n chia hết cho 3.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "chứng minh"
+  ],
+  "chapter": "Chương 4",
+  "options": null,
+  "correctAnswer": null,
+  "answerTolerance": null,
+  "gradingGuide": "Dùng quy nạp hoặc chia trường hợp n mod 3.",
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d477"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Choose the correct form: 'She ___ to school every day.'",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "grammar",
+    "present simple"
+  ],
+  "chapter": "Unit 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "go"
+    },
+    {
+      "key": "B",
+      "content": "goes"
+    },
+    {
+      "key": "C",
+      "content": "going"
+    },
+    {
+      "key": "D",
+      "content": "gone"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d478"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "If I ___ rich, I would travel the world.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "conditional"
+  ],
+  "chapter": "Unit 5",
+  "options": [
+    {
+      "key": "A",
+      "content": "am"
+    },
+    {
+      "key": "B",
+      "content": "was"
+    },
+    {
+      "key": "C",
+      "content": "were"
+    },
+    {
+      "key": "D",
+      "content": "be"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d479"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "fill_blank",
+  "content": "The opposite of 'beautiful' is ___.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "vocabulary"
+  ],
+  "chapter": "Unit 2",
+  "options": null,
+  "correctAnswer": "ugly",
+  "answerTolerance": "case_insensitive",
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d47a"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "true_false",
+  "content": "'I have been waiting for two hours' is correct Present Perfect Continuous.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "grammar"
+  ],
+  "chapter": "Unit 4",
+  "options": null,
+  "correctAnswer": true,
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d47b"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "essay",
+  "content": "Write a paragraph (80-100 words) about the advantages of learning English.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "writing"
+  ],
+  "chapter": "Unit 6",
+  "options": null,
+  "correctAnswer": null,
+  "answerTolerance": null,
+  "gradingGuide": "Nội dung (4đ), ngữ pháp (3đ), từ vựng (3đ).",
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-23T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d47c"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "subjectName": "Vật Lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Đơn vị đo lực trong hệ SI là gì?",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "cơ học",
+    "đơn vị"
+  ],
+  "chapter": "Chương 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Kilogram"
+    },
+    {
+      "key": "B",
+      "content": "Newton"
+    },
+    {
+      "key": "C",
+      "content": "Joule"
+    },
+    {
+      "key": "D",
+      "content": "Watt"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d47d"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "subjectName": "Vật Lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Vật 2kg chịu lực 10N. Gia tốc của vật là bao nhiêu?",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "Newton",
+    "gia tốc"
+  ],
+  "chapter": "Chương 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "2 m/s²"
+    },
+    {
+      "key": "B",
+      "content": "5 m/s²"
+    },
+    {
+      "key": "C",
+      "content": "20 m/s²"
+    },
+    {
+      "key": "D",
+      "content": "0,2 m/s²"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d47e"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "subjectName": "Vật Lý",
+  "subjectCode": "LY",
+  "questionType": "true_false",
+  "content": "Ánh sáng truyền trong chân không với vận tốc khoảng 3×10⁸ m/s.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "quang học"
+  ],
+  "chapter": "Chương 4",
+  "options": null,
+  "correctAnswer": true,
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d47f"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "subjectName": "Vật Lý",
+  "subjectCode": "LY",
+  "questionType": "fill_blank",
+  "content": "Công thức tính công cơ học là A = F × ___.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "công cơ học"
+  ],
+  "chapter": "Chương 2",
+  "options": null,
+  "correctAnswer": "s",
+  "answerTolerance": "exact",
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d480"
+  },
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "subjectName": "Vật Lý",
+  "subjectCode": "LY",
+  "questionType": "essay",
+  "content": "Quả bóng rơi tự do từ độ cao 20m. Tính vận tốc ngay trước khi chạm đất (g = 10 m/s²).",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "rơi tự do"
+  ],
+  "chapter": "Chương 1",
+  "options": null,
+  "correctAnswer": null,
+  "answerTolerance": null,
+  "gradingGuide": "v² = 2gh = 400 → v = 20 m/s. Ghi rõ công thức, thay số, đơn vị.",
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-28T14:16:16.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "ab0b62a9b31a85585d8b2404"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "23737544b47271b8faaa53f0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "11beb3d05c243ffd6e51a9f4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cae61367a2f547f107326710"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "515ba3cfcb4dff32b1325df4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ffa1a3b426a0f78006b98a2f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0abdb1d66205d840efcc65fe"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 11: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ba235200c6622b0758ae5e95"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 12: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9cb17478a95c70487dd1f26b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "81eef2a341362560f1795ec4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "37f5c433fa4b74334ca025e3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d7d2e1f5f67fda74906fd5dd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 12: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f0b3b9332331a3e7f35f91e2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "764b0dad8f9f7d6c2329bb65"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d56765a17e7003687444739a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4ef5c4671f2079406ba1d40b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "da1f514949602d68f9cc5061"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b3de394c821bcd8a64b90bd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5fdf7be32dc8a63d829f8d57"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a3dfa6c29935a78031059444"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 11: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bf60c9ec19af7ed87824bd90"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c6fc601d77f9a5e6a1c95ebd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6c1778dce6b7cf8f3eef875a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0d9e6583468e3c473ba0584f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65cff7022f392577a0e7b93c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 11: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "294f4296fa456483af5742fc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f79c982f7e56ec863d12a3d5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bff4dfccada33ee64e67f16e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5237163401608e92ba1725a3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ec7869ea1970ad4b5212160f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6c55d3e88e587b3fc818158e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 12: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "df8d973369bdb66196a413ab"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "48192d50f99d24a9837fd9f7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b553487694e5f9df93cf9e20"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c231dff34d1f43784971947e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e266e7f9063efd145824a6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "46d928e0366924297b39d4aa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 12: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "71051f0ab28f232ffe355e45"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b54fd5b2bd1f16fc7d50411b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "406e3b3d04c9ce531b0d7f02"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "198d072ff878c8532d243e4b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "adc95d7c79c2dddb70756050"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 11: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0ccbf1d7f72fe94fc4c27ff1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 12: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a53052ee38ceeefd3c327ae"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "subjectName": "Toán học",
+  "subjectCode": "TOAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Toán học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "toan",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "232cc4ddb689cc0008ef44ab"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "18a0dfc0acc95998ca8c9b50"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e0d77fc1be14797a2e4b0c1f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e60ab81b7e320ca383b8b55a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "subjectName": "Ngữ văn",
+  "subjectCode": "VAN",
+  "questionType": "multiple_choice",
+  "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "van",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fd4346f7cb152af976649f53"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "59439878a0e151362d2c5a6e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "easy",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 1",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0c47881361b9bae27e56408c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0371d3234dd86f5d3bde9369"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "subjectName": "Tiếng Anh",
+  "subjectCode": "ANH",
+  "questionType": "multiple_choice",
+  "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "anh",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a7946d4c0f18d131fa096861"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4c969571504f02f56c88704c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c7ba8517e5a907e0f9440c0d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "subjectName": "Vật lý",
+  "subjectCode": "LY",
+  "questionType": "multiple_choice",
+  "content": "Câu 11: Chọn đáp án đúng cho chuyên đề Vật lý.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "ly",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bb5c7b3c6117d1d161174194"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 2",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2a23458a8ddc4456c0a01008"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "C",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a518890663da96c63bd18544"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "D",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8d124e6f32f0e47542dc2b9d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "medium",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 3",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "A",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b85d1b239486fb77f3d28cd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "createdBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "subjectName": "Hóa học",
+  "subjectCode": "HOA",
+  "questionType": "multiple_choice",
+  "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Hóa học.",
+  "imageUrl": null,
+  "difficulty": "hard",
+  "tags": [
+    "hoa",
+    "binh-minh"
+  ],
+  "chapter": "Chuyên đề 4",
+  "options": [
+    {
+      "key": "A",
+      "content": "Đáp án A"
+    },
+    {
+      "key": "B",
+      "content": "Đáp án B"
+    },
+    {
+      "key": "C",
+      "content": "Đáp án C"
+    },
+    {
+      "key": "D",
+      "content": "Đáp án D"
+    }
+  ],
+  "correctAnswer": "B",
+  "answerTolerance": null,
+  "gradingGuide": null,
+  "isReported": false,
+  "reportNote": null,
+  "isActive": true,
+  "usageCount": 2,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+}]

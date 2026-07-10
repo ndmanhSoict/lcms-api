@@ -1428,7 +1428,7 @@ paths:
                         type: string
                       status:
                         type: string
-                        enum: [present, absent, late, excused]
+                        enum: [present, absent]
                       note:
                         type: string
       responses:
@@ -1518,7 +1518,7 @@ paths:
               properties:
                 status:
                   type: string
-                  enum: [present, absent, late, excused]
+                  enum: [present, absent]
                 note:
                   type: string
       responses:
@@ -3195,7 +3195,7 @@ components:
         sessionDate: { type: string, format: date-time }
         status:
           type: string
-          enum: [present, absent, late, excused]
+          enum: [present, absent]
         note: { type: string, nullable: true }
         createdAt: { type: string, format: date-time }
 

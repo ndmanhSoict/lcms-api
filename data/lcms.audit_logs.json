@@ -1,0 +1,4645 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db5a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db0a",
+  "action": "UPDATE_SCORE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db0b"
+  },
+  "before": {
+    "score": 6
+  },
+  "after": {
+    "score": 7
+  },
+  "ipAddress": "192.168.4.183",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-22T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db5b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db0c",
+  "action": "CHANGE_INVOICE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db0d"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.22",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-22T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db5c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db0e",
+  "action": "LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db0f"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.191",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-21T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-24T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db5d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db10",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db11"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.177",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-28T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db5e"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db12",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db13"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.144",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-23T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db5f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db14",
+  "action": "LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db15"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.25",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-06T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-10T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db60"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db16",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db17"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.3.19",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-19T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-22T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db61"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db18",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db19"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.183",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-26T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db62"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db1a",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db1b"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.188",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-22T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db63"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db1c",
+  "action": "LOGOUT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db1d"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.49",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-12T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db64"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db1e",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db1f"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.148",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-28T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db65"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db20",
+  "action": "UPDATE_SCORE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db21"
+  },
+  "before": {
+    "score": 5
+  },
+  "after": {
+    "score": 7
+  },
+  "ipAddress": "192.168.1.36",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-10T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-14T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db66"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Thị Phương",
+  "requestId": "6a0b1f3221a466242174db22",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db23"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.107",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-02T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db67"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db24",
+  "action": "LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db25"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.192",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-26T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db68"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db26",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db27"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.91",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-12T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db69"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db28",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db29"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.115",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-24T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-27T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db6a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db2a",
+  "action": "UPDATE_SCORE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db2b"
+  },
+  "before": {
+    "score": 5
+  },
+  "after": {
+    "score": 9
+  },
+  "ipAddress": "192.168.4.89",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-01T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-05T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db6b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db2c",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db2d"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.114",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-11T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-15T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db6c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db2e",
+  "action": "LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db2f"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.53",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-03T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-07T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db6d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db30",
+  "action": "LOGOUT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db31"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.67",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-12T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-16T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db6e"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Thị Phương",
+  "requestId": "6a0b1f3221a466242174db32",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db33"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.187",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-09T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db6f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Thị Phương",
+  "requestId": "6a0b1f3221a466242174db34",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db35"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.3.128",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-26T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db70"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db36",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db37"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.41",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-18T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-21T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db71"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db38",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db39"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.14",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-06T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-10T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db72"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db3a",
+  "action": "LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db3b"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.187",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-13T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-17T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db73"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db3c",
+  "action": "LOGOUT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db3d"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.21",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-18T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-21T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db74"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db3e",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db3f"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.25",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-23T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db75"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db40",
+  "action": "LOGOUT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db41"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.123",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-15T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db76"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db42",
+  "action": "LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db43"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.84",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-22T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db77"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db44",
+  "action": "UPDATE_SCORE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db45"
+  },
+  "before": {
+    "score": 5
+  },
+  "after": {
+    "score": 10
+  },
+  "ipAddress": "192.168.4.165",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-23T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db78"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db46",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db47"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.2.130",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-22T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db79"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db48",
+  "action": "UPDATE_SCORE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db49"
+  },
+  "before": {
+    "score": 5
+  },
+  "after": {
+    "score": 9
+  },
+  "ipAddress": "192.168.4.121",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-28T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-01T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db7a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db4a",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db4b"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.3.51",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-15T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db7b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "actorRole": "teacher",
+  "actorName": "Nguyễn Văn Hùng",
+  "requestId": "6a0b1f3221a466242174db4c",
+  "action": "UPDATE_SCORE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db4d"
+  },
+  "before": {
+    "score": 4
+  },
+  "after": {
+    "score": 9
+  },
+  "ipAddress": "192.168.2.120",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-29T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db7c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Thu Hoa",
+  "requestId": "6a0b1f3221a466242174db4e",
+  "action": "FAILED_LOGIN",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db4f"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.5.157",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-09T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-13T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db7d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db50",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db51"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.113",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-22T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db7e"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db52",
+  "action": "CHANGE_INVOICE",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db53"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.1.15",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-07T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db7f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Trần Đức Mạnh",
+  "requestId": "6a0b1f3221a466242174db54",
+  "action": "EXPORT_DATA",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db55"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.3.61",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-13T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-17T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db80"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "actorRole": "staff",
+  "actorName": "Hoàng Thị Lan",
+  "requestId": "6a0b1f3221a466242174db56",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db57"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.60",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-11-01T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-05T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db81"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Thị Phương",
+  "requestId": "6a0b1f3221a466242174db58",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "users",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174db59"
+  },
+  "before": null,
+  "after": null,
+  "ipAddress": "192.168.4.46",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "expiresAt": {
+    "$date": "2026-10-15T14:16:18.668Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:18.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0f2b25ae88b6955fcb927d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "actorId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a0b1f3221a466242174d89f"
+  },
+  "before": {
+    "status": "paid"
+  },
+  "after": {
+    "status": "paid",
+    "method": "vnpay",
+    "transactionNo": "15550537"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-11-17T15:56:21.482Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-21T15:56:21.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a246c75283806708ce4b2cd"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a0b1f2521a466242174ca6f"
+  },
+  "actorRole": "system_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-03T18:52:37.880Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-06T18:52:37.881Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a246c81283806708ce4b2d0"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a0b1f2521a466242174ca6f"
+  },
+  "actorRole": "system_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-03T18:52:49.543Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-06T18:52:49.549Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a246c83283806708ce4b2d3"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a0b1f2521a466242174ca6f"
+  },
+  "actorRole": "system_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-03T18:52:51.921Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-06T18:52:51.922Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2585d1cd92a57b73f64502"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a0b1f2521a466242174ca6f"
+  },
+  "actorRole": "system_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T14:53:05.036Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T14:53:05.048Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a258b54ec46e93f4cb113cf"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T15:16:36.659Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T15:16:36.660Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a258b5cec46e93f4cb113d2"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T15:16:44.456Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T15:16:44.457Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a258b5fec46e93f4cb113d5"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T15:16:47.883Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T15:16:47.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a258ff952d626d9dac01c4b"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T15:36:25.856Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T15:36:25.862Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a25900252d626d9dac01c4e"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T15:36:34.959Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T15:36:34.960Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a25968bbec8d4498ab27837"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T16:04:27.153Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T16:04:27.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a259831bec8d4498ab2783a"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T16:11:29.382Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T16:11:29.383Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a259aab160e53da757fb4eb"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "actorRole": "student",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-04T16:22:03.386Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-07T16:22:03.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2a68d4c47a2113c76fbc38"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "CHANGE_INVOICE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a2a68d4c47a2113c76fbc36"
+  },
+  "before": null,
+  "after": {
+    "invoiceCode": "INV-CS-6DB7124C-2026-0001",
+    "totalAmount": 210000,
+    "status": "unpaid"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-08T07:50:44.359Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-11T07:50:44.359Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e8217f9c66349137d8892"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "CHANGE_INVOICE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a2e8216f9c66349137d8890"
+  },
+  "before": null,
+  "after": {
+    "invoiceCode": "INV-CS-6DB7124C-2026-0002",
+    "totalAmount": 0,
+    "status": "unpaid"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-11T10:27:35.020Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-14T10:27:35.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e8229f9c66349137d88dd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "CHANGE_INVOICE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a2e8229f9c66349137d88db"
+  },
+  "before": null,
+  "after": {
+    "invoiceCode": "INV-CS-6DB7124C-2026-0003",
+    "totalAmount": 0,
+    "status": "unpaid"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-11T10:27:53.747Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-14T10:27:53.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e8fa08a8ff0954f7ee6d1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a2a68d4c47a2113c76fbc36"
+  },
+  "before": {
+    "status": "unpaid",
+    "paidAmount": null
+  },
+  "after": {
+    "status": "paid",
+    "paidAmount": 210000
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-11T11:25:20.995Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-14T11:25:20.995Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e989d8a8ff0954f7ee9b3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a25b20d8a33df1377f3dbb7"
+  },
+  "actorRole": "teacher",
+  "actorName": null,
+  "requestId": null,
+  "action": "UPDATE_SCORE",
+  "targetType": "Submission",
+  "targetId": {
+    "$oid": "6a2e98758a8ff0954f7ee943"
+  },
+  "before": {
+    "status": "submitted",
+    "score": null
+  },
+  "after": {
+    "status": "graded",
+    "score": 10,
+    "feedback": ""
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-11T12:03:41.685Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-14T12:03:41.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "ad1893de51de53d7d91f0ecf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0008",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "78de36321fd039f4a8ab0a4c"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-08T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "207103a43b191f5bbe96e819"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0018",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "81c181df1309b12407177181"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-29T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-29T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e880251bec8b01115b9c6ade"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0020",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "e2f1803cb09d7c64bc922f6c"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-27T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-27T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d73804a83f0de967a4b24cac"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0025",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-22T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-22T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "54557b7876982fe67806797c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0026",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "387752de3eb130caafceb8ca"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-21T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-21T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ff9e4c6add2c190db36bbbc3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0027",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-20T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fd2f0a8c7d0aa290fd7c6ea7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0033",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "e5d9625eecfab793fd038090"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-14T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-14T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5d1cfc86d5e4167a7fae7d11"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0034",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "b970093f52e58c03fb618de2"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-13T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-13T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bd37bdf36f2cee82c8ad4274"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0044",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "3604b5cb852f79edb22af06c"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-03T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-03T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3abdf966433f7ea47a0d1f3a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0047",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-30T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-30T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0f321e33b86fcb17a56c5bd3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0054",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "d26822b22811475fc46b4fc6"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-23T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-23T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a196c3b52b03bed6a7f91629"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0059",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-18T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-18T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "296c6496f742ea2aa18e214d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0061",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-16T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-16T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3159b8b3e315dd603a755a5b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0068",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "9afa0714f4904d5264ab8468"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-09T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-09T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "758d44f0ade075d3adfb5824"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0069",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-08T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-08T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a04496c627f3ed3c49866999"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0074",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "2c5a567c993748df8e75837d"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-03T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-03T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cdeb7a9f3e2687a07a008d8e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0075",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-02T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-02T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1c561ceb628031516529194c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0076",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "7f238742603fc1795704fd50"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-01T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-01T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "767471915393d1a442a4be79"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0079",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-03-29T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-09-29T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a50bc7524bfff007d3680903"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0080",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "7bed7cbbafe76d30c5ae2351"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-03-28T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-09-28T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1d1ec8e88b1993cf3c8869e6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0011",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-05T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "262bcce020392a867b9bddcf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0012",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "a43d65df77da108731733e18"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-04T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f13f289fe256a4f731b98bb5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0014",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "da25ac6c0cfbeb0a0c4ccb36"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-02T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-02T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a40e0051ff004efc1b82577b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0016",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "080cf9c87a8c4ee1ab4af620"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-31T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-01T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5ee773b5c33d02c24cfdadba"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0022",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "0d8a774532dca4468d2976dc"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-25T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-25T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "19ab65a52da37c5562ce2246"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0024",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "222c41b99ed57f8334997a63"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-23T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-23T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9f41f267823336108a0feb81"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0030",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "24f490a11b103b7eace9f151"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-17T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "94a109003609ebb092549163"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0036",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6c9724790d4964cf0863a9dc"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-11T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-11T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "91ff4b2ce5e7dc4de30c25ad"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0037",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-10T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-10T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "98d94839a263518cc9bd6881"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0038",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6c78d1ef482e6db1bf05fc75"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-09T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-09T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1a8c1d00c8d4af3e1d41d300"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0039",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-08T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-08T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a3f35637164ef3c953c21e4a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0042",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "7b64d34c2aa446ffca73f3b7"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-05T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-05T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "caa779476739a2ec87ffd1c0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0045",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "6a076245f56db23e94a2a494"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-02T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-02T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "583f414e4a8ef4388c89913d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0049",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-28T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-28T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "db617af80c4fd39f4059abb9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0051",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-26T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-26T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "409d659c37cad20bbb41223c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0053",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-24T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-24T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "11fa54103b13a5e2a50bf7dd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0055",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-22T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-22T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ca53688c5862f24e8b0751f6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0058",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "f3b69b6ea1766bc957192590"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-19T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-19T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0aad7bc536dd328a99f36ddc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0060",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "52bf53ae9b06be9dff883758"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-17T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-17T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1fe9bb25c4850c2374375d82"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0064",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "f85e8e4aeeb266485ba5aebb"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-13T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-13T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "547f05ab670b7ab48cfc47af"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0067",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-10T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-10T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6231262eb3c21adecdd7a121"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0070",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "34020c8d2038849764ba0b64"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-07T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-07T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cae3e93377035b38a03a15de"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0071",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-06T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-06T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b5c367c269e7ab2dcdaadbfe"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0073",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-04T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-04T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a2bd79fac19a96417ad08209"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0078",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "695802a3b5b8852bf198aa24"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-03-30T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-09-30T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a02167aa776e95a560141d1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0001",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ac137be4b0f498dcff92cbab"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0003",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-13T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5d9d312a3d9328fd830dde15"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0004",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "61940ec9ed514212705a63b3"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-12T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a39400959ee4aeaba17031c8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0005",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-11T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1e08d117ca9d9e712835e65c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0006",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "585ee0f9aa7d6b9d5982693d"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-10T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1cd8bab439ad7eb70a0e18aa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0007",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-09T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cd912d3cc255a65d6d902a55"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0010",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "d70f5a50323f5df4b10df8e7"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-06T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-06T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ed516009aa0d020129f98074"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0013",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-03T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "95e41edfd27d7e0a87e1f528"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0017",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-30T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-30T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1f214fb43ed7e0c5764ebba6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0023",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-24T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-24T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "dc3451652c834c6f22c7300b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0032",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "cf845bf9c2acdd4615deb684"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-15T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a71e6712ac0041d5ee625d62"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0043",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-04T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-04T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d9a10e1db01d6a5d4f131bb8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0048",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "c4372b81cf275684ca39868d"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-29T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-29T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8a288abb5213ed5ba85fa4d8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0063",
+  "action": "UPDATE_SCORE",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-14T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-14T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3ec08f2932380ce4ed0c5253"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0065",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-12T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-12T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f9a88e671463810b760db930"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0072",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "a32679b7cf85236746848500"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-05T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-05T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0c26eef009bd87b6939f27fb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0002",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "091c3a08022cd454d83957c3"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-14T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "dea6fc743c4b43854ecf131a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0009",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-07T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2fe92abb8565ff523c271cf0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0015",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-06-01T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-12-01T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "10e20f8c3dde6c7c94273d39"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0019",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-28T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-28T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ec54195b1f373539583a52e4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0021",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-26T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-26T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d18548f95dad1654835b692a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0028",
+  "action": "UPDATE_SCORE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "c5ef35bbfa00df8e6b945d38"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-19T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "84c0cd1ead3d35df6561dcf4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0029",
+  "action": "CONFIRM_PAYMENT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-18T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d25ba69728672224a953576f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0031",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-16T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-16T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bff46033affdebe64f5242e8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "b7c524b4a6a08f7265fa6960"
+  },
+  "actorRole": "staff",
+  "actorName": "Lê Mai Phương",
+  "requestId": "seed-bm-0035",
+  "action": "EXPORT_DATA",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-12T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-12T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9dfceff341d1e9dcac2c8030"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0040",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "86da497f1c85a68bb0f17c9c"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-07T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-07T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4cb696b43ac2ca7b62f21d4d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0041",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "81ee59bad90b403ab12c5199"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-06T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-06T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b222f1cf1bd4128b147db48d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0046",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "ccd7f709b54f8f5f832b1d9b"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-05-01T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-11-01T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7622fff85a2791f1504dfe8e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0050",
+  "action": "EXPORT_DATA",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "0191e6a743e9d1af7fecea2b"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-27T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-27T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4084db6ad4539cfdf77f653f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": "Phạm Quang Vinh",
+  "requestId": "seed-bm-0052",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "accce1654bacda9677a81985"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-25T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-25T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9e6f4592678e68f01fcb6cb2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0056",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "f2ea4511ce5defc57bbb81b3"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-21T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-21T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a91a948d9bdd5721ba5de701"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0057",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-20T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-20T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fb50c6c8964af86556a43503"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "4797b38a5bb5b9e1ba8ababd"
+  },
+  "actorRole": "staff",
+  "actorName": "Trần Đức Thành",
+  "requestId": "seed-bm-0062",
+  "action": "LOGIN",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "ad7b8f6420295f52fa89df23"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-15T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6caa6c66f3ee8ff6433326b3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": "Nguyễn Đức Mạnh",
+  "requestId": "seed-bm-0066",
+  "action": "CREATE_ACCOUNT",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "2f30864967acf98385b7f654"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-04-11T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-11T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "53ac1938ec7f33cda4bcc71e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "01074907d5dddec4b9c563f7"
+  },
+  "actorRole": "staff",
+  "actorName": "Nguyễn Thị Thanh Hương",
+  "requestId": "seed-bm-0077",
+  "action": "LOGIN",
+  "targetType": "User",
+  "targetId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "before": null,
+  "after": {
+    "seed": true
+  },
+  "ipAddress": "127.0.0.1",
+  "userAgent": "LCMS Binh Minh Seed",
+  "createdAt": {
+    "$date": "2026-03-31T02:12:07.254Z"
+  },
+  "expiresAt": {
+    "$date": "2026-10-01T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2f8140f80d2d96afc4a1d0"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-12T04:36:16.887Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T04:36:16.894Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2f88b551dff3a0002c0d4a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "CHANGE_INVOICE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a2f88b451dff3a0002c0d48"
+  },
+  "before": null,
+  "after": {
+    "invoiceCode": "INV-CS-6DB7124C-2026-0004",
+    "totalAmount": 2200000,
+    "status": "unpaid"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-12T05:08:05.031Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T05:08:05.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2fa90701684a10d3054639"
+  },
+  "schemaVersion": 1,
+  "branchId": null,
+  "actorId": {
+    "$oid": "9536a2f813677a03d6b71082"
+  },
+  "actorRole": "staff",
+  "actorName": null,
+  "requestId": null,
+  "action": "FAILED_LOGIN",
+  "targetType": null,
+  "targetId": null,
+  "before": null,
+  "after": null,
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+  "expiresAt": {
+    "$date": "2026-12-12T07:25:59.078Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T07:25:59.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2fb13b1ac44747aea075dd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "actorRole": "branch_owner",
+  "actorName": null,
+  "requestId": null,
+  "action": "CHANGE_INVOICE",
+  "targetType": "Invoice",
+  "targetId": {
+    "$oid": "6a2fb13b1ac44747aea075db"
+  },
+  "before": null,
+  "after": {
+    "invoiceCode": "INV-CS-6DB7124C-2026-0005",
+    "totalAmount": 0,
+    "status": "unpaid"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-12T08:00:59.135Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T08:00:59.137Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2fb21e1ac44747aea077da"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "6a25b20d8a33df1377f3dbb7"
+  },
+  "actorRole": "teacher",
+  "actorName": null,
+  "requestId": null,
+  "action": "UPDATE_SCORE",
+  "targetType": "Submission",
+  "targetId": {
+    "$oid": "6a2fb1e91ac44747aea0776f"
+  },
+  "before": {
+    "status": "submitted",
+    "score": null
+  },
+  "after": {
+    "status": "graded",
+    "score": 10,
+    "feedback": "Làm bài tốt, nhanh"
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-12T08:04:46.664Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-15T08:04:46.665Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a363efe3ba7c65a4394bad3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "actorId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "actorRole": "teacher",
+  "actorName": null,
+  "requestId": null,
+  "action": "UPDATE_SCORE",
+  "targetType": "Submission",
+  "targetId": {
+    "$oid": "c76c3fdbb5aafe79c73947f8"
+  },
+  "before": {
+    "status": "submitted",
+    "score": null
+  },
+  "after": {
+    "status": "graded",
+    "score": 10,
+    "feedback": ""
+  },
+  "ipAddress": null,
+  "userAgent": null,
+  "expiresAt": {
+    "$date": "2026-12-17T07:19:26.755Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-20T07:19:26.755Z"
+  },
+  "__v": 0
+}]

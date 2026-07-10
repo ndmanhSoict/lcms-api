@@ -66,6 +66,14 @@ export const vnpayCreatePaymentSchema = z.object({
   }),
 });
 
+export const vnpayCreateBulkPaymentSchema = z.object({
+  body: z.object({
+    invoice_ids: z.array(z.string().min(1)).optional().default([]),
+    bank_code: z.string().optional().default(''),
+    return_url: z.string().url('return_url phải là URL hợp lệ').optional(),
+  }),
+});
+
 export const deleteInvoiceSchema = z.object({
   params: z.object({ id: z.string().min(1) }),
 });

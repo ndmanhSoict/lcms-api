@@ -1,0 +1,1639 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#4F8EF7",
+    "icon": "📐"
+  },
+  "name": "Toán 8A",
+  "classCode": "HBT-TOAN-8A-2025",
+  "description": "Toán nâng cao dành cho học sinh lớp 8",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "teacherSnapshot": {
+    "fullName": "Nguyễn Văn Hùng",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 150000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomCode": "P101"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomCode": "P101"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-17T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:07.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#4F8EF7",
+    "icon": "📐"
+  },
+  "name": "Toán 9A",
+  "classCode": "HBT-TOAN-9A-2025",
+  "description": "Luyện thi vào 10 THPT",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8b"
+  },
+  "teacherSnapshot": {
+    "fullName": "Trần Thị Mai",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "course",
+  "courseInfo": {
+    "startDate": {
+      "$date": "2026-03-19T14:16:06.895Z"
+    },
+    "endDate": {
+      "$date": "2026-07-17T14:16:06.895Z"
+    },
+    "totalSessions": 40,
+    "completedSessions": 20,
+    "feePerCourse": 3500000
+  },
+  "ongoingInfo": null,
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomCode": "P201"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "08:00",
+      "endTime": "10:00",
+      "roomCode": "P201"
+    }
+  ],
+  "maxStudents": 18,
+  "studentCount": 8,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-14T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:08.561Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "subject": {
+    "name": "Tiếng Anh",
+    "code": "ANH",
+    "color": "#F59E0B",
+    "icon": "🌏"
+  },
+  "name": "Anh Văn 7A",
+  "classCode": "HBT-ANH-7A-2025",
+  "description": "Tiếng Anh giao tiếp cho học sinh lớp 7",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "teacherSnapshot": {
+    "fullName": "Lê Minh Châu",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 150000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 1,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomCode": "P102"
+    },
+    {
+      "dayOfWeek": 4,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomCode": "P102"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 10,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-27T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:09.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "subject": {
+    "name": "Tiếng Anh",
+    "code": "ANH",
+    "color": "#F59E0B",
+    "icon": "🌏"
+  },
+  "name": "Anh Văn 8B",
+  "classCode": "HBT-ANH-8B-2025",
+  "description": "Tiếng Anh nâng cao lớp 8",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "teacherSnapshot": {
+    "fullName": "Lê Minh Châu",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 150000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "roomCode": "P102"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "roomCode": "P102"
+    }
+  ],
+  "maxStudents": 18,
+  "studentCount": 10,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-04T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:09.797Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "subject": {
+    "name": "Ngữ Văn",
+    "code": "VAN",
+    "color": "#10B981",
+    "icon": "📖"
+  },
+  "name": "Văn 8A",
+  "classCode": "HBT-VAN-8A-2025",
+  "description": "Ngữ văn lớp 8",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8d"
+  },
+  "teacherSnapshot": {
+    "fullName": "Phạm Quốc Bảo",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 140000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "roomCode": "P201"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "roomCode": "P201"
+    }
+  ],
+  "maxStudents": 22,
+  "studentCount": 10,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca75"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-09T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:10.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "subject": {
+    "name": "Vật Lý",
+    "code": "LY",
+    "color": "#7C3AED",
+    "icon": "⚡"
+  },
+  "name": "Vật Lý 9A",
+  "classCode": "CG-LY-9A-2025",
+  "description": "Vật lý luyện thi vào 10",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "teacherSnapshot": {
+    "fullName": "Bùi Thị Thanh",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "course",
+  "courseInfo": {
+    "startDate": {
+      "$date": "2026-03-29T14:16:06.895Z"
+    },
+    "endDate": {
+      "$date": "2026-07-27T14:16:06.895Z"
+    },
+    "totalSessions": 36,
+    "completedSessions": 18,
+    "feePerCourse": 3200000
+  },
+  "ongoingInfo": null,
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "18:30",
+      "endTime": "20:30",
+      "roomCode": "A01"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "18:30",
+      "endTime": "20:30",
+      "roomCode": "A01"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 10,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-24T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:11.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "subject": {
+    "name": "Hóa Học",
+    "code": "HOA",
+    "color": "#EF4444",
+    "icon": "🧪"
+  },
+  "name": "Hóa 9B",
+  "classCode": "CG-HOA-9B-2025",
+  "description": "Hóa học nâng cao lớp 9",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "teacherSnapshot": {
+    "fullName": "Đinh Văn Long",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 160000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "18:30",
+      "endTime": "20:30",
+      "roomCode": "B01"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "08:00",
+      "endTime": "10:00",
+      "roomCode": "B01"
+    }
+  ],
+  "maxStudents": 18,
+  "studentCount": 9,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-19T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:11.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#4F8EF7",
+    "icon": "📐"
+  },
+  "name": "Toán 8C",
+  "classCode": "CG-TOAN-8C-2025",
+  "description": "Toán học lớp 8 cơ sở Cầu Giấy",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "teacherSnapshot": {
+    "fullName": "Đinh Văn Long",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 160000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 1,
+      "startTime": "18:30",
+      "endTime": "20:30",
+      "roomCode": "A02"
+    },
+    {
+      "dayOfWeek": 4,
+      "startTime": "18:30",
+      "endTime": "20:30",
+      "roomCode": "A02"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 10,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-22T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:12.412Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "subject": {
+    "name": "Tiếng Anh",
+    "code": "ANH",
+    "color": "#F59E0B",
+    "icon": "🌏"
+  },
+  "name": "Anh Văn 9C",
+  "classCode": "CG-ANH-9C-2025",
+  "description": "Tiếng Anh luyện thi lớp 9",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8e"
+  },
+  "teacherSnapshot": {
+    "fullName": "Hoàng Thị Hương",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "course",
+  "courseInfo": {
+    "startDate": {
+      "$date": "2026-04-03T14:16:06.895Z"
+    },
+    "endDate": {
+      "$date": "2026-08-01T14:16:06.895Z"
+    },
+    "totalSessions": 32,
+    "completedSessions": 14,
+    "feePerCourse": 2800000
+  },
+  "ongoingInfo": null,
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomCode": "A01"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomCode": "A01"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 10,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-29T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:13.067Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "subject": {
+    "name": "Ngữ Văn",
+    "code": "VAN",
+    "color": "#10B981",
+    "icon": "📖"
+  },
+  "name": "Văn 9D",
+  "classCode": "CG-VAN-9D-2025",
+  "description": "Ngữ Văn lớp 9 cơ sở Cầu Giấy",
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca91"
+  },
+  "teacherSnapshot": {
+    "fullName": "Ngô Xuân Trường",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "classType": "ongoing",
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 155000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomCode": "A02"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomCode": "A02"
+    }
+  ],
+  "maxStudents": 22,
+  "studentCount": 8,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a0b1f2621a466242174ca76"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-03-07T14:16:06.895Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:13.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Toán 6",
+    "code": null,
+    "color": null,
+    "icon": null
+  },
+  "name": "Toán 6 thầy A",
+  "classCode": "Math-6-A",
+  "description": null,
+  "teacherId": {
+    "$oid": "6a25b20d8a33df1377f3dbb7"
+  },
+  "teacherSnapshot": null,
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "6a25ad65e1a5a42f03c0b792"
+  },
+  "roomSnapshot": {
+    "code": "BM01-01",
+    "capacity": 20,
+    "detail": "Có tivi, điều hòa, đèn điện đầy đủ"
+  },
+  "classType": "course",
+  "startDate": {
+    "$date": "2026-05-06T17:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-10-06T17:00:00.000Z"
+  },
+  "courseInfo": {
+    "startDate": {
+      "$date": "2026-05-06T17:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-10-06T17:00:00.000Z"
+    },
+    "totalSessions": 0,
+    "completedSessions": 0,
+    "feePerCourse": 0
+  },
+  "ongoingInfo": null,
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "14:00",
+      "endTime": "16:30",
+      "roomId": {
+        "$oid": "6a25ad65e1a5a42f03c0b792"
+      },
+      "roomCode": "BM01-01"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "14:00",
+      "endTime": "16:30",
+      "roomId": {
+        "$oid": "6a25ad65e1a5a42f03c0b792"
+      },
+      "roomCode": "BM01-01"
+    }
+  ],
+  "maxStudents": 5,
+  "studentCount": 4,
+  "status": "active",
+  "createdBy": null,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-07T18:03:53.935Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T08:00:58.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#2563EB",
+    "icon": null
+  },
+  "name": "Toán 6 Nền tảng",
+  "classCode": "BM-T6A",
+  "description": "Chương trình Toán học lớp 6 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "teacherSnapshot": {
+    "fullName": "Phạm Minh Anh",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "9f74fcecff46f93395744bd6"
+  },
+  "roomSnapshot": {
+    "code": "BM-A01",
+    "capacity": 24,
+    "detail": "Tầng 1 - TV 65 inch, điều hòa, bảng từ"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 210000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "9f74fcecff46f93395744bd6"
+      },
+      "roomCode": "BM-A01"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "9f74fcecff46f93395744bd6"
+      },
+      "roomCode": "BM-A01"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Tiếng Anh",
+    "code": "ANH",
+    "color": "#7C3AED",
+    "icon": null
+  },
+  "name": "Tiếng Anh 6 Giao tiếp",
+  "classCode": "BM-A6A",
+  "description": "Chương trình Tiếng Anh lớp 6 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "teacherSnapshot": {
+    "fullName": "Trần Thu Hà",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "89a96a842c7fa52672a8e18f"
+  },
+  "roomSnapshot": {
+    "code": "BM-B02",
+    "capacity": 22,
+    "detail": "Tầng 2 - Phòng Ngoại ngữ, tai nghe luyện nghe"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 210000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 4,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "89a96a842c7fa52672a8e18f"
+      },
+      "roomCode": "BM-B02"
+    },
+    {
+      "dayOfWeek": 0,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "89a96a842c7fa52672a8e18f"
+      },
+      "roomCode": "BM-B02"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Vật lý",
+    "code": "LY",
+    "color": "#0891B2",
+    "icon": null
+  },
+  "name": "Vật lý 7 Thực hành",
+  "classCode": "BM-L7A",
+  "description": "Chương trình Vật lý lớp 7 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "teacherSnapshot": {
+    "fullName": "Lê Hoàng Nam",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "6131cac626729d3594179f00"
+  },
+  "roomSnapshot": {
+    "code": "BM-A03",
+    "capacity": 28,
+    "detail": "Tầng 1 - Máy chiếu, loa, bảng tương tác"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 215000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "6131cac626729d3594179f00"
+      },
+      "roomCode": "BM-A03"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "6131cac626729d3594179f00"
+      },
+      "roomCode": "BM-A03"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Hóa học",
+    "code": "HOA",
+    "color": "#059669",
+    "icon": null
+  },
+  "name": "Hóa học 8 Khám phá",
+  "classCode": "BM-H8A",
+  "description": "Chương trình Hóa học lớp 8 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "teacherSnapshot": {
+    "fullName": "Vũ Thùy Dương",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "6131cac626729d3594179f00"
+  },
+  "roomSnapshot": {
+    "code": "BM-A03",
+    "capacity": 28,
+    "detail": "Tầng 1 - Máy chiếu, loa, bảng tương tác"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 220000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "6131cac626729d3594179f00"
+      },
+      "roomCode": "BM-A03"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "6131cac626729d3594179f00"
+      },
+      "roomCode": "BM-A03"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#2563EB",
+    "icon": null
+  },
+  "name": "Toán 7 Nâng cao",
+  "classCode": "BM-T7A",
+  "description": "Chương trình Toán học lớp 7 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "teacherSnapshot": {
+    "fullName": "Đỗ Đức Long",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "898018f469851c9afe6694ba"
+  },
+  "roomSnapshot": {
+    "code": "BM-B01",
+    "capacity": 26,
+    "detail": "Tầng 2 - Phòng Toán và Khoa học tự nhiên"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 215000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "898018f469851c9afe6694ba"
+      },
+      "roomCode": "BM-B01"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "898018f469851c9afe6694ba"
+      },
+      "roomCode": "BM-B01"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Tiếng Anh",
+    "code": "ANH",
+    "color": "#7C3AED",
+    "icon": null
+  },
+  "name": "Tiếng Anh 7 IELTS Foundation",
+  "classCode": "BM-A7A",
+  "description": "Chương trình Tiếng Anh lớp 7 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "teacherSnapshot": {
+    "fullName": "Bùi Ngọc Mai",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "89a96a842c7fa52672a8e18f"
+  },
+  "roomSnapshot": {
+    "code": "BM-B02",
+    "capacity": 22,
+    "detail": "Tầng 2 - Phòng Ngoại ngữ, tai nghe luyện nghe"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 215000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 4,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "89a96a842c7fa52672a8e18f"
+      },
+      "roomCode": "BM-B02"
+    },
+    {
+      "dayOfWeek": 0,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "89a96a842c7fa52672a8e18f"
+      },
+      "roomCode": "BM-B02"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#2563EB",
+    "icon": null
+  },
+  "name": "Toán 8 Chuyên đề",
+  "classCode": "BM-T8A",
+  "description": "Chương trình Toán học lớp 8 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "teacherSnapshot": {
+    "fullName": "Phạm Minh Anh",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "898018f469851c9afe6694ba"
+  },
+  "roomSnapshot": {
+    "code": "BM-B01",
+    "capacity": 26,
+    "detail": "Tầng 2 - Phòng Toán và Khoa học tự nhiên"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 220000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "898018f469851c9afe6694ba"
+      },
+      "roomCode": "BM-B01"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "898018f469851c9afe6694ba"
+      },
+      "roomCode": "BM-B01"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Ngữ văn",
+    "code": "VAN",
+    "color": "#DB2777",
+    "icon": null
+  },
+  "name": "Ngữ văn 8 Viết sáng tạo",
+  "classCode": "BM-V8A",
+  "description": "Chương trình Ngữ văn lớp 8 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "teacherSnapshot": {
+    "fullName": "Hoàng Gia Huy",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "e5bbcc1422f1f81ac4ba61a5"
+  },
+  "roomSnapshot": {
+    "code": "BM-A02",
+    "capacity": 20,
+    "detail": "Tầng 1 - Phòng học nhóm, ánh sáng tự nhiên"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 220000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 4,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "e5bbcc1422f1f81ac4ba61a5"
+      },
+      "roomCode": "BM-A02"
+    },
+    {
+      "dayOfWeek": 0,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "e5bbcc1422f1f81ac4ba61a5"
+      },
+      "roomCode": "BM-A02"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Ngữ văn",
+    "code": "VAN",
+    "color": "#DB2777",
+    "icon": null
+  },
+  "name": "Ngữ văn 6 Cảm thụ",
+  "classCode": "BM-V6A",
+  "description": "Chương trình Ngữ văn lớp 6 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "teacherSnapshot": {
+    "fullName": "Nguyễn Quốc Bảo",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "e5bbcc1422f1f81ac4ba61a5"
+  },
+  "roomSnapshot": {
+    "code": "BM-A02",
+    "capacity": 20,
+    "detail": "Tầng 1 - Phòng học nhóm, ánh sáng tự nhiên"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 210000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "e5bbcc1422f1f81ac4ba61a5"
+      },
+      "roomCode": "BM-A02"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "e5bbcc1422f1f81ac4ba61a5"
+      },
+      "roomCode": "BM-A02"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Toán học",
+    "code": "TOAN",
+    "color": "#2563EB",
+    "icon": null
+  },
+  "name": "Toán 9 Luyện thi vào 10",
+  "classCode": "BM-T9A",
+  "description": "Chương trình Toán học lớp 9 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "teacherSnapshot": {
+    "fullName": "Đỗ Đức Long",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "7e666266ef681415cd807e7e"
+  },
+  "roomSnapshot": {
+    "code": "BM-B03",
+    "capacity": 30,
+    "detail": "Tầng 2 - Phòng học lớn và sinh hoạt chuyên đề"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 225000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "7e666266ef681415cd807e7e"
+      },
+      "roomCode": "BM-B03"
+    },
+    {
+      "dayOfWeek": 5,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "7e666266ef681415cd807e7e"
+      },
+      "roomCode": "BM-B03"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Tiếng Anh",
+    "code": "ANH",
+    "color": "#7C3AED",
+    "icon": null
+  },
+  "name": "Tiếng Anh 9 Luyện đề",
+  "classCode": "BM-A9A",
+  "description": "Chương trình Tiếng Anh lớp 9 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "teacherSnapshot": {
+    "fullName": "Bùi Ngọc Mai",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "89a96a842c7fa52672a8e18f"
+  },
+  "roomSnapshot": {
+    "code": "BM-B02",
+    "capacity": 22,
+    "detail": "Tầng 2 - Phòng Ngoại ngữ, tai nghe luyện nghe"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 225000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 3,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "89a96a842c7fa52672a8e18f"
+      },
+      "roomCode": "BM-B02"
+    },
+    {
+      "dayOfWeek": 6,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "89a96a842c7fa52672a8e18f"
+      },
+      "roomCode": "BM-B02"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "subject": {
+    "name": "Ngữ văn",
+    "code": "VAN",
+    "color": "#DB2777",
+    "icon": null
+  },
+  "name": "Ngữ văn 9 Luyện thi vào 10",
+  "classCode": "BM-V9A",
+  "description": "Chương trình Ngữ văn lớp 9 tại Cơ sở Bình Minh.",
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "teacherSnapshot": {
+    "fullName": "Nguyễn Quốc Bảo",
+    "avatarUrl": null
+  },
+  "coTeacherIds": [],
+  "roomId": {
+    "$oid": "7e666266ef681415cd807e7e"
+  },
+  "roomSnapshot": {
+    "code": "BM-B03",
+    "capacity": 30,
+    "detail": "Tầng 2 - Phòng học lớn và sinh hoạt chuyên đề"
+  },
+  "classType": "ongoing",
+  "startDate": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "endDate": null,
+  "courseInfo": null,
+  "ongoingInfo": {
+    "feePerSession": 225000,
+    "billingCycle": "monthly"
+  },
+  "weeklySchedule": [
+    {
+      "dayOfWeek": 4,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "7e666266ef681415cd807e7e"
+      },
+      "roomCode": "BM-B03"
+    },
+    {
+      "dayOfWeek": 0,
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "roomId": {
+        "$oid": "7e666266ef681415cd807e7e"
+      },
+      "roomCode": "BM-B03"
+    }
+  ],
+  "maxStudents": 20,
+  "studentCount": 12,
+  "status": "active",
+  "createdBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-02-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+}]

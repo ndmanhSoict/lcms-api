@@ -1,0 +1,1457 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db04"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "authorId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "title": "Lịch kiểm tra giữa kỳ",
+  "content": "<p>Lớp sẽ có bài kiểm tra 45 phút vào tuần tới. Ôn tập từ chương 1 đến chương 3.</p>",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-05-08T14:16:18.606Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-08T14:16:18.606Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-08T14:16:18.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db05"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "authorId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "title": "Vocabulary List — Unit 3",
+  "content": "<p>Học thuộc 30 từ Unit 3 trước buổi thứ Hai. Sẽ có kiểm tra miệng đầu giờ.</p>",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-05-15T14:16:18.606Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-15T14:16:18.606Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-15T14:16:18.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db06"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "authorId": {
+    "$oid": "6a0b1f2621a466242174ca8b"
+  },
+  "title": "Lịch học thêm cuối tuần",
+  "content": "<p>Buổi học bổ sung Chủ nhật 9h-11h tại phòng 201. Phụ huynh sắp xếp cho em tham dự.</p>",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-05-11T14:16:18.606Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-11T14:16:18.606Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-11T14:16:18.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db07"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "authorId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "title": "Thí nghiệm thực hành tuần tới",
+  "content": "<p>Buổi thứ Ba tuần tới có tiết thực hành. Các em mang bút chì và thước kẻ.</p>",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-05-12T14:16:18.606Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-12T14:16:18.606Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-12T14:16:18.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db08"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "authorId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "title": "Nhắc nhở nộp bài tập",
+  "content": "<p>Còn 5 bạn chưa nộp bài tập tuần trước. Hạn chót ngày mai.</p>",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-05-17T14:16:18.606Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-17T14:16:18.606Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:18.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "e7dc0d8369af16cf2acb1910"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "authorId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Toán 6 Nền tảng. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7a1806a2dfe14d61cd79944e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "authorId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Toán 6 Nền tảng. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-t6a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ae16a80a0b8ea9bcf5b68d1f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "authorId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Toán 7 Nâng cao. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-t7a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "167f96a98b57741a92a988e3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "authorId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Toán 8 Chuyên đề. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "981b59f35f4a4c53179f0338"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "authorId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Hóa học 8 Khám phá. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-h8a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "15d8c3ac43a9439529007e57"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "authorId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Ngữ văn 8 Viết sáng tạo. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64c93ee7402e860cf2966915"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "authorId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Tiếng Anh 9 Luyện đề. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1a6b6674d2d0ac40e27a0b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "authorId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Ngữ văn 9 Luyện thi vào 10. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-v9a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2bc9d4b892e7a6bf0c77597e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "authorId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Toán 6 Nền tảng. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "df7f7d8b2f6f8d636e5f06d3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "authorId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Ngữ văn 6 Cảm thụ. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-v6a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "45d34e36d2abc73ccac35ca9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "authorId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Ngữ văn 6 Cảm thụ. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fa8dde3bcf4fe8bebc168e4d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "authorId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Tiếng Anh 6 Giao tiếp. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-a6a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "43b597d06e6dcc45b8856724"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "authorId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Tiếng Anh 6 Giao tiếp. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5feb0cf723bb582b28be16a7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "authorId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Toán 7 Nâng cao. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "621c83ddbcfd1b8ea3877816"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "authorId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Tiếng Anh 7 IELTS Foundation. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d5ca3e2f79a36f908479b10a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "authorId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Tiếng Anh 7 IELTS Foundation. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-a7a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3c3c310c6012fdd1a6c18198"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "authorId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Tiếng Anh 7 IELTS Foundation. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "705026b6305cedd2abff89e3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "authorId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Toán 8 Chuyên đề. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-t8a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e3ccdd71edf5635319e56444"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "authorId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Toán 8 Chuyên đề. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "309656a4cced5b4eafa11cfa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "authorId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Ngữ văn 8 Viết sáng tạo. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7f142dd82ca8f99df5733bb7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "authorId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Toán 9 Luyện thi vào 10. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-t9a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "218d7e02cfcb9b983df76605"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "authorId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Tiếng Anh 9 Luyện đề. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-a9a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b85bccad3df070bf82623ab6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "authorId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Ngữ văn 9 Luyện thi vào 10. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-03T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3519b871a052777cb8b0398b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "authorId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Ngữ văn 6 Cảm thụ. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4b18facf01151ceabff7de62"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "authorId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Vật lý 7 Thực hành. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4a7d4b6116e1ccc3874c5a28"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "authorId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Vật lý 7 Thực hành. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "57deb5e6d1907c5040b62c1a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "authorId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Hóa học 8 Khám phá. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "244f1cc788167390a970f9f3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "authorId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Ngữ văn 8 Viết sáng tạo. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-v8a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d560d54a8125863a37f3aaee"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "authorId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Toán 9 Luyện thi vào 10. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a731013ad4c8143cf17a1060"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "authorId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Tiếng Anh 6 Giao tiếp. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "75a5f4de1c4136ad31b61a0d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "authorId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Toán 7 Nâng cao. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2623c8a4967899544599e98e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "authorId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "title": "Tài liệu ôn tập trong tháng",
+  "content": "Tài liệu ôn tập trong tháng của lớp Vật lý 7 Thực hành. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [
+    "/uploads/announcements/bm-l7a-review.pdf"
+  ],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0e35ccfd0513c0487bf67e8f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "authorId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Hóa học 8 Khám phá. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d93e42b5f2e30364cd92ee04"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "authorId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Toán 9 Luyện thi vào 10. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "069263b5b869beae8ffae9b9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "authorId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Thông báo kiểm tra định kỳ",
+  "content": "Thông báo kiểm tra định kỳ của lớp Tiếng Anh 9 Luyện đề. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": false,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "99f8f76100e3be7f9be401ad"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "authorId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Lịch học và nội quy lớp",
+  "content": "Lịch học và nội quy lớp của lớp Ngữ văn 9 Luyện thi vào 10. Phụ huynh và học sinh vui lòng theo dõi để thực hiện đúng kế hoạch.",
+  "attachmentUrls": [],
+  "targetAudience": [
+    "student",
+    "parent"
+  ],
+  "isPinned": true,
+  "notificationSent": true,
+  "notificationSentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+}]

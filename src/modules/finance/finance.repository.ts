@@ -4,6 +4,7 @@ import { Payment, IPayment } from '../../models/payment.model.js';
 import { Branch } from '../../models/branch.model.js';
 import { User } from '../../models/user.model.js';
 import { Class } from '../../models/class.model.js';
+import { ClassSession } from '../../models/classSession.model.js';
 import { Enrollment } from '../../models/enrollment.model.js';
 import { Attendance } from '../../models/attendance.model.js';
 import { AuditLog } from '../../models/auditLog.model.js';
@@ -23,6 +24,24 @@ export class FinanceRepository {
 
   async findInvoiceById(id: string) {
     return await Invoice.findOne({ _id: id, deletedAt: null });
+  }
+
+  async findInvoicesByIds(ids: string[]) {
+    return await Invoice.find({ _id: { $in: ids }, deletedAt: null });
+  }
+
+  async findPayableInvoicesByStudents(
+    studentIds: string[],
+    branchId: string,
+    invoiceIds?: string[]
+  ) {
+    return await Invoice.find({
+      ...(invoiceIds?.length ? { _id: { $in: invoiceIds } } : {}),
+      studentId: { $in: studentIds.map(id => new Types.ObjectId(id)) },
+      branchId: new Types.ObjectId(branchId),
+      status: { $in: ['unpaid', 'partial', 'overdue'] },
+      deletedAt: null,
+    }).sort({ dueDate: 1, createdAt: 1 });
   }
 
   async hasActivePayments(invoiceId: string) {
@@ -181,6 +200,31 @@ export class FinanceRepository {
     return await invoiceDoc.save();
   }
 
+  async updateInvoicesVNPay(
+    invoiceDocs: IInvoice[],
+    paymentId: Types.ObjectId,
+    vnpayRef: string,
+    vnpayTransactionId: string
+  ) {
+    const updated: IInvoice[] = [];
+    for (const invoiceDoc of invoiceDocs) {
+      const remainingAmount = Math.max(
+        0,
+        (invoiceDoc.totalAmount ?? 0) - (invoiceDoc.paidAmount ?? 0)
+      );
+      const totalPaid = (invoiceDoc.paidAmount ?? 0) + remainingAmount;
+      invoiceDoc.status = 'paid';
+      invoiceDoc.paidAmount = totalPaid;
+      invoiceDoc.paidAt = new Date();
+      invoiceDoc.paymentMethod = 'vnpay';
+      invoiceDoc.vnpayTransactionRef = `${vnpayRef}:${invoiceDoc._id.toString()}`;
+      invoiceDoc.vnpayTransactionId = vnpayTransactionId;
+      invoiceDoc.paymentIds.push(paymentId);
+      updated.push(await invoiceDoc.save());
+    }
+    return updated;
+  }
+
   // 12.2 Batch: lấy tất cả enrollment active của branch
   async findActiveEnrollmentsByBranch(branchId: string) {
     return await Enrollment.find({ branchId, leftAt: null }).lean();
@@ -202,6 +246,41 @@ export class FinanceRepository {
       status: 'present',
       sessionDate: { $gte: from, $lte: to },
     });
+  }
+
+  async countChargeableClassSessions(classId: string, from: Date, to: Date) {
+    return await ClassSession.countDocuments({
+      classId,
+      deletedAt: null,
+      status: { $ne: 'cancelled' },
+      sessionDate: { $gte: from, $lte: to },
+    });
+  }
+
+  async findCancelledSessionIds(classId: string, from: Date, to: Date) {
+    const sessions = await ClassSession.find({
+      classId,
+      deletedAt: null,
+      status: 'cancelled',
+      sessionDate: { $gte: from, $lte: to },
+    })
+      .select('_id')
+      .lean();
+
+    return sessions.map(session => session._id.toString());
+  }
+
+  async findAbsentSessionIds(studentId: string, classId: string, from: Date, to: Date) {
+    const attendances = await Attendance.find({
+      studentId,
+      classId,
+      status: 'absent',
+      sessionDate: { $gte: from, $lte: to },
+    })
+      .select('sessionId')
+      .lean();
+
+    return attendances.map(attendance => attendance.sessionId.toString());
   }
 
   async findInvoiceByVNPayRef(vnpayRef: string) {

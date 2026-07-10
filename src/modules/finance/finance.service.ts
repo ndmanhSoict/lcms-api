@@ -44,6 +44,11 @@ type CashPaymentPayload = AppPayload & {
   amount: number;
 };
 
+type VnpayBulkPaymentPayload = AppPayload & {
+  invoice_ids?: string[];
+  invoiceIds?: string[];
+};
+
 const VNPAY_RESPONSE_MESSAGES: Record<string, string> = {
   '00': 'Giao dịch thành công',
   '07': 'Giao dịch bị nghi ngờ gian lận',
@@ -122,6 +127,20 @@ export class FinanceService {
 
   private buildVnpayTxnRef(invoiceId: string) {
     return `LCMS${Date.now()}${invoiceId.slice(-8)}`.slice(0, 100);
+  }
+
+  private buildSignedVnpayUrl(params: VnpayParams, hashSecret: string, paymentUrl: string) {
+    const sortedParams = sortVnpayParams(params);
+    const signData = qs.stringify(sortedParams, { encode: false });
+    const hmac = crypto.createHmac('sha512', hashSecret);
+    const secureHash = hmac.update(Buffer.from(signData, 'utf-8')).digest('hex');
+    sortedParams.vnp_SecureHash = secureHash;
+
+    return {
+      signData,
+      signedParams: sortedParams,
+      paymentUrl: `${paymentUrl}?${qs.stringify(sortedParams, { encode: false })}`,
+    };
   }
 
   private normalizeVnpayText(value: string) {
@@ -208,6 +227,90 @@ export class FinanceService {
   private async finalizeVnpayPayment(payment: IPayment, params: VnpayParams) {
     const transactionNo = String(params.vnp_TransactionNo ?? '');
     const outcome = this.getVnpayOutcome(params);
+    const invoiceIds = Array.isArray(payment.vnpayData?.invoiceIds)
+      ? payment.vnpayData.invoiceIds.map(String).filter(Boolean)
+      : [];
+
+    if (invoiceIds.length > 1) {
+      const invoices = await this.repo.findInvoicesByIds(invoiceIds);
+      if (invoices.length !== invoiceIds.length) {
+        await this.repo.updatePaymentVNPayResult(
+          payment,
+          'failed',
+          this.buildVnpayResultData(params, {
+            failureReason: 'invoice_not_found',
+            failureMessage: 'Không tìm thấy đủ hóa đơn liên kết với giao dịch tổng',
+          })
+        );
+        return { rspCode: '01', message: 'Invoice not found' };
+      }
+
+      const remainingByInvoice = new Map(
+        invoices.map(invoice => [invoice._id.toString(), this.getRemainingAmount(invoice)])
+      );
+      const totalRemaining = [...remainingByInvoice.values()].reduce(
+        (sum, amount) => sum + amount,
+        0
+      );
+      const vnpAmount = Number(params.vnp_Amount ?? 0) / 100;
+
+      if (vnpAmount !== payment.amount || vnpAmount !== totalRemaining) {
+        await this.repo.updatePaymentVNPayResult(
+          payment,
+          'failed',
+          this.buildVnpayResultData(params, {
+            failureReason: 'invalid_amount',
+            failureMessage: `Số tiền VNPay trả về ${this.formatCurrency(vnpAmount)} không khớp giao dịch tổng ${this.formatCurrency(payment.amount)}`,
+          })
+        );
+        return { rspCode: '04', message: 'Invalid amount' };
+      }
+
+      if (payment.status === 'success' || invoices.every(invoice => invoice.status === 'paid')) {
+        return { rspCode: '02', message: 'Order already confirmed', invoice: invoices[0] };
+      }
+
+      if (!outcome.isSuccess) {
+        await this.repo.updatePaymentVNPayResult(
+          payment,
+          'failed',
+          this.buildVnpayResultData(params, {
+            failureReason: 'vnpay_response',
+            failureMessage: outcome.userMessage,
+          })
+        );
+        return { rspCode: '00', message: 'Confirm Success', invoice: invoices[0] };
+      }
+
+      const updatedPayment = await this.repo.updatePaymentVNPayResult(
+        payment,
+        'success',
+        this.buildVnpayResultData(params)
+      );
+      const updatedInvoices = await this.repo.updateInvoicesVNPay(
+        invoices,
+        updatedPayment._id as Types.ObjectId,
+        transactionNo || payment.vnpayRef || updatedPayment._id.toString(),
+        transactionNo
+      );
+
+      for (const invoice of updatedInvoices) {
+        const paidAmount = remainingByInvoice.get(invoice._id.toString()) ?? invoice.totalAmount;
+        await this.repo.createAuditLog({
+          action: 'CONFIRM_PAYMENT',
+          actorId: invoice.studentId,
+          actorRole: 'student',
+          branchId: invoice.branchId,
+          targetId: invoice._id as Types.ObjectId,
+          before: { status: 'unpaid' },
+          after: { status: invoice.status, method: 'vnpay', transactionNo },
+        });
+        await this.notifyPaymentConfirmed(invoice, paidAmount);
+      }
+
+      return { rspCode: '00', message: 'Confirm Success', invoice: updatedInvoices[0] };
+    }
+
     const invoice = await this.repo.findInvoiceById(payment.invoiceId.toString());
 
     if (!invoice) {
@@ -292,16 +395,50 @@ export class FinanceService {
     branch: IBranch
   ) {
     const invoiceType = body.invoice_type ?? (cls.classType === 'course' ? 'course' : 'monthly');
-    const sessionsAttended =
-      body.sessions_attended ??
-      (await this.repo.countPresentSessions(body.student_id, body.class_id, body.billing_period));
-    const sessionsTotal = body.sessions_total ?? cls.courseInfo?.totalSessions ?? undefined;
     const feePerSession =
       body.fee_per_session ?? cls.ongoingInfo?.feePerSession ?? branch.defaultFeePerSession ?? 0;
     const courseFee = body.course_fee ?? cls.courseInfo?.feePerCourse ?? 0;
-    const subtotal =
-      invoiceType === 'course' && courseFee > 0 ? courseFee : sessionsAttended * feePerSession;
-    const discountAmount = body.discount_amount ?? 0;
+
+    let sessionsAttended = 0;
+    let sessionsTotal = body.sessions_total ?? cls.courseInfo?.totalSessions ?? undefined;
+    let subtotal = 0;
+    let discountAmount = body.discount_amount ?? 0;
+    let discountNote = body.discount_note ?? null;
+    let excusedSessions = 0;
+    let previousAbsentSessions = 0;
+    let previousCancelledSessions = 0;
+
+    if (invoiceType === 'course' && courseFee > 0) {
+      sessionsAttended = body.sessions_attended ?? 0;
+      subtotal = courseFee;
+    } else {
+      const currentRange = this.getBillingPeriodRange(body.billing_period);
+      const previousPeriod = this.getPreviousBillingPeriod(body.billing_period);
+      const previousRange = this.getBillingPeriodRange(previousPeriod);
+      const [currentSessions, absentSessionIds, cancelledSessionIds] = await Promise.all([
+        this.repo.countChargeableClassSessions(body.class_id, currentRange.from, currentRange.to),
+        this.repo.findAbsentSessionIds(
+          body.student_id,
+          body.class_id,
+          previousRange.from,
+          previousRange.to
+        ),
+        this.repo.findCancelledSessionIds(body.class_id, previousRange.from, previousRange.to),
+      ]);
+      const deductionSessionIds = new Set([...absentSessionIds, ...cancelledSessionIds]);
+
+      sessionsAttended = currentSessions;
+      sessionsTotal = currentSessions;
+      subtotal = currentSessions * feePerSession;
+      excusedSessions = deductionSessionIds.size;
+      previousAbsentSessions = absentSessionIds.length;
+      previousCancelledSessions = cancelledSessionIds.length;
+      discountAmount += excusedSessions * feePerSession;
+      if (!discountNote && excusedSessions > 0) {
+        discountNote = `Giảm trừ ${excusedSessions} buổi từ kỳ ${previousPeriod}`;
+      }
+    }
+
     const totalAmount = Math.max(0, subtotal - discountAmount);
 
     return {
@@ -326,7 +463,10 @@ export class FinanceService {
       course_fee: courseFee,
       subtotal: subtotal,
       discount_amount: discountAmount,
-      discount_note: body.discount_note ?? null,
+      discount_note: discountNote,
+      excused_sessions: excusedSessions,
+      previous_absent_sessions: previousAbsentSessions,
+      previous_cancelled_sessions: previousCancelledSessions,
       total_amount: totalAmount,
       due_date: body.due_date ? new Date(body.due_date) : null,
     };
@@ -366,6 +506,24 @@ export class FinanceService {
       },
       excludeUserIds: requesterId ? [requesterId] : [],
     });
+  }
+
+  private getBillingPeriodRange(billingPeriod: string) {
+    const [year, month] = billingPeriod.split('-').map(Number);
+    if (!year || !month || month < 1 || month > 12) {
+      throw new BadRequestError('billing_period phải là YYYY-MM');
+    }
+
+    return {
+      from: new Date(year, month - 1, 1),
+      to: new Date(year, month, 0, 23, 59, 59, 999),
+    };
+  }
+
+  private getPreviousBillingPeriod(billingPeriod: string) {
+    const [year, month] = billingPeriod.split('-').map(Number);
+    const date = new Date(year, month - 2, 1);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
   }
 
   private getCourseBillingPeriod(cls: IClass) {
@@ -430,6 +588,7 @@ export class FinanceService {
       courseFee: calculation.course_fee,
       subtotal: calculation.subtotal,
       discountAmount: 0,
+      excusedSessions: 0,
       totalAmount: calculation.total_amount,
       status: 'unpaid',
       generationType: 'auto',
@@ -490,7 +649,8 @@ export class FinanceService {
       courseFee: calculation.course_fee,
       subtotal: calculation.subtotal,
       discountAmount: calculation.discount_amount,
-      discountNote: body.discount_note,
+      discountNote: calculation.discount_note ?? undefined,
+      excusedSessions: calculation.excused_sessions,
       totalAmount: calculation.total_amount,
       dueDate: body.due_date ? new Date(body.due_date) : undefined,
       status: 'unpaid',
@@ -521,6 +681,8 @@ export class FinanceService {
       course_fee: invoice.courseFee,
       subtotal: invoice.subtotal,
       discount_amount: invoice.discountAmount,
+      discount_note: invoice.discountNote,
+      excused_sessions: invoice.excusedSessions,
       total_amount: invoice.totalAmount,
       paid_amount: invoice.paidAmount ?? 0,
       remaining_amount: this.getRemainingAmount(invoice),
@@ -582,29 +744,16 @@ export class FinanceService {
         const classId = enrollment.classId.toString();
 
         // Skip nếu đã có phiếu
-        const exists = await this.repo.findExistingInvoice(
-          studentId,
-          classId,
-          body.billing_period
-        );
+        const exists = await this.repo.findExistingInvoice(studentId, classId, body.billing_period);
         if (exists) {
           skipped++;
           continue;
         }
 
-        const sessionsAttended = await this.repo.countPresentSessions(
-          studentId,
-          classId,
-          body.billing_period
-        );
-        if (sessionsAttended === 0) {
-          skipped++;
-          continue;
-        }
-
-        const cls = targetClass && targetClass._id.toString() === classId
-          ? targetClass
-          : await this.repo.findClassById(classId);
+        const cls =
+          targetClass && targetClass._id.toString() === classId
+            ? targetClass
+            : await this.repo.findClassById(classId);
         if (!cls || cls.branchId.toString() !== branchId) {
           skipped++;
           continue;
@@ -620,8 +769,23 @@ export class FinanceService {
           continue;
         }
 
-        const feePerSession = cls.ongoingInfo?.feePerSession ?? branch.defaultFeePerSession ?? 0;
-        const subtotal = sessionsAttended * feePerSession;
+        const calculation = await this.calculateInvoiceAmount(
+          {
+            student_id: studentId,
+            class_id: classId,
+            invoice_type: 'monthly',
+            billing_period: body.billing_period,
+            discount_amount: 0,
+          },
+          student,
+          cls,
+          branch
+        );
+        if (calculation.sessions_attended === 0 || calculation.total_amount <= 0) {
+          skipped++;
+          continue;
+        }
+
         const invoiceCode = await this.repo.generateInvoiceCode(branch.branchCode);
 
         const invoice = await this.repo.createInvoice({
@@ -636,11 +800,14 @@ export class FinanceService {
           invoiceCode,
           invoiceType: 'monthly',
           billingPeriod: body.billing_period,
-          sessionsAttended,
-          feePerSession,
-          subtotal,
-          discountAmount: 0,
-          totalAmount: subtotal,
+          sessionsAttended: calculation.sessions_attended,
+          sessionsTotal: calculation.sessions_total,
+          feePerSession: calculation.fee_per_session,
+          subtotal: calculation.subtotal,
+          discountAmount: calculation.discount_amount,
+          discountNote: calculation.discount_note ?? undefined,
+          excusedSessions: calculation.excused_sessions,
+          totalAmount: calculation.total_amount,
           dueDate: body.due_date ? new Date(body.due_date) : undefined,
           status: 'unpaid',
           generationType: 'auto',
@@ -732,6 +899,8 @@ export class FinanceService {
       course_fee: inv.courseFee,
       subtotal: inv.subtotal,
       discount_amount: inv.discountAmount,
+      discount_note: inv.discountNote,
+      excused_sessions: inv.excusedSessions,
       total_amount: inv.totalAmount,
       paid_amount: inv.paidAmount ?? 0,
       remaining_amount: Math.max(0, (inv.totalAmount ?? 0) - (inv.paidAmount ?? 0)),
@@ -790,6 +959,7 @@ export class FinanceService {
       subtotal: invoice.subtotal,
       discount_amount: invoice.discountAmount,
       discount_note: invoice.discountNote,
+      excused_sessions: invoice.excusedSessions,
       total_amount: invoice.totalAmount,
       paid_amount: invoice.paidAmount ?? 0,
       remaining_amount: this.getRemainingAmount(invoice),
@@ -808,7 +978,11 @@ export class FinanceService {
 
     this.checkAdminAccess(invoice.branchId.toString(), requester);
 
-    if (invoice.status === 'paid' || invoice.status === 'partial' || (invoice.paidAmount ?? 0) > 0) {
+    if (
+      invoice.status === 'paid' ||
+      invoice.status === 'partial' ||
+      (invoice.paidAmount ?? 0) > 0
+    ) {
       throw new BadRequestError('Không thể xóa phiếu đã phát sinh khoản thu');
     }
     if (await this.repo.hasActivePayments(id)) {
@@ -1063,25 +1237,126 @@ export class FinanceService {
 
     console.log('[BE][VNPay][create-payment raw params]', params);
 
-    const sortedParams = sortVnpayParams(params);
-    const signData = qs.stringify(sortedParams, { encode: false });
-    const hmac = crypto.createHmac('sha512', vnpayConfig.hashSecret);
-    const secureHash = hmac.update(Buffer.from(signData, 'utf-8')).digest('hex');
-    sortedParams.vnp_SecureHash = secureHash;
+    const signed = this.buildSignedVnpayUrl(params, vnpayConfig.hashSecret, vnpayConfig.paymentUrl);
 
-    const paymentUrl = `${vnpayConfig.paymentUrl}?${qs.stringify(sortedParams, {
-      encode: false,
-    })}`;
-
-    console.log('[BE][VNPay][create-payment sign data]', signData);
-    console.log('[BE][VNPay][create-payment signed query params]', sortedParams);
-    console.log('[BE][VNPay][create-payment payment url]', paymentUrl);
+    console.log('[BE][VNPay][create-payment sign data]', signed.signData);
+    console.log('[BE][VNPay][create-payment signed query params]', signed.signedParams);
+    console.log('[BE][VNPay][create-payment payment url]', signed.paymentUrl);
 
     return {
-      payment_url: paymentUrl,
+      payment_url: signed.paymentUrl,
       invoice_code: invoice.invoiceCode,
       txn_ref: txnRef,
       amount: remainingAmount,
+      expired_at: expireDate,
+    };
+  }
+
+  async vnpayCreateBulkPayment(body: VnpayBulkPaymentPayload, requester: RequestUser) {
+    const vnpayConfig = this.getVnpayConfig();
+    const requestedInvoiceIds = [
+      ...new Set(
+        [...(body.invoice_ids ?? []), ...(body.invoiceIds ?? [])].map(String).filter(Boolean)
+      ),
+    ];
+    let studentIds: string[] = [];
+
+    if (requester.role === ROLES.PARENT) {
+      const { User } = await import('../../models/user.model.js');
+      const parent = await User.findById(requester.id).lean();
+      studentIds = parent?.parentInfo?.studentIds?.map(String) ?? [];
+      if (!studentIds.length) throw new BadRequestError('Phụ huynh chưa có học sinh liên kết');
+    } else if (requester.role === ROLES.STUDENT) {
+      studentIds = [requester.id];
+    } else {
+      throw new ForbiddenError('Chỉ học sinh hoặc phụ huynh được thanh toán online toàn bộ');
+    }
+    if (!requester.branchId) throw new ForbiddenError('Không xác định được cơ sở thanh toán');
+
+    const invoices = await this.repo.findPayableInvoicesByStudents(
+      studentIds,
+      requester.branchId,
+      requestedInvoiceIds.length ? requestedInvoiceIds : undefined
+    );
+    if (requestedInvoiceIds.length && invoices.length !== requestedInvoiceIds.length) {
+      throw new BadRequestError('Có phiếu không hợp lệ hoặc không thuộc quyền thanh toán của bạn');
+    }
+    if (!invoices.length) {
+      throw new BadRequestError('Không có phiếu học phí nào cần thanh toán');
+    }
+
+    const remainingByInvoice = invoices.map(invoice => ({
+      invoice,
+      remainingAmount: this.getRemainingAmount(invoice),
+    }));
+    const totalAmount = remainingByInvoice.reduce((sum, item) => sum + item.remainingAmount, 0);
+    if (totalAmount <= 0) {
+      throw new BadRequestError('Các phiếu học phí đã hết số tiền cần thanh toán');
+    }
+
+    const firstInvoice = invoices[0];
+    const txnRef = this.buildVnpayTxnRef(firstInvoice._id.toString());
+    const now = new Date();
+    const expireDate = new Date(now.getTime() + 15 * 60 * 1000);
+    const finalReturnUrl =
+      body.return_url ||
+      (requester.role === ROLES.PARENT
+        ? `${vnpayConfig.frontendUrl}/parent/invoices`
+        : `${vnpayConfig.frontendUrl}/student/finance`);
+    const invoiceIds = invoices.map(invoice => invoice._id.toString());
+    const invoiceCodes = invoices.map(invoice => invoice.invoiceCode);
+
+    await this.repo.createPayment({
+      branchId: firstInvoice.branchId,
+      invoiceId: firstInvoice._id as Types.ObjectId,
+      studentId: firstInvoice.studentId,
+      paymentMethod: 'vnpay',
+      amount: totalAmount,
+      status: 'pending',
+      vnpayRef: txnRef,
+      vnpayData: {
+        txnRef,
+        invoiceId: firstInvoice._id.toString(),
+        invoiceCode: `${invoiceCodes.length} phiếu`,
+        invoiceIds,
+        invoiceCodes,
+        returnUrl: finalReturnUrl,
+        createdBy: requester.id,
+        createdByRole: requester.role,
+        bulkPayment: true,
+      },
+    });
+
+    const params: VnpayParams = {
+      vnp_Version: '2.1.0',
+      vnp_Command: 'pay',
+      vnp_TmnCode: vnpayConfig.tmnCode,
+      vnp_Amount: totalAmount * 100,
+      vnp_CreateDate: formatVnpayDate(now),
+      vnp_CurrCode: 'VND',
+      vnp_IpAddr: this.normalizeIpAddress(body.ip_addr),
+      vnp_Locale: 'vn',
+      vnp_OrderInfo: this.normalizeVnpayText(
+        `Thanh toan toan bo hoc phi ${invoiceCodes.length} phieu`
+      ),
+      vnp_OrderType: 'other',
+      vnp_ReturnUrl: vnpayConfig.returnUrl,
+      vnp_TxnRef: txnRef,
+    };
+
+    const bankCode = typeof body.bank_code === 'string' ? body.bank_code.trim() : '';
+    if (bankCode) {
+      params.vnp_BankCode = bankCode;
+    }
+
+    const signed = this.buildSignedVnpayUrl(params, vnpayConfig.hashSecret, vnpayConfig.paymentUrl);
+
+    return {
+      payment_url: signed.paymentUrl,
+      invoice_code: `${invoiceCodes.length} phiếu`,
+      invoice_codes: invoiceCodes,
+      txn_ref: txnRef,
+      amount: totalAmount,
       expired_at: expireDate,
     };
   }
@@ -1157,7 +1432,9 @@ export class FinanceService {
 
     return {
       status: isSuccess ? 'success' : 'failed',
-      invoice_code: result.invoice?.invoiceCode ?? payment.vnpayData?.invoiceCode ?? '',
+      invoice_code: payment.vnpayData?.bulkPayment
+        ? String(payment.vnpayData?.invoiceCode ?? '')
+        : (result.invoice?.invoiceCode ?? payment.vnpayData?.invoiceCode ?? ''),
       redirect_url: this.getStoredReturnUrl(payment),
       message: outcome.userMessage,
       response_code: outcome.responseCode,

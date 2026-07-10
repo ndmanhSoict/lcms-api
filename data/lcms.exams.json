@@ -1,0 +1,5916 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d482"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "title": "Kiểm tra 15 phút - Toán 8A",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 15,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "submit",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-04-28T14:16:16.647Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-25T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d472"
+      },
+      "questionType": "multiple_choice",
+      "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "112"
+        },
+        {
+          "key": "B",
+          "content": "96"
+        },
+        {
+          "key": "C",
+          "content": "108"
+        },
+        {
+          "key": "D",
+          "content": "100"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d473"
+      },
+      "questionType": "multiple_choice",
+      "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "x=10"
+        },
+        {
+          "key": "B",
+          "content": "x=12"
+        },
+        {
+          "key": "C",
+          "content": "x=8"
+        },
+        {
+          "key": "D",
+          "content": "x=14"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d474"
+      },
+      "questionType": "true_false",
+      "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d475"
+      },
+      "questionType": "fill_blank",
+      "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "50",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "published",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.744Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d483"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8b"
+  },
+  "title": "Bài kiểm tra định kỳ - Toán 9A",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-04-29T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d472"
+      },
+      "questionType": "multiple_choice",
+      "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "112"
+        },
+        {
+          "key": "B",
+          "content": "96"
+        },
+        {
+          "key": "C",
+          "content": "108"
+        },
+        {
+          "key": "D",
+          "content": "100"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d473"
+      },
+      "questionType": "multiple_choice",
+      "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "x=10"
+        },
+        {
+          "key": "B",
+          "content": "x=12"
+        },
+        {
+          "key": "C",
+          "content": "x=8"
+        },
+        {
+          "key": "D",
+          "content": "x=14"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d474"
+      },
+      "questionType": "true_false",
+      "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d475"
+      },
+      "questionType": "fill_blank",
+      "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "50",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-19T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.810Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d484"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "title": "Bài kiểm tra định kỳ - Anh Văn 7A",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "submit",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-04-30T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d477"
+      },
+      "questionType": "multiple_choice",
+      "content": "Choose the correct form: 'She ___ to school every day.'",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "go"
+        },
+        {
+          "key": "B",
+          "content": "goes"
+        },
+        {
+          "key": "C",
+          "content": "going"
+        },
+        {
+          "key": "D",
+          "content": "gone"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d478"
+      },
+      "questionType": "multiple_choice",
+      "content": "If I ___ rich, I would travel the world.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "am"
+        },
+        {
+          "key": "B",
+          "content": "was"
+        },
+        {
+          "key": "C",
+          "content": "were"
+        },
+        {
+          "key": "D",
+          "content": "be"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d479"
+      },
+      "questionType": "fill_blank",
+      "content": "The opposite of 'beautiful' is ___.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "ugly",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47a"
+      },
+      "questionType": "true_false",
+      "content": "'I have been waiting for two hours' is correct Present Perfect Continuous.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-20T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.867Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d485"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "title": "Kiểm tra 15 phút - Anh Văn 8B",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 15,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-01T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d477"
+      },
+      "questionType": "multiple_choice",
+      "content": "Choose the correct form: 'She ___ to school every day.'",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "go"
+        },
+        {
+          "key": "B",
+          "content": "goes"
+        },
+        {
+          "key": "C",
+          "content": "going"
+        },
+        {
+          "key": "D",
+          "content": "gone"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d478"
+      },
+      "questionType": "multiple_choice",
+      "content": "If I ___ rich, I would travel the world.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "am"
+        },
+        {
+          "key": "B",
+          "content": "was"
+        },
+        {
+          "key": "C",
+          "content": "were"
+        },
+        {
+          "key": "D",
+          "content": "be"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d479"
+      },
+      "questionType": "fill_blank",
+      "content": "The opposite of 'beautiful' is ___.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "ugly",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47a"
+      },
+      "questionType": "true_false",
+      "content": "'I have been waiting for two hours' is correct Present Perfect Continuous.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-21T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d486"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8d"
+  },
+  "title": "Bài kiểm tra định kỳ - Văn 8A",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "submit",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-02T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-25T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d472"
+      },
+      "questionType": "multiple_choice",
+      "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "112"
+        },
+        {
+          "key": "B",
+          "content": "96"
+        },
+        {
+          "key": "C",
+          "content": "108"
+        },
+        {
+          "key": "D",
+          "content": "100"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d473"
+      },
+      "questionType": "multiple_choice",
+      "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "x=10"
+        },
+        {
+          "key": "B",
+          "content": "x=12"
+        },
+        {
+          "key": "C",
+          "content": "x=8"
+        },
+        {
+          "key": "D",
+          "content": "x=14"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d474"
+      },
+      "questionType": "true_false",
+      "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d475"
+      },
+      "questionType": "fill_blank",
+      "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "50",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-22T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:16.983Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d487"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "title": "Bài kiểm tra định kỳ - Vật Lý 9A",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-04-28T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47c"
+      },
+      "questionType": "multiple_choice",
+      "content": "Đơn vị đo lực trong hệ SI là gì?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Kilogram"
+        },
+        {
+          "key": "B",
+          "content": "Newton"
+        },
+        {
+          "key": "C",
+          "content": "Joule"
+        },
+        {
+          "key": "D",
+          "content": "Watt"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47d"
+      },
+      "questionType": "multiple_choice",
+      "content": "Vật 2kg chịu lực 10N. Gia tốc của vật là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "2 m/s²"
+        },
+        {
+          "key": "B",
+          "content": "5 m/s²"
+        },
+        {
+          "key": "C",
+          "content": "20 m/s²"
+        },
+        {
+          "key": "D",
+          "content": "0,2 m/s²"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47e"
+      },
+      "questionType": "true_false",
+      "content": "Ánh sáng truyền trong chân không với vận tốc khoảng 3×10⁸ m/s.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47f"
+      },
+      "questionType": "fill_blank",
+      "content": "Công thức tính công cơ học là A = F × ___.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "s",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "published",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-23T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:17.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d488"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "title": "Kiểm tra 15 phút - Hóa 9B",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 15,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "submit",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-04-29T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d472"
+      },
+      "questionType": "multiple_choice",
+      "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "112"
+        },
+        {
+          "key": "B",
+          "content": "96"
+        },
+        {
+          "key": "C",
+          "content": "108"
+        },
+        {
+          "key": "D",
+          "content": "100"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d473"
+      },
+      "questionType": "multiple_choice",
+      "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "x=10"
+        },
+        {
+          "key": "B",
+          "content": "x=12"
+        },
+        {
+          "key": "C",
+          "content": "x=8"
+        },
+        {
+          "key": "D",
+          "content": "x=14"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d474"
+      },
+      "questionType": "true_false",
+      "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d475"
+      },
+      "questionType": "fill_blank",
+      "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "50",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-24T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:17.109Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d489"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "title": "Bài kiểm tra định kỳ - Toán 8C",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-04-30T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d472"
+      },
+      "questionType": "multiple_choice",
+      "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "112"
+        },
+        {
+          "key": "B",
+          "content": "96"
+        },
+        {
+          "key": "C",
+          "content": "108"
+        },
+        {
+          "key": "D",
+          "content": "100"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d473"
+      },
+      "questionType": "multiple_choice",
+      "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "x=10"
+        },
+        {
+          "key": "B",
+          "content": "x=12"
+        },
+        {
+          "key": "C",
+          "content": "x=8"
+        },
+        {
+          "key": "D",
+          "content": "x=14"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d474"
+      },
+      "questionType": "true_false",
+      "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d475"
+      },
+      "questionType": "fill_blank",
+      "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "50",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-18T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:17.166Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d48a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca8e"
+  },
+  "title": "Bài kiểm tra định kỳ - Anh Văn 9C",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "submit",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-01T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-25T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d477"
+      },
+      "questionType": "multiple_choice",
+      "content": "Choose the correct form: 'She ___ to school every day.'",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "go"
+        },
+        {
+          "key": "B",
+          "content": "goes"
+        },
+        {
+          "key": "C",
+          "content": "going"
+        },
+        {
+          "key": "D",
+          "content": "gone"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d478"
+      },
+      "questionType": "multiple_choice",
+      "content": "If I ___ rich, I would travel the world.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "am"
+        },
+        {
+          "key": "B",
+          "content": "was"
+        },
+        {
+          "key": "C",
+          "content": "were"
+        },
+        {
+          "key": "D",
+          "content": "be"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d479"
+      },
+      "questionType": "fill_blank",
+      "content": "The opposite of 'beautiful' is ___.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "ugly",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d47a"
+      },
+      "questionType": "true_false",
+      "content": "'I have been waiting for two hours' is correct Present Perfect Continuous.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-19T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:17.228Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3021a466242174d48b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "teacherId": {
+    "$oid": "6a0b1f2621a466242174ca91"
+  },
+  "title": "Kiểm tra 15 phút - Văn 9D",
+  "description": "Đề kiểm tra mẫu phục vụ kiểm thử chức năng làm bài, nộp bài và xem điểm.",
+  "durationMinutes": 15,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-02T14:16:16.648Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T14:16:16.648Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d472"
+      },
+      "questionType": "multiple_choice",
+      "content": "Kết quả của 15 × 8 − 40 ÷ 5 là bao nhiêu?",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "112"
+        },
+        {
+          "key": "B",
+          "content": "96"
+        },
+        {
+          "key": "C",
+          "content": "108"
+        },
+        {
+          "key": "D",
+          "content": "100"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 4,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d473"
+      },
+      "questionType": "multiple_choice",
+      "content": "Giải phương trình 3x − 7 = 2x + 5, tìm x:",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "x=10"
+        },
+        {
+          "key": "B",
+          "content": "x=12"
+        },
+        {
+          "key": "C",
+          "content": "x=8"
+        },
+        {
+          "key": "D",
+          "content": "x=14"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d474"
+      },
+      "questionType": "true_false",
+      "content": "Tam giác có các cạnh 3cm, 4cm, 5cm là tam giác vuông.",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": true,
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "6a0b1f3021a466242174d475"
+      },
+      "questionType": "fill_blank",
+      "content": "Diện tích hình thang đáy lớn 12cm, đáy nhỏ 8cm, chiều cao 5cm là ___ cm².",
+      "imageUrl": null,
+      "options": null,
+      "correctAnswer": "50",
+      "score": 2,
+      "order": 4
+    }
+  ],
+  "status": "closed",
+  "attemptCount": 8,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-04-20T14:16:16.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-18T14:16:17.298Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "1ca0734006f4cce638c4d095"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Bài kiểm tra sắp tới - Ngữ văn 6 Cảm thụ",
+  "description": "Đề kiểm tra 45 phút môn Ngữ văn.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-23T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-25T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "bf60c9ec19af7ed87824bd90"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "71051f0ab28f232ffe355e45"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "c6fc601d77f9a5e6a1c95ebd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "b54fd5b2bd1f16fc7d50411b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "ffa1a3b426a0f78006b98a2f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5766e714a0fe6dd3ce20c749"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "title": "Kiểm tra định kỳ - Tiếng Anh 6 Giao tiếp",
+  "description": "Đề kiểm tra 45 phút môn Tiếng Anh.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-16T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "fd4346f7cb152af976649f53"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6c1778dce6b7cf8f3eef875a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "59439878a0e151362d2c5a6e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "9cb17478a95c70487dd1f26b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "81eef2a341362560f1795ec4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-06T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8f8b1ca01aec90823872c678"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Kiểm tra định kỳ - Toán 7 Nâng cao",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-15T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "da1f514949602d68f9cc5061"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "ab0b62a9b31a85585d8b2404"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6b3de394c821bcd8a64b90bd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "23737544b47271b8faaa53f0"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "6a53052ee38ceeefd3c327ae"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ea6f11ee7eb02c73f0e2e5f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "title": "Bài kiểm tra sắp tới - Vật lý 7 Thực hành",
+  "description": "Đề kiểm tra 45 phút môn Vật lý.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-22T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-24T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "a7946d4c0f18d131fa096861"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "5237163401608e92ba1725a3"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "d56765a17e7003687444739a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "4c969571504f02f56c88704c"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "ec7869ea1970ad4b5212160f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "28aed19e6dbd722bb88b31bc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "title": "Bài kiểm tra sắp tới - Hóa học 8 Khám phá",
+  "description": "Đề kiểm tra 45 phút môn Hóa học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-25T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-27T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "198d072ff878c8532d243e4b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "2a23458a8ddc4456c0a01008"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "a518890663da96c63bd18544"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "8d124e6f32f0e47542dc2b9d"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "6b85d1b239486fb77f3d28cd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ae740842e464a2c1f910c88a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "title": "Kiểm tra định kỳ - Ngữ văn 8 Viết sáng tạo",
+  "description": "Đề kiểm tra 45 phút môn Ngữ văn.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-15T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "232cc4ddb689cc0008ef44ab"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "18a0dfc0acc95998ca8c9b50"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "e0d77fc1be14797a2e4b0c1f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "e60ab81b7e320ca383b8b55a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "515ba3cfcb4dff32b1325df4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-05T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68f8dba7a8b2163a93c96b01"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Bài kiểm tra sắp tới - Tiếng Anh 9 Luyện đề",
+  "description": "Đề kiểm tra 45 phút môn Tiếng Anh.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-24T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-26T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "0c47881361b9bae27e56408c"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "0d9e6583468e3c473ba0584f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "37f5c433fa4b74334ca025e3"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "406e3b3d04c9ce531b0d7f02"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "0371d3234dd86f5d3bde9369"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "24beac52c9a02cb7b995b329"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Kiểm tra định kỳ - Ngữ văn 6 Cảm thụ",
+  "description": "Đề kiểm tra 45 phút môn Ngữ văn.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "232cc4ddb689cc0008ef44ab"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "18a0dfc0acc95998ca8c9b50"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "e0d77fc1be14797a2e4b0c1f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "e60ab81b7e320ca383b8b55a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "515ba3cfcb4dff32b1325df4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-21T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-07T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "facf2d8b1f2cdc746363ffb4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "d98c7abccd1d7cdb524a58d3"
+  },
+  "title": "Bài kiểm tra sắp tới - Tiếng Anh 6 Giao tiếp",
+  "description": "Đề kiểm tra 45 phút môn Tiếng Anh.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-24T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-26T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "0c47881361b9bae27e56408c"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "0d9e6583468e3c473ba0584f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "37f5c433fa4b74334ca025e3"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "406e3b3d04c9ce531b0d7f02"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "0371d3234dd86f5d3bde9369"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b684dc4a38c7d1c2803c7aa1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Kiểm tra định kỳ - Toán 8 Chuyên đề",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "da1f514949602d68f9cc5061"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "ab0b62a9b31a85585d8b2404"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6b3de394c821bcd8a64b90bd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "23737544b47271b8faaa53f0"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "6a53052ee38ceeefd3c327ae"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-21T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-07T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8853fb986909df885edeeec3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Bài kiểm tra sắp tới - Toán 6 Nền tảng",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-22T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-24T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "11beb3d05c243ffd6e51a9f4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "5fdf7be32dc8a63d829f8d57"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "cae61367a2f547f107326710"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "c231dff34d1f43784971947e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "65e266e7f9063efd145824a6"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "41dbc5ccc0512c4287955265"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "0d1a6a633473c2a91aa202af"
+  },
+  "title": "Bài kiểm tra sắp tới - Ngữ văn 8 Viết sáng tạo",
+  "description": "Đề kiểm tra 45 phút môn Ngữ văn.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-22T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-24T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "bf60c9ec19af7ed87824bd90"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "71051f0ab28f232ffe355e45"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "c6fc601d77f9a5e6a1c95ebd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "b54fd5b2bd1f16fc7d50411b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "ffa1a3b426a0f78006b98a2f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f06ea4f6a8ec6c9239e99222"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Kiểm tra định kỳ - Tiếng Anh 9 Luyện đề",
+  "description": "Đề kiểm tra 45 phút môn Tiếng Anh.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "fd4346f7cb152af976649f53"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6c1778dce6b7cf8f3eef875a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "59439878a0e151362d2c5a6e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "9cb17478a95c70487dd1f26b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "81eef2a341362560f1795ec4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-22T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "97459f387d7c11357cd293ed"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Kiểm tra định kỳ - Ngữ văn 9 Luyện thi vào 10",
+  "description": "Đề kiểm tra 45 phút môn Ngữ văn.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-17T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-19T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "232cc4ddb689cc0008ef44ab"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "18a0dfc0acc95998ca8c9b50"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "e0d77fc1be14797a2e4b0c1f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "e60ab81b7e320ca383b8b55a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "515ba3cfcb4dff32b1325df4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-21T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-07T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3d8265a02a2e7f5dc61f2fc2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "3039fbf64860f96d3e2cc772"
+  },
+  "title": "Bài kiểm tra sắp tới - Ngữ văn 9 Luyện thi vào 10",
+  "description": "Đề kiểm tra 45 phút môn Ngữ văn.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-25T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-27T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "bf60c9ec19af7ed87824bd90"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "71051f0ab28f232ffe355e45"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "c6fc601d77f9a5e6a1c95ebd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "b54fd5b2bd1f16fc7d50411b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "ffa1a3b426a0f78006b98a2f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Ngữ văn.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "315210623cbb15aba3930a4e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Kiểm tra định kỳ - Toán 6 Nền tảng",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "da1f514949602d68f9cc5061"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "ab0b62a9b31a85585d8b2404"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6b3de394c821bcd8a64b90bd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "23737544b47271b8faaa53f0"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "6a53052ee38ceeefd3c327ae"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-22T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d843a507858dc0efcfcfe502"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Bài kiểm tra sắp tới - Toán 7 Nâng cao",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-25T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-27T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "11beb3d05c243ffd6e51a9f4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "5fdf7be32dc8a63d829f8d57"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "cae61367a2f547f107326710"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "c231dff34d1f43784971947e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "65e266e7f9063efd145824a6"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d2538ecc64107df42d35a1d9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "title": "Kiểm tra định kỳ - Vật lý 7 Thực hành",
+  "description": "Đề kiểm tra 45 phút môn Vật lý.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-14T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-16T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "294f4296fa456483af5742fc"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "f0b3b9332331a3e7f35f91e2"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "f79c982f7e56ec863d12a3d5"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "764b0dad8f9f7d6c2329bb65"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "bff4dfccada33ee64e67f16e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Vật lý.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "5796e913d7844674a0b87614"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0599d8e853b85f12a76e14ef"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Kiểm tra định kỳ - Tiếng Anh 7 IELTS Foundation",
+  "description": "Đề kiểm tra 45 phút môn Tiếng Anh.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "fd4346f7cb152af976649f53"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "6c1778dce6b7cf8f3eef875a"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "59439878a0e151362d2c5a6e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "9cb17478a95c70487dd1f26b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "81eef2a341362560f1795ec4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-22T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-08T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4d444ac517a00adf2544cd12"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "ed6dbf26006889e1b778d55c"
+  },
+  "title": "Bài kiểm tra sắp tới - Tiếng Anh 7 IELTS Foundation",
+  "description": "Đề kiểm tra 45 phút môn Tiếng Anh.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-23T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-25T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "0c47881361b9bae27e56408c"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "0d9e6583468e3c473ba0584f"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "37f5c433fa4b74334ca025e3"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "406e3b3d04c9ce531b0d7f02"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "0371d3234dd86f5d3bde9369"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Tiếng Anh.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e43b372bc115fc1fab3fa596"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "title": "Bài kiểm tra sắp tới - Toán 8 Chuyên đề",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-24T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-26T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "11beb3d05c243ffd6e51a9f4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "5fdf7be32dc8a63d829f8d57"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "cae61367a2f547f107326710"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "c231dff34d1f43784971947e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "65e266e7f9063efd145824a6"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "931fef839a1317219e660052"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "title": "Kiểm tra định kỳ - Hóa học 8 Khám phá",
+  "description": "Đề kiểm tra 45 phút môn Hóa học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-16T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "df8d973369bdb66196a413ab"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "4ef5c4671f2079406ba1d40b"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "48192d50f99d24a9837fd9f7"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "b553487694e5f9df93cf9e20"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "bb5c7b3c6117d1d161174194"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Hóa học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-20T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "c79a94b76a7ad691f35d3cfb"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-06T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2dc68839b47b06687dfd5b55"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Kiểm tra định kỳ - Toán 9 Luyện thi vào 10",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-05-14T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-05-16T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "da1f514949602d68f9cc5061"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 1: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "ab0b62a9b31a85585d8b2404"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 2: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "6b3de394c821bcd8a64b90bd"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 3: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "23737544b47271b8faaa53f0"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 4: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "6a53052ee38ceeefd3c327ae"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 5: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "closed",
+  "resultPublishedAt": {
+    "$date": "2026-05-18T02:12:07.254Z"
+  },
+  "resultPublishedBy": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "attemptCount": 12,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-05-04T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "1b7c57c56cbdfde4d7617638"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "targetType": "class",
+  "teacherId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "title": "Bài kiểm tra sắp tới - Toán 9 Luyện thi vào 10",
+  "description": "Đề kiểm tra 45 phút môn Toán học.",
+  "durationMinutes": 45,
+  "totalScore": 10,
+  "passingScore": 5,
+  "config": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showResultAfter": "graded",
+    "allowedAttempts": 1
+  },
+  "availableFrom": {
+    "$date": "2026-06-23T02:12:07.254Z"
+  },
+  "availableTo": {
+    "$date": "2026-06-25T02:12:07.254Z"
+  },
+  "questions": [
+    {
+      "questionId": {
+        "$oid": "11beb3d05c243ffd6e51a9f4"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 6: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 1
+    },
+    {
+      "questionId": {
+        "$oid": "5fdf7be32dc8a63d829f8d57"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 7: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "C",
+      "score": 2,
+      "order": 2
+    },
+    {
+      "questionId": {
+        "$oid": "cae61367a2f547f107326710"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 8: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "D",
+      "score": 2,
+      "order": 3
+    },
+    {
+      "questionId": {
+        "$oid": "c231dff34d1f43784971947e"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 9: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "A",
+      "score": 2,
+      "order": 4
+    },
+    {
+      "questionId": {
+        "$oid": "65e266e7f9063efd145824a6"
+      },
+      "questionType": "multiple_choice",
+      "content": "Câu 10: Chọn đáp án đúng cho chuyên đề Toán học.",
+      "imageUrl": null,
+      "options": [
+        {
+          "key": "A",
+          "content": "Đáp án A"
+        },
+        {
+          "key": "B",
+          "content": "Đáp án B"
+        },
+        {
+          "key": "C",
+          "content": "Đáp án C"
+        },
+        {
+          "key": "D",
+          "content": "Đáp án D"
+        }
+      ],
+      "correctAnswer": "B",
+      "score": 2,
+      "order": 5
+    }
+  ],
+  "status": "published",
+  "resultPublishedAt": null,
+  "resultPublishedBy": null,
+  "attemptCount": 0,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+}]

@@ -1,0 +1,6036 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daef"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8d_6a0b1f2721a466242174cb18",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb18"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8d"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn phụ huynh đã thông báo. Em có thể học bù vào buổi tới.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-06T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca90_6a0b1f2721a466242174cb01",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb01"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "messageType": "text",
+  "content": "Thầy ơi, con tôi thấy bài tập khó quá, không hiểu phần phương trình.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-08T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca90_6a0b1f2721a466242174cb16",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb16"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-11T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8c_6a0b1f2721a466242174cb1f",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb1f"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn phụ huynh đã thông báo. Em có thể học bù vào buổi tới.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-18T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8c_6a0b1f2721a466242174cb11",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb11"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-05T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8f_6a0b1f2721a466242174cb09",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb09"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-15T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8d_6a0b1f2721a466242174cafd",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cafd"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8d"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn phụ huynh đã thông báo. Em có thể học bù vào buổi tới.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-16T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca91_6a0b1f2721a466242174cb19",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca91"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb19"
+  },
+  "messageType": "text",
+  "content": "Thưa thầy/cô, con tôi hôm nay bị ốm không đi học được ạ.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-04T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8c_6a0b1f2721a466242174cb16",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb16"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-18T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca91_6a0b1f2721a466242174cb00",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb00"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca91"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-06T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daf9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8f_6a0b1f2721a466242174cb01",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb01"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "messageType": "text",
+  "content": "Thầy ơi, con tôi thấy bài tập khó quá, không hiểu phần phương trình.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-05T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174dafa"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8a_6a0b1f2721a466242174cb04",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb04"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-04-29T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174dafb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8b_6a0b1f2721a466242174cb08",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8b"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb08"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-11T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174dafc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8f_6a0b1f2721a466242174cb2b",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb2b"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8f"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn phụ huynh đã thông báo. Em có thể học bù vào buổi tới.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-15T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174dafd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2621a466242174ca8d_6a0b1f2721a466242174cb07",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8d"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb07"
+  },
+  "messageType": "text",
+  "content": "Con tôi nói không khí lớp học rất vui và thân thiện ạ.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-11T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174dafe"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca90_6a0b1f2721a466242174cb24",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb24"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca90"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy đã thông báo, tôi sẽ nhắc cháu ôn bài ngay.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-14T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174daff"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8a_6a0b1f2721a466242174cb28",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8a"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb28"
+  },
+  "messageType": "text",
+  "content": "Thầy ơi, con tôi thấy bài tập khó quá, không hiểu phần phương trình.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-08T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db00"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8c_6a0b1f2721a466242174cb28",
+  "senderId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cb28"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn phụ huynh đã thông báo. Em có thể học bù vào buổi tới.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-01T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db01"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8b_6a0b1f2721a466242174cb17",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb17"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8b"
+  },
+  "messageType": "text",
+  "content": "Tuần tới sẽ có bài kiểm tra 15 phút, nhắc em ôn lại chương 2 nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-10T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f3221a466242174db02"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "threadId": "6a0b1f2621a466242174ca8c_6a0b1f2721a466242174cb2a",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174cb2a"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2621a466242174ca8c"
+  },
+  "messageType": "text",
+  "content": "Phụ huynh cho biết em đang học trang bài nào để thầy hỗ trợ thêm nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-05-14T14:16:18.542Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a246af4283806708ce4b28d"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "threadId": "6a0b1f2721a466242174caba_6a0b1f2721a466242174cafd",
+  "senderId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "receiverId": {
+    "$oid": "6a0b1f2721a466242174cafd"
+  },
+  "messageType": "text",
+  "content": "Em chào cô ạ",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-06T18:46:12.191Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2a698fc47a2113c76fbd27"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "ní hảo",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-11T07:53:51.475Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2a699ac47a2113c76fbda3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "abcxyz",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-11T07:54:02.467Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7e6ff7ed94bd5d6194dd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "a",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T10:11:59.636Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7e71f7ed94bd5d61950f"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "b",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T10:12:01.194Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7e73f7ed94bd5d619541"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "c",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T10:12:03.840Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7e75f7ed94bd5d619573"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "d",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T10:12:05.457Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7e77f7ed94bd5d6195a5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "f",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T10:12:07.097Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7e78f7ed94bd5d6195d7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6a258a72ec46e93f4cb1136f_6a258b17ec46e93f4cb1139b",
+  "senderId": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "receiverId": {
+    "$oid": "6a258b17ec46e93f4cb1139b"
+  },
+  "messageType": "text",
+  "content": "h",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T10:12:08.381Z"
+  },
+  "deletedAt": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "fb321e670cb6829833cb5aad"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e42d974d44018ded352916e8",
+  "senderId": {
+    "$oid": "e42d974d44018ded352916e8"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c65d4b33085e55a744ff963e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9d5ee0a5eee59ede40409eaf",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "9d5ee0a5eee59ede40409eaf"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "08072596b1e7401099eed96d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9d5ee0a5eee59ede40409eaf",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "9d5ee0a5eee59ede40409eaf"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "4ce1f5bc5883dbac36f26a29"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "05f4428bdd999ebfd28e8d9a_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "05f4428bdd999ebfd28e8d9a"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "172e56251db36e9898cdeca2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "05f4428bdd999ebfd28e8d9a_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "05f4428bdd999ebfd28e8d9a"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "eb2655088815df5d703af178"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_613aa2876b965ca6e3e3c82d",
+  "senderId": {
+    "$oid": "613aa2876b965ca6e3e3c82d"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "636a22b42b50b06b93f7ce76"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_613aa2876b965ca6e3e3c82d",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "613aa2876b965ca6e3e3c82d"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "a4bffa5c2b3fa9901f6d9b3d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_613aa2876b965ca6e3e3c82d",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "613aa2876b965ca6e3e3c82d"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "128ec6c761a1d7c7fc1ec6db"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9aa2fbec09136953c5095d96",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "9aa2fbec09136953c5095d96"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "bfb67d2b446473f127d3e8bf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_dfab8df8e0f9e223e95548a0",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "dfab8df8e0f9e223e95548a0"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "da54d985f622c5aebac5ffa8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "01b855ec9b4601711733b11e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "01b855ec9b4601711733b11e"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "d150a752adb1ced4921dbb1c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "01b855ec9b4601711733b11e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "01b855ec9b4601711733b11e"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "8840ba782afc9f71d4eb6fd8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "029c8afcac0c1478c96966ee_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "029c8afcac0c1478c96966ee"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "ef72d2b8f39f1da345bbd1b8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "029c8afcac0c1478c96966ee_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "029c8afcac0c1478c96966ee"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "fe5297dc31933400cf0e5e3b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_ad6f321f6aec7148c40ba2fb",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "ad6f321f6aec7148c40ba2fb"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "669f6d7780bd21b43d0592c5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1aa9b0cab8c51a9a32bf42f8_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "1aa9b0cab8c51a9a32bf42f8"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b73675a8600d2d67dec980ab"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1aa9b0cab8c51a9a32bf42f8_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "1aa9b0cab8c51a9a32bf42f8"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "fa86d2e0dcef890551f1c2ae"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6af5356e05ac23b834308db1_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "6af5356e05ac23b834308db1"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "4ecd4e1509682c4c86306df3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6af5356e05ac23b834308db1_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "6af5356e05ac23b834308db1"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1b6a67e9b77fe2f00fcb9fec"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "91bbf343842b4a30c2a0cabf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "91bbf343842b4a30c2a0cabf"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f467a02571eace4d0312f96f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "11ea120e2869ce5d0dd78569_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "11ea120e2869ce5d0dd78569"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c07e2e0eae74d7298725cd62"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "94aad65adeb79e0dc4c017bf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "94aad65adeb79e0dc4c017bf"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f82bb92f0ceac81c7ee43b9f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "94aad65adeb79e0dc4c017bf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "94aad65adeb79e0dc4c017bf"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "d08f81d48ee79510c34d198b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_dbc86675ef6294f3b6c3590f",
+  "senderId": {
+    "$oid": "dbc86675ef6294f3b6c3590f"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "dc30c446e8ae72327f159fa8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_b8fd747cccfdd6cb81449b48",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "b8fd747cccfdd6cb81449b48"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7422fd1ce738821ee4fb4f06"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_b8fd747cccfdd6cb81449b48",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "b8fd747cccfdd6cb81449b48"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "d4ddd6605949a5f2dd6dcb5b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ccb3d2fb319d66c0ca043c43",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "ccb3d2fb319d66c0ca043c43"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "46f851725ec9a50f79c5d88a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1bf7a7aa65b00c67d4b0ed58_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "1bf7a7aa65b00c67d4b0ed58"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1b4810df7b7b8215a9313bba"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_f13b1d968949f3f9d3033825",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "f13b1d968949f3f9d3033825"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f4420e8623fdb87caf20e84c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_bf7eea2073867f2684705ff7",
+  "senderId": {
+    "$oid": "bf7eea2073867f2684705ff7"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "ca4223ae5ed9096e32f1393d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "2bdff76860cdba80b5641baa_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "2bdff76860cdba80b5641baa"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "89a6f01ef10055c2a5a0839d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "2bdff76860cdba80b5641baa_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "2bdff76860cdba80b5641baa"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1575e7184d084e5e92fc1184"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_659fb65375ec262801ce56ff",
+  "senderId": {
+    "$oid": "659fb65375ec262801ce56ff"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "898505dd2e39b3e946aa2ef4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_a125be96c9bb3cd36629fd85",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "a125be96c9bb3cd36629fd85"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2be184d4d119fdd8b43e0ebf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_a125be96c9bb3cd36629fd85",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "a125be96c9bb3cd36629fd85"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "ba4ee20c5ae5adc055ea790e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "157044d0dcb9dd25ee1fb8ed_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "157044d0dcb9dd25ee1fb8ed"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "3b2665989846ef81afa905cf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "157044d0dcb9dd25ee1fb8ed_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "157044d0dcb9dd25ee1fb8ed"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "195c707c0f6a04c8104e2b24"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_97c16b752c679281b5b45388",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "97c16b752c679281b5b45388"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1e5df6f1239bb98e1418ff67"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_97c16b752c679281b5b45388",
+  "senderId": {
+    "$oid": "97c16b752c679281b5b45388"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "5b3d5f11dcaf888bc5fe4c14"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e0912b9f981c207491a0e415",
+  "senderId": {
+    "$oid": "e0912b9f981c207491a0e415"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "3e1d0af5bd61539aac8a794b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "32b2a6bd594b8a05aebb7773_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "32b2a6bd594b8a05aebb7773"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "fa74b473af4789ca4eaf4f1a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5fd72c3f46f3a6264e5cd7d9_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "5fd72c3f46f3a6264e5cd7d9"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "6c30322dea9d7d910e8d4465"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5fd72c3f46f3a6264e5cd7d9_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "5fd72c3f46f3a6264e5cd7d9"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "92a7f11d47bfc3bddf57841d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "89fc91c325c7980b9322deb6_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "89fc91c325c7980b9322deb6"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "24f52861400ee901d7a66dea"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ce512d8d0f194f05ea25be31",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "ce512d8d0f194f05ea25be31"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "668bcfa4d0ed917a6b7a79f2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "87b043d9e399d55ba226891b_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "87b043d9e399d55ba226891b"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7a446a6b6e1fd46f0b15bc5f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "200b058bfbb8b7f1f6e6ec74_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "200b058bfbb8b7f1f6e6ec74"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1c6ee09c3ec0511fbc69b5b2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "200b058bfbb8b7f1f6e6ec74_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "200b058bfbb8b7f1f6e6ec74"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "204604d664fd95fdd9f04529"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "204272d53157e197e55e295d_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "204272d53157e197e55e295d"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7cf5fe056d58cc356a6b6b9a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "204272d53157e197e55e295d_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "204272d53157e197e55e295d"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "908359e1261c22507478dba6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_c15d29453eb699ec2b72a8f7",
+  "senderId": {
+    "$oid": "c15d29453eb699ec2b72a8f7"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "36f054a4e8489a350c8804f3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "80270e8043b3a41323c02b2a_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "80270e8043b3a41323c02b2a"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9c42828c937f5a8ab9bf343e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "80270e8043b3a41323c02b2a_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "80270e8043b3a41323c02b2a"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "6092fab5a8faffea02babb65"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "8d5c2ea17dcf7a75c18c2a3e_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "8d5c2ea17dcf7a75c18c2a3e"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c25433282e405796c1fd5eb4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7bf1da87dfa34096c6dfa5d7_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "7bf1da87dfa34096c6dfa5d7"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f8d18c17b8805e3eb2c2dd52"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "ac9f15001d5e76b389af6229_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "ac9f15001d5e76b389af6229"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "19358bacdb9de23d3d1fc8fd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e42d974d44018ded352916e8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "e42d974d44018ded352916e8"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b18abca1cca6e86f99f0a0a0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "05f4428bdd999ebfd28e8d9a_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "05f4428bdd999ebfd28e8d9a"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f2c076a1ae8ce6231e11585d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "05f4428bdd999ebfd28e8d9a_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "05f4428bdd999ebfd28e8d9a"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c58d4c28bbfb7435c4f26216"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_613aa2876b965ca6e3e3c82d",
+  "senderId": {
+    "$oid": "613aa2876b965ca6e3e3c82d"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f6334c38a22943bf885f2795"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9aa2fbec09136953c5095d96",
+  "senderId": {
+    "$oid": "9aa2fbec09136953c5095d96"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "ca3b883a8c6d8b1c16c01b48"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9aa2fbec09136953c5095d96",
+  "senderId": {
+    "$oid": "9aa2fbec09136953c5095d96"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "cce7e2bec43b1af9047fc359"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9aa2fbec09136953c5095d96",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "9aa2fbec09136953c5095d96"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "90fc37e9dc897315ac007f9a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "01b855ec9b4601711733b11e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "01b855ec9b4601711733b11e"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "3043ccd65f7393ea380324d2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "01b855ec9b4601711733b11e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "01b855ec9b4601711733b11e"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c5743c56ee7338d0d60a9896"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "029c8afcac0c1478c96966ee_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "029c8afcac0c1478c96966ee"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c42c1e0a4036f827b960d121"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_def8a36c17633802a74f24fa",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "def8a36c17633802a74f24fa"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f4ebc05b0c6d6003ea3eb73e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_def8a36c17633802a74f24fa",
+  "senderId": {
+    "$oid": "def8a36c17633802a74f24fa"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "669f1e24ad124a2c07474ce6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_6f6b5d64843329e273a90d76",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "6f6b5d64843329e273a90d76"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "294de43e96248af36f49deb4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "651a7509b80fcd4d2b98e500_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "651a7509b80fcd4d2b98e500"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "fdaab70dd103416b7cc9854c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "11ea120e2869ce5d0dd78569_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "11ea120e2869ce5d0dd78569"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9634942f0fc5b12ed6ddc5c0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_bbcfbecda9e68514f1ce0176",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "bbcfbecda9e68514f1ce0176"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1eea079fa2fbaa8c60e62c02"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_bbcfbecda9e68514f1ce0176",
+  "senderId": {
+    "$oid": "bbcfbecda9e68514f1ce0176"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b9023ffd46ebd74e2fcf163f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "94aad65adeb79e0dc4c017bf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "94aad65adeb79e0dc4c017bf"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9f3cd9eedda2228b98cf6929"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "94aad65adeb79e0dc4c017bf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "94aad65adeb79e0dc4c017bf"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "40fffd90a1368b3ce03d6f2a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "27db24aaf990479963e886ba_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "27db24aaf990479963e886ba"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c8d6e3af918a4512848bebb7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "27db24aaf990479963e886ba_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "27db24aaf990479963e886ba"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "07aabd346bbce5502887e428"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7650e4267b90e3681832017c_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "7650e4267b90e3681832017c"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e37adf32109994380f065727"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_b8fd747cccfdd6cb81449b48",
+  "senderId": {
+    "$oid": "b8fd747cccfdd6cb81449b48"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "dc7b3461a82d600911b35f42"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ccb3d2fb319d66c0ca043c43",
+  "senderId": {
+    "$oid": "ccb3d2fb319d66c0ca043c43"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e9d33041f0062af8af3d83f8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1bf7a7aa65b00c67d4b0ed58_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "1bf7a7aa65b00c67d4b0ed58"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c3bc24692370bdb4881fe767"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_bf7eea2073867f2684705ff7",
+  "senderId": {
+    "$oid": "bf7eea2073867f2684705ff7"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1407901fef0a4f8f66546d07"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "2bdff76860cdba80b5641baa_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "2bdff76860cdba80b5641baa"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-15T04:50:53.285Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2a19a9ebdbb400e5140bc802"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_a125be96c9bb3cd36629fd85",
+  "senderId": {
+    "$oid": "a125be96c9bb3cd36629fd85"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b1bae1cf3448cfd8880aaf1c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "157044d0dcb9dd25ee1fb8ed_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "157044d0dcb9dd25ee1fb8ed"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "fd2e85e0c39126a8e552a7f3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "157044d0dcb9dd25ee1fb8ed_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "157044d0dcb9dd25ee1fb8ed"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "099f929dafb9a21a547c59b8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_df787a5f0b70ea0747ceccaa",
+  "senderId": {
+    "$oid": "df787a5f0b70ea0747ceccaa"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "cff79a4e5fffdb2cfc9f6267"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_df787a5f0b70ea0747ceccaa",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "df787a5f0b70ea0747ceccaa"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "35813c7d9a52fc045e8cb05e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "06a6d49d87e56fbd7b1f6b1e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "06a6d49d87e56fbd7b1f6b1e"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "55c3c4995d6473f7a0869885"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_5b65e24cd682d74960395071",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "5b65e24cd682d74960395071"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "43f620ce6fcd494a6b4df677"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_5b65e24cd682d74960395071",
+  "senderId": {
+    "$oid": "5b65e24cd682d74960395071"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "8d63b816cb5240af5dd4edd7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_7dc6c41723c7171e34f935f8",
+  "senderId": {
+    "$oid": "7dc6c41723c7171e34f935f8"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "12687f84d838cc0639af679a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5fd72c3f46f3a6264e5cd7d9_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "5fd72c3f46f3a6264e5cd7d9"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c266cdebaf9a0fb21f817421"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ce512d8d0f194f05ea25be31",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "ce512d8d0f194f05ea25be31"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7973b40af5a760056c636e14"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "87b043d9e399d55ba226891b_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "87b043d9e399d55ba226891b"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "90f8bce43236138a146d96e3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "87b043d9e399d55ba226891b_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "87b043d9e399d55ba226891b"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "82b6482ad6fdd0635cd397f4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "200b058bfbb8b7f1f6e6ec74_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "200b058bfbb8b7f1f6e6ec74"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "dd5ebd7f8bb115c2a2169bf5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "204272d53157e197e55e295d_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "204272d53157e197e55e295d"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "21c2c34c858cc3374943772c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_c15d29453eb699ec2b72a8f7",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "c15d29453eb699ec2b72a8f7"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f65c637de37c021319549d42"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "80270e8043b3a41323c02b2a_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "80270e8043b3a41323c02b2a"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "3aec841e1cce45b09e21340e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "8d5c2ea17dcf7a75c18c2a3e_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "8d5c2ea17dcf7a75c18c2a3e"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1c80e8ed28f3b1cfa010dc73"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "8d5c2ea17dcf7a75c18c2a3e_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "8d5c2ea17dcf7a75c18c2a3e"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "82d49b40bb0b29ab93855a0f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7bf1da87dfa34096c6dfa5d7_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "7bf1da87dfa34096c6dfa5d7"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "5b4905f4b4162c58748f79da"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "ac9f15001d5e76b389af6229_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "ac9f15001d5e76b389af6229"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "ba438c23656f4150d508cf44"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e42d974d44018ded352916e8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "e42d974d44018ded352916e8"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "fec41e31d896e2f61295e6d5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9d5ee0a5eee59ede40409eaf",
+  "senderId": {
+    "$oid": "9d5ee0a5eee59ede40409eaf"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "cf5abcda82d7b2acae3c3bc4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_dfab8df8e0f9e223e95548a0",
+  "senderId": {
+    "$oid": "dfab8df8e0f9e223e95548a0"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2be9203296c492aad6a8278b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_dfab8df8e0f9e223e95548a0",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "dfab8df8e0f9e223e95548a0"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "078790f8ec97894b356c407e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_dfab8df8e0f9e223e95548a0",
+  "senderId": {
+    "$oid": "dfab8df8e0f9e223e95548a0"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "75c2a13a6fb86e2944b260dc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "029c8afcac0c1478c96966ee_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "029c8afcac0c1478c96966ee"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "632719e2f19643c64921f2b7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_ad6f321f6aec7148c40ba2fb",
+  "senderId": {
+    "$oid": "ad6f321f6aec7148c40ba2fb"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "4c58fee52335e45b750585a2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_ad6f321f6aec7148c40ba2fb",
+  "senderId": {
+    "$oid": "ad6f321f6aec7148c40ba2fb"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "73c6cdf5f5778bc4e26e37c8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_def8a36c17633802a74f24fa",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "def8a36c17633802a74f24fa"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "057f51cac652dc7cc17491f4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_6f6b5d64843329e273a90d76",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "6f6b5d64843329e273a90d76"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7a9d1e3ca00f4b56d07707a5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1aa9b0cab8c51a9a32bf42f8_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "1aa9b0cab8c51a9a32bf42f8"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "a907bb6127e72132cb6f44c1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "651a7509b80fcd4d2b98e500_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "651a7509b80fcd4d2b98e500"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "35131971b85f1ed73a4935e9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "651a7509b80fcd4d2b98e500_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "651a7509b80fcd4d2b98e500"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "87cc5fc917c8c6eb6c9f21ea"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "91bbf343842b4a30c2a0cabf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "91bbf343842b4a30c2a0cabf"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9f1361306290e85773055f54"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "11ea120e2869ce5d0dd78569_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "11ea120e2869ce5d0dd78569"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e87afaab1c68748bb6ea7fb9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_bbcfbecda9e68514f1ce0176",
+  "senderId": {
+    "$oid": "bbcfbecda9e68514f1ce0176"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e3564ce23eeb46caba66c355"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_bbcfbecda9e68514f1ce0176",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "bbcfbecda9e68514f1ce0176"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2c2f495214bf570b15c0206e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_dbc86675ef6294f3b6c3590f",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "dbc86675ef6294f3b6c3590f"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "6cf0cf117f0e7d9c531c0d3b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_dbc86675ef6294f3b6c3590f",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "dbc86675ef6294f3b6c3590f"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9c39dc1fe4bab3db564faca4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "27db24aaf990479963e886ba_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "27db24aaf990479963e886ba"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "576a79db864cf645f0a06d76"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7650e4267b90e3681832017c_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "7650e4267b90e3681832017c"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b0cc6e1b198495980f6c532e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7650e4267b90e3681832017c_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "7650e4267b90e3681832017c"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "15d105966d79747a767dce5a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_b8fd747cccfdd6cb81449b48",
+  "senderId": {
+    "$oid": "b8fd747cccfdd6cb81449b48"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e816df4542d09a5063376236"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ccb3d2fb319d66c0ca043c43",
+  "senderId": {
+    "$oid": "ccb3d2fb319d66c0ca043c43"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "de2204b8d1a3a75f97feaf6c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1bf7a7aa65b00c67d4b0ed58_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "1bf7a7aa65b00c67d4b0ed58"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "735d92325afdeb53df626976"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_f13b1d968949f3f9d3033825",
+  "senderId": {
+    "$oid": "f13b1d968949f3f9d3033825"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f475b1ef36e888b576ed81dc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "2bdff76860cdba80b5641baa_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "2bdff76860cdba80b5641baa"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e2da67bfdd116db7c138abf2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_659fb65375ec262801ce56ff",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "659fb65375ec262801ce56ff"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "5cfeeed3846149a7beecd4d6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_659fb65375ec262801ce56ff",
+  "senderId": {
+    "$oid": "659fb65375ec262801ce56ff"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "3740092ea44de59542935460"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_659fb65375ec262801ce56ff",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "659fb65375ec262801ce56ff"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7bcbf93fc226d53cea3e64db"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_df787a5f0b70ea0747ceccaa",
+  "senderId": {
+    "$oid": "df787a5f0b70ea0747ceccaa"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b1cd004882aa68898931b983"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "06a6d49d87e56fbd7b1f6b1e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "06a6d49d87e56fbd7b1f6b1e"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f844ae25b0f67c73885b9364"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_5b65e24cd682d74960395071",
+  "senderId": {
+    "$oid": "5b65e24cd682d74960395071"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9ae7a7e452c4446bfe90d811"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_7dc6c41723c7171e34f935f8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "7dc6c41723c7171e34f935f8"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "3ba583cbd196c18d90957f6d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_7dc6c41723c7171e34f935f8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "7dc6c41723c7171e34f935f8"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "66d566c5388576a26ac6dd7d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_97c16b752c679281b5b45388",
+  "senderId": {
+    "$oid": "97c16b752c679281b5b45388"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9afc99ac6a880e5fe238a339"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_97c16b752c679281b5b45388",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "97c16b752c679281b5b45388"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2c176c2fc7cd83e8f0940587"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "32b2a6bd594b8a05aebb7773_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "32b2a6bd594b8a05aebb7773"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7df604aaf5b79fba061b9349"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5fd72c3f46f3a6264e5cd7d9_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "5fd72c3f46f3a6264e5cd7d9"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e090fd27246ab51eb9e38a28"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "89fc91c325c7980b9322deb6_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "89fc91c325c7980b9322deb6"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c540a13d2d60df3095cd3c3e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "89fc91c325c7980b9322deb6_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "89fc91c325c7980b9322deb6"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "27bc39b75c76418d07be44eb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ce512d8d0f194f05ea25be31",
+  "senderId": {
+    "$oid": "ce512d8d0f194f05ea25be31"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "37a324ce499e12ce7bc7adc9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ce512d8d0f194f05ea25be31",
+  "senderId": {
+    "$oid": "ce512d8d0f194f05ea25be31"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "250d3ff09193fc97fe6c5a8f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_c15d29453eb699ec2b72a8f7",
+  "senderId": {
+    "$oid": "c15d29453eb699ec2b72a8f7"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "bb0eb7786356e1e9bec51a82"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "8d5c2ea17dcf7a75c18c2a3e_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "8d5c2ea17dcf7a75c18c2a3e"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "65601f8bc9b2e9a37e09cba6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "ac9f15001d5e76b389af6229_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "ac9f15001d5e76b389af6229"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "4adf1b547bf0bd6fdd7feb66"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "ac9f15001d5e76b389af6229_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "ac9f15001d5e76b389af6229"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1df9593e496db8afdfb46029"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e42d974d44018ded352916e8",
+  "senderId": {
+    "$oid": "e42d974d44018ded352916e8"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "934698d0f207dba52e4d2783"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_9d5ee0a5eee59ede40409eaf",
+  "senderId": {
+    "$oid": "9d5ee0a5eee59ede40409eaf"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "5006cb03a03a3cc2752c9cf7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_ad6f321f6aec7148c40ba2fb",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "ad6f321f6aec7148c40ba2fb"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "dfb0abca9b86396920529679"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_def8a36c17633802a74f24fa",
+  "senderId": {
+    "$oid": "def8a36c17633802a74f24fa"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "0222628645dd3f0644e6187f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_6f6b5d64843329e273a90d76",
+  "senderId": {
+    "$oid": "6f6b5d64843329e273a90d76"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "54f9eaa3571821466d348165"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_6f6b5d64843329e273a90d76",
+  "senderId": {
+    "$oid": "6f6b5d64843329e273a90d76"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2be87630c0f7ae27f7385ae1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1aa9b0cab8c51a9a32bf42f8_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "1aa9b0cab8c51a9a32bf42f8"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "59bf8465b9e17206025dc1df"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6af5356e05ac23b834308db1_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "6af5356e05ac23b834308db1"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "eab3175b25fc5b23e646c495"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "6af5356e05ac23b834308db1_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "6af5356e05ac23b834308db1"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "5f068b1c9e4771a210a9d5fc"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "651a7509b80fcd4d2b98e500_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "651a7509b80fcd4d2b98e500"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "abb9d5d29adb00ec812dc7b9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "91bbf343842b4a30c2a0cabf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "91bbf343842b4a30c2a0cabf"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1739186691473076f0228ac6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "91bbf343842b4a30c2a0cabf_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "91bbf343842b4a30c2a0cabf"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "47e511a87fe8b23e2da56ea6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "11ea120e2869ce5d0dd78569_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "11ea120e2869ce5d0dd78569"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "667765779a62a372b75842ac"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_dbc86675ef6294f3b6c3590f",
+  "senderId": {
+    "$oid": "dbc86675ef6294f3b6c3590f"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7c6946258bea0aef329c8cfa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "27db24aaf990479963e886ba_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "27db24aaf990479963e886ba"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "ce684fc6290200f8806fc31b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7650e4267b90e3681832017c_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "7650e4267b90e3681832017c"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "141d2b01d249fc872cb4c447"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_ccb3d2fb319d66c0ca043c43",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "ccb3d2fb319d66c0ca043c43"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "d7272e3619a8ee3bccbe5c02"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "1bf7a7aa65b00c67d4b0ed58_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "1bf7a7aa65b00c67d4b0ed58"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9b881202cf828cd89509de36"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_f13b1d968949f3f9d3033825",
+  "senderId": {
+    "$oid": "f13b1d968949f3f9d3033825"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-07T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-07T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "131e1c83a08c4a4e21e2b343"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_f13b1d968949f3f9d3033825",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "f13b1d968949f3f9d3033825"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "8b8a2f63e60edc7c06b01545"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_bf7eea2073867f2684705ff7",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "bf7eea2073867f2684705ff7"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "5c39955a1c528ace6da7b8b5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_bf7eea2073867f2684705ff7",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "bf7eea2073867f2684705ff7"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "2eb4e04f98be9158adf86321"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_a125be96c9bb3cd36629fd85",
+  "senderId": {
+    "$oid": "a125be96c9bb3cd36629fd85"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c7bd29055207aba49aab2d81"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_df787a5f0b70ea0747ceccaa",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "df787a5f0b70ea0747ceccaa"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "9d96214e85b4283320808872"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "06a6d49d87e56fbd7b1f6b1e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "06a6d49d87e56fbd7b1f6b1e"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "1298eb552029f21b9b306593"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "06a6d49d87e56fbd7b1f6b1e_5b35637b7f9869d7541260b8",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "06a6d49d87e56fbd7b1f6b1e"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "b195a7d60a1894528b76d712"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_5b65e24cd682d74960395071",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "5b65e24cd682d74960395071"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "c721ea67846bbab051aab33a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_7dc6c41723c7171e34f935f8",
+  "senderId": {
+    "$oid": "7dc6c41723c7171e34f935f8"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "e5539da868cb1c3f1298735e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e0912b9f981c207491a0e415",
+  "senderId": {
+    "$oid": "e0912b9f981c207491a0e415"
+  },
+  "receiverId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-09T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-09T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f34e81e3be0f687d2ad60762"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e0912b9f981c207491a0e415",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "e0912b9f981c207491a0e415"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "7019a3ee0f2553cfadd29f5e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "5b35637b7f9869d7541260b8_e0912b9f981c207491a0e415",
+  "senderId": {
+    "$oid": "5b35637b7f9869d7541260b8"
+  },
+  "receiverId": {
+    "$oid": "e0912b9f981c207491a0e415"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "34d04b4e180c150c3f127c5c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "32b2a6bd594b8a05aebb7773_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "32b2a6bd594b8a05aebb7773"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "f2f52652395398ac70367891"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "32b2a6bd594b8a05aebb7773_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "32b2a6bd594b8a05aebb7773"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "97839554222bf16b808bef82"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "89fc91c325c7980b9322deb6_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "89fc91c325c7980b9322deb6"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-13T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "4ab87f28e80a7b0ceba1e18a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "87b043d9e399d55ba226891b_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "87b043d9e399d55ba226891b"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Cảm ơn thầy/cô. Gia đình sẽ tiếp tục nhắc em ôn bài.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-12T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-12T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "d44acbb5cd53d9643b949bb5"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "200b058bfbb8b7f1f6e6ec74_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "200b058bfbb8b7f1f6e6ec74"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "cd2d142b118f10f6aad4ac1a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "204272d53157e197e55e295d_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "204272d53157e197e55e295d"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-13T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "689200ae9dd642d7dedf68c2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "b34f44eb018d833dee2ac1be_c15d29453eb699ec2b72a8f7",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "c15d29453eb699ec2b72a8f7"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-10T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-10T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "851ca34bf2b2b7e64590523a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "80270e8043b3a41323c02b2a_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "80270e8043b3a41323c02b2a"
+  },
+  "messageType": "text",
+  "content": "Em học khá tập trung và hoàn thành bài tập đều.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-11T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-11T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "920b5123b9c84ebcc9e3fc3c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7bf1da87dfa34096c6dfa5d7_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "7bf1da87dfa34096c6dfa5d7"
+  },
+  "receiverId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "messageType": "text",
+  "content": "Chào thầy/cô, cho tôi xin nhận xét tình hình học tập gần đây của con.",
+  "attachmentUrl": null,
+  "isRead": true,
+  "readAt": {
+    "$date": "2026-06-08T02:42:07.254Z"
+  },
+  "sentAt": {
+    "$date": "2026-06-08T02:12:07.254Z"
+  },
+  "deletedAt": null
+},
+{
+  "_id": {
+    "$oid": "aeccd515226102206e2ccf0c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "threadId": "7bf1da87dfa34096c6dfa5d7_b34f44eb018d833dee2ac1be",
+  "senderId": {
+    "$oid": "b34f44eb018d833dee2ac1be"
+  },
+  "receiverId": {
+    "$oid": "7bf1da87dfa34096c6dfa5d7"
+  },
+  "messageType": "text",
+  "content": "Tuần tới lớp có bài kiểm tra ngắn, phụ huynh nhắc em xem lại tài liệu nhé.",
+  "attachmentUrl": null,
+  "isRead": false,
+  "readAt": null,
+  "sentAt": {
+    "$date": "2026-06-14T02:12:07.254Z"
+  },
+  "deletedAt": null
+}]

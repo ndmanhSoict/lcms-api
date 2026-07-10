@@ -1,0 +1,8567 @@
+[{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbac"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-09T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-17T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbad"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabb"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-06T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbae"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabc"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-12T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-23T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbaf"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabd"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-16T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-16T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabe"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-24T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-12T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabf"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-04T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-15T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-07T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-03T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-20T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-03T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-27T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-17T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-10T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-20T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac4"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-18T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-17T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac5"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9c"
+  },
+  "classSnapshot": {
+    "name": "Toán 8A",
+    "subjectName": "Toán học",
+    "teacherName": "Nguyễn Văn Hùng"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-11T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-19T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac6"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-22T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-06T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbb9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac7"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-01T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbba"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac8"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-02T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-22T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbbb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac9"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-31T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-13T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbbc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caca"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-02T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-11T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbbd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacb"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-11T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbbe"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacc"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-02T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-04T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbbf"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacd"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9d"
+  },
+  "classSnapshot": {
+    "name": "Toán 9A",
+    "subjectName": "Toán học",
+    "teacherName": "Trần Thị Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-05T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-07T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caba"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-04T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-31T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabc"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-14T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabe"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-04T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-15T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-17T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-21T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-13T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cace"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-05T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-13T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacf"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-20T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-16T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-30T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-03T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-25T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbc9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9e"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 7A",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-18T14:16:07.684Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-02T14:16:07.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbca"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabb"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-18T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-10T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbcb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabd"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-19T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-10T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbcc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cabf"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-12T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-08T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbcd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-19T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-14T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbce"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-12T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-29T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbcf"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-29T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-10T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad4"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-11T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-06T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad5"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-16T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-19T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad6"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-04T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-09T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad7"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174ca9f"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 8B",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Lê Minh Châu"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-19T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-05T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac4"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-22T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac5"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-30T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-05T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac6"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-05T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-09T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cac7"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-18T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-30T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cace"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-26T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-28T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbd9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cacf"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-08T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbda"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-30T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-13T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbdb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-10T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-13T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbdc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-09T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-03-17T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbdd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6a"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa0"
+  },
+  "classSnapshot": {
+    "name": "Văn 8A",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Phạm Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-02T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca80"
+  },
+  "createdAt": {
+    "$date": "2026-04-02T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbde"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad8"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-05T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-04T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbdf"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad9"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-25T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-09T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cada"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-28T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-07T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadb"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-11T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-12T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadc"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-30T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadd"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-15T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-04T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cade"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-22T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadf"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-18T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-04T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-03T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-13T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa1"
+  },
+  "classSnapshot": {
+    "name": "Vật Lý 9A",
+    "subjectName": "Vật Lý",
+    "teacherName": "Bùi Thị Thanh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-04T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-22T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cada"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-25T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-24T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbe9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadb"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-27T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-16T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbea"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadc"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-30T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-03T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbeb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-30T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-12T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbec"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-03T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-26T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbed"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae4"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-08T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-13T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbee"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae5"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-07T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-21T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbef"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae6"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-21T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf0"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae7"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa2"
+  },
+  "classSnapshot": {
+    "name": "Hóa 9B",
+    "subjectName": "Hóa Học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-03T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-06T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad8"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-21T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-03T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf2"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cad9"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-11T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-12T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf3"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae8"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-05T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-14T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf4"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae9"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-10T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-21T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf5"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caea"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-06T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf6"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caeb"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-12T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-16T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf7"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caec"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-15T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-12T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf8"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caed"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-21T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbf9"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caee"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-13T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-15T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbfa"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caef"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa3"
+  },
+  "classSnapshot": {
+    "name": "Toán 8C",
+    "subjectName": "Toán học",
+    "teacherName": "Đinh Văn Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-06T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-13T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbfb"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadd"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-09T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-23T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbfc"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cade"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-17T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbfd"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cadf"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-03T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-24T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbfe"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-22T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-16T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cbff"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-04T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-15T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc00"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-03T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-14T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc01"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-03T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-10T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc02"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-19T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc03"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf4"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-04T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-05T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc04"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf5"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa4"
+  },
+  "classSnapshot": {
+    "name": "Anh Văn 9C",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Hoàng Thị Hương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-13T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-18T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc05"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-18T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-11T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc06"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-29T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-02T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc07"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae3"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-21T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-02T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc08"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae4"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-16T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-07T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc09"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174cae5"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-16T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-05T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc0a"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf0"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-27T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-17T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc0b"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf1"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-16T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0b1f2721a466242174cc0c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a0b1f2421a466242174ca6b"
+  },
+  "studentId": {
+    "$oid": "6a0b1f2721a466242174caf2"
+  },
+  "classId": {
+    "$oid": "6a0b1f2621a466242174caa5"
+  },
+  "classSnapshot": {
+    "name": "Văn 9D",
+    "subjectName": "Ngữ Văn",
+    "teacherName": "Ngô Xuân Trường"
+  },
+  "enrolledAt": {
+    "$date": "2026-04-04T14:16:07.685Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a0b1f2621a466242174ca82"
+  },
+  "createdAt": {
+    "$date": "2026-04-13T14:16:07.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-17T14:16:07.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a25b2928a33df1377f3dc5c"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "6a258b17ec46e93f4cb1139d"
+  },
+  "classId": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 thầy A",
+    "subjectName": "Toán 6",
+    "teacherName": "Thầy Văn A"
+  },
+  "enrolledAt": {
+    "$date": "2026-06-07T18:04:02.758Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": null,
+  "createdAt": {
+    "$date": "2026-06-07T18:04:02.759Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-07T18:04:02.759Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a25b2978a33df1377f3dc90"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "6a25991bbec8d4498ab278c1"
+  },
+  "classId": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 thầy A",
+    "subjectName": "Toán 6",
+    "teacherName": "Thầy Văn A"
+  },
+  "enrolledAt": {
+    "$date": "2026-06-07T18:04:07.067Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": null,
+  "createdAt": {
+    "$date": "2026-06-07T18:04:07.068Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-07T18:04:07.068Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2e7fcbf9c66349137d8201"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "6a2e7ef0f9c66349137d80d0"
+  },
+  "classId": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 thầy A",
+    "subjectName": "Toán 6",
+    "teacherName": "Thầy Văn A"
+  },
+  "enrolledAt": {
+    "$date": "2026-06-14T10:17:47.086Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": null,
+  "createdAt": {
+    "$date": "2026-06-14T10:17:47.088Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-14T10:17:47.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "8d812619ea529fa72d8e62aa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "b8be11acd7369c2af55d559f"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cf49b18d6a87393681e082fb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "b8be11acd7369c2af55d559f"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "391fa59178023a0b73b49e17"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "54c79540ee08a565db8e6255"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "cf94d9ed5a773c31616a68b3"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ca06e5e483f6c752aded350f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c70387a69799862bc3fe3531"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "59d7d9698fc3f343568effa4"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8c806a8e1626d3814855f10b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5abd30337d7b4ac906d92c4c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "56f471176d2bf5226affed9e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "506834154d8401a5e0b4212a"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "baa8db578c81e173c5128f2b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68250213d2af44d23291631d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a8c01339c41b9cbe2788d18a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64c1076fdb2e81ec6776a54c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "568f53787c6291d6b87c0035"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b13f515dfbcbe2faed695a8a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f6bebe6e564d9042e1d9475a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a0f702ab676c7b72ea16a26c"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63c907f79ae0dd4bc1f47f7e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a0f702ab676c7b72ea16a26c"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "16d2cf6c293a030c4d14d58f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c6a55c92facfb538ceea692d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "3dc8342af02feab610cf2166"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a7d17f846bf77d0159fff1ea"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "3dc8342af02feab610cf2166"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fc657ea757af09a480558f43"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "80f8a9c30bc54ec70d8f8f57"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5d3f65d9c3e7faa6f177355f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65142e1a07d07f1e179b84a7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "9633cb0fa12251da7f89dfb6"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3340be477e83568adb5171eb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "df6cae3269d2b0b01ed24d79"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4f32b7f284c12f00a86cfa3d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "be96d9e39a2064d3da799e32"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2b744a6a1228ae414d707222"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9ae3ad398d8ec4041bf2d483"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "2675bab7277cc1346c52ddb5"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e9e00e3bc318ca9599586935"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "6a076245f56db23e94a2a494"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f5a1c7f2d99b0623026e5584"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "6a076245f56db23e94a2a494"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6bbaa3019ff3788286f8d3bb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8bd097060a35182e14c63722"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "588cdb70032b37882e307cb8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8353052c17f467bde9d96959"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4ebfeb0fdd6a389a345c5fea"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2c8c5d9edd22d62aaabdf6f4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "342b46f54c747633b3cb12c2"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0095c92d251fb7b3104ac2b7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "59d7d9698fc3f343568effa4"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5442fb8e12a3164f1e3cc6aa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "59d7d9698fc3f343568effa4"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d3fab5c6c51134afcbc65e0a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "374275a4ebabf59bb14a1e97"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "72c2ccb11b75613df41a47ee"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f04d0ae0428814be103852d2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "72c2ccb11b75613df41a47ee"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2ce45c4800becc00a61981da"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "72c2ccb11b75613df41a47ee"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "94cbf220ec5e1936dd3f844e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "dad236f48927bae4abdab256"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "d0c81893540fbba6a365f63c"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d2a0264b3c2d13e5daab6583"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "d0c81893540fbba6a365f63c"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e960ace5fb99a02766b8359f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "348bd7a183f18847fefc134d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8d1cfb22992eb13b6a65406e"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5e19dcf6d8c5f575e60b060e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "087b2812519c9f898292b64e"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fad43d0b0ea09aa95bec72be"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8069df63b519da8792ed4684"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "634027bd6ca40a66df343284"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9acb4053b3686d2f2dc1f926"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5f0ff8083b053554384045ec"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a9af75c8559c3ffdade4e113"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4d0dd3227a4b6cf4377e93c2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4d3094706525ea9b4d941301"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "59778b94d68acd4e8353e7de"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "3dc8342af02feab610cf2166"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b2c639c72203596e406dde1a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f19c901ad39f572483d78f14"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9e5c078f429ec8ca60fef55c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "e4ac43c31cfabb35cc21b035"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a53e0959ea09b40e0dc79e93"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6d9300158a974fb7e3a8100e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9f0c162407e5239f338c765c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "5a358a1b6a6304d23008f539"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9a2dd3b49ce4c5c4b58b7669"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "5a358a1b6a6304d23008f539"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "99f6191192df6d4938e31d68"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "e5d9625eecfab793fd038090"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "04f15363432d872c27f40f0a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "80f8a9c30bc54ec70d8f8f57"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6f7117adba6ef41b1251c614"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "03c1ce66435747839d56cf46"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "9633cb0fa12251da7f89dfb6"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b7ccb21ddd562a09372bc729"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "df6cae3269d2b0b01ed24d79"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3211693cd5e7290a034ef31f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "81ee59bad90b403ab12c5199"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3cef58402a7b280ed92f5f76"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "81ee59bad90b403ab12c5199"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9b7a01e2195ed031cff0db1c"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "2675bab7277cc1346c52ddb5"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b0dd546c3c03a8dfebd54795"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "2675bab7277cc1346c52ddb5"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "09564331abfa55e29b736b27"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7291808831ffc5d43a767779"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "b8be11acd7369c2af55d559f"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672fcf5c5f3146ac34d3697f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "cf94d9ed5a773c31616a68b3"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "aa145fc43167cbaf1d498e89"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "81c399b71088c5efaadf1f92"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9cf7cd5851c92785578fcbaa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "9baa234d2ae60303b28419db"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "38f3c7f3e7a447c5befe5292"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "506834154d8401a5e0b4212a"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "37d6d9d70e091d954d7dedca"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2a575fca9aeacdc7c14bee9f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "953d1c288f2bea1391f0d3db"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "01f55620ad3203157ce493aa"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "14d190ba2dec3debae56af4f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8d1cfb22992eb13b6a65406e"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "45ab16ba73a523742ae0e2b0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8d1cfb22992eb13b6a65406e"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2a4ecdec3540c5c2051d6c38"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cdff4a740f96517bd07299fb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "340f9b1aae9c6cce09f4bbf5"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "13a9e9dc2fa97ee2225cf85b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "bfcaf20e7f0443447e9450af"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "35ffc90175364123d4cfbb43"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "087b2812519c9f898292b64e"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "eca954ad3c4d771133277c23"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6d6119bb4078c2d768cb0000"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "473dd10a39a8b484b648831b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8a6a1ef753018a3133fedafd"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "90c6c3d16145ccd026a7722e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "568f53787c6291d6b87c0035"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2a1ed457daf8a97d8ad292d8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "cf96fb049068708c7c7e2029"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7d10f328ea4206e66de3652d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "724f9d10dd8992b48f406a52"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "3f96d2b73a0f2ad409630cd9"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c3a457f8d65a09eb90bbbf0f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a9af75c8559c3ffdade4e113"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "05d0deae0286b64fd1fdf0e0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "e4ac43c31cfabb35cc21b035"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "353985637ed990f0b49006f2"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "e5d9625eecfab793fd038090"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7e4f594c83d72a30b7707f5a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "e5d9625eecfab793fd038090"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d363436220ca2cd76b8f373a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "80f8a9c30bc54ec70d8f8f57"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "854876cefcd3dcdb35bcbd7f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0ec45cc455ccbaaa9092fd2d"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "b7aab62a02b5d2521d8ec9c9"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "85ea2339aa37278abd52ba67"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "b7aab62a02b5d2521d8ec9c9"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7688e46102006314f10e5717"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7716d34bdba50eb3cb37354b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "9633cb0fa12251da7f89dfb6"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-22T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4325c2d52217932c107373cb"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5f7cf4a4190605e85858535a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "439fa2bb957fd6a5dc9f0e7e"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "df6cae3269d2b0b01ed24d79"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4cda7f2d951361411e2626d4"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "81ee59bad90b403ab12c5199"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "16692abc384becff2f5d9f15"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "be96d9e39a2064d3da799e32"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ded7151f6c6f866e745c8f3b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ac578b9e4c49a54421459b4a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "6a076245f56db23e94a2a494"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "963cc5291b2e57896af30035"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8bd097060a35182e14c63722"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "440f6047c3ad60dff9ff6fc3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8353052c17f467bde9d96959"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8a8281dbf4a50472aa1c8f44"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8353052c17f467bde9d96959"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e8196f079a5da56947739e62"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "044dc151d0c809ec3b3804e8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3e0af33792f82a88a7651078"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "4820683c9737de4bfe2ed80e"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e7d2ad78ccfbf5ac0f1ad478"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "cf94d9ed5a773c31616a68b3"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-18T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "397edd0084db6a90faf74953"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "7b89ae5fbc9e3cc73e77529e"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9cab7373a8221983132b8c93"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a7dc343ae12e0a8587bc82f8"
+  },
+  "classId": {
+    "$oid": "bd2f4ed07ef91634de123d63"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 Nền tảng",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b924c3273916dc8ebf989468"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "506834154d8401a5e0b4212a"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "73f6e59da328a67729bbe703"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "ce0a564ca9ed285367f3337e"
+  },
+  "classId": {
+    "$oid": "da14ea487bd38dc5d84a7c23"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 6 Cảm thụ",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4b9ec82b13399858463c6ba3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "d0c81893540fbba6a365f63c"
+  },
+  "classId": {
+    "$oid": "e61613a0d4e8adf3c7db6a0c"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 6 Giao tiếp",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Trần Thu Hà"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3ad7e570b550a27d1b95a846"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "be357af437c74cb674996473"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c878d424b550e0c5505633d1"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "340f9b1aae9c6cce09f4bbf5"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d6a7db3c3226c61b8c89c0cd"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "340f9b1aae9c6cce09f4bbf5"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6e569196dcefd3428f82c7c3"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "087b2812519c9f898292b64e"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-17T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c9b821d2ac8945e0fac9a400"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "568f53787c6291d6b87c0035"
+  },
+  "classId": {
+    "$oid": "e3d7ac5880b1784120199b6d"
+  },
+  "classSnapshot": {
+    "name": "Toán 7 Nâng cao",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "15b1ede1b0e979afe2eddff6"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "cf96fb049068708c7c7e2029"
+  },
+  "classId": {
+    "$oid": "f723b06ce178a7d87309e81a"
+  },
+  "classSnapshot": {
+    "name": "Vật lý 7 Thực hành",
+    "subjectName": "Vật lý",
+    "teacherName": "Lê Hoàng Nam"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d5313b509788c452781dbfb7"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "cf96fb049068708c7c7e2029"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9bb865285c43c4f373d493a9"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a9af75c8559c3ffdade4e113"
+  },
+  "classId": {
+    "$oid": "8a62c291b9316e341e26a0a2"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 7 IELTS Foundation",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e4bbd9a5e1e9135b0208cab0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b0b7680e4888195a534ebf"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "436ae6de703a251ec1169c17"
+  },
+  "classId": {
+    "$oid": "b00fb001fc7ada8a72471fc8"
+  },
+  "classSnapshot": {
+    "name": "Hóa học 8 Khám phá",
+    "subjectName": "Hóa học",
+    "teacherName": "Vũ Thùy Dương"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2e440b42d150201412856f29"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "a0f702ab676c7b72ea16a26c"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "82d4c064c85214f15a97bd84"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "92e963817dabeaa90ccb979a"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "0221d1b17db113abaf213617"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-28T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bbe26d07292dfdb32e1ca26f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "e4ac43c31cfabb35cc21b035"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-03-01T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ea98404c958d10cfec43c8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "2c665a707cc8db655bfefc78"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8b8672dd4b9d5e88e1d775da"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "5a358a1b6a6304d23008f539"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "af8659a1084f590f591a4097"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "7f0347b9d7c0a91d602d4594"
+  },
+  "classId": {
+    "$oid": "048d0aebecc3188e6ff09a50"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 8 Viết sáng tạo",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Hoàng Gia Huy"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-19T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "71addb3204aa769b2fcc0f2b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "b7aab62a02b5d2521d8ec9c9"
+  },
+  "classId": {
+    "$oid": "a9eb2c0a6dc78db1715862cd"
+  },
+  "classSnapshot": {
+    "name": "Toán 8 Chuyên đề",
+    "subjectName": "Toán học",
+    "teacherName": "Phạm Minh Anh"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-20T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9a10bb59f4f88db56955eb6b"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "bd11a44ac769945b75d53724"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-21T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "374777444062779e9ee6e690"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8c793fe00511fe2bf6e5f1b7"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-23T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cac4e09d2c6505700d04c1fa"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "be96d9e39a2064d3da799e32"
+  },
+  "classId": {
+    "$oid": "3783c3b110821e7f80ec0c91"
+  },
+  "classSnapshot": {
+    "name": "Tiếng Anh 9 Luyện đề",
+    "subjectName": "Tiếng Anh",
+    "teacherName": "Bùi Ngọc Mai"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-26T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b5c67b4ae4b35072aa4bd9d8"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "17d2c3f4ff2404746e7243d6"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-27T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "843df423630ded07546a60a0"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8bd097060a35182e14c63722"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-15T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5dc757f50b4eda6ed3d96c4f"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "classId": {
+    "$oid": "192358ff26bacf7303ffe577"
+  },
+  "classSnapshot": {
+    "name": "Toán 9 Luyện thi vào 10",
+    "subjectName": "Toán học",
+    "teacherName": "Đỗ Đức Long"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c8b948196f3266a22a036916"
+  },
+  "seedSource": "binh-minh-rich-v1",
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "8b65f5e6bf18a63d6882dd2c"
+  },
+  "classId": {
+    "$oid": "99d4ae6a88b5d0de5331238d"
+  },
+  "classSnapshot": {
+    "name": "Ngữ văn 9 Luyện thi vào 10",
+    "subjectName": "Ngữ văn",
+    "teacherName": "Nguyễn Quốc Bảo"
+  },
+  "enrolledAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": {
+    "$oid": "6a258a72ec46e93f4cb1136f"
+  },
+  "createdAt": {
+    "$date": "2026-02-16T02:12:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T02:12:07.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2fb13a1ac44747aea075d1"
+  },
+  "schemaVersion": 1,
+  "branchId": {
+    "$oid": "6a258a72ec46e93f4cb1136d"
+  },
+  "studentId": {
+    "$oid": "84127029c4827c45a46214e3"
+  },
+  "classId": {
+    "$oid": "6a25b2898a33df1377f3dc0c"
+  },
+  "classSnapshot": {
+    "name": "Toán 6 thầy A",
+    "subjectName": "Toán 6",
+    "teacherName": "Thầy Văn A"
+  },
+  "enrolledAt": {
+    "$date": "2026-06-15T08:00:58.562Z"
+  },
+  "leftAt": null,
+  "leftReason": null,
+  "enrolledBy": null,
+  "createdAt": {
+    "$date": "2026-06-15T08:00:58.568Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T08:00:58.568Z"
+  },
+  "__v": 0
+}]
