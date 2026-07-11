@@ -15,16 +15,16 @@ export class EnrollmentRepository {
   }
 
   // ─── TRANSACTION: XẾP LỚP ──────────────────────────────────────────────
-  async createEnrollmentWithSession(data: Partial<IEnrollment>, session: ClientSession) {
+  async createEnrollmentWithSession(data: Partial<IEnrollment>, session?: ClientSession) {
     const enrollment = new Enrollment(data);
     return await enrollment.save({ session });
   }
 
-  async addStudentToClass(classId: string, session: ClientSession) {
+  async addStudentToClass(classId: string, session?: ClientSession) {
     await Class.findByIdAndUpdate(classId, { $inc: { studentCount: 1 } }, { session });
   }
 
-  async addClassToStudent(studentId: string, classId: string, session: ClientSession) {
+  async addClassToStudent(studentId: string, classId: string, session?: ClientSession) {
     await User.findByIdAndUpdate(
       studentId,
       { $addToSet: { 'studentInfo.activeClassIds': classId } },
@@ -36,7 +36,7 @@ export class EnrollmentRepository {
   async leaveClassWithSession(
     enrollmentId: string,
     leaveData: MongoUpdate<IEnrollment>,
-    session: ClientSession
+    session?: ClientSession
   ) {
     return await Enrollment.findByIdAndUpdate(
       enrollmentId,
@@ -45,11 +45,11 @@ export class EnrollmentRepository {
     ).lean();
   }
 
-  async removeStudentFromClass(classId: string, session: ClientSession) {
+  async removeStudentFromClass(classId: string, session?: ClientSession) {
     await Class.findByIdAndUpdate(classId, { $inc: { studentCount: -1 } }, { session });
   }
 
-  async removeClassFromStudent(studentId: string, classId: string, session: ClientSession) {
+  async removeClassFromStudent(studentId: string, classId: string, session?: ClientSession) {
     await User.findByIdAndUpdate(
       studentId,
       { $pull: { 'studentInfo.activeClassIds': classId } },
@@ -57,7 +57,7 @@ export class EnrollmentRepository {
     );
   }
 
-  async createAuditLog(logData: AuditSnapshot, session: ClientSession) {
+  async createAuditLog(logData: AuditSnapshot, session?: ClientSession) {
     const log = new AuditLog(logData);
     await log.save({ session });
   }

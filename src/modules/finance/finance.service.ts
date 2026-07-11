@@ -878,38 +878,46 @@ export class FinanceService {
 
     const { items, total, totalAmount } = await this.repo.findInvoices(filter, skip, limit);
 
-    const data = items.map(inv => ({
-      _id: inv._id,
-      invoice_code: inv.invoiceCode,
-      student: {
-        _id: (inv.studentId as PopulatedUserSummary)._id ?? inv.studentId,
-        full_name: (inv.studentId as PopulatedUserSummary).fullName ?? null,
-        user_code: (inv.studentId as PopulatedUserSummary).userCode ?? null,
-      },
-      class: {
-        _id: (inv.classId as PopulatedClassSummary)._id ?? inv.classId,
-        name: (inv.classId as PopulatedClassSummary).name ?? null,
-        class_type: (inv.classId as PopulatedClassSummary).classType ?? null,
-      },
-      invoice_type: inv.invoiceType,
-      billing_period: inv.billingPeriod,
-      sessions_attended: inv.sessionsAttended,
-      sessions_total: inv.sessionsTotal,
-      fee_per_session: inv.feePerSession,
-      course_fee: inv.courseFee,
-      subtotal: inv.subtotal,
-      discount_amount: inv.discountAmount,
-      discount_note: inv.discountNote,
-      excused_sessions: inv.excusedSessions,
-      total_amount: inv.totalAmount,
-      paid_amount: inv.paidAmount ?? 0,
-      remaining_amount: Math.max(0, (inv.totalAmount ?? 0) - (inv.paidAmount ?? 0)),
-      status: inv.status,
-      due_date: inv.dueDate,
-      paid_at: inv.paidAt,
-      payment_method: inv.paymentMethod,
-      created_at: inv.createdAt,
-    }));
+    const data = items.map(inv => {
+      const student = inv.studentId as PopulatedUserSummary;
+      const cls = inv.classId as PopulatedClassSummary;
+
+      return {
+        _id: inv._id,
+        invoice_code: inv.invoiceCode,
+        student_snapshot: inv.studentSnapshot,
+        class_snapshot: inv.classSnapshot,
+        student: {
+          _id: student?._id ?? inv.studentId,
+          full_name: student?.fullName ?? inv.studentSnapshot?.fullName ?? null,
+          user_code: student?.userCode ?? inv.studentSnapshot?.studentCode ?? null,
+        },
+        class: {
+          _id: cls?._id ?? inv.classId,
+          name: cls?.name ?? inv.classSnapshot?.name ?? null,
+          class_type: cls?.classType ?? (inv.invoiceType === 'course' ? 'course' : 'ongoing'),
+          subject_name: inv.classSnapshot?.subjectName ?? null,
+        },
+        invoice_type: inv.invoiceType,
+        billing_period: inv.billingPeriod,
+        sessions_attended: inv.sessionsAttended,
+        sessions_total: inv.sessionsTotal,
+        fee_per_session: inv.feePerSession,
+        course_fee: inv.courseFee,
+        subtotal: inv.subtotal,
+        discount_amount: inv.discountAmount,
+        discount_note: inv.discountNote,
+        excused_sessions: inv.excusedSessions,
+        total_amount: inv.totalAmount,
+        paid_amount: inv.paidAmount ?? 0,
+        remaining_amount: Math.max(0, (inv.totalAmount ?? 0) - (inv.paidAmount ?? 0)),
+        status: inv.status,
+        due_date: inv.dueDate,
+        paid_at: inv.paidAt,
+        payment_method: inv.paymentMethod,
+        created_at: inv.createdAt,
+      };
+    });
 
     return {
       data,

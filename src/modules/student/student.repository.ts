@@ -5,7 +5,7 @@ import { ROLES } from '../../shared/constants/roles.js';
 
 export class StudentRepository {
   // Tạo user trong một session (dùng cho transaction)
-  async createUserWithSession(data: Partial<IUser>, session: ClientSession) {
+  async createUserWithSession(data: Partial<IUser>, session?: ClientSession) {
     const user = new User(data);
     return await user.save({ session });
   }

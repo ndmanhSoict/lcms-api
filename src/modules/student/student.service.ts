@@ -1,4 +1,3 @@
-import mongoose from 'mongoose';
 import { Types } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import { StudentRepository } from './student.repository.js';
@@ -12,6 +11,7 @@ import {
 import { getPagination } from '../../shared/constants/pagination.helper.js';
 import { User, IUser } from '../../models/user.model.js';
 import { normalizeVietnamPhone } from '../../shared/utils/validators.js';
+import { runOptionalTransaction } from '../../shared/utils/mongooseTransaction.js';
 import { ClassSession } from '../../models/classSession.model.js';
 import { Attendance } from '../../models/attendance.model.js';
 import { Assignment } from '../../models/assignment.model.js';
@@ -52,43 +52,40 @@ export class StudentService {
   }
 
   async createStudent(data: AppPayload, creator: RequestUser) {
-    const session = await mongoose.startSession();
-    session.startTransaction();
+    const { parent: parentData, password: studentPassword, ...studentData } = data;
+    if (!studentPassword) throw new BadRequestError('Thiếu mật khẩu tài khoản học sinh');
+    const branchId =
+      creator.role === ROLES.SYSTEM_OWNER ? studentData.branchId : creator.branchId;
+    if (!branchId) throw new ForbiddenError('Không xác định được cơ sở để tạo học sinh');
 
-    try {
-      const { parent: parentData, password: studentPassword, ...studentData } = data;
-      if (!studentPassword) throw new BadRequestError('Thiếu mật khẩu tài khoản học sinh');
-      const branchId =
-        creator.role === ROLES.SYSTEM_OWNER ? studentData.branchId : creator.branchId;
-      if (!branchId) throw new ForbiddenError('Không xác định được cơ sở để tạo học sinh');
+    const studentPhone = normalizeVietnamPhone(studentData.phone);
+    const studentEmail = typeof studentData.email === 'string' ? studentData.email.trim() : '';
+    const parentPhone = parentData ? normalizeVietnamPhone(parentData.phone) : undefined;
+    const parentEmail = parentData
+      ? parentData.email || `ph.${parentPhone}@lcms.internal`
+      : undefined;
 
-      const studentPhone = normalizeVietnamPhone(studentData.phone);
-      const studentEmail = typeof studentData.email === 'string' ? studentData.email.trim() : '';
-      const parentPhone = parentData ? normalizeVietnamPhone(parentData.phone) : undefined;
-      const parentEmail = parentData
-        ? parentData.email || `ph.${parentPhone}@lcms.internal`
-        : undefined;
+    if (parentData && parentPhone) {
+      const existingPhone = await User.findOne({ phone: parentPhone, deletedAt: null }).lean();
+      if (existingPhone) throw new ConflictError('Số điện thoại phụ huynh này đã được sử dụng');
+    }
+    if (studentPhone) {
+      const existingPhone = await User.findOne({ phone: studentPhone, deletedAt: null }).lean();
+      if (existingPhone) throw new ConflictError('Số điện thoại học sinh này đã được sử dụng');
+    }
+    if (parentData && parentEmail) {
+      const existingEmail = await User.findOne({ email: parentEmail, deletedAt: null }).lean();
+      if (existingEmail) throw new ConflictError('Email phụ huynh này đã được sử dụng');
+    }
+    if (studentEmail) {
+      const existingEmail = await User.findOne({ email: studentEmail, deletedAt: null }).lean();
+      if (existingEmail) throw new ConflictError('Email học sinh này đã được sử dụng');
+    }
 
-      if (parentData && parentPhone) {
-        const existingPhone = await User.findOne({ phone: parentPhone, deletedAt: null }).lean();
-        if (existingPhone) throw new ConflictError('Số điện thoại phụ huynh này đã được sử dụng');
-      }
-      if (studentPhone) {
-        const existingPhone = await User.findOne({ phone: studentPhone, deletedAt: null }).lean();
-        if (existingPhone) throw new ConflictError('Số điện thoại học sinh này đã được sử dụng');
-      }
-      if (parentData && parentEmail) {
-        const existingEmail = await User.findOne({ email: parentEmail, deletedAt: null }).lean();
-        if (existingEmail) throw new ConflictError('Email phụ huynh này đã được sử dụng');
-      }
-      if (studentEmail) {
-        const existingEmail = await User.findOne({ email: studentEmail, deletedAt: null }).lean();
-        if (existingEmail) throw new ConflictError('Email học sinh này đã được sử dụng');
-      }
+    const salt = await bcrypt.genSalt(10);
 
-      const salt = await bcrypt.genSalt(10);
+    return runOptionalTransaction(async session => {
       let parentDoc: IUser | null = null;
-
       if (parentData) {
         const parentPasswordHash = await bcrypt.hash(parentData.password || 'TempPass@123', salt);
         parentDoc = await this.studentRepo.createUserWithSession(
@@ -144,14 +141,8 @@ export class StudentService {
         );
       }
 
-      await session.commitTransaction();
       return { student: studentDoc, parent: parentDoc ?? undefined };
-    } catch (error) {
-      await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+    });
   }
 
   async addSecondParent(studentId: string, parentData: AppPayload, requester: RequestUser) {
@@ -178,10 +169,7 @@ export class StudentService {
     const existingEmail = await User.findOne({ email, deletedAt: null }).lean();
     if (existingEmail) throw new ConflictError('Email phụ huynh này đã được sử dụng');
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
-
-    try {
+    return runOptionalTransaction(async session => {
       const newParent = await this.studentRepo.createUserWithSession(
         {
           ...(parentData as Partial<IUser>),
@@ -208,14 +196,8 @@ export class StudentService {
         session
       );
 
-      await session.commitTransaction();
       return newParent;
-    } catch (error) {
-      await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+    });
   }
 
   async getStudents(query: AppQuery, user: RequestUser) {
@@ -225,6 +207,7 @@ export class StudentService {
     if (user.role !== ROLES.SYSTEM_OWNER) filter.branchId = user.branchId;
     if (query.classId) filter['studentInfo.activeClassIds'] = query.classId;
     if (query.grade) filter['studentInfo.grade'] = parseInt(String(query.grade), 10);
+    if (query.isActive !== undefined) filter.isActive = query.isActive === 'true';
     if (query.search) filter.fullName = { $regex: query.search, $options: 'i' };
 
     // Xử lý status

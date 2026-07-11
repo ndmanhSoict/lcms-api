@@ -1,4 +1,4 @@
-import mongoose, { Types } from 'mongoose';
+import { Types } from 'mongoose';
 import { ClassRepository } from './class.repository.js';
 import {
   BadRequestError,
@@ -19,6 +19,7 @@ import {
   NOTIFICATION_TYPES,
   sendNotifications,
 } from '../../shared/utils/notification.helper.js';
+import { runOptionalTransaction } from '../../shared/utils/mongooseTransaction.js';
 
 type CourseInfoPayload = {
   startDate?: string | Date;
@@ -61,7 +62,14 @@ export class ClassService {
 
     for (const cls of activeClasses) {
       const existingRange = this.getClassScheduleRange(cls);
-      if (!this.dateRangesOverlap(newStartDate, newEndDate, existingRange.startDate, existingRange.endDate)) {
+      if (
+        !this.dateRangesOverlap(
+          newStartDate,
+          newEndDate,
+          existingRange.startDate,
+          existingRange.endDate
+        )
+      ) {
         continue;
       }
       if (!cls.weeklySchedule) continue;
@@ -128,6 +136,16 @@ export class ClassService {
       return String((roomId as { _id: unknown })._id);
     }
     return String(roomId);
+  }
+
+  private getObjectIdValue(value: unknown) {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    if (value instanceof Types.ObjectId) return value.toString();
+    if (typeof value === 'object' && '_id' in value) {
+      return String((value as { _id: unknown })._id);
+    }
+    return String(value);
   }
 
   private parseScheduleDate(value: unknown, fieldName: string) {
@@ -230,7 +248,9 @@ export class ClassService {
       .lean();
 
     if (students.length !== studentIds.length) {
-      throw new BadRequestError('Có học sinh không tồn tại, bị khóa hoặc không thuộc cơ sở của lớp');
+      throw new BadRequestError(
+        'Có học sinh không tồn tại, bị khóa hoặc không thuộc cơ sở của lớp'
+      );
     }
 
     return students;
@@ -280,11 +300,48 @@ export class ClassService {
     return sessions;
   }
 
+  private getLocalDateKey(date: Date) {
+    return [
+      date.getFullYear(),
+      String(date.getMonth() + 1).padStart(2, '0'),
+      String(date.getDate()).padStart(2, '0'),
+    ].join('-');
+  }
+
+  private assertGeneratedSessionsDoNotOverlap(sessions: Partial<IClassSession>[]) {
+    const slotsByRoomDate = new Map<string, Partial<IClassSession>[]>();
+
+    for (const session of sessions) {
+      if (!session.sessionDate || !session.startTime || !session.endTime || !session.roomId) {
+        continue;
+      }
+
+      const key = `${session.roomId.toString()}::${this.getLocalDateKey(session.sessionDate)}`;
+      const slots = slotsByRoomDate.get(key) ?? [];
+      const conflicted = slots.some(
+        existing =>
+          existing.startTime &&
+          existing.endTime &&
+          session.startTime! < existing.endTime &&
+          existing.startTime < session.endTime!
+      );
+
+      if (conflicted) {
+        throw new ConflictError('Lịch tự động tạo có tiết học bị trùng phòng trong cùng khung giờ');
+      }
+
+      slots.push(session);
+      slotsByRoomDate.set(key, slots);
+    }
+  }
+
   private async checkGeneratedSessionRoomConflicts(
     branchId: string,
     roomId: string,
     sessions: Partial<IClassSession>[]
   ) {
+    this.assertGeneratedSessionsDoNotOverlap(sessions);
+
     const dates = sessions
       .map(session => session.sessionDate)
       .filter((date): date is Date => Boolean(date));
@@ -306,10 +363,10 @@ export class ClassService {
       .lean();
 
     const conflicted = existingSessions.some(existing => {
-      const existingDateKey = new Date(existing.sessionDate).toISOString().slice(0, 10);
+      const existingDateKey = this.getLocalDateKey(new Date(existing.sessionDate));
       return sessions.some(session => {
         if (!session.sessionDate || !session.startTime || !session.endTime) return false;
-        const newDateKey = new Date(session.sessionDate).toISOString().slice(0, 10);
+        const newDateKey = this.getLocalDateKey(new Date(session.sessionDate));
         return (
           existingDateKey === newDateKey &&
           existing.startTime &&
@@ -347,12 +404,18 @@ export class ClassService {
 
     for (const cls of activeClasses) {
       const existingRange = this.getClassScheduleRange(cls);
-      if (!this.dateRangesOverlap(startDate, endDate, existingRange.startDate, existingRange.endDate)) {
+      if (
+        !this.dateRangesOverlap(startDate, endDate, existingRange.startDate, existingRange.endDate)
+      ) {
         continue;
       }
       for (const slot of cls.weeklySchedule ?? []) {
         for (const newSlot of schedule) {
-          if (slot.dayOfWeek === newSlot.dayOfWeek && newSlot.startTime < slot.endTime && slot.startTime < newSlot.endTime) {
+          if (
+            slot.dayOfWeek === newSlot.dayOfWeek &&
+            newSlot.startTime < slot.endTime &&
+            slot.startTime < newSlot.endTime
+          ) {
             return true;
           }
         }
@@ -385,7 +448,12 @@ export class ClassService {
     if (data.teacherId && data.weeklySchedule) {
       const teacher = await this.assertTeacherInBranch(data.teacherId, branchId);
       teacherName = teacher.fullName ?? teacherName;
-      const hasConflict = await this.checkScheduleConflict(data.teacherId, data.weeklySchedule, startDate, endDate);
+      const hasConflict = await this.checkScheduleConflict(
+        data.teacherId,
+        data.weeklySchedule,
+        startDate,
+        endDate
+      );
       if (hasConflict) throw new ConflictError('Giáo viên bị trùng lịch dạy vào khung giờ này');
     } else if (data.teacherId) {
       const teacher = await this.assertTeacherInBranch(data.teacherId, branchId);
@@ -404,43 +472,55 @@ export class ClassService {
       startDate,
       endDate
     );
-    if (hasRoomConflict) throw new ConflictError('Phòng học bị trùng lịch trong khoảng thời gian này');
+    if (hasRoomConflict)
+      throw new ConflictError('Phòng học bị trùng lịch trong khoảng thời gian này');
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
+    const { teacherId, roomId, ...classData } = data;
+    const newClassId = new Types.ObjectId();
+    const generatedSessions = this.buildSessionDates(
+      startDate,
+      endDate,
+      scheduleWithRoom,
+      newClassId,
+      branchId,
+      teacherId,
+      room
+    );
+    await this.checkGeneratedSessionRoomConflicts(branchId, roomId, generatedSessions);
 
-    try {
-      const { teacherId, roomId, ...classData } = data;
-      const courseInfo = data.courseInfo as CourseInfoPayload | undefined;
-      const ongoingInfo = data.ongoingInfo as OngoingInfoPayload | undefined;
-      delete (classData as { branchId?: unknown }).branchId;
-      const newClassData: Partial<IClass> = {
-        ...(classData as Partial<IClass>),
-        branchId: new Types.ObjectId(branchId),
-        ...(teacherId && { teacherId: new Types.ObjectId(teacherId) }),
-        roomId: new Types.ObjectId(roomId),
-        roomSnapshot: this.buildRoomSnapshot(room),
-        weeklySchedule: scheduleWithRoom,
-        startDate,
-        endDate,
-        ...(data.classType === 'course' && {
-          courseInfo: {
-            startDate,
-            endDate,
-            totalSessions: Number(courseInfo?.totalSessions ?? 0),
-            completedSessions: Number(courseInfo?.completedSessions ?? 0),
-            feePerCourse: Number(courseInfo?.feePerCourse ?? data.tuitionFee ?? 0),
-          },
-        }),
-        ...(data.classType === 'ongoing' && {
-          ongoingInfo: {
-            feePerSession: Number(ongoingInfo?.feePerSession ?? data.tuitionFee ?? 0),
-            billingCycle: ongoingInfo?.billingCycle ?? 'monthly',
-          },
-        }),
-        status: 'active',
-        studentCount: initialStudents.length,
-      };
+    const courseInfo = data.courseInfo as CourseInfoPayload | undefined;
+    const ongoingInfo = data.ongoingInfo as OngoingInfoPayload | undefined;
+    delete (classData as { branchId?: unknown }).branchId;
+    const newClassData: Partial<IClass> = {
+      ...(classData as Partial<IClass>),
+      _id: newClassId,
+      branchId: new Types.ObjectId(branchId),
+      ...(teacherId && { teacherId: new Types.ObjectId(teacherId) }),
+      roomId: new Types.ObjectId(roomId),
+      roomSnapshot: this.buildRoomSnapshot(room),
+      weeklySchedule: scheduleWithRoom,
+      startDate,
+      endDate,
+      ...(data.classType === 'course' && {
+        courseInfo: {
+          startDate,
+          endDate,
+          totalSessions: Number(courseInfo?.totalSessions ?? 0),
+          completedSessions: Number(courseInfo?.completedSessions ?? 0),
+          feePerCourse: Number(courseInfo?.feePerCourse ?? data.tuitionFee ?? 0),
+        },
+      }),
+      ...(data.classType === 'ongoing' && {
+        ongoingInfo: {
+          feePerSession: Number(ongoingInfo?.feePerSession ?? data.tuitionFee ?? 0),
+          billingCycle: ongoingInfo?.billingCycle ?? 'monthly',
+        },
+      }),
+      status: 'active',
+      studentCount: initialStudents.length,
+    };
+
+    const newClass = await runOptionalTransaction(async session => {
       const newClass = await this.classRepo.createClass(newClassData, session);
       if (initialStudents.length) {
         await Enrollment.insertMany(
@@ -464,16 +544,6 @@ export class ClassService {
           { session }
         );
       }
-      const generatedSessions = this.buildSessionDates(
-        startDate,
-        endDate,
-        scheduleWithRoom,
-        newClass._id,
-        branchId,
-        teacherId,
-        room
-      );
-      await this.checkGeneratedSessionRoomConflicts(branchId, roomId, generatedSessions);
       await ClassSession.insertMany(generatedSessions, { session, ordered: true });
 
       // Cập nhật teacherInfo nếu có GV
@@ -486,43 +556,38 @@ export class ClassService {
         );
       }
 
-      await session.commitTransaction();
-
-      if (newClass.classType === 'course' && initialStudentIds.length) {
-        for (const studentId of initialStudentIds) {
-          await this.financeService.createCourseInvoiceForEnrollment(
-            studentId,
-            newClass._id.toString(),
-            requester
-          );
-        }
-      }
-
-      const recipients = await getClassAudienceRecipientIds(newClass, {
-        teacher: true,
-        branchUsers: true,
-      });
-      await sendNotifications(recipients, {
-        branchId,
-        type: NOTIFICATION_TYPES.CLASS_CREATED,
-        title: `Lớp mới: ${newClass.name}`,
-        content: `Lớp ${newClass.name} đã được tạo.`,
-        actionUrl: `/classes/${newClass._id}`,
-        metadata: {
-          classId: newClass._id.toString(),
-          createdBy: requester.id,
-          createdByRole: requester.role,
-        },
-        excludeUserIds: [requester.id],
-      });
-
       return newClass;
-    } catch (error) {
-      if (session.inTransaction()) await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
+    });
+
+    if (newClass.classType === 'course' && initialStudentIds.length) {
+      for (const studentId of initialStudentIds) {
+        await this.financeService.createCourseInvoiceForEnrollment(
+          studentId,
+          newClass._id.toString(),
+          requester
+        );
+      }
     }
+
+    const recipients = await getClassAudienceRecipientIds(newClass, {
+      teacher: true,
+      branchUsers: true,
+    });
+    await sendNotifications(recipients, {
+      branchId,
+      type: NOTIFICATION_TYPES.CLASS_CREATED,
+      title: `Lớp mới: ${newClass.name}`,
+      content: `Lớp ${newClass.name} đã được tạo.`,
+      actionUrl: `/classes/${newClass._id}`,
+      metadata: {
+        classId: newClass._id.toString(),
+        createdBy: requester.id,
+        createdByRole: requester.role,
+      },
+      excludeUserIds: [requester.id],
+    });
+
+    return newClass;
   }
 
   async getClasses(query: AppQuery, requester: RequestUser) {
@@ -553,7 +618,7 @@ export class ClassService {
     if (requester.role !== ROLES.SYSTEM_OWNER && cls.branchId.toString() !== requester.branchId) {
       throw new ForbiddenError('Lớp học không thuộc cơ sở của bạn');
     }
-    if (requester.role === ROLES.TEACHER && cls.teacherId?.toString() !== requester.id) {
+    if (requester.role === ROLES.TEACHER && this.getObjectIdValue(cls.teacherId) !== requester.id) {
       throw new ForbiddenError('Bạn không được phân công giảng dạy lớp này');
     }
 
@@ -592,22 +657,27 @@ export class ClassService {
       endDate,
       id
     );
-    if (hasRoomConflict) throw new ConflictError('Phòng học bị trùng lịch trong khoảng thời gian này');
+    if (hasRoomConflict)
+      throw new ConflictError('Phòng học bị trùng lịch trong khoảng thời gian này');
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
-
-    try {
+    const updatedClass = await runOptionalTransaction(async session => {
       // Xử lý đổi Giáo viên
-      if (data.teacherId && data.teacherId !== cls.teacherId?.toString()) {
+      const currentTeacherId = this.getObjectIdValue(cls.teacherId);
+      if (data.teacherId && data.teacherId !== currentTeacherId) {
         await this.assertTeacherInBranch(data.teacherId, cls.branchId.toString());
         const scheduleToCheck = data.weeklySchedule || cls.weeklySchedule;
-        const hasConflict = await this.checkScheduleConflict(data.teacherId, scheduleToCheck, startDate, endDate, id);
+        const hasConflict = await this.checkScheduleConflict(
+          data.teacherId,
+          scheduleToCheck,
+          startDate,
+          endDate,
+          id
+        );
         if (hasConflict) throw new ConflictError('Giáo viên mới bị trùng lịch dạy');
 
         // Gỡ lớp khỏi GV cũ
-        if (cls.teacherId)
-          await this.classRepo.updateTeacherClasses(cls.teacherId.toString(), id, 'pull', session);
+        if (currentTeacherId)
+          await this.classRepo.updateTeacherClasses(currentTeacherId, id, 'pull', session);
         // Thêm lớp vào GV mới
         await this.classRepo.updateTeacherClasses(data.teacherId, id, 'push', session);
 
@@ -624,49 +694,44 @@ export class ClassService {
         endDate,
         ...(data.courseInfo
           ? {
-          courseInfo: {
-            ...(data.courseInfo as CourseInfoPayload),
-            startDate,
-            endDate,
-          },
-        }
+              courseInfo: {
+                ...(data.courseInfo as CourseInfoPayload),
+                startDate,
+                endDate,
+              },
+            }
           : {}),
       };
       const updatedClass = await this.classRepo.updateById(id, updateData, session);
       if (!updatedClass) throw new NotFoundError('Lớp học');
-      await session.commitTransaction();
-
-      const teacherIds = [cls.teacherId?.toString()].filter(Boolean) as string[];
-      const recipients = [
-        ...(await getClassAudienceRecipientIds(updatedClass, {
-          teacher: true,
-          students: true,
-          parents: true,
-          branchUsers: true,
-        })),
-        ...teacherIds,
-      ];
-      await sendNotifications(recipients, {
-        branchId: cls.branchId,
-        type: NOTIFICATION_TYPES.CLASS_UPDATED,
-        title: `Lớp đã cập nhật: ${updatedClass?.name ?? cls.name}`,
-        content: `Thông tin lớp ${updatedClass?.name ?? cls.name} đã được cập nhật.`,
-        actionUrl: `/classes/${id}`,
-        metadata: {
-          classId: id,
-          updatedBy: requester.id,
-          updatedByRole: requester.role,
-        },
-        excludeUserIds: [requester.id],
-      });
-
       return updatedClass;
-    } catch (error) {
-      if (session.inTransaction()) await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+    });
+
+    const teacherIds = [this.getObjectIdValue(cls.teacherId)].filter(Boolean) as string[];
+    const recipients = [
+      ...(await getClassAudienceRecipientIds(updatedClass, {
+        teacher: true,
+        students: true,
+        parents: true,
+        branchUsers: true,
+      })),
+      ...teacherIds,
+    ];
+    await sendNotifications(recipients, {
+      branchId: cls.branchId,
+      type: NOTIFICATION_TYPES.CLASS_UPDATED,
+      title: `Lớp đã cập nhật: ${updatedClass?.name ?? cls.name}`,
+      content: `Thông tin lớp ${updatedClass?.name ?? cls.name} đã được cập nhật.`,
+      actionUrl: `/classes/${id}`,
+      metadata: {
+        classId: id,
+        updatedBy: requester.id,
+        updatedByRole: requester.role,
+      },
+      excludeUserIds: [requester.id],
+    });
+
+    return updatedClass;
   }
 
   async closeClass(id: string, reason: string, requester: RequestUser) {
@@ -678,10 +743,7 @@ export class ClassService {
       throw new ForbiddenError('Không có quyền thao tác');
     }
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
-
-    try {
+    await runOptionalTransaction(async session => {
       // 1. Đổi status lớp
       await this.classRepo.updateById(id, { status: 'completed' }, session);
 
@@ -689,18 +751,13 @@ export class ClassService {
       await this.classRepo.closeAllEnrollments(id, session);
 
       // 3. Gỡ lớp khỏi activeClassIds của Giáo viên
-      if (cls.teacherId) {
-        await this.classRepo.updateTeacherClasses(cls.teacherId.toString(), id, 'pull', session);
+      const teacherId = this.getObjectIdValue(cls.teacherId);
+      if (teacherId) {
+        await this.classRepo.updateTeacherClasses(teacherId, id, 'pull', session);
       }
+    });
 
-      await session.commitTransaction();
-      return { status: 'completed', reason };
-    } catch (error) {
-      await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+    return { status: 'completed', reason };
   }
 
   async getClassStudents(id: string, query: AppQuery, requester: RequestUser) {

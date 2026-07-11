@@ -596,12 +596,8 @@ export class AssignmentService {
       throw new ValidationError('Giáo viên đã mở đáp án nên bài tập không thể làm lại');
     }
 
-    if (existing && isLate) {
-      throw new ValidationError('Đã hết thời hạn làm lại bài tập');
-    }
-
-    if (isLate && assignment.submissionConfig?.allowLate === false) {
-      throw new ValidationError('Đã quá hạn nộp bài và bài tập này không cho phép nộp muộn');
+    if (isLate) {
+      throw new ValidationError('Đã quá hạn nộp bài nên không thể làm hoặc nộp bài nữa');
     }
 
     const requestedAttachmentUrls = this.parseJsonField<string[]>(body.attachment_urls, []);

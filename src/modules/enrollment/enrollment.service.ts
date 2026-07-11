@@ -1,4 +1,4 @@
-import mongoose, { Types } from 'mongoose';
+import { Types } from 'mongoose';
 import { EnrollmentRepository } from './enrollment.repository.js';
 import { User } from '../../models/user.model.js';
 import { Class } from '../../models/class.model.js';
@@ -16,6 +16,7 @@ import {
   BadRequestError,
 } from '../../shared/errors/AllErrors.js';
 import { FinanceService } from '../finance/finance.service.js';
+import { runOptionalTransaction } from '../../shared/utils/mongooseTransaction.js';
 
 export class EnrollmentService {
   private enrollmentRepo: EnrollmentRepository;
@@ -67,15 +68,11 @@ export class EnrollmentService {
     const existing = await this.enrollmentRepo.findActiveEnrollment(studentId, classId);
     if (existing) throw new ConflictError('Học sinh đang học trong lớp này rồi');
 
-    // 5. Bắt đầu Transaction
-    const session = await mongoose.startSession();
-    session.startTransaction();
+    const teacher = cls.teacherId as PopulatedUserSummary | undefined;
+    const teacherName = teacher?.fullName ?? 'Chưa phân công';
 
-    try {
-      const teacher = cls.teacherId as PopulatedUserSummary | undefined;
-      const teacherName = teacher?.fullName ?? 'Chưa phân công';
-
-      const newEnrollment = await this.enrollmentRepo.createEnrollmentWithSession(
+    const newEnrollment = await runOptionalTransaction(async session => {
+      const enrollment = await this.enrollmentRepo.createEnrollmentWithSession(
         {
           studentId: new Types.ObjectId(studentId),
           classId: new Types.ObjectId(classId),
@@ -93,7 +90,8 @@ export class EnrollmentService {
       await this.enrollmentRepo.addStudentToClass(classId, session);
       await this.enrollmentRepo.addClassToStudent(studentId, classId, session);
 
-      await session.commitTransaction();
+      return enrollment;
+    });
 
       if (cls.classType === 'course') {
         await this.financeService.createCourseInvoiceForEnrollment(studentId, classId, requester);
@@ -121,12 +119,6 @@ export class EnrollmentService {
       });
 
       return newEnrollment;
-    } catch (error) {
-      if (session.inTransaction()) await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
   }
 
   // 5.2 Rút học sinh khỏi lớp
@@ -153,10 +145,7 @@ export class EnrollmentService {
     const student = await User.findById(enrollment.studentId).lean();
     if (!student) throw new NotFoundError('Học sinh');
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
-
-    try {
+    await runOptionalTransaction(async session => {
       const leftAt = new Date();
       await this.enrollmentRepo.leaveClassWithSession(
         enrollmentId,
@@ -187,8 +176,8 @@ export class EnrollmentService {
         },
         session
       );
+    });
 
-      await session.commitTransaction();
       const studentId = enrollment.studentId.toString();
       const classId = enrollment.classId.toString();
       const recipients = [
@@ -214,12 +203,6 @@ export class EnrollmentService {
       });
 
       return true;
-    } catch (error) {
-      if (session.inTransaction()) await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
   }
 
   // 5.3 Lấy lịch sử enrollment của học sinh

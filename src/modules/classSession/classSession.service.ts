@@ -80,6 +80,13 @@ export class ClassSessionService {
     };
   }
 
+  private assertValidTimeRange(startTime?: string | null, endTime?: string | null) {
+    if (!startTime || !endTime) return;
+    if (startTime >= endTime) {
+      throw new BadRequestError('Giờ kết thúc phải sau giờ bắt đầu');
+    }
+  }
+
   private async assertRoomAvailable(params: {
     roomId: string;
     branchId: Types.ObjectId;
@@ -204,6 +211,7 @@ export class ClassSessionService {
 
     if (!data.sessionDate) throw new BadRequestError('Vui lòng chọn ngày học');
     if (!data.roomId) throw new BadRequestError('Vui lòng chọn phòng học cho buổi học');
+    this.assertValidTimeRange(data.startTime, data.endTime);
 
     const sessionDate = new Date(data.sessionDate);
     const startOfDay = new Date(sessionDate.setHours(0, 0, 0, 0));
@@ -254,6 +262,7 @@ export class ClassSessionService {
     const nextRoomId = data.roomId ?? existing.roomId?.toString();
     if (!nextRoomId) throw new BadRequestError('Vui lòng chọn phòng học cho buổi học');
     const room = await this.assertRoomInBranch(nextRoomId, cls);
+    this.assertValidTimeRange(data.startTime ?? existing.startTime, data.endTime ?? existing.endTime);
 
     const updateData: Partial<IClassSession> = {
       ...(data as Partial<IClassSession>),

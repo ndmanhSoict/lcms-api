@@ -15,7 +15,10 @@ export class ClassRepository {
   }
 
   async findById(id: string) {
-    return await Class.findById(id).populate('roomId', 'code capacity detail branchId').lean();
+    return await Class.findById(id)
+      .populate('teacherId', 'fullName avatarUrl email branchId')
+      .populate('roomId', 'code capacity detail branchId')
+      .lean();
   }
 
   async updateById(id: string, data: MongoUpdate<IClass>, session?: ClientSession) {
@@ -50,7 +53,7 @@ export class ClassRepository {
     teacherId: string,
     classId: string,
     action: 'push' | 'pull',
-    session: ClientSession
+    session?: ClientSession
   ) {
     const updateOp =
       action === 'push'
@@ -61,7 +64,7 @@ export class ClassRepository {
   }
 
   // Cập nhật trạng thái Enrollment khi đóng lớp
-  async closeAllEnrollments(classId: string, session: ClientSession) {
+  async closeAllEnrollments(classId: string, session?: ClientSession) {
     // 1. Chốt ngày rời lớp cho các hồ sơ đang học
     await Enrollment.updateMany(
       { classId, leftAt: null },

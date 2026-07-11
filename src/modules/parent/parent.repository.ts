@@ -68,7 +68,7 @@ export class ParentRepository {
       .lean();
   }
 
-  async addParentToStudents(studentIds: string[], parentId: string, session: ClientSession) {
+  async addParentToStudents(studentIds: string[], parentId: string, session?: ClientSession) {
     if (studentIds.length === 0) return;
 
     await User.updateMany(
@@ -78,7 +78,7 @@ export class ParentRepository {
     );
   }
 
-  async removeParentFromStudents(studentIds: string[], parentId: string, session: ClientSession) {
+  async removeParentFromStudents(studentIds: string[], parentId: string, session?: ClientSession) {
     if (studentIds.length === 0) return;
 
     await User.updateMany(
@@ -88,7 +88,7 @@ export class ParentRepository {
     );
   }
 
-  async softDelete(id: string, deletedBy: string, session: ClientSession) {
+  async softDelete(id: string, deletedBy: string, session?: ClientSession) {
     return await User.findByIdAndUpdate(
       id,
       { $set: { deletedAt: new Date(), deletedBy, isActive: false } },

@@ -1,4 +1,4 @@
-import mongoose, { Types } from 'mongoose';
+import { Types } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import { ParentRepository } from './parent.repository.js';
 import { ATTENDANCE_STATUS, ROLES } from '../../shared/constants/roles.js';
@@ -19,6 +19,7 @@ import { Message } from '../../models/message.model.js';
 import { User, type IUser } from '../../models/user.model.js';
 import type { IAttendance } from '../../models/attendance.model.js';
 import { normalizeVietnamPhone } from '../../shared/utils/validators.js';
+import { runOptionalTransaction } from '../../shared/utils/mongooseTransaction.js';
 
 type EntityReference = ObjectIdLike | { _id?: ObjectIdLike };
 type ParentStudentView = PopulatedUserSummary & {
@@ -184,42 +185,35 @@ export class ParentService {
 
     const passwordHash = await bcrypt.hash(data.password || 'TempPass@123', 12);
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
+    const parentData: Partial<IUser> = {
+      fullName: data.fullName,
+      email,
+      phone,
+      passwordHash,
+      role: ROLES.PARENT,
+      branchId: new Types.ObjectId(requester.branchId),
+      dateOfBirth: data.dateOfBirth ? new Date(data.dateOfBirth) : undefined,
+      gender: data.gender,
+      avatarUrl: data.avatarUrl,
+      isActive: data.isActive ?? true,
+      userCode: this.generateParentCode(),
+      createdBy: new Types.ObjectId(requester.id),
+      parentInfo: {
+        studentIds: studentIds.map(studentId => new Types.ObjectId(studentId)),
+        relationship: data.parentInfo?.relationship,
+      },
+    };
 
-    try {
-      const parentData: Partial<IUser> = {
-        fullName: data.fullName,
-        email,
-        phone,
-        passwordHash,
-        role: ROLES.PARENT,
-        branchId: new Types.ObjectId(requester.branchId),
-        dateOfBirth: data.dateOfBirth ? new Date(data.dateOfBirth) : undefined,
-        gender: data.gender,
-        avatarUrl: data.avatarUrl,
-        isActive: data.isActive ?? true,
-        userCode: this.generateParentCode(),
-        createdBy: new Types.ObjectId(requester.id),
-        parentInfo: {
-          studentIds: studentIds.map(studentId => new Types.ObjectId(studentId)),
-          relationship: data.parentInfo?.relationship,
-        },
-      };
-
+    const parent = await runOptionalTransaction(async session => {
       const parent = await this.repo.create(parentData, session);
 
       await this.repo.addParentToStudents(studentIds, parent._id.toString(), session);
 
-      await session.commitTransaction();
-      const result = await this.repo.getParentDetail(parent._id.toString());
-      return result;
-    } catch (error) {
-      await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+      return parent;
+    });
+
+    const result = await this.repo.getParentDetail(parent._id.toString());
+    return result;
   }
 
   async getParents(query: AppQuery, requester: RequestUser) {
@@ -638,23 +632,14 @@ export class ParentService {
       (studentId: string) => !nextStudentIds.includes(studentId)
     );
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
-
-    try {
+    await runOptionalTransaction(async session => {
       await this.repo.updateById(id, { $set: set } as MongoUpdate<IUser>, session);
       await this.repo.addParentToStudents(addedStudentIds, id, session);
       await this.repo.removeParentFromStudents(removedStudentIds, id, session);
+    });
 
-      await session.commitTransaction();
-      const result = await this.repo.getParentDetail(id);
-      return result;
-    } catch (error) {
-      await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+    const result = await this.repo.getParentDetail(id);
+    return result;
   }
 
   async deleteParent(id: string, requester: RequestUser) {
@@ -664,21 +649,12 @@ export class ParentService {
 
     const studentIds = this.getOwnedStudentIds(parent);
 
-    const session = await mongoose.startSession();
-    session.startTransaction();
-
-    try {
+    await runOptionalTransaction(async session => {
       await this.repo.removeParentFromStudents(studentIds, id, session);
       await this.repo.revokeAllTokens(id, session);
       await this.repo.softDelete(id, requester.id, session);
+    });
 
-      await session.commitTransaction();
-      return { deleted: true, parentId: id };
-    } catch (error) {
-      await session.abortTransaction();
-      throw error;
-    } finally {
-      session.endSession();
-    }
+    return { deleted: true, parentId: id };
   }
 }
